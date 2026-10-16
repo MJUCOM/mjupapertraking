@@ -1,0 +1,107 @@
+# 추적할 학회 목록.
+#
+# source: openalex
+#   OpenAlex(https://openalex.org)에서 DOI 접두어로 논문을 가져온다 (초록 포함).
+#   - doi_prefixes: 연도별 프로시딩 DOI 접두어. 모르면 비워둬도 된다.
+#   - doi_prefix_template: 매년 규칙적인 접두어일 때 ({year} 치환).
+#   - openalex_sources: 새 연도의 접두어를 자동 발견할 때 쓰는 OpenAlex source ID.
+#     (접두어가 없는 연도는 이 source에서 가장 많이 쓰인 DOI 접두어를 자동으로 채택해
+#      data/discovered.json에 기록한다.)
+#
+# source: usenix
+#   usenix.org 공식 프로그램 페이지를 파싱한다 (학회 전 accepted papers 목록도 포함).
+#   - slug_template: {yy}=두 자리 연도
+#   - pages: 시도할 하위 페이지 (없으면 404로 건너뜀)
+
+start_year: 2022
+
+# 프로시딩에 섞여 들어오는 비논문 항목 제외 (제목 기준, 대소문자 무시)
+exclude_title_patterns:
+  - '^(poster|demo|demonstration|keynote|panel|tutorial|lightning talk|invited talk)s?\s*:'
+  - '^(front matter|table of contents|title page|copyright|author index)'
+  - '^message from'
+  - '(organizing|program) committee'
+  - '^welcome'
+
+venues:
+  - id: ccs
+    short: CCS
+    name: ACM Conference on Computer and Communications Security
+    area: security
+    source: openalex
+    openalex_sources: [S4363608815, S4393917527]
+    doi_prefixes:
+      2022: 10.1145/3548606
+      2023: 10.1145/3576915
+      2024: 10.1145/3658644
+      2025: 10.1145/3719027
+
+  - id: ndss
+    short: NDSS
+    name: Network and Distributed System Security Symposium
+    area: security
+    source: openalex
+    openalex_sources: [S4306420590]
+    doi_prefix_template: "10.14722/ndss.{year}"
+
+  - id: sp
+    short: S&P
+    name: IEEE Symposium on Security and Privacy
+    area: security
+    source: openalex
+    openalex_sources: [S4210233669]
+    doi_prefixes:
+      2022: 10.1109/sp46214.2022
+      2023: 10.1109/sp46215.2023
+      2024: 10.1109/sp54263.2024
+      2025: 10.1109/sp61157.2025
+      2026: 10.1109/sp63933.2026
+
+  - id: usenixsec
+    short: USENIX Sec
+    name: USENIX Security Symposium
+    area: security
+    source: usenix
+    slug_template: "usenixsecurity{yy}"
+    pages:
+      - technical-sessions
+      - cycle1-accepted-papers
+      - cycle2-accepted-papers
+      - summer-accepted-papers
+      - fall-accepted-papers
+      - winter-accepted-papers
+
+  - id: sosp
+    short: SOSP
+    name: ACM Symposium on Operating Systems Principles
+    area: systems
+    source: openalex
+    openalex_sources: [S4306420989, S7407089168, S7407086666]
+    doi_prefixes:
+      2023: 10.1145/3600006
+      2024: 10.1145/3694715
+      2025: 10.1145/3731569
+      2026: 10.1145/3830418
+
+  - id: osdi
+    short: OSDI
+    name: USENIX Symposium on Operating Systems Design and Implementation
+    area: systems
+    source: usenix
+    slug_template: "osdi{yy}"
+    pages:
+      - technical-sessions
+      - accepted-papers
+
+  - id: icse
+    short: ICSE
+    name: IEEE/ACM International Conference on Software Engineering
+    area: se
+    source: openalex
+    openalex_sources: [S4210203175, S7407086679]
+    doi_prefixes:
+      2022: 10.1145/3510003
+      2023: 10.1109/icse48619.2023
+      2024: 10.1145/3597503
+      2025: 10.1109/icse55347.2025
+      2026: 10.1145/3744916

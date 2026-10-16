@@ -1,0 +1,33 @@
+# 추적 키워드(토픽) 목록.
+# 여기에 추가하면 사이트의 토픽 탭과 RSS(Atom) 피드가 자동으로 생긴다.
+#
+# patterns: JavaScript/Python 공통 정규식, 대소문자 무시.
+#           제목 + 초록 + 키워드에 대해 매칭한다.
+# exclude:  (선택) 이 패턴이 매칭되면 제외.
+
+topics:
+  - id: rust
+    name: Rust
+    description: Rust 언어, unsafe Rust, Rust 컴파일러/생태계 관련 논문
+    patterns:
+      - '\brust\b'
+      - '\brustc\b'
+      - '\bcrates?\.io\b'
+      - '\bunsafe rust\b'
+      - '\brust-?for-?linux\b'
+      - '\brustbelt\b'
+
+  - id: memory-safety
+    name: Memory Safety
+    description: 메모리 안전성, memory-safe language, 메모리 오류 방어
+    patterns:
+      - '\bmemory[- ]safe(ty)?\b'
+      - '\buse[- ]after[- ]free\b'
+      - '\bbuffer overflows?\b'
+      - '\btemporal safety\b'
+      - '\bspatial safety\b'
+
+  - id: fuzzing
+    name: Fuzzing
+    patterns:
+      - '\bfuzz(ing|er|ers|ed)?\b'

@@ -1,0 +1,121 @@
+{
+ "updated": "2026-10-16T05:26:02+00:00",
+ "venues": [
+  {
+   "id": "ccs",
+   "short": "CCS",
+   "name": "ACM Conference on Computer and Communications Security",
+   "area": "security"
+  },
+  {
+   "id": "ndss",
+   "short": "NDSS",
+   "name": "Network and Distributed System Security Symposium",
+   "area": "security"
+  },
+  {
+   "id": "sp",
+   "short": "S&P",
+   "name": "IEEE Symposium on Security and Privacy",
+   "area": "security"
+  },
+  {
+   "id": "usenixsec",
+   "short": "USENIX Sec",
+   "name": "USENIX Security Symposium",
+   "area": "security"
+  },
+  {
+   "id": "sosp",
+   "short": "SOSP",
+   "name": "ACM Symposium on Operating Systems Principles",
+   "area": "systems"
+  },
+  {
+   "id": "osdi",
+   "short": "OSDI",
+   "name": "USENIX Symposium on Operating Systems Design and Implementation",
+   "area": "systems"
+  },
+  {
+   "id": "icse",
+   "short": "ICSE",
+   "name": "IEEE/ACM International Conference on Software Engineering",
+   "area": "se"
+  }
+ ],
+ "topics": [
+  {
+   "id": "rust",
+   "name": "Rust",
+   "description": "Rust 언어, unsafe Rust, Rust 컴파일러/생태계 관련 논문",
+   "patterns": [
+    "\\brust\\b",
+    "\\brustc\\b",
+    "\\bcrates?\\.io\\b",
+    "\\bunsafe rust\\b",
+    "\\brust-?for-?linux\\b",
+    "\\brustbelt\\b"
+   ],
+   "exclude": []
+  },
+  {
+   "id": "memory-safety",
+   "name": "Memory Safety",
+   "description": "메모리 안전성, memory-safe language, 메모리 오류 방어",
+   "patterns": [
+    "\\bmemory[- ]safe(ty)?\\b",
+    "\\buse[- ]after[- ]free\\b",
+    "\\bbuffer overflows?\\b",
+    "\\btemporal safety\\b",
+    "\\bspatial safety\\b"
+   ],
+   "exclude": []
+  },
+  {
+   "id": "fuzzing",
+   "name": "Fuzzing",
+   "description": "",
+   "patterns": [
+    "\\bfuzz(ing|er|ers|ed)?\\b"
+   ],
+   "exclude": []
+  }
+ ],
+ "counts": {
+  "ccs:2022": 240,
+  "ccs:2023": 246,
+  "ccs:2024": 361,
+  "ccs:2025": 354,
+  "icse:2022": 197,
+  "icse:2023": 215,
+  "icse:2024": 237,
+  "icse:2025": 249,
+  "icse:2026": 302,
+  "ndss:2022": 84,
+  "ndss:2023": 95,
+  "ndss:2024": 141,
+  "ndss:2025": 211,
+  "ndss:2026": 262,
+  "osdi:2022": 49,
+  "osdi:2023": 55,
+  "osdi:2024": 53,
+  "osdi:2025": 53,
+  "osdi:2026": 136,
+  "sosp:2023": 43,
+  "sosp:2024": 43,
+  "sosp:2025": 56,
+  "sosp:2026": 62,
+  "sp:2022": 148,
+  "sp:2023": 197,
+  "sp:2024": 263,
+  "sp:2025": 257,
+  "sp:2026": 256,
+  "usenixsec:2022": 256,
+  "usenixsec:2023": 422,
+  "usenixsec:2024": 417,
+  "usenixsec:2025": 438,
+  "usenixsec:2026": 363
+ },
+ "errors": []
+}

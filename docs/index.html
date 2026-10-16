@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Tracker</title>
+  <meta name="description" content="CCS · NDSS · USENIX Security · S&P · SOSP · OSDI · ICSE 논문 키워드 트래커">
+  <link rel="stylesheet" href="style.css">
+  <link rel="alternate" type="application/atom+xml" title="All papers" href="feeds/all.xml">
+  <link rel="alternate" type="application/atom+xml" title="Rust" href="feeds/rust.xml">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <h1>Paper Tracker</h1>
+        <p class="sub" id="subtitle">불러오는 중…</p>
+      </div>
+      <a class="feed" id="feedLink" href="feeds/all.xml" title="이 토픽의 Atom/RSS 피드">RSS</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="row">
+        <span class="label">토픽</span>
+        <div class="chips" id="topicChips"></div>
+      </div>
+      <form class="row add" id="addTopicForm" autocomplete="off">
+        <span class="label">키워드 추가</span>
+        <input id="addTopicInput" type="text" placeholder="예: WebAssembly, wasm   ·   정규식은 /eBPF|BPF verifier/">
+        <button type="submit">추가</button>
+      </form>
+      <div class="row">
+        <span class="label">검색</span>
+        <input id="search" type="search" placeholder="제목·초록·저자 검색 (공백=AND, &quot;구문&quot;)">
+      </div>
+      <div class="row">
+        <span class="label">학회</span>
+        <div class="chips" id="venueChips"></div>
+      </div>
+      <div class="row">
+        <span class="label">연도</span>
+        <div class="chips" id="yearChips"></div>
+      </div>
+      <div class="row split">
+        <div class="row inline">
+          <span class="label">추가 시점</span>
+          <select id="since">
+            <option value="0">전체</option>
+            <option value="7">최근 7일</option>
+            <option value="30">최근 30일</option>
+            <option value="90">최근 90일</option>
+          </select>
+        </div>
+        <div class="row inline">
+          <span class="label">정렬</span>
+          <select id="sort">
+            <option value="year">연도 최신순</option>
+            <option value="relevance">관련도순 (토픽)</option>
+            <option value="added">추가된 순</option>
+            <option value="venue">학회순</option>
+            <option value="title">제목순</option>
+          </select>
+        </div>
+        <label class="row inline check" title="초록에서 '…Rust로 구현했다' 같은 부수적 언급을 제외">
+          <input type="checkbox" id="titleOnly"> 토픽은 제목에서만 매칭
+        </label>
+        <div class="row inline">
+          <button type="button" id="exportCsv" class="ghost">CSV 내보내기</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-info" id="topicInfo" hidden></section>
+
+    <section class="matrix-wrap">
+      <table class="matrix" id="matrix"></table>
+    </section>
+
+    <p class="count" id="resultCount"></p>
+    <ol class="results" id="results"></ol>
+    <button id="more" class="more" hidden>더 보기</button>
+  </main>
+
+  <footer class="wrap foot">
+    데이터: <a href="https://openalex.org">OpenAlex</a> · <a href="https://www.usenix.org">USENIX</a> ·
+    매일 GitHub Actions로 자동 갱신 · 영구 토픽은 <code>config/topics.yml</code>에서 관리
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

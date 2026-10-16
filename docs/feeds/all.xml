@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Paper Tracker — All papers</title>
+  <id>./feeds/all.xml</id>
+  <link href="./"/>
+  <updated>2026-10-16T05:26:02Z</updated>
+  <entry>
+    <title>"Game Changer" or "Overenthusiastic Drunk Acquaintance"? Generative AI Use by Blind and Low Vision Software Professionals in the Workplace</title>
+    <link href="https://doi.org/10.1145/3744916.3773172"/>
+    <id>https://doi.org/10.1145/3744916.3773172</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yoonha Cha, Victoria Jackson, Lauren Shu, Stacy Marie Branham, André van der Hoek
+
+The software development workplace poses numerous technical and collaborative accessibility challenges for blind and low vision software professionals (BLVSPs). Though Generative AI (GenAI) is increasingly adopted within the software development industry and has been a rapidly growing topic of interest in research, to date, the unique perspectives of BLVSPs have yet to be consulted. We report on a qualitative study involving 39 semi-structured interviews with BLVSPs about what the introduction of GenAI has meant for their work. We found that BLVSPs used GenAI for many software development tasks, resulting in benefits such as increased productivity and accessibility. However, significant costs were also accompanied by GenAI use as they were more vulnerable to hallucinations than their sighted colleagues. Sometimes, organizational policies prevented use. Based on our findings, we discuss the higher-risks and higher-returns that BLVSPs had to carefully weigh when deciding whether and when to use GenAI tools for work.</summary>
+  </entry>
+  <entry>
+    <title>"Making Our Life Less Monotonous" or "Just Tick Things Off": An Exploratory Multi-Method Study of Toil</title>
+    <link href="https://doi.org/10.1145/3744916.3764540"/>
+    <id>https://doi.org/10.1145/3744916.3764540</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Tom Kafoe, Lina Ochoa, Sharath Siravuru, Alexander Serebrenik
+
+Google introduced Site Reliability Engineering (SRE) as a DevOps approach focused on service reliability. A key concept in SRE is toil defined as manual, repetitive, automatable, and reactive tasks that arise in production service management, scale with service growth, and provide no lasting value. As SRE adoption expands beyond Google, organisations adapt SRE practices and terminology, leading to inconsistencies in how toil is defined and perceived.</summary>
+  </entry>
+  <entry>
+    <title>3D Software Synthesis Driven by Constraint-Expressive Intermediate Representation</title>
+    <link href="https://doi.org/10.1145/3744916.3787812"/>
+    <id>https://doi.org/10.1145/3744916.3787812</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Shuqing Li, Anson Y. Lam, Yun Peng, Wenxuan Wang, Michael Rung-Tsong Lyu
+
+Graphical user interface (UI) software has undergone a fundamental transformation from traditional 2D interfaces to spatial 3D environments. While existing work has made remarkable success in 2D software generation, 3D software generation still remains underexplored. Current methods for 3D software generation usually generate 3D environment as a whole and cannot modify specific elements. Furthermore, these methods struggle to handle the complex spatial and semantic constraints inherent in the real world.</summary>
+  </entry>
+  <entry>
+    <title>A Causal Perspective on Measuring, Explaining and Mitigating Smells in LLM-Generated Code</title>
+    <link href="https://doi.org/10.1145/3744916.3773164"/>
+    <id>https://doi.org/10.1145/3744916.3773164</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Alejandro Velasco, Daniel Rodriguez-Cardenas, Dipin Khati, David N. Palacio, Lutfar Rahman Alif, Denys Poshyvanyk
+
+Recent advances in large language models (LLMs) have accelerated their adoption in software engineering contexts. However, concerns persist about the structural quality of the code they produce. In particular, LLMs often replicate poor coding practices, introducing code smells (i.e., patterns that hinder readability, maintainability, or design integrity). Although prior research has examined the detection or repair of smells, we still lack a clear understanding of how and when these issues emerge in generated code.</summary>
+  </entry>
+  <entry>
+    <title>A Comprehensive Study of Concurrency Bugs in the Linux Kernel</title>
+    <link href="https://doi.org/10.1145/3744916.3787790"/>
+    <id>https://doi.org/10.1145/3744916.3787790</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Sishuai Gong, Chih-En Lin, Kevin Wu, Edwin Lu, Pedro Fonseca
+
+Concurrency bugs arise from unexpected orderings of concurrent instructions and are notoriously difficult to detect and diagnose due to their non-deterministic nature. Prior studies of concurrency bugs in user-space applications have identified common bug characteristics and informed the design of effective detection, diagnosis, and repair techniques. In contrast, far less is known about concurrency bugs in operating system kernels, where low-level systems programming and complex execution patterns introduce fundamentally different concurrent execution behaviors.</summary>
+  </entry>
+  <entry>
+    <title>A Comprehensive Study of Deep Learning Model Fixing Approaches</title>
+    <link href="https://doi.org/10.1145/3744916.3764528"/>
+    <id>https://doi.org/10.1145/3744916.3764528</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Hanmo You, Zan Wang, Zishuo Dong, Luanqi Mo, Jianjun Zhao, Junjie Chen
+
+Deep Learning (DL) has been widely adopted in diverse industrial domains, including autonomous driving, intelligent healthcare, and aided programming. Like traditional software, DL systems are also prone to faults, whose malfunctioning may expose users to significant risks. Consequently, numerous approaches have been proposed to address these issues. In this paper, we conduct a large-scale empirical study on 16 state-of-the-art DL model fixing approaches, spanning model-level, layer-level, and neuron-level categories, to comprehensively evaluate their performance. We assess not only their fixing effectiveness (their primary purpose) but also their impact on other critical properties, such as robustness, fairness, and backward compatibility. To ensure comprehensive and fair evaluation, we employ a diverse set of datasets, model architectures, and application domains within a uniform experimental setup for experimentation. We summarize several key findings with implications for both industry and academia. For example, model-level approaches demonstrate superior fixing effectiveness compared to others. No single approach can achieve the best fixing performance while improving accuracy and maintaining all other properties. Thus, academia should prioritize research on mitigating these side effects. These insights highlight promising directions for future exploration in this field.</summary>
+  </entry>
+  <entry>
+    <title>A First Look at Model Supply Chain: From the Risk Perspective</title>
+    <link href="https://doi.org/10.1145/3744916.3773171"/>
+    <id>https://doi.org/10.1145/3744916.3773171</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Ziqian Chen, Z. J. Chen, Susheng Wu, Bihuan Chen, Wenyan Song, Yiheng Huang, Zhuotong Zhou, Yuhua Cao
+
+The rapid proliferation of publicly available artificial intelligence models on platforms such Hugging Face has formed a complex model supply chain, where base models are continually transformed, e.g., by fine-tuning, quantization, and merging, into new derived models. Despite its critical importance for reuse, provenance, and risk management, this supply chain remains poorly characterized at scale.</summary>
+  </entry>
+  <entry>
+    <title>A Large-Scale Empirical Study of Secret Key Leakage in Hugging Face Spaces</title>
+    <link href="https://doi.org/10.1145/3744916.3773117"/>
+    <id>https://doi.org/10.1145/3744916.3773117</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Shaoxuan Yun, Yuchao Zhang, Zhikun Shi, Liu Wang, Yi Wang, Yu Bai
+
+Hugging Face Spaces (Spaces) has become a leading platform for hosting AI applications, offering developers seamless integration of Git-based repositories and out-of-the-box web service deployment. However, as its adoption continues to expand, security concerns have come to light. Recent reports have pointed to the issue of accidental exposure of sensitive information, such as API tokens and database credentials, within Spaces-hosted code. Despite these concerns, the research community still lacks a comprehensive understanding of the scope and impact of these security risks. To bridge this gap, we present the first large-scale and systematic empirical study to quantify the extent of secret key leakage in Spaces. We begin by compiling a comprehensive dataset of 313,647 public Spaces repositories created between March 2022 and December 2024. To detect exposed secret keys, we introduce Secret Reviewer, an advanced framework that combines static analysis and Large Language Model (LLM)-assisted detection to identify leaked credentials. Applying Secret Reviewer, we identified 9,149 with secret keys leakage vulnerabilities and 11,557 unique keys—76% of which from leading AI service providers such as OpenAI and Groq. Our findings indicate that 30% of leaks were embedded in commit histories, and over 1,000 non-code files contained sensitive data. Further validation revealed that 30% of detected keys remained active, including 140 valid database credentials and 50% of access tokens wit</summary>
+  </entry>
+  <entry>
+    <title>A Semantic-based Optimization Approach for Repairing LLMs: Case Study on Code Generation</title>
+    <link href="https://doi.org/10.1145/3744916.3773262"/>
+    <id>https://doi.org/10.1145/3744916.3773262</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jian Gu, Aldeida Aleti, Chunyang Chen, Hongyu Zhang
+
+Language Models (LMs) are widely used in software engineering for code generation, but they may produce erroneous code. Rather than repairing outputs, a more thorough remedy is to address underlying model failures. LM repair offers a lightweight solution: it requires minimal data, lowers computational cost, and limits side effects. Unlike full retraining, LM repair focuses on applying tailored updates to targeted neurons, making it suitable for limited resources, high-performance demands, or strict safety requirements. In this paper, we propose Semantic Targeting for Analytical Repair (STAR), a novel semantic-based optimization method for repairing LLMs. STAR realizes the main operations of repairing LMs in an optimization process, including locating “buggy neurons”, solving “neuron patches”, and patching “buggy neurons”. The neuron patches are computed with a solid semantic-based analytical formula, which directly bridges the changes to logits with the deltas of neurons, by steering latent representations. Compared to the prior work of LM repair (MINT) and standard optimization methods (SGD), STAR integrates their strengths while mitigating their limitations. By reformulating LM repair as an optimization process, STAR may solve multiple failures together, significantly improving the usefulness. Evaluated on coding tasks using popular code LMs, STAR demonstrates superior effectiveness compared with the state-of-the-art. For instance, on CoNaLa, STAR obtained 10.5%–19.9% impro</summary>
+  </entry>
+  <entry>
+    <title>Accelerating IC3 Verification by Exploiting Unsatisfiable Cores and Satisfying Models</title>
+    <link href="https://doi.org/10.1145/3744916.3787819"/>
+    <id>https://doi.org/10.1145/3744916.3787819</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Xinyi Gong, Liangze Yin, Yuhan Li, Ke Kang, Wei Dong, Shanshan Li, Ji Wang
+
+</summary>
+  </entry>
+  <entry>
+    <title>Accurate Inference of Termination Conditions</title>
+    <link href="https://doi.org/10.1145/3744916.3764568"/>
+    <id>https://doi.org/10.1145/3744916.3764568</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Biting Huang, Zhilei Han, Fei He
+
+We present the first approach to infer termination conditions that are accurate in the sense of precisely characterizing terminating states. It builds on a simple but effective framework where non-terminating states are iteratively identified and removed, and a termination prover is employed to validate the current condition. We instantiate the framework with data-driven provers and design a multi-way data sharing mechanism to enhance their interaction. Our proofs show that this method is correct, accurate, terminating, and relatively complete. Additionally, we introduce generalization techniques for recurrent sets to accelerate the iteration process. Evaluation on a benchmark of programs from the literature shows that our implementation significantly outperforms the state-of-the-art tool Acabar, producing much more accurate termination conditions, with the proposed techniques playing a crucial role in speeding up the convergence of the process.</summary>
+  </entry>
+  <entry>
+    <title>Actionable Warning Is Not Enough: Recommending Valid Actionable Warnings with Weak Supervision</title>
+    <link href="https://doi.org/10.1145/3744916.3773133"/>
+    <id>https://doi.org/10.1145/3744916.3773133</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhipeng Xue, Zhipeng Gao, Tongtong Xu, Xing Hu, Xin Xia, Shanping Li
+
+The use of static analysis tools has gained increasing popularity among developers in the last few years. However, the widespread adoption of static analysis tools is hindered by their high false alarm rates. Previous studies have introduced the concept of actionable warnings and built a machine-learning method to distinguish actionable warnings from false alarms. However, according to our empirical observation, the current assumption used for actionable warning(s) collection is rather shaky and inaccurate, leading to a large number of invalid actionable warnings. To address this problem, in this study, we build the first large actionable warning dataset by mining 68,274 reversions from Top-500 GitHub C repositories, we then take one step further by assigning each actionable warning a weak label regarding its likelihood of being a real bug. Following that, we propose a two-stage framework called ACWRecommender to automatically recommend the actionable warnings with high probability to be real bugs (AWHB). Our approach warms up the pre-trained model UniXcoder by identifying actionable warnings task (coarse-grained detection stage) and rerank AWHB to the top by weakly supervised learning (fine-grained reranking stage). Experimental results show that our proposed model outperforms several baselines by a large margin in terms of nDCG and MRR for AWHB recommendation. Moreover, we ran our tool on 6 randomly selected projects and manually checked the top-ranked warnings from 2,197 r</summary>
+  </entry>
+  <entry>
+    <title>AdapTrack: Constrained Decoding without Distorting LLM's Output Intent</title>
+    <link href="https://doi.org/10.1145/3744916.3773144"/>
+    <id>https://doi.org/10.1145/3744916.3773144</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yongmin Li, Jia Li, Ge Li, Zhi Gang Jin
+
+Language model-based code generation and completion tools have been widely adopted, but they may sometimes produce code that does not meet necessary constraints, such as syntactic correctness or API existence. Constrained decoding techniques are developed to help the model generate code that adheres to the constraints by greedily eliminating generation options that violate constraints at each step of the generation process. However, there is a severe limitation of constrained decoding, that it distorts the model’s output intent, forcing it to produce code that may satisfy the constraint but does not match the development intent and is therefore incorrect. In response to this challenge, we propose AdapTrack. By incorporating backtracking into the generation process, AdapTrack avoids distorting the output intent of the language model, thereby producing results that are not only constraint-compliant but also more semantically aligned with model’s output intent. On our synthetic API completion dataset, AdapTrack can achieve up to 360.87% improvement compared to constrained decoding; on the real-world API completion dataset we collect that exhibits similar issues, AdapTrack can also achieve an improvement of up to 38.93% over constrained decoding; in general code genration benchmarks, compared to constrained decoding, AdapTrack can achieve up to 7.84% improvement on HumanEval, and up to 6.42% improvement on MBPP. This indicates that, simply by better adhering to the model’s output</summary>
+  </entry>
+  <entry>
+    <title>ADARULE: LLM-Driven Natural Language to LTL Conversion via Pattern-Adaptive Rule Induction</title>
+    <link href="https://doi.org/10.1145/3744916.3787821"/>
+    <id>https://doi.org/10.1145/3744916.3787821</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiayi Hu, Jingling Sun, Chong Wang, Yihao Huang, Jincao Feng, Yilongfei Xu, Yong Li, Kailong Wang
+
+Translating natural language (NL) specifications into Linear Temporal Logic (LTL) formulas is critical for bridging human intent and formal system verification. While large language models (LLMs) have made this task more feasible, adapting NL2LTL systems to different domains remains challenging due to varied linguistic conventions. Existing methods typically rely on manually crafted translation rules or pattern-specific templates, which are costly to construct and do not generalize across domains. A core challenge is that NL–LTL datasets provide paired examples but do not explicitly indicate which linguistic elements reflect pattern-specific translation conventions. To address this problem, we propose AdaRule, a feedback-guided approach for pattern-adaptive NL2LTL translation via automatic rule induction. The key insight is that even without explicit supervision, we can leverage LLMs to perform NL2LTL translation using only basic, general-purpose rules. By comparing the predicted LTL with ground truth LTL formulas, the LLM can identify where the general rules fall short and uses this feedback to induce new translation rules that capture pattern-specific conventions. AdaRule consists of two collaborative LLM-based components: a Translator that performs the NL2LTL conversion, and a Learner that analyzes failed translations to generate corrective rules. These rules are incorporated into the Translator’s prompts to improve future predictions. Through iterative learning, AdaRule p</summary>
+  </entry>
+  <entry>
+    <title>Agent-Based Ensemble Reasoning for Repository-Level Issue Resolution</title>
+    <link href="https://doi.org/10.1145/3744916.3787761"/>
+    <id>https://doi.org/10.1145/3744916.3787761</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhao Tian, Pengfei Gao, Junjie Chen, Chao Peng
+
+Software issue resolution is a critical challenge in software engineering and has garnered increasing attention in recent years. With the rapid advancement of large language models (LLMs), substantial progress has been made in addressing real-world software engineering tasks. Recent studies have introduced ensemble reasoning techniques to enhance the performance of LLM-based issue resolution. However, existing prompting-based methods still face limitations in effectively exploring large ensemble spaces and lack the capacity for repository-level understanding, both of which constrain their overall effectiveness. In this paper, we propose EnAgent, the first agent-based ensemble reasoning approach for repository-level issue resolution. EnAgent formulates our goal as an optimal solution search problem and addresses two key challenges, i.e., large ensemble spaces and repository-level understanding, through modular agents for generation, pruning, and selection. We conduct extensive experiments using three leading LLMs on the widely-adopted SWE-bench benchmark, comparing EnAgent against four state-of-the-art ensemble reasoning techniques. Experimental results demonstrate that EnAgent consistently achieves superior performance, with an average improvement of 10.22% over all baselines in terms of Pass@1. EnAgent has been integrated into Trae Agent, driving it to achieve first place on the SWE-bench Verified leaderboard as of January 2026, with a notable Pass@1 score of 78.80%.</summary>
+  </entry>
+  <entry>
+    <title>Aligning Requirement for Large Language Model's Code Generation</title>
+    <link href="https://doi.org/10.1145/3744916.3764572"/>
+    <id>https://doi.org/10.1145/3744916.3764572</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhao Tian, Junjie Chen
+
+Code generation refers to the automatic generation of source code based on a given programming specification, which has garnered significant attention particularly with the advancement of large language models (LLMs). However, due to the inherent complexity of real-world problems, the LLM-generated code often fails to fully align with the provided specification. While state-of-the-art agent-based techniques have been proposed to enhance LLM code generation, they overlook the critical issue of specification perception, resulting in persistent misalignment issues. Given that accurate perception of programming specifications serves as the foundation of the LLM-based code generation paradigm, ensuring specification alignment is particularly crucial. In this work, we draw on software requirements engineering to propose Specine, a novel specification alignment technique for LLM code generation. Its key idea is to identify misaligned input specifications, lift LLM-perceived specifications, and align them to enhance the code generation performance of LLMs. Our comprehensive experiments on four state-of-the-art LLMs across five challenging competitive benchmarks by comparing with ten state-of-the-art baselines, demonstrate the effectiveness of Specine. For example, Specine outperforms the most effective baseline, achieving an average improvement of 29.60% across all subjects in terms of Pass@1.</summary>
+  </entry>
+  <entry>
+    <title>An empirical Analysis of Community and Coding Patterns in OSS4SG vs. Conventional OSS</title>
+    <link href="https://doi.org/10.1145/3744916.3787782"/>
+    <id>https://doi.org/10.1145/3744916.3787782</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Mohamed Ouf, Shayan Noei, Zeph Van Iterson, Mariam Guizani, Ying Zou
+
+Open Source Software for Social Good (OSS4SG) projects aim to address critical societal challenges, such as healthcare access and community safety. Understanding the community dynamics and contributor patterns in these projects is essential for ensuring their sustainability and long-term impact. However, while extensive research has focused on conventional Open Source Software (OSS), little is known about how the mission-driven nature of OSS4SG influences its development practices. To address this gap, we conduct a large-scale empirical study of 1,039 GitHub repositories, comprising 422 OSS4SG and 617 conventional OSS projects, to compare community structure, contributor engagement, and coding practices. Our findings reveal that OSS4SG projects foster significantly more stable and “sticky” (63.4%) communities, whereas conventional OSS projects are more “magnetic” (75.4%), attracting a high turnover of contributors. OSS4SG projects also demonstrate consistent engagement throughout the year, while conventional OSS communities exhibit seasonal fluctuations. Additionally, OSS4SG projects rely heavily on core contributors for both code quality and issue resolution, while conventional OSS projects leverage casual contributors for issue resolution, with core contributors focusing primarily on code quality.</summary>
+  </entry>
+  <entry>
+    <title>An Empirical Study of Fine-Grained Entity Relationships for Tracing Natural Language and Code Vulnerability Artifacts</title>
+    <link href="https://doi.org/10.1145/3744916.3787831"/>
+    <id>https://doi.org/10.1145/3744916.3787831</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Simin Wang, LiGuo Huang, Shiyi Wei, Amiao Gao, Ruiqi Hu, Vincent Ng
+
+Understanding software vulnerabilities requires analyzing fine-grained entities and their complex relationships across natural language (NL) artifacts and source code. Vulnerability descriptions often interweave vulnerability triggers (VT), crash phenomena (CP), and after-fix (AF) actions within the same sentence, making it challenging to distinguish root causes, failure symptoms, and remediation strategies. Additionally, missing key NL entities further hinders traceability, limiting an analyst’s ability to determine why and how a vulnerability was introduced and resolved. To address these challenges, we conduct an empirical study on fine-grained entity relationships using a manually curated dataset of 1,000 vulnerabilities. We extract phrase-level VT, CP, and AF entities, categorize them into structured taxonomies, and analyze cross-entity relationships within NL artifacts and source code, uncovering recurring patterns in vulnerability evolution and remediation strategies. Furthermore, we investigate the automation of vulnerability entity extraction using different approaches, showing that ELECTRA [7], a state-of-the-art pre-trained language model, along with other LLM-based approaches, outperforms other methods.</summary>
+  </entry>
+  <entry>
+    <title>An Empirical Study of Knowledge Distillation for Code Understanding Tasks</title>
+    <link href="https://doi.org/10.1145/3744916.3764547"/>
+    <id>https://doi.org/10.1145/3744916.3764547</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Ruiqi Wang, Zezhou Yang, Cuiyun Gao, Xin Xia, Qing Liao
+
+Pre-trained language models (PLMs) have emerged as powerful tools for code understanding. However, deploying these PLMs in large-scale applications faces practical challenges due to their computational intensity and inference latency. Knowledge distillation (KD), a promising model compression and acceleration technique, addresses these limitations by transferring knowledge from large teacher models to compact student models, enabling efficient inference while preserving most of the teacher models’ capabilities. While this technique has shown remarkable success in natural language processing and computer vision domains, its potential for code understanding tasks remains largely underexplored.</summary>
+  </entry>
+  <entry>
+    <title>An Empirical Study of WebAssembly Usage in Node.js</title>
+    <link href="https://doi.org/10.1145/3744916.3764533"/>
+    <id>https://doi.org/10.1145/3744916.3764533</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Michelle Davies Thalakottur, Maxwell Bernstein, Daniel Lehmann, Michael Pradel, Frank Tip
+
+WebAssembly code executes within a host environment, such as JavaScript running on Node.js. Despite the increasing popularity of mixed JavaScript-WebAssembly applications, the interactions between these two languages and the effect of WebAssembly usage on the NPM ecosystem, are currently not well understood. As a result, developers of program analyses, runtime engines, and ecosystem tooling are forced to make assumptions that may not hold in practice. Moreover, there currently is no executable dataset of WebAssembly modules that allows for studying how WebAssembly is used at runtime within Node.js packages. This paper presents the first comprehensive study of WebAssembly usage in Node.js code. The study is enabled by a novel dataset that we collect comprising 510 executable Node.js packages that exercise 217 unique WebAssembly modules. We study dependencies among packages that use WebAssembly, how JavaScript and WebAssembly interoperate, and the implications for security, efficiency and reliability in the WebAssembly-JavaScript ecosystem. The study provides several insights and future research opportunities, including: (i) a lack of maintenance of WebAssembly binaries that are ports of C/C++/Rust libraries, which motivates future work on cross-language package maintenance, (ii) a lack of testing of WebAssembly usage from JavaScript, which motivates work on targeted testing techniques; (iii) relatively little dynamism in WebAssembly usage, allowing for pragmatic assumptions in</summary>
+  </entry>
+  <entry>
+    <title>An Empirical Study on Static Application Security Testing (SAST) Tools for Python</title>
+    <link href="https://doi.org/10.1145/3744916.3773110"/>
+    <id>https://doi.org/10.1145/3744916.3773110</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhuohang Liu, Zhi Wang, Haotong Liu, Wanpeng Li
+
+Python is currently the most popular programming language and ensuring the security of Python applications has become a critical concern. Static Application Security Testing (SAST) tools have been introduced to address this need, claiming to support a wide range of Common Weakness Enumerations (CWEs). However, the ability of these tools to detect real-world vulnerabilities in Python programs has not been comprehensively evaluated.</summary>
+  </entry>
+  <entry>
+    <title>An Empirical Study on the Robustness of Android Third-Party Library Detection Tools Against Advanced Obfuscation</title>
+    <link href="https://doi.org/10.1145/3744916.3773231"/>
+    <id>https://doi.org/10.1145/3744916.3773231</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Dahan Pan, Zhuohao Zhang, Yunjia Min, Runhan Feng, Yuanyuan Zhang
+
+Third-party libraries (TPLs) play a crucial role in Android app development by providing reusable functionalities, improving development efficiency, and reducing time-to-market. However, detecting and analyzing TPLs is essential, as their vulnerabilities, outdated versions, or malicious modifications can introduce security risks and compromise the integrity of Android apps. Existing TPL detection approaches struggle against code obfuscation, a prevalent practice in Android apps. While prior research has explored obfuscation-resistant detection methods, they largely overlook advanced obfuscation techniques such as package hierarchy obfuscation.</summary>
+  </entry>
+  <entry>
+    <title>An Eye for AI: Eye-Tracking the Micro-Interruptions of GenAI Code Suggestions</title>
+    <link href="https://doi.org/10.1145/3744916.3773132"/>
+    <id>https://doi.org/10.1145/3744916.3773132</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Tarek Alakmeh, Sarah D’Angelo, Thomas Fritz
+
+Generative AI code suggestion tools, such as GitHub Copilot, are increasingly integrated into developer workflows. While these tools promise productivity gains, the actual impact on developer cognition and task performance has been mixed. In this paper, we present the first in-depth eye-tracking study of how developers interact with generative AI code suggestions during programming. We recruited 33 professionals and student developers and recorded their gaze behavior, code suggestion interactions, and code editing activity during programming sessions. By combining high-resolution eye-tracking data with fine-grained logging of AI-generated suggestions, we quantify the cognitive costs of reviewing code suggestions. Our findings show that approximately half of the generated suggestions are not even looked at. From the suggestions that were looked at, over 75% are not used. Although suggestions are only reviewed briefly (∼ 0.9 seconds on average), each suggestion introduces a micro-interruption that disrupts developer flow. We discuss opportunities for more efficient and context-aware generative AI code suggestions that minimize cognitive overhead.</summary>
+  </entry>
+  <entry>
+    <title>An LLM Agentic Approach for Legal-Critical Software: A Case Study for Tax Prep Software</title>
+    <link href="https://doi.org/10.1145/3744916.3764575"/>
+    <id>https://doi.org/10.1145/3744916.3764575</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Sina Gogani-Khiabani, Ashutosh Trivedi, Diptikalyan Saha, Saeid Tizpaz-Niari
+
+As Large Language Models (LLMs) continue to advance in their ability to process both natural and programming languages, they show promise for translation tasks in domains with strict compliance requirements. Yet ensuring consistency in legally critical settings remains challenging due to inherent limitations such as natural language ambiguity and the tendency to hallucinate. This paper explores an agentic approach that leverages LLMs for the development of legal-critical software. We use U.S. federal tax software as a representative case study, where natural language tax code must be translated precisely into executable logic.</summary>
+  </entry>
+  <entry>
+    <title>AnchorDiff: Binary OSS Version Identification Method Based on Anchor Node Slicing</title>
+    <link href="https://doi.org/10.1145/3744916.3787772"/>
+    <id>https://doi.org/10.1145/3744916.3787772</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zixuan Liang, Lei Zhou, Yongqiang Guo, Peihong Lin, Danjun Liu, Baosheng Wang, Xu Zhou
+
+Binary Open-Source Software (OSS) is commonly embedded as third-party code within firmware and downstream software architectures, for simplifying the development process. However, vulnerabilities existing in OSS can be propagated through code reuse into embedded firmware and software architectures, posing security risks to these devices. To mitigate the security risks in firmware and software architectures, researchers have identified the versions of extracted firmware or binary software to detect N-day vulnerabilities in OSS. Existing works have achieved several success, but new challenges of non-linear update and minor updates hinder the improvement of the accuracy of binary OSS version identification.</summary>
+  </entry>
+  <entry>
+    <title>Are Humans and LLMs Confused by the Same Code? An Empirical Study on Fixation-Related Potentials and LLM Perplexity</title>
+    <link href="https://doi.org/10.1145/3744916.3773219"/>
+    <id>https://doi.org/10.1145/3744916.3773219</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Youssef Abdelsalam, Norman Peitek, Anna-Maria Maurer, Mariya Toneva, Sven Apel
+
+Already today, humans and programming assistants based on large language models (LLMs) collaborate in everyday programming tasks. Clearly, a misalignment between how LLMs and programmers comprehend code can lead to misunderstandings, inefficiencies, low code quality, and bugs. A key question in this space is whether humans and LLMs are confused by the same kind of code. This would not only guide our choices of integrating LLMs in software engineering workflows but also inform about possible improvements of LLMs. To this end, we conducted an empirical study comparing an LLM to human programmers comprehending clean and confusing code. We operationalized comprehension for the LLM by using LLM perplexity, and for human programmers using neurophysiological responses (in particular, EEG-based fixation-related potentials). We found that LLM perplexity spikes correlate, both in terms of location and amplitude, with human neurophysiological responses that indicate confusion. This result suggests that LLMs and humans are similarly confused about the code. Based on these findings, we devised a data-driven, LLM-based approach to identify regions of confusion in code that elicit confusion in human programmers.</summary>
+  </entry>
+  <entry>
+    <title>Are “Solved Issues” in SWE-bench Really Solved Correctly? An Empirical Study</title>
+    <link href="https://doi.org/10.1145/3744916.3764576"/>
+    <id>https://doi.org/10.1145/3744916.3764576</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — You Wang, Michael Pradel, Zhongxin Liu
+
+Automated issue solving aims to resolve real-world issues in software repositories. The most popular benchmarks for automated issue solving are SWE-bench and its human-filtered subset SWE-bench Verified, which are widely used to evaluate foundation models and software engineering agents. These benchmarks leverage testing to validate generated patches. However, because testing is rarely exhaustive, a patch may pass the tests but nevertheless fail to match the developers’ expectations. Unfortunately, it is currently unclear to what extent evaluations performed with SWE-bench suffer from such plausible but incorrect patches. This paper presents an in-depth empirical study of the correctness of plausible patches generated by three state-of-the-art issue-solving tools (CodeStory, LearnByInteract, and OpenHands) evaluated on SWE-bench Verified. We extensively test and inspect generated patches, and compare them against human-written ground truth patches. The core of our methodology is a novel technique for differential patch testing, called PatchDiff, which automatically exposes behavioral discrepancies between two patches. Our findings reveal critical weaknesses in SWE-bench’s patch validation mechanism, which causes 7.8% of all patches to count as “correct” while failing the developer-written test suite. Moreover, our novel automated technique reveals that even more (29.6%) plausible patches induce different behavior than the ground truth patches. These behavioral differences are</summary>
+  </entry>
+  <entry>
+    <title>Argus: A Multi-agent Sensitive Information Leakage Detection Framework Based on Hierarchical Reference Relationships</title>
+    <link href="https://doi.org/10.1145/3744916.3773208"/>
+    <id>https://doi.org/10.1145/3744916.3773208</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Wang Bin, Hui Li, Liyang Zhang, Qijia Zhuang, Ao Yang, Dong Zhang, Xijun Luo, Bing Lin
+
+Sensitive information leakage in code repositories has emerged as a critical security challenge. Traditional detection methods—relying on regular expressions, fingerprint features, and high-entropy calculations-suffer from high false-positive rates, which not only reduce detection efficiency but also significantly increase the manual screening burden on developers. Recent advances in large language models(LLMs) and multi-agent collaborative architectures have demonstrated remarkable potential in tackling complex tasks, offering a novel technological perspective for sensitive information detection. In response to these challenges, we propose Argus, a multi-agent collaborative framework for detecting sensitive information. Argus employs a three-tier detection mechanism that integrates key content, file context, and project reference relationships to effectively reduce false positives and enhance overall detection accuracy. To comprehensively evaluate Argus in real-world repository environments, we developed two new benchmarks—one to assess genuine leak detection capabilities and another to evaluate false-positive filtering performance. Experimental results show that Argus achieves up to 94.86% accuracy in leak detection, with a precision of 96.36%, recall of 94.64%, and an F1 score of 0.955.Moreover, the analysis of 97 real repositories incurred a total cost of only $2.21. All code implementations and related datasets are publicly available at https://github.com/TheBinKing/Argu</summary>
+  </entry>
+  <entry>
+    <title>AssertFlip: Reproducing Bugs via Inversion of LLM-Generated Passing Tests</title>
+    <link href="https://doi.org/10.1145/3744916.3773127"/>
+    <id>https://doi.org/10.1145/3744916.3773127</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Lara Khatib, Noble Saji Mathews, Meiyappan Nagappan
+
+Bug reproduction is critical in the software debugging and repair process, yet the majority of bugs in open-source and industrial settings lack executable tests to reproduce them at the time they are reported, making diagnosis and resolution more difficult and time-consuming. To address this challenge, we introduce AssertFlip, a novel technique for automatically generating Bug Reproducible Tests (BRTs) using large language models (LLMs). Unlike existing methods that attempt direct generation of failing tests, AssertFlip first generates passing tests on the buggy behaviour and then inverts these tests to fail when the bug is present. We hypothesize that LLMs are better at writing passing tests than ones that crash or fail on purpose. Our results show that AssertFlip outperforms all known techniques in the leaderboard of SWT-Bench, a benchmark curated for BRTs. Specifically, AssertFlip achieves a fail-to-pass success rate of 43.6% on the SWT-Bench-Verified subset.</summary>
+  </entry>
+  <entry>
+    <title>Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models</title>
+    <link href="https://doi.org/10.1145/3744916.3773272"/>
+    <id>https://doi.org/10.1145/3744916.3773272</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Changshu Liu, Yang Chen, Reyhaneh Jabbarvand
+
+This paper proposes CES, a task to evaluate the abilities of LLMs in simulating program execution and using that reasoning in programming tasks. Besides measuring the correctness of variable predictions during execution simulation, CES introduces the notion of coherence to determine whether the simulation complies with commonsense execution logic, even if the predicted values along the simulations are incorrect. This enables CES to rule out suspiciously correct output predictions due to reasoning shortcuts, hallucinations, or potential data leakage. CES also introduces a novel metric to measure reasoning consistency across tests with the same or different prime path coverage in a spectrum: strong, weak, and random. Evaluating 16 LLMs (including three reasoning LLMs) using CES indicates 81.42% coherent execution simulation on HumanEval, 46.92% and 53.08% of which result in correct and incorrect output predictions. Frontier LLMs such as GPT-4 and DeepSeek-R1 have the most incoherent execution reasoning, mostly due to natural language shortcuts. Despite relatively coherent execution simulation, LLMs' reasoning performance across different tests is inconsistent, mostly random (48.87%) or weak (45.37%), potentially explaining their weakness in programming tasks that require path-sensitive program analysis to succeed. We also compare CES with bug prediction/localization/repair, which intuitively requires control- and data-flow awareness. We observe that LLMs barely incorporate exec</summary>
+  </entry>
+  <entry>
+    <title>Atomizer: An LLM-based Collaborative Multi-Agent Framework for Intent-Driven Commit Untangling</title>
+    <link href="https://doi.org/10.1145/3744916.3787773"/>
+    <id>https://doi.org/10.1145/3744916.3787773</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Kangchen Zhu, Zhiliang Tian, Shangwen Wang, Mingyue Leng, Xiaoguang Mao
+
+Composite commits, which entangle multiple unrelated concerns, are prevalent in software development and significantly hinder program comprehension and maintenance. Existing automated untangling methods, particularly state-of-the-art graph clustering-based approaches, are fundamentally limited by two issues. (1) They over-rely on structural information, failing to grasp the crucial semantic intent behind changes, and (2) they operate as “single-pass” algorithms, lacking a mechanism for the critical reflection and refinement inherent in human review processes. To overcome these challenges, we introduce Atomizer, a novel collaborative multi-agent framework for composite commit untangling. To address the semantic deficit, Atomizer employs an Intent-Oriented Chain-of-Thought (IO-CoT) strategy, which prompts large language models (LLMs) to infer the intent of each code change according to both the structure and the semantic information of code. To overcome the limitations of “single-pass” grouping, we employ two agents to establish a grouper-reviewer collaborative refinement loop, which mirrors human review practices by iteratively refining groupings until all changes in a cluster share the same underlying semantic intent. Extensive experiments on two benchmark C# and Java datasets demonstrate that Atomizer significantly outperforms several representative baselines. On average, it surpasses the state-of-the-art graph-based methods by over 6.0% on the C# dataset and 5.5% on the Jav</summary>
+  </entry>
+  <entry>
+    <title>AtPatch: Debugging Transformers via Hot-Fixing Over-Attention</title>
+    <link href="https://doi.org/10.1145/3744916.3764559"/>
+    <id>https://doi.org/10.1145/3744916.3764559</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Shihao Weng, Yang Feng, Jincheng Li, Yining Yin, Xiaofei Xie, Jia Liu
+
+Transformer-based deep neural networks (DNNs) affected by backdoor attacks and unfairness typically exhibit anomalous attention patterns, leading to over-attend to backdoor triggers or protected attributes. Existing neuron-editing mitigation strategies often struggle to handle such situation and most of them lack flexibility and tend to distort feature representations. Motivated by such over-attention phenomenon and software engineering paradigms such as delta debugging and hot patching, we propose AtPatch, a hot-fix method that dynamically redistributes attention maps during model inference. Specifically, for a given input, AtPatch first extracts the attention map from the model’s inference process. Then, it uses a pre-trained detector to identify anomalous columns and replace them with unified benign attention. Then, AtPatch rescales other columns to mitigate the impact of over-attention. Finally, AtPatch returns the redistributed attention map to the model for continued inference. Notably, if the detector does not report any anomalous columns, AtPatch directly returns the original attention map to the model. Unlike existing techniques, AtPatch selectively redistributes the attention map, making it better at preserving the model’s original functionality. Furthermore, AtPatch’s on-the-fly nature allows it to work without modifying model parameters or retraining, making it better suited for deployed models. We conducted extensive experiments to validate AtPatch. Experimental </summary>
+  </entry>
+  <entry>
+    <title>Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models</title>
+    <link href="https://doi.org/10.1145/3744916.3787818"/>
+    <id>https://doi.org/10.1145/3744916.3787818</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Wang Bin, Ao Yang, Kedan Li, Liu Aofan, Hui Li, Guibo Luo, Weixiang Huang, Yan Zhuang
+
+In the domain of software security testing, Directed Grey-Box Fuzzing (DGF) has garnered widespread attention for its efficient target localization and excellent detection performance. However, existing approaches measure only the physical distance between seed execution paths and target locations, overlooking logical relationships among code segments. This omission can yield redundant or misleading guidance in complex binaries, weakening DGF’s real-world effectiveness. To address this, we introduce attention distance, a novel metric that leverages a large language model’s contextual analysis to compute attention scores between code elements and reveal their intrinsic connections. Under the same AFLGo configuration—without altering any fuzzing components other than the distance metric—replacing physical distances with attention distances across 38 real vulnerability reproduction experiments delivers a 3.43× average increase in testing efficiency over the traditional method. Compared to state-of-the-art directed fuzzers DAFL and WindRanger, our approach achieves 2.89× and 7.13× improvements, respectively. To further validate the generalizability of attention distance, we integrate it into DAFL and WindRanger, where it also consistently enhances their original performance.</summary>
+  </entry>
+  <entry>
+    <title>Attention Pruning: Automated Fairness Repair of Language Models via Surrogate Simulated Annealing</title>
+    <link href="https://doi.org/10.1145/3744916.3773115"/>
+    <id>https://doi.org/10.1145/3744916.3773115</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Vishnu Asutosh Dasu, Md Rafi ur Rashid, Vipul Kumar Gupta, Saeid Tizpaz-Niari, Gang Tan
+
+This paper explores pruning attention heads as a post-processing bias mitigation method for large language models (LLMs). As LLMs expand into sensitive social contexts, fairness concerns become crucial since these models encode and perpetuate societal biases from their training data. While modifying training datasets is prohibitive, post-processing techniques like pruning attention heads can provide feasible approaches to improve fairness. However, identifying optimal parameters to prune presents a combinatorial challenge requiring efficient solutions that balance model fairness and utility. We introduce Attention Pruning, a fairness-aware surrogate simulated annealing approach that uses surrogate deep neural networks to efficiently model the relationship between attention head states and fairness/utility metrics, enabling optimization without directly searching the massive LLM parameter space. Our experimental evaluation shows that Attention Pruning achieves up to \(40\%\) reduction in gender bias, outperforming the state-of-the-art.</summary>
+  </entry>
+  <entry>
+    <title>Automated Network-Level Fault Injection Testing of Microservice Architectures</title>
+    <link href="https://doi.org/10.1145/3744916.3773193"/>
+    <id>https://doi.org/10.1145/3744916.3773193</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Delano Flipse, Hakan Simsek, Jérémie Decouchant, Burcu Kulahcioglu Ozkan
+
+Microservice architectures are inherently vulnerable to partial failures, and they rely on resilience patterns to tolerate them. However, it is challenging to design and implement the resilience logic. Unforeseen interactions with faulty services can lead to errors in dependent services, resulting in incorrect system behavior. Fault injection testing techniques aim to uncover these errors by examining the system’s behavior in response to different fault combinations. However, existing automated techniques primarily focus on service-level fault injection, which limits their broader applicability.</summary>
+  </entry>
+  <entry>
+    <title>Automatic Dockerfile Generation with Large Language Models</title>
+    <link href="https://doi.org/10.1145/3744916.3773162"/>
+    <id>https://doi.org/10.1145/3744916.3773162</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jun Lyu, He Zhang, Yusong Yuan, Lanxin Yang, Yue Li, Manuel Rigger
+
+</summary>
+  </entry>
+  <entry>
+    <title>Automating API Documentation from Crowdsourced Knowledge</title>
+    <link href="https://doi.org/10.1145/3744916.3773130"/>
+    <id>https://doi.org/10.1145/3744916.3773130</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Bonan Kou, Zijie Zhou, Muhao Chen, Tianyi Zhang
+
+API documentation is crucial for developers to learn and use APIs. However, it is known that many official API documents are obsolete and incomplete. To address this challenge, we propose a new approach called AutoDoc that generates API documents with API knowledge extracted from online discussions on Stack Overflow (SO). AutoDoc leverages a fine-tuned dense retrieval model to identify seven types of API knowledge from SO posts. Then, it uses GPT-4o to summarize the API knowledge in these posts into concise text. Meanwhile, we designed two specific components to handle LLM hallucination and redundancy in generated content.</summary>
+  </entry>
+  <entry>
+    <title>Automating Just-In-Time Python Type Annotation Updating</title>
+    <link href="https://doi.org/10.1145/3744916.3764565"/>
+    <id>https://doi.org/10.1145/3744916.3764565</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhipeng Xue, Gao Z, Xing Hu, Jingyuan Chen, Xin Xia, Shanping Li
+
+Type annotations are more and more popular in Python projects to avoid type errors caused by Python’s dynamic typing feature. However, when developers change source code, these type annotations are often neglected or overlooked, resulting in outdated and inconsistent type annotations. Such obsolete type annotations can hinder program comprehension, mislead developers, and even introduce bugs in the future. Therefore, it is necessary to avoid and correct these inconsistent type annotations from the very beginning. In this work, we argue that obsolete type annotations can be reduced and even avoided by automatically updating type annotations alongside code changes. We refer to this task as “Just-In-Time (JIT) type annotation updating”. To solve this task, we propose a novel LLM-based approach named TypeUp (Type Annotation Updator) to automate this task. TypeUp can automatically generate new type annotations based on the old type annotations and corresponding code changes. Specifically, TypeUp guides LLM to perform type annotation updates by eliciting its knowledge and logical reasoning power and learning from similar code changes. The evaluation results show that TypeUp outperforms the state-of-the-art type inference approach (i.e., TypeGen) by 41.9% on our task. Moreover, we conducted a practical application with real-world software projects, 20 out of 25 type annotation updates generated by our approach have already been confirmed by developers, showing our approach’s practic</summary>
+  </entry>
+  <entry>
+    <title>Automating Requirements Formalization: Using LLMs and Low-Complexity Distinguishing Traces for Semantic Validation</title>
+    <link href="https://doi.org/10.1145/3744916.3787815"/>
+    <id>https://doi.org/10.1145/3744916.3787815</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Daniel E. Mendoza, Anastasia Mavridou, Andreas Katis, Caroline Trippel
+
+Translating natural language (NL) requirements into formal specifications is critical for verifying safety-critical systems, but it is error-prone and time-consuming when done manually. While Large Language Models (LLMs) can automate this translation, they often produce incorrect outputs that require extensive validation. In this paper, we propose ARTEMIS, an LLM-based framework that translates unstructured NL requirements into formal temporal logic (TL) specifications. Our framework reduces validation effort through three synergistic, automated techniques: (i) LLM Translation to Structured NL: We use LLMs to translate unstructured NL requirements into structured NL, which has an unambiguous mapping to TL. This intermediate representation reduces translation errors. (ii) Sub-Specification Generation: We generate low-complexity execution traces (i.e., system behaviors) that correspond to candidate specification fragments from the LLM translations. Users inspect these and accept or reject them. (iii) Balanced Distinguishing Trace Generation: We minimize the number of traces users need to inspect by pruning the candidate specification space. Each accepted or rejected trace eliminates candidates logarithmically. We evaluate ARTEMIS on five real-world safety-critical requirements datasets. The results show that it achieves 1.57X higher translation accuracy while reducing manual validation effort by up to 10.83X compared to state-of-the-art baselines.</summary>
+  </entry>
+  <entry>
+    <title>Back to the Basics: Rethinking Issue-Commit Linking with LLM-Assisted Retrieval</title>
+    <link href="https://doi.org/10.1145/3744916.3764530"/>
+    <id>https://doi.org/10.1145/3744916.3764530</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Huihui Huang, Ratnadira Widyasari, Ting Zhang, Ivana Clairine Irsan, Jieke Shi, Han Wei Ang, Frank Liauw, Eng Lieh Ouh
+
+Issue-commit linking, which connects issues with commits that fix them, is crucial for software maintenance. Existing approaches have shown promise in automatically recovering these links. Evaluations of these techniques assess their ability to identify genuine links from plausible but false links. However, these evaluations overlook the fact that, in reality, when a repository has more commits, the presence of more plausible yet unrelated commits may interfere with the tool in differentiating the correct fix commits. To address this, we propose the Realistic Distribution Setting (RDS) and use it to construct a more realistic evaluation dataset that includes 20 open-source projects. By evaluating tools on this dataset, we observe that the performance of the state-of-the-art deep learning-based approach drops by more than half, while the traditional Information Retrieval method, VSM, outperforms it.</summary>
+  </entry>
+  <entry>
+    <title>Bayesian Multi-Level Performance Models for Multi-Factor Variability of Configurable Software Systems</title>
+    <link href="https://doi.org/10.1145/3744916.3773131"/>
+    <id>https://doi.org/10.1145/3744916.3773131</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Johannes Dorn, Stefan Mühlbauer, Stefan Jahns, Sven Apel, Norbert Siegmund
+
+Tuning a software system’s configuration is essential to meet performance requirements. However, not only do configuration options affect performance, but also the system’s interaction with external factors such as the workload. Hence, tuning requires understanding how a specific setting of external factors (e.g., a specific workload) in combination with the system configuration influences performance. To address this issue, we propose HyPerf , a Bayesian multi-level performance modeling approach that systematically distinguishes between setting-invariant and setting-variant influences, that is, influences that remain consistent across settings versus those that exhibit substantial variation. With HyPerf , we aim at balancing accuracy and efficiency, achieving robust performance predictions with significantly fewer training samples. Unlike the state of the art, HyPerf is able to identify a minimal set of settings that captures essential performance variations, so that developers can approximate whether all setting-variant influences have been accounted for. Empirical evaluations on ten real-world software systems across up to 35 workloads and scalability experiments on the Linux kernel demonstrate that HyPerf matches or outperforms state-of-the-art approaches while requiring fewer measurements. Notably, HyPerf is indeed capable of interpretable performance reasoning and can identify minimal workload subsets that capture essential performance variations.</summary>
+  </entry>
+  <entry>
+    <title>Beyond Adoption: Examining the Evolution and Impact of Code of Conduct on Open Source Communities</title>
+    <link href="https://doi.org/10.1145/3744916.3773268"/>
+    <id>https://doi.org/10.1145/3744916.3773268</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiayi Sun, Hongbo Fang, Junming Zhang, Jiakai Shi, Ruitao Lai, Anita Ihuman, Richard Littauer, Shurui Zhou
+
+</summary>
+  </entry>
+  <entry>
+    <title>Beyond Correctness: Exposing LLM-generated Logical Flaws in Reasoning via Multi-step Automated Theorem Proving</title>
+    <link href="https://doi.org/10.1145/3744916.3787820"/>
+    <id>https://doi.org/10.1145/3744916.3787820</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Xinyi Zheng, Ningke Li, Xiaokun Luan, Kailong Wang, Ling Shi, Meng Sun, Haoyu Wang
+
+Large Language Models (LLMs) have demonstrated impressive reasoning capabilities, leading to their adoption in high-stakes domains such as healthcare, law, and scientific research. However, their reasoning often contains subtle logical errors masked by fluent language, posing significant risks for critical applications. While existing approaches like fact-checking, self-consistency methods, and rule-based validation provide partial solutions, they fail to detect complex logical flaws in multi-step reasoning.</summary>
+  </entry>
+  <entry>
+    <title>Beyond Final Code: A Process-Oriented Error Analysis of Software Development Agents in Real-World GitHub Scenarios</title>
+    <link href="https://doi.org/10.1145/3744916.3773140"/>
+    <id>https://doi.org/10.1145/3744916.3773140</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhi Chen, Wei Ma, Lingxiao Jiang
+
+AI-driven software development has rapidly advanced with the emergence of software development agents that leverage large language models (LLMs) to tackle complex, repository-level software engineering tasks. These agents go beyond just generation of final code; they engage in multi-step reasoning, utilize various tools for code modification and debugging, and interact with execution environments to diagnose and iteratively resolve issues. However, most existing evaluations focus primarily on static analyses of final code outputs, yielding limited insights into the agents’ dynamic problem-solving processes. To fill this gap, we conduct an in-depth empirical study on 3,977 solving-phase trajectories and 3,931 testing-phase logs from 8 top-ranked agents evaluated on 500 GitHub issues in the SWE-Bench benchmark. Our exploratory analysis shows that Python execution errors during the issue resolution phase correlate with lower resolution rates and increased reasoning overheads. We have identified the most prevalent errors—such as ModuleNotFoundError and TypeError—and highlighted particularly challenging errors like OSError and database-related issues (e.g., IntegrityError) that demand significantly more debugging effort. Furthermore, we have discovered 3 bugs in the SWE-Bench platform that affect benchmark fairness and accuracy; these issues have been reported to and confirmed by the maintainers. To promote transparency and foster future research, we publicly share our datasets an</summary>
+  </entry>
+  <entry>
+    <title>Beyond Fuzzy Matching: Constraint-Guided Patch Presence Testing for Obfuscated Java Binaries</title>
+    <link href="https://doi.org/10.1145/3744916.3787802"/>
+    <id>https://doi.org/10.1145/3744916.3787802</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Lige Zhan, Jiang Ming, Chenke Luo, Letian Sha, Guojun Peng, Jianming Fu
+
+Patch presence testing (PPT) is critical for mitigating vulnerabilities introduced by the use of third-party libraries (TPLs) in Java programs. However, the widespread use of obfuscation significantly undermines its accuracy by altering patch-relevant features. To preserve feature consistency before and after obfuscation for reliable comparison, existing studies summarize patch digests using several representative fuzzy features. These fuzzy features, designed to generalize obfuscation-prone details, have proven effective in TPL detection. Nevertheless, this approach faces limitations when directly applied to PPT, where finer features are needed to capture subtle patch changes. Although patch digests facilitate feature matching under obfuscation-induced code changes with high efficiency, methods with similar semantic structures—common in TPLs due to factors such as overriding and inheritance—often exhibit identical digests. Relying solely on feature similarity without considering method constraints often results in inaccurate outcomes.</summary>
+  </entry>
+  <entry>
+    <title>BFix: Automated Safe Memory-Leak Fixing for Binary Code</title>
+    <link href="https://doi.org/10.1145/3744916.3773234"/>
+    <id>https://doi.org/10.1145/3744916.3773234</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhang Wen, Botang Xiao, Qingchen Kong, Boyang Yi, Suxin Ji, Yage Hu, Songlan Wang, Wenwen Wang
+
+This is the artifact for BFix. For docker image, please check V2 edition: https://zenodo.org/records/18264808</summary>
+  </entry>
+  <entry>
+    <title>Boosting Gas Revenues of Ethereum Miners</title>
+    <link href="https://doi.org/10.1145/3744916.3787770"/>
+    <id>https://doi.org/10.1145/3744916.3787770</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Togzhan Barakbayeva, Soroush Farokhnia, Amir Kafshdar Goharshady, Sergei Novozhilov
+
+In cryptocurrency networks, transaction-fee revenue serves as the primary financial incentive for miners to participate in the consensus mechanism, securing the network by validating transactions and extending the blockchain. Maximizing this revenue is therefore a key optimization problem for miners. While this has been studied for UTXO blockchains like Bitcoin, where transaction fees are fixed, we focus on Ethereum, where the challenge is significantly greater. On Ethereum, the fee paid by a transaction depends on its execution cost (gas), which can change based on the ordering of preceding transactions in a block. This creates a combinatorial explosion, as miners must select not only a subset of transactions but also their optimal permutation to maximize revenue.</summary>
+  </entry>
+  <entry>
+    <title>Bounded Exhaustive Random Program Generation for Testing Solidity Compilers</title>
+    <link href="https://doi.org/10.1145/3744916.3773237"/>
+    <id>https://doi.org/10.1145/3744916.3773237</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Haoyang Ma, Alastair F. Donaldson, Qingchao Shen, Yongqiang Tian, Junjie Chen, Shing-Chi Cheung
+
+By July 2025, smart contracts collectively manage roughly $120 billion in assets. With Solidity remaining the dominant language for smart contract development, the correctness of Solidity compilers has become critically important. However, Solidity compilers are prone to bugs, with a recent study revealing that combinations of qualifiers in Solidity programs are the primary cause of compiler crashes, accounting for \(40.5\%\) of all historical crashes. While random program generators are widely used for compiler testing, they may be less effective at finding Solidity compiler bugs because they explore the unbounded space of possible programs rather than concentrating on the specific subspace related to bug-prone qualifiers. A promising idea for finding qualifier-related bugs is to bound the search space based on empirical evidence of where such bugs are likely to occur, specifically focusing test generation to target subspaces with rich combinations of qualifiers. To address this, we propose bounded exhaustive random program generation, a novel approach that dynamically bounds the search space, enhancing the likelihood of uncovering Solidity compiler bugs. Specifically, our method bounds the search space by generating valid program templates that abstract programs that use bug-prone qualifiers, and then uses these templates as a basis for compiler testing through exhaustive enumeration of suitable qualifiers. Mechanisms are devised to address technical challenges regarding va</summary>
+  </entry>
+  <entry>
+    <title>Breaking Single-Tester Limits: Multi-Agent LLMs for Multi-User Feature Testing</title>
+    <link href="https://doi.org/10.1145/3744916.3764535"/>
+    <id>https://doi.org/10.1145/3744916.3764535</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Sidong Feng, Changhao Du, Huaxiao Liu, Qingnan Wang, Zhengwei Lv, Mengfei Wang, Chunyang Chen
+
+The growing dependence on mobile phones and their apps has made multi-user interactive features—like chat calls, live streaming, and video conferencing—indispensable for bridging the gaps in social connectivity caused by physical and situational barriers. However, automating these interactive features for testing is fraught with challenges, owing to their inherent need for timely, dynamic, and collaborative user interactions, which current automated testing methods inadequately address. Inspired by the concept of agents designed to autonomously and collaboratively tackle problems, we propose MAdroid, a novel multi-agent approach powered by the Large Language Models (LLMs) to automate the multi-user interactive task for app feature testing. Specifically, MAdroid employs two functional types of multi-agents: user agents (Operator) and supervisor agents (Coordinator and Observer). Each agent takes a specific role: the Coordinator directs the interactive task; the Operator mimics user interactions on the device; and the Observer monitors and reviews the task automation process. Our evaluation, which included 41 multi-user interactive tasks, demonstrates the effectiveness of our approach, achieving 82.9% of the tasks with 96.8% action similarity, outperforming the ablation studies and state-of-the-art baselines. Additionally, a preliminary investigation underscores MAdroid’s practicality by helping identify 11 multi-user interactive bugs during regression app testing, confirming i</summary>
+  </entry>
+  <entry>
+    <title>Breaking Strong Encapsulation: A Comprehensive Study of Java Module Abuse</title>
+    <link href="https://doi.org/10.1145/3744916.3764526"/>
+    <id>https://doi.org/10.1145/3744916.3764526</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yirui He, Yongbo Chen, Jessy Ayala, Yecheng Zhou, Qiran Wang, Joshua Garcia
+
+</summary>
+  </entry>
+  <entry>
+    <title>Breaking the Alphabet: Rethinking File Ordering in Code Review</title>
+    <link href="https://doi.org/10.1145/3744916.3787838"/>
+    <id>https://doi.org/10.1145/3744916.3787838</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Md Shamimur Rahman, Zadia Codabux, Chanchal Kumar Roy
+
+Effective code review is central to maintaining software quality, yet there is limited research about how the ordering of changed files in Pull Requests (PRs) influences review effectiveness. Most popular code review tools default to alphabetical ordering, favoring predictability over contextual relevance. While prior studies examined how file position shapes reviewer attention, it remains unclear how such ordering influences cognitive load and perceived review thoroughness. This study presents the first large-scale survey of 1,355 professional developers across 182 widely used open-source projects to investigate how file ordering impacts review behavior, comprehension, and perceived effectiveness. Our mixed-methods analysis reveals that only 10.2% of reviewers consider alphabetical ordering optimal, underscoring a cognitive misalignment in their interpretation of code changes. Although some developers appreciate its predictability, more than half (57.6%) report that it increases context switching, disrupts logical reasoning, and contributes to review fatigue, and 63.9% expressed concern that the default ordering may cause them to miss bugs. We further identify key challenges in multi-file reviews and elicit developers’ expectations for improved tooling, including dependency-aware grouping and customizable file ordering (requested by 66% of reviewers). These findings highlight the need for reviewer-centric interface designs that better align tool behavior with human cognition</summary>
+  </entry>
+  <entry>
+    <title>BTreeFuzz: Enhanced Feedback Mechanism for ROS Program Fuzzer Based on Behavior Tree</title>
+    <link href="https://doi.org/10.1145/3744916.3773261"/>
+    <id>https://doi.org/10.1145/3744916.3773261</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Hee Yeon Kim, Gyunghoon Kim, Dong Hoon Lee, Wonsuk Choi
+
+Robots are increasingly taking on human roles and functions, and societal expectations for these machines to perform critical tasks and eliminate the problem of human error continue to rise. The robot operating system (ROS) is considered the de facto standard that has been widely used to develop robotic programs. However, even though robot malfunctions should be minimized, it remains highly challenging to develop ROS programs without software vulnerabilities. As a result, many ROS programs still contain software vulnerabilities that can lead to serious malfunctions. To address this concern, researchers have recently presented several fuzzing techniques to automatically detect these vulnerabilities in ROS programs. A feedback mechanism for fuzzing requires a specific metric tailored to the features of ROS programs. However, existing ROS program fuzzers have been unable to provide adequate feedback mechanisms to make this possible. For instance, ROFER, a state-of-the-art ROS program fuzzer, cannot correctly differentiate between multiple distinct robot statuses based on its feedback mechanism metric, and often mistakenly identifies identical statuses as being different from each other, making it ineffective at detecting unique crashes.</summary>
+  </entry>
+  <entry>
+    <title>Bytecode-centric Detection of Known-to-be-vulnerable Dependencies in Java Projects</title>
+    <link href="https://doi.org/10.1145/3744916.3773151"/>
+    <id>https://doi.org/10.1145/3744916.3773151</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Stefan Schott, Serena Elisa Ponta, Wolfram Fischer, Jonas Klauke, Eric Bodden
+
+On average, 71% of the code in typical Java projects comes from open-source software (OSS) dependencies, making OSS dependencies the dominant component of modern software code bases. This high degree of OSS reliance comes with a considerable security risk of adding known security vulnerabilities to a code base. To remedy this risk, researchers and companies have developed various dependency scanners, which try to identify inclusions of known-to-be-vulnerable OSS dependencies. However, there are still challenges that modern dependency scanners do not overcome, especially when it comes to dependency modifications, such as re-compilations, re-bundlings or re-packagings, which are common in the Java ecosystem. To overcome these challenges, we present Jaralyzer, a bytecode-centric dependency scanner for Java. Jaralyzer does not rely on the metadata or the source code of the included OSS dependencies being available but directly analyzes a dependency's bytecode. Our evaluation across 56 popular OSS components demonstrates that Jaralyzer outperforms other popular dependency scanners in detecting vulnerabilities within modified dependencies. It is the only scanner capable of identifying vulnerabilities across all the above mentioned types of modifications. But even when applied to unmodified dependencies, Jaralyzer outperforms the current state-of-the-art code-centric scanner Eclipse Steady by detecting 28 more true vulnerabilities and yielding 29 fewer false warnings.</summary>
+  </entry>
+  <entry>
+    <title>Can SAT Solvers Keep Up With the Linux Kernel's Feature Model?</title>
+    <link href="https://doi.org/10.1145/3744916.3787823"/>
+    <id>https://doi.org/10.1145/3744916.3787823</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Elias Kuiter, Braun Urs-Benedict, Thomas Thüm, Sebastian Krieter, Gunter Saake
+
+The Linux kernel is a highly relevant, yet also highly configurable software system. Kernel developers keep track of this configurability in a feature model, which defines the features of Linux and their dependencies. To support kernel developers in various activities, many (semi-)automated product-line analyses have been proposed over the years. Under the hood, these analyses can often be computed with SAT solvers. Yet, the Linux kernel has constantly been growing in complexity for decades, which increasingly hampers its efficient analysis. At the same time, SAT solvers have been improving in performance for decades, which eases analysis. In this paper, we investigate empirically whether SAT solvers can keep up with the Linux kernel’s feature model. To this end, we analyze historic feature models of Linux with historic SAT solvers from several sources. We find that SAT solvers are generally not able to keep up with Linux. Even the optimal SAT solver is slowing down by 10% every year, meaning that its performance halves every seven years. We conclude that the Linux kernel will become increasingly difficult to analyze if its growth is not counteracted.</summary>
+  </entry>
+  <entry>
+    <title>Causal or Correlational? A Cohort Study on the Effects of Code Smells on Class Change- and Fault-Proneness</title>
+    <link href="https://doi.org/10.1145/3744916.3787786"/>
+    <id>https://doi.org/10.1145/3744916.3787786</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Sabato Nocera, Sira Vegas, Giuseppe Scanniello, Massimiliano Di Penta, Natália Juristo
+
+Code smells are suboptimal design choices in source code that are conjectured to hinder software maintainability. Previous research has studied the impact of code smells on class change- and fault-proneness, yet, as in most mining studies, it has been limited to highlighting correlations rather than detecting causal relationships.This paper instantiates the cohort study design to software repository studies and presents a cohort study aimed at assessing whether code smells cause an increase or decrease in class change- and fault-proneness.By reusing data from the work of Khomh et al. [41] within a cohort study design, we investigate the causal effect of eleven types of code smells on class change- and fault-proneness.Our results show that, overall, the presence of code smells appears to be causing a significant increase in change-proneness, while, with few exceptions, fault-proneness appears unaffected. This work reinforces the principle that correlation does not imply causation: we partially confirmed some previous results on the effects of code smells, while challenging others. It also lays the groundwork for applying cohort study designs to other software properties and relationships previously studied using observational data.</summary>
+  </entry>
+  <entry>
+    <title>CCLInsight: Unveiling Insights in GPU Collective Communication Libraries via Primitive-Centric Analysis</title>
+    <link href="https://doi.org/10.1145/3744916.3773105"/>
+    <id>https://doi.org/10.1145/3744916.3773105</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Liuyao Dai, Adam Weingram, Weicong Chen, Xiaoyi Lu
+
+</summary>
+  </entry>
+  <entry>
+    <title>Change And Cover: Last-Mile, Pull Request-Based Regression Test Augmentation</title>
+    <link href="https://doi.org/10.1145/3744916.3787768"/>
+    <id>https://doi.org/10.1145/3744916.3787768</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zitong Zhou, Matteo Paltenghi, Miryung Kim, Michael Pradel
+
+Software is in constant evolution, with developers frequently submitting pull requests (PRs) to introduce new features or fix bugs. Testing newly added or modified code in PRs is critical to maintaining software quality. Yet, even in projects with extensive test suites, some of the code modified in PRs may remain untested, leaving a “last-mile” regression test gap. Existing automated test generators mostly focus on improving overall code coverage, but do not specifically target the uncovered lines in PRs. This paper presents Change And Cover (ChaCo), a novel, LLM-based test augmentation technique that specifically addresses the last-mile regression test gap in PRs. Our approach is enabled by three key contributions: (i) Instead of focusing on overall code coverage, ChaCo considers a specific PR and the lines left uncovered after applying the PR, offering developers augmented tests for code just when it is on the developers’ mind. (ii) We identify providing suitable test context as a crucial challenge for an LLM to generate useful tests, and present two techniques to extract relevant test content, such as existing test functions, fixtures, and data generators. (iii) To make augmented tests acceptable for developers, ChaCo carefully integrates them into the existing test suite, e.g., by matching the test’s structure and style with the existing tests, and generates a summary of the test addition for developer review. We evaluate ChaCo on 145 PRs from three popular, complex, and </summary>
+  </entry>
+  <entry>
+    <title>Characterizing GPU-accelerated Web Applications in Browsers</title>
+    <link href="https://doi.org/10.1145/3744916.3787824"/>
+    <id>https://doi.org/10.1145/3744916.3787824</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yudong Han, Weichen Bi, Haiyang Shen, Mugeng Liu, Ruibo An, Yun Ma
+
+Driven by the rapid advancement of Web immersive experiences, the demand for GPU acceleration in Web applications has become an essential component of the Web ecosystem. However, little is known about the current practices of GPU-accelerated Web applications. To bridge the knowledge gap, we conduct the first comprehensive empirical study of real-world Web applications that leverage the Web Graphics Library (WebGL) for GPU acceleration, i.e., WebGL applications. We construct a dataset consisting of 5,954 real-world WebGL applications and develop a measurement tool to evaluate how these applications perform across various devices, operating systems, and browsers. Our findings reveal the performance defects in these applications, along with the root causes stemming from undesired development practices. Based on the findings, we propose actionable strategies for developers and browser vendors to mitigate the performance defects.</summary>
+  </entry>
+  <entry>
+    <title>Characterizing Regression Bug‑Inducing Changes and Improving LLM‑Based Regression Bug Detection</title>
+    <link href="https://doi.org/10.1145/3744916.3773182"/>
+    <id>https://doi.org/10.1145/3744916.3773182</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Xuezhi Song, Yijian Wu, Bihuan Chen, Zhengjie Lu, S. Liu, Xin Peng
+
+Regression bugs are common in real-world software projects. Although several studies have characterized various aspects of these bugs, a detailed analysis of the characteristics of code changes that introduce regression bugs is still lacking. It is also not clear whether and how regression bugs can be identified, in the era of wide usage of large language models (LLMs), in code commits during software development in the first place. To fill this gap, our study systematically analyzes 280 regression bugs from open-source Java projects, examining both the root causes and the associated development activities of regression bug-inducing changes, while also evaluating the effectiveness of LLMs in detection such commits and explaining their underlying causes.</summary>
+  </entry>
+  <entry>
+    <title>Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving</title>
+    <link href="https://doi.org/10.1145/3744916.3787844"/>
+    <id>https://doi.org/10.1145/3744916.3787844</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Muyeed Ahmed, Iulian Neamtiu
+
+Unsupervised Learning (UL) implementations are widely used, but prone to issues such as nondeterminism and inconsistency, which makes them unreliable and exploitable. Moreover, the lack of a specification (or ground truth) makes UL implementations hard to verify or test: when they produce diverging results on a dataset, they do so subtly and silently, which gives users a false sense of security, and complicates developers’ job of tracing the error to its root cause. We introduce an approach, Ocelot, that reduces nondeterminism/inconsistency checking to satisfiability checking in Z3. Given the Python code of an UL implementation, Ocelot automatically isolates a nondeterministic “kernel” (variables and code), which forms the basis for a Z3 specification. A Z3-found solution acts as a “witness” dataset – a typically small dataset that can be used to reliably reproduce the error. Ocelot has exposed sources of nondeterminism and inconsistency in popular implementations (Scikit-learn, MATLAB, and R) of well-known Clustering algorithms (Affinity Propagation, DBSCAN, HAC, and K-means) and Anomaly Detection algorithms (Isolation Forest, Local Outlier Factor). Moreover, Ocelot has exposed regressions (changes in semantics) in the evolution of these implementations.</summary>
+  </entry>
+  <entry>
+    <title>Cobblestone: A Divide-and-Conquer Approach for Automating Formal Verification</title>
+    <link href="https://doi.org/10.1145/3744916.3773178"/>
+    <id>https://doi.org/10.1145/3744916.3773178</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Saketh Ram Kasibatla, Arpan Agrawal, Yuriy Brun, Sorin Lerner, Talia Ringer, Emily First
+
+Formal verification using proof assistants, such as Coq, is an effective way of improving software quality, but requires significant effort and expertise. Machine learning can automatically synthesize proofs, but such tools are able to prove only a fraction of desired software properties. We introduce Cobblestone, a divide-and-conquer approach for proof synthesis. Cobblestone uses a large language model (LLM) to generate potential proofs, uses those proofs to break the problem into simpler parts, automatically identifies which of those parts were successfully proven, and iterates on the remaining parts to build a correct proof that is guaranteed to be sound, despite the reliance on unsound LLMs. We evaluate Cobblestone on four benchmarks of open-source Coq projects, controlling for training data leakage. Fully automatically, Cobblestone outperforms state-of-the-art non-LLM tools, and proves many theorems that other LLM-based tools cannot, and on many benchmarks, outperforms them. Each Cobblestone run costs only $1.25 and takes 14.7 minutes, on average. Cobblestone can also be used with external input, from a user or another tool, providing a proof structure or relevant lemmas. Evaluated with such an oracle, Cobblestone proves up to 58% of theorems. Overall, our research shows that tools can make use of partial progress and external input to more effectively automate formal verification.</summary>
+  </entry>
+  <entry>
+    <title>CoBrA: Context-, Branch-sensitive Static Analysis for Detecting Taint-style Vulnerabilities in PHP Web Applications</title>
+    <link href="https://doi.org/10.1145/3744916.3773195"/>
+    <id>https://doi.org/10.1145/3744916.3773195</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yichao Xu, Mingqing Kang, Neil P. Thimmaiah, Rigel Gjomemo, Venkat N. Venkatakrishnan, Yinzhi Cao
+
+PHP, a widely-used programming language in Web development, contains powerful dynamic features (e.g., dynamic function name construction), making static detection of taint-style vulnerabilities like SQL injection and XSS challenging. State-of-the-art (SoTA) static approaches perform call graph-guided backward dataflow tracking, thus failing to analyze those dynamic PHP features, like variable functions, and control structures, which results in high false positives and negatives. In this paper, we design and implement CoBrA, a context-, branch-sensitive approach to detect taint-style vulnerabilities in PHP-based Web applications. The key innovations are the abstract domain graph (ADG), which is used to efficiently guide the analysis, and a ‘‘stretch-relax’’ algorithm, which enables accurate resolution of PHP dynamic features and efficient inter-procedural taint propagation. Our evaluation of CoBrA’s prototype identified 54 zero-day vulnerabilities in 19 real-world applications with nine CVE identifiers assigned, achieved 88.66% detection rate with under 0.3% false positives on a PHP tarpits dataset, and outperformed four SoTA tools across all test datasets with reasonable time and space consumption.</summary>
+  </entry>
+  <entry>
+    <title>CodeMapper: A Language-Agnostic Approach to Mapping Code Regions Across Commits</title>
+    <link href="https://doi.org/10.1145/3744916.3773267"/>
+    <id>https://doi.org/10.1145/3744916.3773267</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Huimin Hu, Michael Pradel
+
+During software evolution, developers commonly face the problem of mapping a specific code region from one commit to another. For example, they may want to determine how the condition of an if-statement, a specific line in a configuration file, or the definition of a function changes. We call this the code mapping problem. Existing techniques, such as git diff, address this problem only insufficiently because they show all changes made to a file instead of focusing on a code region of the developer's choice. Other techniques focus on specific code elements and programming languages (e.g., methods in Java), limiting their applicability. This paper introduces CodeMapper, an approach to address the code mapping problem in a way that is independent of specific program elements and programming languages. Given a code region in one commit, CodeMapper finds the corresponding region in another commit. The approach consists of two phases: (i) computing candidate regions by analyzing diffs, detecting code movements, and searching for specific code fragments, and (ii) selecting the most likely target region by calculating similarities. Our evaluation applies CodeMapper to four datasets, including two new hand-annotated datasets containing code region pairs in ten popular programming languages. CodeMapper correctly identifies the expected target region in 71.0%--94.5% of all cases, improving over the best available baselines by 1.5--58.8 absolute percent points.</summary>
+  </entry>
+  <entry>
+    <title>Cognitive Biases in LLM-Assisted Software Development</title>
+    <link href="https://doi.org/10.1145/3744916.3773104"/>
+    <id>https://doi.org/10.1145/3744916.3773104</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Xinyi Zhou, Zeinadsadat Saghi, Sadra Sabouri, Rahul Pandita, Mollie McGuire, Souti Chattopadhyay
+
+The widespread adoption of Large Language Models (LLMs) in software development is transforming programming from a solution-generative to a solution-evaluative activity. This shift opens a pathway for new cognitive challenges that amplify existing decision-making biases or create entirely novel ones. One such type of challenge stems from cognitive biases, which are thinking patterns that lead people away from logical reasoning and result in sub-optimal decisions. How do cognitive biases manifest and impact decision-making in emerging AI-collaborative development? This paper presents the first comprehensive study of cognitive biases in LLM-assisted development. We employ a mixed-methods approach, combining observational studies with 14 student and professional developers, followed by surveys with 22 additional developers. We qualitatively compare categories of biases affecting developers against the traditional non-LLM workflows. Our findings suggest that LLM-related actions are more likely to be associated with novel biases. Through a systematic analysis of 90 cognitive biases specific to developer-LLM interactions, we develop a taxonomy of 15 bias categories validated by cognitive psychologists. We found that 48.8% of total programmer actions are biased, and developer-LLM interactions account for 56.4% of these biased actions. We discuss how these bias categories manifest, present tools and practices for developers, and recommendations for LLM tool builders to help mitigate </summary>
+  </entry>
+  <entry>
+    <title>CombCT: Compiler Testing via Combinatorial Testing</title>
+    <link href="https://doi.org/10.1145/3744916.3764548"/>
+    <id>https://doi.org/10.1145/3744916.3764548</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Chuan Wen Luo, Shaoke Cui, Jiahao Yan, Junjie Chen, Chenyao Suo, Wei Wu, Chanjuan Liu, Chunming Hu
+
+Compilers, as fundamental software, are essential for various applications, making their reliability crucial. Modern compilers like GCC and LLVM offer numerous optimizations to improve performance. Empirical studies present that most bugs occur during compiler optimization, especially with specific optimization sequences, yet little attention has been paid to this in compiler testing. The vast optimization sequence space challenges existing methods, leaving this important research direction in its early stages and in need of effective solutions. In this work, we propose a novel and effective compiler testing approach dubbed CombCT, aimed at boosting compiler testing. CombCT is the first approach that leverages the power of combinatorial testing for compiler testing, making it be capable of effectively exploring optimization sequences. Besides, CombCT incorporates three new techniques, i.e., dynamic optimization sequence adaption, partial sequence selection, and diversity augmentation, to enhance its effectiveness. Extensive experiments on various versions of GCC and LLVM demonstrate that CombCT detects much more unique bugs, which are caused by certain optimization sequences, than current state-of-the-art methods, indicating its superiority. Moreover, CombCT has disclosed 14 previously unknown bugs in the latest versions of GCC and LLVM, 13 of which have been confirmed or fixed, showing its practical value.</summary>
+  </entry>
+  <entry>
+    <title>Comfrey: Mitigating Integration Failures in LLM-enabled Software at Run-Time</title>
+    <link href="https://doi.org/10.1145/3744916.3787847"/>
+    <id>https://doi.org/10.1145/3744916.3787847</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yuchen Shao, Yuheng Huang, Jiazhen Zou, Yuling Shi, Long Yang, Lei Ma, Ting Su, Chengcheng Wan
+
+Due to the unrestricted outputs of LLMs and strict requirements of software components, integration failures are widespread in software that incorporates LLM agents and retrieval-augmented generation (RAG). Even seemingly correct LLM/RAG responses can trigger software misbehaviors if they violate these requirements.</summary>
+  </entry>
+  <entry>
+    <title>Configuration-Sensitive Linux Kernel Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3773136"/>
+    <id>https://doi.org/10.1145/3744916.3773136</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yuheng Shen, Jianzhong Liu, Yuhan Chen, Yifei Chu, Qiang Zhang, G L Yin, Heyuan Shi, Yu Jiang
+
+Fuzzing operating system kernels to discover deep and complex bugs is difficult to accomplish, as kernels reside between hardware and user applications, exposing a variety of input vectors that affect their internal state. Previous approaches mainly use a kernel’s system call interface to deliver test payloads into the kernel, but reaching states and triggering bugs also require collaborative efforts from other input vectors, such as runtime parameters. Kernel runtime parameters greatly affect the execution behavior of the kernel under test, as they alter internal execution flows and thus require kernel fuzzers to manipulate them in conjunction with invoking system calls to effectively root out bugs. In this paper, we present CSGO, a kernel fuzzer that discovers more in-depth bugs through fuzzing kernel runtime parameters in conjunction with system calls. CSGO’s approach is achieved through the following designs. First, CSGO generates valid test case generation syntax for kernel configurations by extracting available parameters exposed by the kernel. Then, for the extracted parameters, CSGO statically deduces relations between the configurations and kernel system calls for initial generation guidance. Finally, during fuzzing, CSGO dynamically refines the relations between the configurations and system calls by interpreting execution feedback. We implemented CSGO and evaluated its approach on recent versions of the Linux kernel. Our results show that CSGO achieves an average o</summary>
+  </entry>
+  <entry>
+    <title>ConfLogger: Enhance Systems' Configuration Diagnosability through Configuration Logging</title>
+    <link href="https://doi.org/10.1145/3744916.3764570"/>
+    <id>https://doi.org/10.1145/3744916.3764570</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Shiwen Shan, Yintong Huo, Yuxin Su, Zhining Wang, Dan Li, Zibin Zheng
+
+Modern configurable systems, including distributed systems and recently popular decentralized systems in Web 3.0, offer customization via intricate configuration spaces, yet such flexibility introduces pervasive configuration-related issues such as misconfigurations and latent software bugs. Existing diagnosability supports focus on post-failure analysis of software behavior to identify configuration issues, but none of these approaches look into whether the software clues sufficient failure information for diagnosis. To fill in the blank, we propose the idea of configuration logging to enhance existing logging practices at the source code level. We develop ConfLogger, the first tool that unifies configuration-aware static taint analysis with LLM-based log generation to enhance software configuration diagnosability. Specifically, our method 1) identifies configuration-sensitive code segments by tracing configuration-related data flow in the whole project, and 2) generates diagnostic logging statements by analyzing configuration code contexts. Evaluation results on eight popular software systems demonstrate the effectiveness of ConfLogger to enhance configuration diagnosability. Specifically, ConfLogger-enhanced logs successfully aid a log-based misconfiguration diagnosis tool to achieve 100% accuracy on error localization in 30 silent misconfiguration scenarios, with 80% directly resolvable through explicit configuration information exposed. In addition, ConfLogger achieves 7</summary>
+  </entry>
+  <entry>
+    <title>Connected to Stay: Gender Homophily and Its Role in Open-Source Software Developer Retention</title>
+    <link href="https://doi.org/10.1145/3744916.3773181"/>
+    <id>https://doi.org/10.1145/3744916.3773181</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Kaijun Yu, Huilian Sophie Qiu, Patrick S. Park, Laura Dabbish, Bogdan Vasilescu
+
+Understanding how social connections shape participation is critical for sustaining open-source software (OSS) communities. To investigate this, we analyze longitudinal collaboration networks of 1.6 million developers over 14 years (2008–2022) using the World of Code dataset, focusing on gender homophily, developers’ preference to collaborate with others of the same gender, and its relationship to retention. We find strong evidence of gender homophily beyond demographic baselines, with same-gender ties among women exceeding random expectations by more than twice. While women tend to form homophilous ties, men show a preference for cross-gender collaboration, and these patterns shift over time as the OSS ecosystem evolves. Most notably, we find that developers, especially women, who collaborate with other women experience significantly lower dropout risk, with hazard rates up to 20.7% lower. These retention effects only become visible after accounting for activity levels, consistent with prior work showing that aggregate analyses can mask true relationships. Our results suggest that homophilous ties offer social support that improves developer persistence, highlighting the importance of inclusive, gender-diverse networks for sustaining participation in OSS projects.</summary>
+  </entry>
+  <entry>
+    <title>Context-Free Grammar Inference for Complex Programming Languages in Black Box Settings</title>
+    <link href="https://doi.org/10.1145/3744916.3773147"/>
+    <id>https://doi.org/10.1145/3744916.3773147</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Feifei Li, Xiao Chen, Xiaoyu Sun, Xi Xiao, Shaohua Wang, Yong Ding, Sheng Wen, Qing Li
+
+Grammar inference for complex programming languages remains a significant challenge, as existing approaches fail to scale to real-world datasets within practical time constraints. In our experiments, none of the state-of-the-art tools, including Arvada, Treevada and Kedavra were able to infer grammars for complex languages such as C, C++, and Java within 48 hours. Arvada and Treevada perform grammar inference directly on full-length input examples, which proves inefficient for large files commonly found in such languages. While Kedavra introduces data decomposition to create shorter examples for grammar inference, its lexical analysis still relies on the original inputs. Additionally, its strict no-overgeneralization constraint limits the construction of complex grammars.</summary>
+  </entry>
+  <entry>
+    <title>Context-Free Property Oriented Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3773273"/>
+    <id>https://doi.org/10.1145/3744916.3773273</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiaqiang Yao, Meixi Liu, Zhenbang Chen, Yongchao Xing, Jinjian Luo, Yunlai Luo, Guofeng Zhang, Yufeng Zhang
+
+Fuzzing is effective for finding software bugs. However, the bugs specified in context-free properties are difficult for the existing fuzzers. These bugs are triggered when the program execution contains specific sequences of operations, e.g., push and pop operations on the stack, and locking and unlocking operations on the lock. As far as we know, existing approaches do not support fuzzing for non-regular context-free properties, which are more expressive and can be used to specify bugs in many scenarios.</summary>
+  </entry>
+  <entry>
+    <title>CoReX: Context-Aware Refinement-Based Slicing for Debugging Regression Failures</title>
+    <link href="https://doi.org/10.1145/3744916.3764577"/>
+    <id>https://doi.org/10.1145/3744916.3764577</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Sahar Badihi, Julia Rubin
+
+Troubleshooting regression failures is one of the most frequent yet time-consuming development tasks. To help with this task, numerous approaches aim to narrow down developers’ attention to the subset of code statements relevant to the failure. The most prominent of these approaches are based on program slicing, as slicing not only identifies a subset of relevant statements but also maintains the flow of information between these statements.</summary>
+  </entry>
+  <entry>
+    <title>CREME: Robustness Enhancement of Code LLMs via Layer-Aware Model Editing</title>
+    <link href="https://doi.org/10.1145/3744916.3773111"/>
+    <id>https://doi.org/10.1145/3744916.3773111</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — S.-S. Liu, Xing Hu, Kerui Huang, Xiaohu Yang, David Lo, Xin Xia
+
+Large language models (LLMs) have demonstrated impressive capabilities in code generation, where the natural language prompt plays a crucial role in conveying user intent to the model. However, prior studies have shown that LLMs are highly sensitive to prompt perturbations. Minor modifications in wording, syntax, or formatting can significantly reduce the functional correctness of generated code. As perturbations frequently occur in real-world scenarios, improving the robustness of LLMs to prompt perturbations is essential for ensuring reliable performance in practical code generation. In this paper, we introduce CREME (CodeLLM Robustness Enhancement via Model Editing), a novel approach that enhances LLM robustness through targeted parameter updates. CREME first identifies robustness-sensitive layers by comparing hidden states between an original prompt and its perturbed variant. Then, it performs lightweight parameter editing at the identified layer to reduce performance degradation. We evaluate CREME on two widely used code generation benchmarks (HumanEval and MBPP) along with their perturbed counterparts. Experimental results show that CREME improves Pass@1 accuracy by 63% on perturbed prompts while maintaining stable performance on clean inputs, with accuracy deviations within ± 1%. Further analysis reveals that robustness-sensitive layers are primarily concentrated in the middle and deeper layers of the network, and their locations vary across different model architectur</summary>
+  </entry>
+  <entry>
+    <title>CRUDinfer: Automated CRUD Semantics Inference for REST APIs Through Black-box Testing</title>
+    <link href="https://doi.org/10.1145/3744916.3787826"/>
+    <id>https://doi.org/10.1145/3744916.3787826</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Michele Pasqua, Davide Corradini, Michele Perlotto, Mariano Ceccato
+
+REST APIs are the de facto standard for web service interaction, praised for flexibility and simplicity of adoption. Nevertheless, the lack of mandatory implementation guidelines for REST APIs has led to the diffusion of poor-quality and difficult-to-maintain web services. A key concern in this context is the misuse of CRUD (Create, Read, Update, and Delete) semantics of API operations. While best practices suggest mapping CRUD verbs to HTTP methods (POST, GET, PUT/PATCH, and DELETE, respectively), many implementations fail to adhere to such a guideline. This common anti-pattern makes interaction with the API ambiguous, hindering maintainability and decreasing the effectiveness of automated REST API testing.</summary>
+  </entry>
+  <entry>
+    <title>D-BUNDLR: Destructing JavaScript Bundles for Effective Static Analysis</title>
+    <link href="https://doi.org/10.1145/3744916.3764564"/>
+    <id>https://doi.org/10.1145/3744916.3764564</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Wenyuan Xu, Alexi Turcotte, Cristian-Alexandru Staicu
+
+Static analysis for vulnerability detection in JavaScript is an extensively studied research area. However, state-of-the-art approaches ignore bundling, an emerging development practice, akin to compilation, which allows developers to merge code from different providers, while also applying optimizations to reduce code size. A typical bundle heavily reuses single-letter identifiers and extensively relies on dynamic JavaScript features to emulate code dependencies, thus, hindering static analysis. In this work, we propose a reverse engineering approach that relies on domain-specific code transformations to unpack bundles and replace reidentified libraries with their source code. Our technique applies lightweight static analysis to dissect bundles into individual components, machine learning to identify libraries, and dynamic analysis to verify that libraries were correctly identified. We implement this approach in a tool called D-Bundlr, and evaluate it by comparing the output of CodeQL (a popular static analysis tool) before and after debundling.</summary>
+  </entry>
+  <entry>
+    <title>Debugging Performance Issues in WebAssembly Runtimes via Mutation-based Inference</title>
+    <link href="https://doi.org/10.1145/3744916.3773141"/>
+    <id>https://doi.org/10.1145/3744916.3773141</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Ruiying Zeng, Shuyao Jiang, Wenxuan Zhao, Yangfan Zhou
+
+Performance debugging in WebAssembly (Wasm) runtimes is essential for ensuring the robustness of Wasm, especially since performance issues have frequently occurred in Wasm runtimes, which can significantly degrade the capabilities of hosted services. Many performance issues in Wasm runtimes result from suboptimal compilation of input Wasm programs, for which existing performance debugging methods primarily designed for application-level inefficiencies are not well-suited. In this paper, we present WarpL, a novel mutation-based approach that aims to identify the exact suboptimal instruction sequences responsible for the performance issues in Wasm runtimes, thereby narrowing down the root causes. Specifically, WarpL obtains a functionally similar mutant in which the performance issue does not manifest, and isolates the exact suboptimal instructions by comparing the machine code of the original and mutated programs. We implement WarpL as an open-source tool and evaluate it on 12 real-world performance issues across three widely used Wasm runtimes. WarpL identified the exact causes in 10 out of 12 issues. Notably, we have used WarpL to successfully diagnose six previously unknown performance issues in Wasmtime.</summary>
+  </entry>
+  <entry>
+    <title>Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?</title>
+    <link href="https://doi.org/10.1145/3744916.3764537"/>
+    <id>https://doi.org/10.1145/3744916.3764537</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Alexander Schultheiß, Alexander Boll, Paul Maximilian Bittner, Sandra Greiner, Thomas Thüm, Timo Kehrer
+
+</summary>
+  </entry>
+  <entry>
+    <title>Defects4REST: A Benchmark of Real-World Defects to Enable Controlled Testing and Debugging Studies for REST APIs</title>
+    <link href="https://doi.org/10.1145/3744916.3787787"/>
+    <id>https://doi.org/10.1145/3744916.3787787</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Rahil P Mehta, Pushpak Katkhede, Manish Motwani
+
+Existing research on REST API testing and debugging often relies on arbitrarily selected APIs for evaluation, leaving a critical gap in our understanding of real world defects in REST API based projects, particularly those that can be automatically detected or repaired. To address this gap, we present Defects4REST, the first public benchmark of defects in REST API projects, systematically mined from open source GitHub repositories. Using a semi-automated process that combines clustering, topic modeling, and manual validation, we build a dataset of 607 REST API defects from 50 projects and organize them into a taxonomy of 6 defect types and 13 sub-types. Each defect is linked to an issue report, the developer-modified versions of the patched files, and the corresponding commit messages. Defects4REST features easy access to the buggy and patched versions of projects for each defect and enables analysis of the associated artifacts. To evaluate current automated testing capabilities, we assess four state-of-the-art REST API testing tools on a sample of 30 defects from 11 projects. Our evaluation reveals that tools detect only 10% (3/30) of real-world defects due to nine fundamental limitations including semantic validation, stateful testing, and infrastructure-aware testing. We release both the benchmark and the issue mining framework to support reproducible research in REST APIs, enabling the development and evaluation of REST API testing and debugging techniques.</summary>
+  </entry>
+  <entry>
+    <title>DeFT: Maintaining Determinism and Extracting Unit Tests for Autonomous Driving Planning</title>
+    <link href="https://doi.org/10.1145/3744916.3773252"/>
+    <id>https://doi.org/10.1145/3744916.3773252</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yuqi Huai, Yuntianyi Chen, Ziwen Wan, Qi Alfred Chen, Joshua Garcia
+
+An Autonomous Driving System (ADS) is a complex software system often composed of multiple modules, each responsible for its own set of tasks. The ADS planning module is responsible for planning the autonomous vehicle’s future driving trajectories and has historically been the most buggy ADS module. In recent years, many approaches have been proposed to test an ADS in complex virtual scenarios through simulation, and these scenarios have been effective in revealing the ADS’s suboptimal decisions. However, due to the randomness of events that occur during the real-time execution of an ADS, test scenarios tend to produce varying outcomes and, in turn, make ADS testing non-deterministic, flaky, and unpredictable. To address this challenge, we propose and evaluate DeFT, an approach that extracts deterministic test cases for the ADS planning module from non-deterministic system-level scenario tests. DeFT monitors the messages exchanged by ADS modules during the execution of system-level scenario tests and reconstructs inputs to reproduce the planning module’s execution. By using DeFT, we find that planning module tests can (1) more accurately reproduce planning module executions that occurred during system-level scenario tests, (2) be used to deterministically detect the same 658 collision failures revealed by system-level scenario tests, and (3) reduce the time needed to reproduce failures by 43.69% to 77.64%.</summary>
+  </entry>
+  <entry>
+    <title>Demystifying the CVE Ecosystem: Community-Perceived Impacts and Problems</title>
+    <link href="https://doi.org/10.1145/3744916.3773241"/>
+    <id>https://doi.org/10.1145/3744916.3773241</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Y. Zhao, Hengzhi Ye, Minghui Zhou, Huaimin Wang
+
+The Common Vulnerabilities and Exposures (CVE) system plays a critical role in global cybersecurity by standardizing the identification and cataloging of software and hardware vulnerabilities. However, recent high-profile incidents highlight the potential pitfall of the system, indicating the space for improvement. Despite significant interests in and substantial studies on CVE system, there is a lack of understanding to what extent the participants are impacted, and what problems are exactly in the CVE ecosystem. To bridge the knowledge gap, we extensively collect blog posts, community discussions, and editorial articles from various sources, including Reddit, LWN.net, and GitHub, and employ a thematic analysis approach to identify the perceived adverse impact on participants as well as the inherent problems within the CVE ecosystem. Then we conducted a community survey with 77 participants for verification. The results unveil the impacts on various participants within the prevailing CVE ecosystem and for the first time comprehensively trace and elucidate the problems that may cause these impacts. Based on the findings and survey results, we propose a series of implications to mitigate existing problems within the CVE ecosystem, aiming to enhance its efficiency and health.</summary>
+  </entry>
+  <entry>
+    <title>Dependency-aware Residual Risk Analysis</title>
+    <link href="https://doi.org/10.1145/3744916.3773180"/>
+    <id>https://doi.org/10.1145/3744916.3773180</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Seongmin Lee, Marcel Böhme
+
+However much we test a software system, some residual risk of undiscovered bugs always remains. If we model test generation as a sampling process, the residual risk can be defined as the probability that the next test input reveals a bug. This risk is upper-bounded by the discovery probability (DP), i.e., the probability that the next test input covers new code, which itself is upper-bounded by the coverage rate, i.e., the expected number of new coverage elements per test input. Prior work introduced the Good-Turing estimator (GoTu) to estimate residual risk via coverage rate. However, we find that GoTu substantially overestimates, leading to undue optimism in bug finding because (i) the coverage rate is only a loose upper bound, and (ii) GoTu ignores dependencies among coverage elements.</summary>
+  </entry>
+  <entry>
+    <title>Depradar: Agentic Coordination for Context-Aware Defect Impact Analysis in Deep Learning Libraries</title>
+    <link href="https://doi.org/10.1145/3744916.3787763"/>
+    <id>https://doi.org/10.1145/3744916.3787763</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yi Gao, Xing Hu, Tongtong Xu, Jiali Zhao, Xiaohu Yang, Xin Xia
+
+Deep learning (DL) libraries like Transformers and Megatron are now widely adopted in modern AI programs. However, when these libraries introduce defects—ranging from silent computation errors to subtle performance regressions—it is often challenging for downstream users to assess whether their own programs are affected. Such impact analysis requires not only understanding the defect semantics but also checking whether the client code satisfies complex triggering conditions involving configuration flags, runtime environments, and indirect API usage. We present DepRadar, an agent coordination framework for fine-grained defect and impact analysis in DL library updates. DepRadar coordinates four specialized agents across three steps: (1) the PR Miner and Code Diff Analyzer extract structured defect semantics from commits or pull requests, (2) the Orchestrator Agent synthesizes these signals into a unified defect pattern with trigger conditions, and (3) the Impact Analyzer checks downstream programs to determine whether the defect can be triggered. To improve accuracy and explainability, DepRadar integrates static analysis with DL-specific domain rules for defect reasoning and client-side tracing. We evaluate DepRadar on 157 PRs and 70 commits across two representative DL libraries. It achieves 90% precision in defect identification and generates high-quality structured fields (average field score 1.6/2). On 122 client programs, DepRadar identifies affected cases with 90% recall </summary>
+  </entry>
+  <entry>
+    <title>Designing Abandabot: When Does Open Source Dependency Abandonment Matter?</title>
+    <link href="https://doi.org/10.1145/3744916.3764519"/>
+    <id>https://doi.org/10.1145/3744916.3764519</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Courtney Miller, Hao He, Weigen Chen, Elizabeth Lin, Chenyang Yang, Bogdan Vasilescu, Christian Kästner
+
+Despite the inevitable risk posed by abandoned open source dependencies, many developers feel they lack sufficient guidance on how to deal with dependency abandonment. Automated detection of abandonment is feasible, but not all abandoned dependencies impact downstream projects equally. In this paper, we perform a need-finding interview study with 22 open source maintainers exploring what makes the abandonment of certain dependencies impactful to their project given the context of their usage, as well as their information needs and design requirements for such an automated notification tool. We identify four categories of context-specific information that often affect the impactfulness of a given dependency’s abandonment to a particular downstream project: the depth of integration, the availability of alternatives, the importance of the functionality, and external environmental pressures. Using this emerging theory, we then build an LLM-based classifier to predict the impact of a dependency’s abandonment in a given context, and evaluate it with an independent user study with 124 open source maintainers. Our results show that the classifier is effective at predicting whether a dependency’s abandonment would be impactful to a project and that LLM-generated theory-based explanations are useful to many developers when making judgments about the potential impactfulness of abandonment.</summary>
+  </entry>
+  <entry>
+    <title>Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities</title>
+    <link href="https://doi.org/10.1145/3744916.3773205"/>
+    <id>https://doi.org/10.1145/3744916.3773205</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zirui Chen, Zhipeng Xue, Jiayuan Zhou, Xing Hu, Xin Xia, Xiaohu Yang
+
+Exploits are commonly used to demonstrate the presence of library vulnerabilities and validate their impact across different versions. However, their direct application to alternative versions often fails due to breaking changes introduced during evolution. These failures stem from both changes in triggering conditions (e.g., API refactorings) and broken dynamic environments (e.g., build or runtime errors), which are challenging to interpret and adapt manually. Existing techniques primarily focus on code-level trace alignment through fuzzing, which is both time-consuming and insufficient for handling environment-level failures. Moreover, they often fall short when dealing with complicated triggering condition changes across versions. To overcome this, we propose Diffploit, an iterative, diff-driven exploit migration method structured around two key modules: the Context Module and the Migration Module. The Context Module constructs contexts derived from analyzing behavioral discrepancies between the target and reference versions, which capture the failure symptom and its related diff hunks. Leveraging these contexts, the Migration Module guides an LLM-based adaptation through an iterative feedback loop, balancing exploration of diff candidates and gradual refinement to resolve reproduction failures effectively. We evaluate Diffploit on a large-scale dataset containing 102 Java CVEs and 689 version-migration tasks across 79 libraries. Diffploit successfully migrates 84.2% explo</summary>
+  </entry>
+  <entry>
+    <title>Distance-Guided Search in Program Synthesis with Imperfect LLM Solutions</title>
+    <link href="https://doi.org/10.1145/3744916.3787779"/>
+    <id>https://doi.org/10.1145/3744916.3787779</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Hangyeol Cho, J. W. Lee, Woosuk Lee
+
+Search-based program synthesis systematically explores a space of programs to find one that satisfies a given specification. While effective for small programs, it struggles with scalability due to the combinatorial explosion of the search space. In contrast, large language models (LLMs) can generate large programs but often produce solutions that are incorrect or fail to meet the specification. We propose a novel distance-guided search algorithm that leverages imperfect LLM-generated programs to guide both top-down and bottom-up synthesis. Using an anti-unification-based distance metric, we prioritize candidates in the top-down search that are structurally similar to the LLM output. For bottom-up synthesis, we generate components close to subexpressions of the LLM solution while preserving completeness and pruning efficiency. We implement our approach atop Trio, a bidirectional synthesizer for recursive functional programs, and evaluate it on 80 synthesis tasks. Our results show that distance-guided search effectively combines the strengths of LLMs and search-based methods, solving tasks beyond the reach of either technique alone.</summary>
+  </entry>
+  <entry>
+    <title>DNN Modularization via Activation-Driven Training</title>
+    <link href="https://doi.org/10.1145/3744916.3773190"/>
+    <id>https://doi.org/10.1145/3744916.3773190</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Kien-Tuan Ngo, Abid Hassan, Saad Shafiq, Nenad Medvidović
+
+Deep Neural Networks (DNNs) tend to accrue technical debt and suffer from significant retraining costs when adapting to evolving requirements. Modularizing DNNs offers the promise of improving their reusability. Previous work has proposed techniques to decompose DNN models into modules both during and after training. However, these strategies yield several shortcomings, including significant weight overlaps and accuracy losses across modules, restricted focus on convolutional layers only, and added complexity and training time by introducing auxiliary masks to control modularity. In this work, we propose MODA, an activation-driven modular training approach. MODA promotes inherent modularity within a DNN model by directly regulating the activation outputs of its layers based on three modular objectives: intra-class affinity, inter-class dispersion, and compactness. MODA is evaluated using three well-known DNN models and five datasets with varying sizes. This evaluation indicates that, compared to the existing state-of-the-art, using MODA yields several advantages: (1) MODA accomplishes modularization with 22% less training time; (2) the resultant modules generated by MODA comprise up to 24x fewer weights and 37x less weight overlap while (3) preserving the original model's accuracy without additional fine-tuning; in module replacement scenarios, (4) MODA improves the accuracy of a target class by 12% on average while ensuring minimal impact on the accuracy of other classes.</summary>
+  </entry>
+  <entry>
+    <title>Dually Hierarchical Drift Adaptation for Online Configuration Performance Learning</title>
+    <link href="https://doi.org/10.1145/3744916.3764542"/>
+    <id>https://doi.org/10.1145/3744916.3764542</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zezhen Xiang, Jingzhi Gong, Tao Chen
+
+Modern configurable software systems need to learn models that correlate configuration and performance. However, when the system operates in dynamic environments, the workload variations, hardware changes, and system updates will inevitably introduce concept drifts at different levels—global drifts, which reshape the performance landscape of the entire configuration space; and local drifts, which only affect certain sub-regions of that space. As such, existing offline and transfer learning approaches can struggle to adapt to these implicit and unpredictable changes in real-time, rendering configuration performance learning challenging. To address this, we propose DHDA, an online configuration performance learning framework designed to capture and adapt to these drifts at different levels. The key idea is that DHDA adapts to both the local and global drifts using dually hierarchical adaptation: at the upper level, we redivide the data into different divisions, within each of which the local model is retrained, to handle global drifts only when necessary. At the lower level, the local models of the divisions can detect local drifts and adapt themselves asynchronously. To balance responsiveness and efficiency, DHDA combines incremental updates with periodic full retraining to minimize redundant computation when no drifts are detected. Through evaluating eight software systems and against state-of-the-art approaches, we show that DHDA achieves considerably better accuracy and can</summary>
+  </entry>
+  <entry>
+    <title>DyMA-Fuzz: Dynamic Direct Memory Access Abstraction for Re-hosted Monolithic Firmware Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3787828"/>
+    <id>https://doi.org/10.1145/3744916.3787828</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Guy Farrelly, Michael Chesser, Seyit Ahmet Camtepe, Damith Chinthana Ranasinghe
+
+The rise of smart devices in critical domains—including automotive, medical, industrial—demands robust firmware testing. Fuzzing firmware in re-hosted environments is a promising method for automated testing at scale, but remains difficult due to the tight coupling of code with a microcontroller’s peripherals. Existing fuzzing frameworks primarily address input challenges in providing inputs for Memory-Mapped I/O or interrupts, but largely overlook Direct Memory Access (DMA), a key high-throughput interface used that bypasses the CPU.</summary>
+  </entry>
+  <entry>
+    <title>E-Test: E'er-Improving Test Suites</title>
+    <link href="https://doi.org/10.1145/3744916.3773126"/>
+    <id>https://doi.org/10.1145/3744916.3773126</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Ketai Qiu, Luca Di Grazia, Leonardo Mariani, Mauro Pezzè
+
+Test suites are inherently imperfect, and testers can always enrich a suite with new test cases that improve its quality and, consequently, the reliability of the target software system. However, finding test cases that explore execution scenarios beyond the scope of an existing suite can be extremely challenging and labor-intensive, particularly when managing large test suites over extended periods.</summary>
+  </entry>
+  <entry>
+    <title>EchoFuzz: Empowering Smart Contract Fuzzing with Large Language Models</title>
+    <link href="https://doi.org/10.1145/3744916.3773166"/>
+    <id>https://doi.org/10.1145/3744916.3773166</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiayu Li, Peng Qian, Guanyan Li, Rui Wang, Peixin Wang, Zhiqing Tang, Fuchen Ma, Yuanliang Chen
+
+Smart contracts, serving as the cornerstone of decentralized applications, autonomously manage trillion-dollar digital assets, making them attractive targets for attacks. Fuzzing has emerged as a promising technique for detecting vulnerabilities in smart contracts, yet existing methods face two main challenges. (1) The logical gap in state transitions and combinatorial redundancy hinders effective tradeoffs between bug detection efficiency and state space exploration cost, leading to critical execution paths to be overlooked. (2) Rule-based sequence mutation strategies suffer from path redundancy and inadequate guidance from contract logic, resulting in performance bottlenecks that stall the exploration of in-depth vulnerability-oriented paths.</summary>
+  </entry>
+  <entry>
+    <title>Efficient Build Dependency Verification Using eBPF and Incremental Analysis</title>
+    <link href="https://doi.org/10.1145/3744916.3773204"/>
+    <id>https://doi.org/10.1145/3744916.3773204</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yuta Saito, Kazunori Sakamoto, Hironori Washizaki
+
+Build systems are fundamental to modern software development, but maintaining correct dependency specifications remains a significant challenge. Dependency-related errors, including missing and redundant dependencies, account for over 50% of build errors in large-scale software projects. Existing tools for detecting such errors suffer from two major limitations: high runtime overhead due to ptrace-based system call tracing, and the need to verify all edges in the build dependency graph. This paper presents mkcheck2, a novel approach that combines extended Berkeley Packet Filter (eBPF)-based system call tracing with incremental analysis to enable efficient dependency verification. Our evaluation on a diverse set of open-source projects demonstrates that mkcheck2 reduces the overhead of dependency error detection by up to 99.7% compared to existing ptrace-based approaches while maintaining detection accuracy. Across the entire 300-project Make corpus, the incremental analysis technique lowers the mean analysis time per commit from 1267.49 seconds to just 23.56 seconds, making continuous dependency verification practical in real-world development environments.</summary>
+  </entry>
+  <entry>
+    <title>Efficient Strong Updates For Path Sensitive Data Dependence Analysis</title>
+    <link href="https://doi.org/10.1145/3744916.3773183"/>
+    <id>https://doi.org/10.1145/3744916.3773183</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yiyuan Guo, Charles Zhang
+
+Path-sensitive data dependence analysis is a powerful technique widely used in static vulnerability detection. One of the central challenges is how to resolve indirect data dependencies induced by pointer operations: the value loaded from a memory location may depend on different values stored before. Resolving indirect data dependencies in a path-sensitive manner significantly improves the analysis precision, but also induces high overhead that limits its scalability.</summary>
+  </entry>
+  <entry>
+    <title>EmbedAgent: Benchmarking Large Language Models in Embedded System Development</title>
+    <link href="https://doi.org/10.1145/3744916.3787788"/>
+    <id>https://doi.org/10.1145/3744916.3787788</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Ruiyang Xu, Jialun Cao, Mingyuan Wu, Wenliang Zhong, Yaojie Lu, Ben He, Xianpei Han, Shing-Chi Cheung
+
+Large Language Models (LLMs) have shown promise in various tasks, yet few benchmarks assess their capabilities in embedded system development. In this paper, we introduce EmbedAgent, a paradigm designed to simulate real-world roles in embedded system development, such as Embedded System Programmer, Architect, and Integrator. This paradigm enables LLMs to be tested in tasks that bridge the gap between digital and physical systems, allowing for a more comprehensive assessment of their capabilities. To evaluate LLMs on these tasks, we propose EmbedBench, the first comprehensive benchmark for embedded system programming, circuit design, and cross-platform migration. EmbedBench consists of 126 cases, covering 9 electronic components across 3 hardware platforms. Through extensive experiments on 10 mainstream LLMs, we uncover several key findings. Surprisingly, despite the simplicity of the cases, DeepSeek-R1 achieves only a 55.6% pass@1 rate when provided with schematic information, and 50.0% when tasked with generating the schematics itself. In the cross-platform migration tasks, LLMs show relatively strong performance with MicroPython on the Raspberry Pi Pico (with the top model achieving 73.8% pass@1), but perform poorly on ESP-IDF, where the best model reaches only 29.4% pass@1. Interestingly, we observe that general-purpose chat LLMs like DeepSeek-V3 often fail to utilize relevant pre-trained knowledge in this domain, while reasoning LLMs tend to overthink and overlook efficie</summary>
+  </entry>
+  <entry>
+    <title>EMC: A Semantic-Enhanced Malware Classification Method with Robustness and Scalability</title>
+    <link href="https://doi.org/10.1145/3744916.3773123"/>
+    <id>https://doi.org/10.1145/3744916.3773123</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Haojun Zhao, Yueming Wu, Zhen Li, Deqing Zou
+
+Driven by substantial financial incentives, Portable Executable (PE) malware continues to evolve, posing persistent and growing threats. Malware classification has long been a vital research area, and numerous classification approaches have been proposed. However, existing methods still face performance limitations and often lack robustness when dealing with complex analytical scenarios that involve concept drift. In this paper, we propose a robust and scalable PE malware classification framework based on program semantic analysis and feature enhancement, and implement a prototype system named EMC. Our approach focuses on behavior-oriented semantic understanding of programs, constructing a more effective feature space while eliminating spurious correlations between features at a fine-grained level to enhance robustness. EMC extracts comprehensive behavior-oriented binary opcode sequences and employs an encoder sliding window mechanism for semantic understanding and feature space construction. Furthermore, it combines random Fourier features and weighted resampling techniques to remove dependencies between features, and leverages mutual information to purify features. These enhancements enable the classification model to more accurately capture the intrinsic characteristics of malicious programs, thereby improving both accuracy and robustness. Compared with ten mainstream malware classification methods, EMC improves F1 scores by up to 12.06% under normal scenarios and by 6.64%</summary>
+  </entry>
+  <entry>
+    <title>Enabling Global, Human-Centered Explanations for LLMs: From Tokens to Interpretable Code and Test Generation</title>
+    <link href="https://doi.org/10.1145/3744916.3787764"/>
+    <id>https://doi.org/10.1145/3744916.3787764</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Dipin Khati, Daniel Rodríguez-Cárdenas, David N. Palacio, Alejandro Velasco, Michele Tufano, Denys Poshyvanyk
+
+As Large Language Models for Code (LM4Code) become integral to software engineering, establishing trust in their output becomes critical. However, standard accuracy metrics obscure the underlying reasoning of generative models, offering little insight into how decisions are made. Although post-hoc interpretability methods attempt to fill this gap, they often restrict explanations to local, token-level insights, which fail to provide a developer-understandable global analysis. Our work highlights the urgent need for global, code-based explanations that reveal how models reason across code. To support this vision, we introduce code rationales (Code\(\mathbb {Q}\)), a framework that enables global interpretability by mapping token-level rationales to high-level programming categories. Aggregating thousands of these token-level explanations allows us to perform statistical analyses that expose systemic reasoning behaviors. We validate this aggregation by showing it distills a clear signal from noisy token data, reducing explanation uncertainty (Shannon entropy) by over 50%. Additionally, we find that a code generation model (codeparrot-small) consistently favors shallow syntactic cues (e.g., indentation) over deeper semantic logic. Furthermore, in a user study with 37 participants, we find its reasoning is significantly misaligned with that of human developers. These findings, hidden from traditional metrics, demonstrate the importance of global interpretability techniques to fos</summary>
+  </entry>
+  <entry>
+    <title>End-to-End Model Generation with Large Language Models for Adaptive IoT Application Deployment</title>
+    <link href="https://doi.org/10.1145/3744916.3787771"/>
+    <id>https://doi.org/10.1145/3744916.3787771</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhenyu Wen, Jintao Feng, Nanjie Yao, Di Wu, Cong Wang, Mincheng Wu, Jianbin Qin, Shibo He
+
+The deployment of AI-powered applications on resource-constrained edge devices presents a significant software engineering challenge. While Pruning and Neural Architecture Search (NAS) have shown promise in optimizing model efficiency, their application in edge device deployment is often limited by low levels of automation. In this paper, we introduce LLM-based Adaptive Model Generation (LAMDA), a novel framework that tackle the challenge of adaptive AI deployment as an automated model generation problem. LAMDA empowers an LLM to perform end-to-end design, refinement, and optimization of DNNs to meet the specific hardware constraints. Our approach makes two primary contributions. First, we introduce a serialization technique that transforms complex DNN computation graphs into a structured textual representation that makes model architectures comprehensible and manipulable by an LLM. Further, to ground the generation process in real-world hardware constraints, we integrate a feedback-driven optimization loop. This loop leverages an empirical performance model, trained to correlate architectural patterns with on-device latency, enabling the LLM to reason about and optimize for non-functional requirements. To mitigate architectural “hallucinations”, we incorporate context management and validation to ensure valid generation. We evaluate LAMDA through extensive experiments on public benchmarks and real-world edge devices. The results demonstrate that our framework can autonomousl</summary>
+  </entry>
+  <entry>
+    <title>Energy-Efficient Software Development: A Multi-dimensional Empirical Analysis of Stack Overflow</title>
+    <link href="https://doi.org/10.1145/3744916.3773177"/>
+    <id>https://doi.org/10.1145/3744916.3773177</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Bihui Jin, Heng Li, Pengyu Nie, Ying Zou
+
+Energy consumption of software applications has emerged as a critical concern for developers to contemplate in their daily development processes. Previous studies have surveyed a limited number of developers to understand their viewpoints on energy consumption. We complement these studies by analyzing a meticulously curated dataset of 1,193 Stack Overflow (SO) questions concerning energy consumption. These questions capture real-world energy-related challenges in practice. To understand practitioners' perceptions, we investigate the intentions behind these questions, semantic topics, and associated technologies (e.g., programming languages). Our results reveal that: (i) the most prevalent energy consumption topic is about balancing Positioning usage; (ii) efficiently handling data is particularly challenging, with these questions having the longest response times; (iii) practitioners primarily ask questions to understand a concept or API related to energy consumption; and (iv) practitioners are concerned about energy consumption across multiple levels-hardware, operating systems, and programming languages-during energy efficient software development. Our findings raise awareness about energy consumption's impact on software development. We also derive actionable implications for energy optimization at different levels (e.g., optimizing API usage or hardware accesses) during energy-aware software development.</summary>
+  </entry>
+  <entry>
+    <title>Enforcing Control Flow Integrity on DeFi Smart Contracts</title>
+    <link href="https://doi.org/10.1145/3744916.3773266"/>
+    <id>https://doi.org/10.1145/3744916.3773266</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zhiyang Chen, Sidi Mohamed Beillahi, Pasha Barahimi, Cyrus Minwalla, Han Du, Andreas G. Veneris, Fan Long
+
+Smart contracts power decentralized financial (DeFi) services but are vulnerable to security exploits that can lead to significant financial losses. Existing security measures often fail to adequately protect these contracts due to the composability of DeFi protocols and the increasing sophistication of attacks. Through a large-scale empirical study of historical transactions from the 37 hacked DeFi protocols, we discovered that while benign transactions typically exhibit a limited number of unique control flows, in stark contrast, attack transactions consistently introduce novel, previously unobserved control flows. Building on these insights, we developed CrossGuard, a novel framework that enforces control flow integrity onchain to secure smart contracts. Crucially, CrossGuard does not require prior knowledge of specific hacks. Instead, configured only once at deployment, it enforces control flow whitelisting policies and applies simplification heuristics at runtime. This approach monitors and prevents potential attacks by reverting all transactions that do not adhere to the established control flow whitelisting rules. Our evaluation demonstrates that CrossGuard effectively blocks 35 of the 37 analyzed attacks when configured only once at contract deployment, maintaining a low false positive rate of \(0.26\%\) and minimal additional gas costs. These results underscore the efficacy of applying control flow integrity to smart contracts, significantly enhancing security beyond</summary>
+  </entry>
+  <entry>
+    <title>Enhancing Issue Localization Agent with Tool-Interactive Training</title>
+    <link href="https://doi.org/10.1145/3744916.3773137"/>
+    <id>https://doi.org/10.1145/3744916.3773137</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zexiong Ma, Chao Peng, Qunhong Zeng, Pengfei Gao, Yanzhen Zou, Bing Xie
+
+Issue localization, the process of identifying code locations that need modification to resolve software issues, is a critical yet challenging task in software development. The semantic gap between natural language issue descriptions and faulty code requires complex multi-hop reasoning through code dependencies. Existing LLM-based agents attempt to address this by integrating repository retrieval tools, which poses a higher demand for LLMs to effectively utilize various tools during multi-step reasoning for issue localization. To tackle this challenge, we present ToolTrain, a two-stage tool-interactive training framework combining rejection-sampled supervised fine-tuning and tool-interactive reinforcement learning to enhance LLMs’ ability to use retrieval tools for issue localization. Experimental results show that ToolTrain-trained models achieve state-of-the-art performance among same-size LLMs, with our 32B model even surpassing Claude-3.7-Sonnet on function-level localization. The results also show that improved localization performance translates to better end-to-end issue resolution performance. This further demonstrates that training for issue localization is a viable and effective strategy for improving automated software development.</summary>
+  </entry>
+  <entry>
+    <title>Enhancing LLM Code Generation with Ensembles: A Similarity-Based Selection Approach</title>
+    <link href="https://doi.org/10.1145/3744916.3773143"/>
+    <id>https://doi.org/10.1145/3744916.3773143</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Tarek Mahmud, Bin Duan, Corina S. Păsăreanu, Guowei Yang
+
+Ensemble learning has been widely used in machine learning to improve model robustness, accuracy, and generalization, but has not yet been applied to code generation tasks with large language models (LLMs). In this paper, we propose an ensemble approach for LLMs in code generation. Instead of relying on the output of a single model, we generate multiple candidate programs from different LLMs and apply a structured voting mechanism to select the most reliable solution.</summary>
+  </entry>
+</feed>

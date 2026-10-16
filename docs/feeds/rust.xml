@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Paper Tracker — Rust</title>
+  <id>./feeds/rust.xml</id>
+  <link href="./"/>
+  <updated>2026-10-16T05:26:02Z</updated>
+  <entry>
+    <title>An Empirical Study of WebAssembly Usage in Node.js</title>
+    <link href="https://doi.org/10.1145/3744916.3764533"/>
+    <id>https://doi.org/10.1145/3744916.3764533</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Michelle Davies Thalakottur, Maxwell Bernstein, Daniel Lehmann, Michael Pradel, Frank Tip
+
+WebAssembly code executes within a host environment, such as JavaScript running on Node.js. Despite the increasing popularity of mixed JavaScript-WebAssembly applications, the interactions between these two languages and the effect of WebAssembly usage on the NPM ecosystem, are currently not well understood. As a result, developers of program analyses, runtime engines, and ecosystem tooling are forced to make assumptions that may not hold in practice. Moreover, there currently is no executable dataset of WebAssembly modules that allows for studying how WebAssembly is used at runtime within Node.js packages. This paper presents the first comprehensive study of WebAssembly usage in Node.js code. The study is enabled by a novel dataset that we collect comprising 510 executable Node.js packages that exercise 217 unique WebAssembly modules. We study dependencies among packages that use WebAssembly, how JavaScript and WebAssembly interoperate, and the implications for security, efficiency and reliability in the WebAssembly-JavaScript ecosystem. The study provides several insights and future research opportunities, including: (i) a lack of maintenance of WebAssembly binaries that are ports of C/C++/Rust libraries, which motivates future work on cross-language package maintenance, (ii) a lack of testing of WebAssembly usage from JavaScript, which motivates work on targeted testing techniques; (iii) relatively little dynamism in WebAssembly usage, allowing for pragmatic assumptions in</summary>
+  </entry>
+  <entry>
+    <title>Evaluating and Improving Automated Repository-Level Rust Issue Resolution with LLM-based Agents</title>
+    <link href="https://doi.org/10.1145/3744916.3773108"/>
+    <id>https://doi.org/10.1145/3744916.3773108</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiahong Xiang, Wenxiao He, Xihua Wang, Hongliang Tian, Yuqun Zhang
+
+The Rust programming language presents a steep learning curve and significant coding challenges, making the automation of issue resolution essential for its broader adoption. Recently, LLM-powered code agents have shown remarkable success in resolving complex software engineering tasks, yet their application to Rust has been limited by the absence of a large-scale, repository-level benchmark. To bridge this gap, we introduce Rust-SWE-bench, a benchmark comprising 500 real-world, repository-level software engineering tasks from 34 diverse and popular Rust repositories. We then perform a comprehensive study on Rust-SWE-bench with four representative agents and four state-of-the-art LLMs to establish a foundational understanding of their capabilities and limitations in the Rust ecosystem.</summary>
+  </entry>
+  <entry>
+    <title>HarnessLLM: Rust Verification Harness Generation with Large Language Models</title>
+    <link href="https://doi.org/10.1145/3744916.3773122"/>
+    <id>https://doi.org/10.1145/3744916.3773122</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Minghua Wang, Yuwei Liu, Huang Lj
+
+Rust’s ownership and type system offer strong memory safety guarantees, but unsafe code and runtime panics still present significant risks. Formal verification is essential to ensure memory safety, but developing verification harnesses remains a challenging and manual task. Although large language models (LLMs) have shown strong performance in various code analysis tasks, directly applying them to harness generation often results in inaccurate API invocations, inefficient nondeterministic data generation, and fabricated fixes.</summary>
+  </entry>
+  <entry>
+    <title>PyXray: Practical Cross-Language Call Graph Construction through Object Layout Analysis</title>
+    <link href="https://doi.org/10.1145/3744916.3764555"/>
+    <id>https://doi.org/10.1145/3744916.3764555</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Georgios Alexopoulos, Thodoris Sotiropoulos, Georgios Gousios, Zhendong Su, Dimitris Mitropoulos
+
+A great number of software packages combine code in high-level languages, such as Python, with binary extensions compiled from low-level languages such as C, C++ or Rust to either boost efficiency or enable specific functionalities. In this context, high-level function calls can trigger native (binary) code execution. This setup introduces challenges for call graph generation. Accurate call graphs are essential for various applications, including vulnerability management and software maintenance, as they help track execution paths, assess security risks, and identify unused or redundant code.</summary>
+  </entry>
+  <entry>
+    <title>Rusted Types: Static Detection of Rust Type Confusion Bugs</title>
+    <link href="https://doi.org/10.1145/3744916.3764571"/>
+    <id>https://doi.org/10.1145/3744916.3764571</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zeyang Zhuang, Wei Meng, Michael Rung-Tsong Lyu
+
+</summary>
+  </entry>
+  <entry>
+    <title>RusyFuzz: Unhandled Exception Guided Fuzzing for Rust OS Kernel</title>
+    <link href="https://doi.org/10.1145/3744916.3773138"/>
+    <id>https://doi.org/10.1145/3744916.3773138</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yuwei Liu, Yanhao Wang, Minghua Wang, Lin Huang, Purui Su, Tao Wei
+
+Rust’s strong type system and ownership model eliminate many traditional memory safety issues in OS kernels. However, logic errors—such as unchecked indexing and failed unwrap operations—can still cause panic!s that crash the entire system. Existing kernel fuzzers, designed primarily for C-based kernels and reliant on KCOV, treat all crashes uniformly and fail to account for Rust-specific failure modes.</summary>
+  </entry>
+  <entry>
+    <title>SmartC2Rust: Iterative, Feedback-Driven C-to-Rust Translation via Large Language Models for Safety and Equivalence</title>
+    <link href="https://doi.org/10.1145/3744916.3773259"/>
+    <id>https://doi.org/10.1145/3744916.3773259</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Momoko Shiraishi, Yinzhi Cao, Takahiro Shinagawa
+
+Memory safety vulnerabilities remain prevalent in today's software systems and one promising solution to mitigate them is to adopt memory-safe languages such as Rust. Due to legacy code written in memory unsafe C, there is strong motivation to translate legacy C code into Rust. Prior works have already shown promise in using Large Language Models (LLMs) for such translations. However, significant challenges persist for LLM-based translation: the translated code often fails to compile, let alone reduce unsafe statements and maintain the semantic functionalities due to inherent limitations of LLMs such as limited token size and inconsistent outputs. In this paper, we design an automated C-to-Rust translation system, called SmartC2Rust, to segment and convert the C code to Rust with memory safety and semantic equivalence. The key insight is to iteratively refine the output Rust code with additional feedback, e.g., compilation errors, segmentation contexts, semantic discrepancies, and memory unsafe statements. Such feedback will gradually improve the quality of generated Rust code, thus mitigating unsafety, inconsistency, and semantic issues. Our evaluation shows that SmartC2Rust significantly decreases the unsafe statements and outperforms prior works in security and semantic equivalence.</summary>
+  </entry>
+  <entry>
+    <title>Unlocking LLM Repair Capabilities Through Cross-Language Translation and Multi-Agent Refinement</title>
+    <link href="https://doi.org/10.1145/3744916.3773227"/>
+    <id>https://doi.org/10.1145/3744916.3773227</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Wenqiang Luo, Jacky Keung, Boyang Yang, Jacques Klein, Tegawendé François Bissyandé, Haoye Tian, Bach Le
+
+Recent advances in leveraging LLMs for APR have demonstrated impressive capabilities in fixing software defects. However, current LLM-based approaches predominantly focus on mainstream programming languages like Java and Python, neglecting less prevalent but emerging languages such as Rust due to expensive training resources, limited datasets, and insufficient community support. This narrow focus creates a significant gap in repair capabilities across the programming language spectrum, where the full potential of LLMs for comprehensive multilingual program repair remains largely unexplored. To address this limitation, we introduce a novel cross-language program repair approach LANTERN that leverages LLMs’ differential proficiency across languages through a multi-agent iterative repair paradigm. Our technique strategically translates defective code from languages where LLMs exhibit weaker repair capabilities to languages where they demonstrate stronger performance, without requiring additional training. A key innovation of our approach is an LLM-based decision-making system that dynamically selects optimal target languages based on bug characteristics and continuously incorporates feedback from previous repair attempts.</summary>
+  </entry>
+  <entry>
+    <title>Trust Me, I Know This Function: Hijacking LLM Static Analysis using Bias</title>
+    <link href="https://doi.org/10.14722/ndss.2026.242066"/>
+    <id>https://doi.org/10.14722/ndss.2026.242066</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Shir Bernstein, David Beste, Daniel Ayzenshteyn, Lea Schönherr, Yisroel Mirsky
+
+Large Language Models (LLMs) are increasingly trusted to perform automated code review and static analysis at scale, supporting tasks such as vulnerability detection, summarization, and refactoring.In this paper, we identify and exploit a critical vulnerability in LLM-based code analysis: an abstraction bias that causes models to overgeneralize familiar programming patterns and overlook small, meaningful bugs.Adversaries can exploit this blind spot to hijack the control flow of the LLM's interpretation with minimal edits and without affecting actual runtime behavior.We refer to this attack as a Familiar Pattern Attack (FPA).We develop a fully automated, black-box algorithm that discovers and injects FPAs into target code.Our evaluation shows that FPAs are not only effective against basic and reasoning models, but are also transferable across model families (OpenAI, Anthropic, Google), and universal across programming languages (Python, C, Rust, Go).Moreover, FPAs remain effective even when models are explicitly warned about the attack via robust system prompts.Finally, we explore positive, defensive uses of FPAs and discuss their broader implications for the reliability and safety of code-oriented LLMs.</summary>
+  </entry>
+  <entry>
+    <title>Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases</title>
+    <link href="https://www.usenix.org/conference/osdi26/presentation/hu-guanzhou"/>
+    <id>https://www.usenix.org/conference/osdi26/presentation/hu-guanzhou</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2026"/>
+    <summary>OSDI 2026 — Guanzhou Hu, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau
+
+We present Bodega, the first consensus protocol that serves linearizable reads locally from any desired node, regardless of interfering writes. Bodega attains this capability via a new notion of cluster metadata called the roster, which is a generalization of leadership; it tracks arbitrary subsets of replicas as responder nodes for local reads. A consistent agreement on the roster is established through roster leases, an all-to-all leasing mechanism that generalizes existing all-to-one leasing approaches (Leader Leases, Quorum Leases), unlocking a new point in the protocol design space. Bodega further employs optimistic holding and early accept notifications optimizations to minimize interruption from interfering writes, and smart roster coverage and lightweight heartbeats to maximize practicality. Bodega is a non-intrusive extension to classic consensus; it imposes no special requirements on writes other than a responder-covering quorum. We implement Bodega and related works in Summerset, a protocol-generic replicated key-value store written in async Rust. We compare it to previous protocols (Leader Leases, EPaxos, PQR, and Quorum Leases) and two production coordination services (etcd and ZooKeeper). Bodega speeds up average client read requests by 5.6x∼13.1x on real WAN clusters versus previous approaches under moderate write interference, and closely matches the performance of sequentially-consistent etcd and ZooKeeper deployments across YCSB workloads. Bodega supports fa</summary>
+  </entry>
+  <entry>
+    <title>jwmalloc: A Verified Memory Allocator for Mobile Devices</title>
+    <link href="https://www.usenix.org/conference/osdi26/presentation/wang-jiawei"/>
+    <id>https://www.usenix.org/conference/osdi26/presentation/wang-jiawei</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2026"/>
+    <summary>OSDI 2026 — Jiawei Wang, Ming Fu, Ruixian Wang, Chao Xu, Jonas Oberhauser, Haibo Chen
+
+Dynamic memory allocators provide memory allocation and release functionality to languages such as C, C++, and Rust. Existing allocators have been primarily optimized for performance and timely memory release. However, emerging mobile workloads also emphasize CPU, energy, and memory usage under soft real-time constraints. We present jwmalloc, a novel memory allocator built from the ground up to address these mobile-specific challenges. It is based on three key innovations: a uniform slab size with pooling that enables immediate cross-size-class reuse of any emptied slab; the closed sibling tree , a new data structure for efficiently managing fragments; and a two-buffer lifetime tracker that categorizes short- and long-lived objects to guide memory reclamation. For timely response in soft real-time and oversubscription scenarios, all operations are non-blocking. We verified jwmalloc with a bounded model checker under weak memory models. Replacing jemalloc on a flagship smartphone running real-world workloads, jwmalloc reduces whole-system instructions by 10% and cuts allocator-side instruction counts by 3.84x, while lowering CPU power consumption by 5-11%, all at a comparable memory footprint. jwmalloc has been deployed in production on 12 million commercial mobile devices, operating stably for over 30 billion user hours.</summary>
+  </entry>
+  <entry>
+    <title>Big Bird: Resilient Privacy Budgeting Across Untrusted Web Domains</title>
+    <link href="https://doi.org/10.1145/3830418.3843897"/>
+    <id>https://doi.org/10.1145/3830418.3843897</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2026"/>
+    <summary>SOSP 2026 — Pierre Tholoniat, Alison Caulfield, Giorgio Cavicchioli, Mark I-Cheng Chen, Benjamin Case, Asaf Cidon, Roxana Geambasu, Mathias Lécuyer
+
+The W3C Attribution API is an emerging standard for privacy-preserving advertising measurement. Its current privacy architecture enforces individual differential privacy (IDP) independently for each domain (e.g., an advertiser) issuing queries. We show that this guarantee is unsound under realistic system behavior: it fails under cross-querier data adaptivity and can also fail when shared limits are enforced across queriers. The issue is not the on-device accounting model itself - device-epoch IDP - but treating each querying domain in isolation. We propose Big Bird, a privacy-budget manager that makes global device-epoch IDP - enforced jointly across all domains - both sound and deployable for Attribution. Big Bird addresses the main obstacle to global enforcement in open multi-querier systems: denial-of-service depletion of a shared global budget by Sybil web domains. Its key insight is that benign Attribution workloads have a stock-and-flow structure: impressions create potential privacy loss, conversions realize it, and meaningful budget consumption should be tied to genuine user actions across distinct web domains. Big Bird enforces this structure with privacy-loss-based quotas on impression and conversion sites and a per-user-action cap on how many quotas can be activated, ensuring that adversarial impact scales with genuine user interactions rather than with the number of Sybil domains. We implement Big Bird in Rust, integrate it into Firefox's Attribution prototype, a</summary>
+  </entry>
+  <entry>
+    <title>Lion: Modular Verification of Async Runtime Liveness</title>
+    <link href="https://doi.org/10.1145/3830418.3843879"/>
+    <id>https://doi.org/10.1145/3830418.3843879</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2026"/>
+    <summary>SOSP 2026 — Ti Zhou, Zihao Zhang, Omar Chowdhury, Shuai Mu
+
+Asynchronous programming (async) is the dominant paradigm for developing high-performance systems, where concurrent tasks voluntarily yield control to an async runtime when resources are unavailable. These programs expect a fundamental liveness promise from the runtime: every task that yields will eventually be resumed when its awaited event fires. A single scheduling bug can silently break this contract, leaving tasks permanently stalled with no observable symptoms, such as a crash or error trace, to signal the failure. We present a general parametric specification framework and methodology for discharging this promise in runtimes composed of multiple interacting modules. Our approach introduces an append-only logical event log that abstracts implementation details and enables a Kamp-style translation of Linear Temporal Logic (LTL) into First-Order Logic. This enables deductive program verifiers to reason about progress via monotonic timestamps without needing native temporal logic support. Our main liveness theorem abstracts over the sufficient conditions, such as environmental assumptions and calling conventions, allowing these proof obligations to be instantiated for different runtime implementations. We demonstrate this framework via Lion, a Tokio-compatible runtime in Rust verified using Verus. By establishing a bijective mapping between log events and concrete actions, we prove that Lion maintains the liveness contract and measure at least 95% of unverified-runtime thr</summary>
+  </entry>
+  <entry>
+    <title>Validating a High-Performance Cloud Object Store with Lightweight Formal Methods</title>
+    <link href="https://doi.org/10.1145/3830418.3843899"/>
+    <id>https://doi.org/10.1145/3830418.3843899</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2026"/>
+    <summary>SOSP 2026 — Rajeev Joshi, Bernhard Kragl, Vimuth Fernando, Sarek Høverstad Skotåm, Jake Wires, Matthew Russo, Colin Walker, Julien Mascart
+
+We report on our experience validating S3 Express One Zone, a high-performance Amazon S3 storage class launched in November 2023. We focused on its distributed metadata index, which implements a hierarchical namespace using distributed transactions. We check strong consistency and durability under crashes, network delays, and timeouts. Building on our prior work on lightweight formal methods, we combined executable reference models with property-based testing and stateless model checking. Applying these techniques to a production distributed system required three new techniques: a white-box approach to checking serializability; compositional validation of the data and control planes; and long-running canaries that use reference models to check correctness across deployments. We extended Shuttle, our open-source stateless checker, to support a production async Rust runtime and failure injection, including cancelled operations and timeouts. Our main finding is that this approach is sustainable at engineering scale. After launch, the engineering team took ownership of models and test infrastructure, increasing its share of validation commits from 41% to 84% and independently extending the models for conditional writes, object append, and atomic rename, with little involvement from the formal methods team.</summary>
+  </entry>
+  <entry>
+    <title>Validating Rust Compilers with Trait-Type Constraint Graph</title>
+    <link href="https://doi.org/10.1145/3830418.3843907"/>
+    <id>https://doi.org/10.1145/3830418.3843907</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2026"/>
+    <summary>SOSP 2026 — Xin Lai, Ming Wen, Xiaofei Liao, Hai Jin
+
+Rust is increasingly adopted in safety-critical systems software, making the reliability of its compiler particularly important. Defects in the Rust compiler can lead to incorrect compiler behavior and compromise the reliability of the compilation process. Systematic validation of the compiler is therefore imperative. Through an empirical analysis of real-world Rust compiler bugs, we find that the trait mechanism remains a primary source of hard-to-detect compiler bugs that existing validation tools consistently miss. To address this, we propose a validation methodology based on a novel concept of Trait-Type Constraint Graph (TTCG), a graph that captures semantic relationships between traits and types and enables the derivation of the Trait Constraint Space (TCS) for systematic exploration. Guided by TTCG, our tool TraitFuzzer first leverages large language models to rewrite seed programs into trait-dense forms, and then applies TTCG-guided mutations to drive the compiler toward under-tested trait-solving logic and cross-feature interactions. In total, TraitFuzzer has discovered 51 bugs, 45 of which have already been confirmed. Further analysis reveals that 41 bugs can only be triggered with trait structures. More importantly, none of these bugs can be detected by the baseline approaches. Our tool, together with the reported bugs, has also received positive feedback from the community.</summary>
+  </entry>
+  <entry>
+    <title>deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00060"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00060</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — G. C. Androutsopoulos, Antonio Bianchi
+
+Although Rust ensures memory safety by default, it also permits the use of unsafe code, which can introduce memory safety vulnerabilities if misused. Unfortunately, existing tools for detecting memory bugs in Rust typically exhibit limited detection capabilities, inadequately handle Rust-specific types, or rely heavily on manual intervention. To address these limitations, we present deepSURF, a tool that integrates static analysis with Large Language Model (LLM)-guided fuzzing harness generation to effectively identify memory safety vulnerabilities in Rust libraries, specifically targeting unsafe code. deepSURF introduces a novel approach for handling generics by substituting them with custom types and generating tailored implementations for the required traits, enabling the fuzzer to simulate user-defined behaviors within the fuzzed library. Additionally, deepSURF employs LLMs to augment fuzzing harnesses dynamically, facilitating exploration of complex API interactions and significantly increasing the likelihood of exposing memory safety vulnerabilities. We evaluated deepSURF on 63 real-world Rust crates, successfully rediscovering 30 known memory safety bugs and uncovering 12 previously-unknown vulnerabilities (out of which 11 have been assigned RustSec IDs and 3 have been patched), demonstrating clear improvements over state-of-the-art tools.</summary>
+  </entry>
+  <entry>
+    <title>Oxidizer: Toward Concise and High-fidelity Rust Decompilation</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00257"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00257</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Yibo Liu, Zion Leonahenahe Basque, Arvind S. Raj, Chavin Udomwongsa, Chang Zhu, Jie Hu, Changyu Zhao, Fangzhou Dong
+
+</summary>
+  </entry>
+  <entry>
+    <title>An Integer Overflow Endgame: Compiler and Architecture Support for Default-On Integer Overflow Mitigation</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-zheng"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-zheng</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Zheng Zhang, Qi Ling, Kian Kasad, Brendan Ryan Sweeney, Deepak Gupta, Tal Garfinkel, Kazem Taram
+
+Integer overflow checks are off-by-default in most production settings due to their high overheads. Consequently, many serious vulnerabilities remain unmitigated. We analyze the source of these overheads---in compilers including LLVM (UBSan, Rust), and in processors including x86-64, ARM64, and RISC-V---and show how to eliminate them. Overheads in LLVM stem from how overflow semantics are expressed in LLVM IR. LLVM's current approach, based on intrinsics and branches, interferes with a variety of middle end optimizations. We develop an alternative approach that tracks overflow semantics with metadata, but otherwise leaves LLVM IR unchanged, eliminating this overhead. Overheads in hardware primarily result from current ISA designs, that require doubling the number of μops for checked vs. unchecked arithmetic, stressing the processor pipeline. We show how simple ISA extensions can alleviate this stress, enabling overflow-checked arithmetic to issue as a single μop. We evaluate these extensions through compiler-based emulation on real hardware and simulation in gem5. Our work offers a path to significantly reducing the cost of overflow checks in existing compilers, and demonstrates that integer overflow mitigation can be cheap enough for default-on use in future hardware.</summary>
+  </entry>
+  <entry>
+    <title>Arguzz: Testing zkVMs for Soundness and Completeness Bugs</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/hochrainer"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/hochrainer</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Christoph Hochrainer, Valentin Wüstholz, Maria Christakis
+
+Zero-knowledge virtual machines (zkVMs) are increasingly deployed in decentralized applications and blockchain rollups since they enable verifiable off-chain computation. These VMs execute general-purpose programs, frequently written in Rust, and produce succinct cryptographic proofs. However, zkVMs are complex, and bugs in their constraint systems or execution logic can cause critical soundness (accepting invalid executions) or completeness (rejecting valid ones) issues. We present ARGUZZ, the first automated tool for testing zkVMs for soundness and completeness bugs. To detect such bugs, ARGUZZ combines a novel variant of metamorphic testing with fault injection. In particular, it generates semantically equivalent program pairs, merges them into a single Rust program with a known output, and runs it inside a zkVM. By injecting faults into the VM, ARGUZZ mimics malicious or buggy provers to uncover overly weak constraints. We used ARGUZZ to test six real-world zkVMs—RISC Zero, Nexus, Jolt, SP1, OpenVM, and Pico—and found eleven bugs in three of them. One RISC Zero bug resulted in a $50,000 bounty, despite prior audits, demonstrating the critical need for systematic testing of zkVMs.</summary>
+  </entry>
+  <entry>
+    <title>CULPA: Universal Detection of Memory-Safety Bugs in Unsafe Rust Through the Lens of Safety Requirements</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/chen-hung-mao"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/chen-hung-mao</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Hung-Mao Chen, Bo Lu, Xu He, Xiaokuan Zhang, Kun Sun
+
+Rust has emerged as a leading system programming language by providing strong compile-time guarantees for memory safety. However, these guarantees do not extend to unsafe Rust, where developers may bypass compiler checks and inadvertently introduce memory-safety vulnerabilities. Although prior static analyzers have made progress in detecting such bugs, existing approaches are often fragmented: they target specific coding patterns or bug classes without modeling the underlying causes of unsafety. In this paper, we present CULPA, a universal detector for memory-safety bugs in Rust programs. The key insight of CULPA is to detect the root cause of such bugs: the violation of safety requirements in unsafe Rust contexts. To do so, CULPA first transforms the safety requirements in the standard library documentation into machine-executable predicates. Then it constructs the distinct memory segments to comply with safety requirements. Finally, CULPA collects all safety-relevant safeguards to construct the Requirement Graph. Based on the requirement graph traversal, we can determine whether violations inside unsafe blocks can be triggered. CULPA covers existing bug classes addressed by four prior static analyzers and identifies additional memory-safety vulnerabilities beyond their scope. We evaluate CULPA on the top 1,000 Rust packages. CULPA uncovers 55 previously unknown (zero-day) memory-safety bugs, 29 of which have been confirmed by developers. Most of these vulnerabilities are mi</summary>
+  </entry>
+  <entry>
+    <title>Prezta: Provable Remote Execution of Zero-Trust Authorization using SNARKs</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/wei-zhongjing"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/wei-zhongjing</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Zhongjing Wei, Osaid Muhammad Ameer, Yupeng Zhang, Nikita Borisov
+
+Modernizing the security of operational technology systems that control critical infrastructure has become a pressing challenge. Because edge devices have limited capabilities, modernization has relied on application gateways that interface with identity management systems and enforce access policies. These gateways are powerful enough to perform complex authorization decisions and support zero-trust architectures but create major deployment and management burdens: they must be collocated with remote, distributed edge devices, kept up to date with security patches, and managed with minimal downtime. We propose Provable Remote Execution of Zero-Trust Authorization (Prezta), an architecture that eliminates these gateways by evaluating policies within a zero-knowledge virtual machine (zkVM) running on the client. The zkVM produces a succinct proof of authorization that edge devices can verify efficiently, extending the zero-trust security envelope to the edge. Policies and identity management schemes can evolve without updating edge devices. To demonstrate the feasibility of Prezta, we implement a prototype, built using the RISC Zero zkVM, that supports XACML 3.0 policies and JWT identity claims. While zkVMs introduce substantial proof overhead, we mitigate this by compiling policies to Rust code and pre-compiling regular expressions. Combined with optimized signature verification and JWT parsing, these measures reduce prover time by more than an order of magnitude. Our compiler</summary>
+  </entry>
+  <entry>
+    <title>PVMark: Enabling Public Verifiability for LLM Watermarking Schemes</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/duan"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/duan</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Haohua Duan, Liyao Xiang, Xin Zhang, Baochun Li, Bo Li
+
+Watermarking schemes for large language models (LLMs) have been proposed to identify the source of the generated text. However, current watermarking solutions hardly resolve the trust issue: the watermark detection often relies on the secret key and thus remains opaque to the public; otherwise any adversary may launch removal attacks if the secret key is exposed. To resolve the dilemma, we propose PVMark, a plugin based on zero-knowledge proof (ZKP), enabling the watermark detection process to be publicly verifiable by third parties without disclosing any secret key. PVMark novelly hinges upon the proof of `correct execution' of watermark detection on which a set of constraints are built, and is optimized according to the structural nature of the detection process. Developed for three representative watermarking schemes, we implement multiple variants of PVMark in Python, Rust and Circom, covering combinations of three hash functions and four ZKP protocols, showing our approach effectively works under a variety of circumstances. By experimental results, PVMark efficiently enables public verifiability on the state-of-the-art LLM watermarking schemes yet without compromising the watermarking performance, and hence is promising for practical deployment.</summary>
+  </entry>
+  <entry>
+    <title>SafeFFI: Efficient Sanitization at the Boundary Between Safe and Unsafe Code in Rust and Mixed-Language Applications</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/braunsdorf"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/braunsdorf</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Oliver Braunsdorf, Tim Lange, Konrad Hohentanner, Julian Horsch, Johannes Kinder
+
+Unsafe Rust code is necessary for interoperability with C/C++ libraries and implementing low-level data structures, but it can cause memory safety violations in otherwise memory-safe Rust programs. Sanitizers can catch such memory errors at run time, but introduce many unnecessary checks even for memory accesses guaranteed safe by the Rust type system. We introduce SafeFFI, a system for optimizing memory safety instrumentation in Rust binaries such that checks occur at the boundary between unsafe and safe code, handing over the enforcement of memory safety from the sanitizer to the Rust type system. Unlike previous approaches, our design avoids expensive whole-program analysis; hence, it incurs significantly less compile-time overhead (2.01× compared to over 5.91×). On a collection of popular Rust crates, SafeFFI reduces sanitizer checks by up to 79.63%, while still detecting all memory safety violations in our dataset of known vulnerable Rust code.</summary>
+  </entry>
+  <entry>
+    <title>sigma-rs: A Modular Approach for Keyed-Verification Anonymous Credentials</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/orru"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/orru</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Michele Orrù, Lindsey Tulloch, Victor Snyder-Graf, Ian Goldberg
+
+We introduce a new software stack in Rust aimed at simplifying constructions and deployments of protocols based on modern anonymous credential systems. The stack, called sigma-rs, through its layered design, abstracts cryptographic complexity while remaining flexible enough to support a range of credential schemes, proofs, and access policies. It emphasizes misuse resistance via type safety, domain separation, and prover-state discipline, and supports side-channel-aware constant-time strategies. We evaluate practicality through re-implementations of Tor's Lox bridge distribution protocols and of user authentication in the Open Observatory for Network Interference.</summary>
+  </entry>
+  <entry>
+    <title>Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks</title>
+    <link href="https://doi.org/10.1145/3719027.3765142"/>
+    <id>https://doi.org/10.1145/3719027.3765142</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Zeyang Zhuang, Zilun Wang, Wei Meng, Michael Rung-Tsong Lyu
+
+Rust has been extensively used in software and system development due to its guarantees for memory and concurrency safety. Fuzzing is a popular bug detection technique for examining the correctness and robustness of programs. However, we identify that current state-of-the-art Rust fuzzers are significantly impeded by the ubiquitous presence of Rust runtime safety checks, resulting in poor effectiveness and efficiency. These checks, which are inserted either implicitly by the compiler or explicitly by the compiler or developers, could cause a high number of panic crashes and early program termination in fuzzing. Consequently, current fuzzers are unable to effectively explore deep code behind the runtime safety checks, leaving potential vulnerabilities undetected.</summary>
+  </entry>
+  <entry>
+    <title>Formal Security and Functional Verification of Cryptographic Protocol Implementations in Rust</title>
+    <link href="https://doi.org/10.1145/3719027.3765213"/>
+    <id>https://doi.org/10.1145/3719027.3765213</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Karthikeyan Bhargavan, Lasse Letager Hansen, Franziskus Kiefer, Jonas Schneider-Bensch, Bas Spitters
+
+We present an effective methodology for the formal verification of practical cryptographic protocol implementations written in Rust. Within a single proof framework, we show how to develop machine-checked proofs of diverse properties like runtime safety, parsing correctness, and cryptographic protocol security. All analysis tasks are driven by the software developer who writes annotations in the Rust source code and chooses a backend prover for each task, ranging from a generic proof assistant like F* to dedicated crypto-oriented provers like ProVerif and SSProve Our main contribution is a demonstration of this methodology on Bert13, a portable, post-quantum implementation of TLS 1.3 written in Rust and verified both for security and functional correctness. To our knowledge, this is the first security verification result for a protocol implementation written in Rust, and the first verified post-quantum TLS 1.3 library.</summary>
+  </entry>
+  <entry>
+    <title>Securing Mixed Rust with Hardware Capabilities</title>
+    <link href="https://doi.org/10.1145/3719027.3744861"/>
+    <id>https://doi.org/10.1145/3719027.3744861</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Jason Zhijingcheng Yu, Fangqi Han, Kaustab Choudhury, Trevor E. Carlson, Prateek Saxena
+
+The Rust programming language enforces three basic Rust principles, namely ownership, borrowing, and AXM (Aliasing Xor Mutability) to prevent security bugs such as memory safety violations and data races. However, Rust projects often have mixed code, i.e., code that also uses unsafe Rust, FFI (Foreign Function Interfaces), and inline assembly for low-level control. The Rust compiler is unable to statically enforce Rust principles in mixed Rust code which can lead to many security vulnerabilities. In this paper, we propose CapsLock, a security enforcement mechanism that can run at the level of machine code and detect Rust principle violations at run-time in mixed code. CapsLock is kept simple enough to be implemented into recent capability-based hardware abstractions that provide low-cost spatial memory safety. CapsLock introduces a novel revoke-on-use abstraction for capability-based designs, wherein accessing a memory object via a capability implicitly invalidates certain other capabilities pointing to it, thereby also providing temporal memory safety automatically, without requiring software to explicitly specify such invalidation. Thus, CapsLock is the first mechanism capable of providing cross-language enforcement of Rust principles. We implemented a prototype of CapsLock on QEMU. Evaluation results show that CapsLock is highly compatible with existing Rust code (passing 99.7% of the built-in test cases of the 100 most popular crates) and flags Rust principle violations i</summary>
+  </entry>
+  <entry>
+    <title>A Study of Undefined Behavior Across Foreign Function Boundaries in Rust Libraries</title>
+    <link href="https://doi.org/10.1109/icse55347.2025.00167"/>
+    <id>https://doi.org/10.1109/icse55347.2025.00167</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2025"/>
+    <summary>ICSE 2025 — Ian McCormack, Joshua Sunshine, Jonathan Aldrich
+
+Developers rely on the static safety guarantees of the Rust programming language to write secure and performant applications. However, Rust is frequently used to interoperate with other languages which allow design patterns that conflict with Rust's evolving aliasing models. Miri is currently the only dynamic analysis tool that can validate applications against these models, but it does not support finding bugs in foreign functions, indicating that there may be a critical correctness gap across the Rust ecosystem. We conducted a large-scale evaluation of Rust libraries that call foreign functions to determine whether Miri's dynamic analyses remain useful in this context. We used Miri and an LLVM interpreter to jointly execute applications that call foreign functions, where we found 46 instances of undefined or undesired behavior in 37 libraries. Three bugs were found in libraries that had more than 10,000 daily downloads on average during our observation period, and one was found in a library maintained by the Rust Project. Many of these bugs were violations of Rust's aliasing models, but the latest Tree Borrows model was significantly more permissive than the earlier Stacked Borrows model. The Rust community must invest in new, production-ready tooling for multi-language applications to ensure that developers can detect these errors.</summary>
+  </entry>
+  <entry>
+    <title>Clozemaster: Fuzzing Rust Compiler by Harnessing Llms for Infilling Masked Real Programs</title>
+    <link href="https://doi.org/10.1109/icse55347.2025.00175"/>
+    <id>https://doi.org/10.1109/icse55347.2025.00175</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2025"/>
+    <summary>ICSE 2025 — Hongyan Gao, Yibiao Yang, Maolin Sun, Jiangchang Wu, Yuming Zhou, Baowen Xu
+
+Ensuring the reliability of the Rust compiler is of paramount importance, given increasing adoption of Rust for critical systems development, due to its emphasis on memory and thread safety. However, generating valid test programs for the Rust compiler poses significant challenges, given Rust's complex syntax and strict requirements. With the growing popularity of large language models (LLMs), much research in software testing has explored using LLMs to generate test cases. Still, directly using LLMs to generate Rust programs often results in a large number of invalid test cases. Existing studies have indicated that test cases triggering historical compiler bugs can assist in software testing. Our investigation into Rust compiler bug issues supports this observation. Inspired by existing work and our empirical research, we introduce a bracket-based masking and filling strategy called clozeMask. The clozeMask strategy involves extracting test code from historical issue reports, identifying and masking code snippets with specific structures, and using an LLM to fill in the masked portions for synthesizing new test programs. This approach harnesses the generative capabilities of LLMs while retaining the ability to trigger Rust compiler bugs. It enables comprehensive testing of the compiler's behavior, particularly exploring edge cases. We implemented our approach as a prototype ClozeMaster. ClozeMaster has identified 27 confirmed bugs for rustc and mrustc, of which 10 have been </summary>
+  </entry>
+  <entry>
+    <title>GenC2Rust: Towards Generating Generic Rust Code from C</title>
+    <link href="https://doi.org/10.1109/icse55347.2025.00127"/>
+    <id>https://doi.org/10.1109/icse55347.2025.00127</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2025"/>
+    <summary>ICSE 2025 — Xiafa Wu, Brian Charles Demsky
+
+Rust provides an exciting combination of strong safety guarantees and high performance. Many new systems are being implemented in Rust. Nevertheless, there is a large body of existing C code that could greatly benefit from Rust's safety guarantees. Unfortunately, the manual effort required to rewrite C code into Rust is often prohibitively expensive. Researchers have explored tools to assist developers in trans-lating legacy C code into Rust code. However, the mismatch between C abstractions and idiomatic Rust abstractions makes it challenging to automatically utilize Rust's language features, resulting in non-idiomatic Rust code that requires extensive manual effort to further refactor. For example, existing tools often fail to map polymorphic uses of void pointers in C to Rust's generic pointers. In this paper, we present a translation tool, GenC2Rust, that translates non-generic C code into generic Rust code. GenC2Rust statically analyzes the use of void pointers in the C program to compute the typing constraints and then retypes the parametric polymorphic void pointers into generic pointers. We conducted an evaluation of GenC2Rust across 42 C programs that vary in size and span multiple domains to demonstrate its scalability as well as correctness. We discovered GenC2Rust has translated 4,572 void pointers to use generics. We also discuss the limiting factors encountered in the translation process.</summary>
+  </entry>
+  <entry>
+    <title>Rug: Turbo Llm for Rust Unit Test Generation</title>
+    <link href="https://doi.org/10.1109/icse55347.2025.00097"/>
+    <id>https://doi.org/10.1109/icse55347.2025.00097</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2025"/>
+    <summary>ICSE 2025 — Xiang Chao Cheng, Fan Sang, Yizhuo Zhai, Xiaokuan Zhang, Taesoo Kim
+
+Unit testing improves software quality by evaluating isolated sections of the program. This approach alleviates the need for comprehensive program-wide testing and confines the potential error scope within the software. However, unit test development is time-consuming, requiring developers to create appropriate test contexts and determine input values to cover different code regions. This problem is particularly pronounced in Rust due to its intricate type system, making traditional unit test generation tools ineffective in Rust projects. Recently, large language models (LLMs) have demonstrated their proficiency in understanding programming language and completing software engineering tasks. However, merely prompting LLMs with a basic prompt like “generate unit test for the following source code” often results in code with compilation errors. In addition, LLM-generated unit tests often have limited test coverage. To bridge this gap and harness the capabilities of LLM, we design and implement RUG, an end-to-end solution to automatically generate the unit test for Rust projects. To help LLM's generated test pass Rust strict compilation checks, RUG designs a semantic-aware bottom-up approach to divide the context construction problem into dependent sub-problems. It solves these sub-problems sequentially using an LLM and merges them to a complete context. To increase test coverage, RUG integrates coverage-guided fuzzing with LLM to prepare fuzzing harnesses. Applying RUG on 17 re</summary>
+  </entry>
+  <entry>
+    <title>RustAssistant: Using LLMs to Fix Compilation Errors in Rust Code</title>
+    <link href="https://doi.org/10.1109/icse55347.2025.00022"/>
+    <id>https://doi.org/10.1109/icse55347.2025.00022</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2025"/>
+    <summary>ICSE 2025 — Pantazis Deligiannis, Akash Lal, Nikita Mehrotra, Rishi Poddar, Aseem Rastogi
+
+The Rust programming language, with its safety guarantees, has established itself as a viable choice for low-level systems programming language over the traditional, unsafe alternatives like C/C++. These guarantees come from a strong ownership-based type system, as well as primitive support for features like closures, pattern matching, etc., that make the code more concise and amenable to reasoning. These unique Rust features also pose a steep learning curve for programmers. This paper presents a tool called RustAssistant that leverages the emergent capabilities of Large Language Models (LLMs) to automatically suggest fixes for Rust compilation errors. RustAssistant uses a careful combination of prompting techniques as well as iteration between an LLM and the Rust compiler to deliver high accuracy of fixes. RustAssistant is able to achieve an impressive peak accuracy of roughly 74% on real-world compilation errors in popular open-source Rust repositories. We also contribute a dataset of Rust compilation errors to enable further research.</summary>
+  </entry>
+  <entry>
+    <title>Translating C To Rust: Lessons from a User Study</title>
+    <link href="https://doi.org/10.14722/ndss.2025.241407"/>
+    <id>https://doi.org/10.14722/ndss.2025.241407</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2025"/>
+    <summary>NDSS 2025 — Ruishi Li, Bo Wang, Tianyu Li, Prateek Saxena, Ashish Kundu
+
+Rust aims to offer full memory safety for programs, a guarantee that untamed C programs do not enjoy.How difficult is it to translate existing C code to Rust?To get a complementary view from that of automatic C to Rust translators, we report on a user study asking humans to translate real-world C programs to Rust.Our participants are able to produce safe Rust translations, whereas state-of-the-art automatic tools are not able to do so.Our analysis highlights that the high-level strategy taken by users departs significantly from those of automatic tools we study.We also find that users often choose zero-cost (static) abstractions for temporal safety, which addresses a predominant component of runtime costs in other full memory safety defenses.User-provided translations showcase a rich landscape of specialized strategies to translate the same C program in different ways to safe Rust, which future automatic translators can consider.</summary>
+  </entry>
+  <entry>
+    <title>Building Bridges: Safe Interactions with Foreign Languages through Omniglot</title>
+    <link href="https://www.usenix.org/conference/osdi25/presentation/schuermann"/>
+    <id>https://www.usenix.org/conference/osdi25/presentation/schuermann</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2025"/>
+    <summary>OSDI 2025 — Leon Schuermann, Jack Toubes, Tyler Potyondy, Pat Pannuto, Mae Milano, Amit Levy
+
+Memory- and type-safe languages promise to eliminate entire classes of systems vulnerabilities by construction. In practice, though, even clean-slate systems often need to incorporate libraries written in other languages with fewer safety guarantees. Because these interactions threaten the soundness of safe languages, they can reintroduce the exact vulnerabilities that safe languages prevent in the first place. This paper presents Omniglot: the first framework to efficiently uphold safety and soundness of Rust in the presence of unmodified and untrusted foreign libraries. Omniglot facilitates interactions with foreign code by integrating with a memory isolation primitive and validation infrastructure, and avoids expensive operations such as copying or serialization. We implement Omniglot for two systems: we use it to integrate kernel components in a highly-constrained embedded operating system kernel, as well as to interface with conventional Linux userspace libraries. Omniglot performs comparably to approaches that deliver weaker guarantees and significantly better than those with similar safety guarantees.</summary>
+  </entry>
+  <entry>
+    <title>Paralegal: Practical Static Analysis for Privacy Bugs</title>
+    <link href="https://www.usenix.org/conference/osdi25/presentation/adam"/>
+    <id>https://www.usenix.org/conference/osdi25/presentation/adam</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2025"/>
+    <summary>OSDI 2025 — Justus Adam, Carolyn Zech, Livia Zhu, Sreshtaa Rajesh, Nathan Harbison, Mithi Jethwa, Will Crichton, Shriram Krishnamurthi
+
+Finding privacy bugs in software today usually requires onerous manual audits. Code analysis tools could help, but existing tools aren’t sufficiently practical and ergonomic to be used. Paralegal is a static analysis tool to find privacy bugs in Rust programs. Key to Paralegal’s practicality is its distribution of work between the program analyzer, privacy engineers, and application developers. Privacy engineers express a high-level privacy policy over markers, which application developers then apply to source code entities. Paralegal extracts a Program Dependence Graph (PDG) from the program, leveraging Rust’s ownership type system to model the behavior of library code. Paralegal augments the PDG with the developers’ markers and checks privacy policies against the marked PDG. In an evaluation on eight real-world applications, Paralegal found real privacy bugs, including two previously unknown ones. Paralegal supports a broader range of policies than information flow control (IFC) and CodeQL, a widely-used code analysis engine. Paralegal is fast enough to deploy interactively, and its markers are easy to maintain as code evolves.</summary>
+  </entry>
+  <entry>
+    <title>Atmosphere: Practical Verified Kernels with Rust and Verus</title>
+    <link href="https://doi.org/10.1145/3731569.3764821"/>
+    <id>https://doi.org/10.1145/3731569.3764821</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2025"/>
+    <summary>SOSP 2025 — Xiangdong Chen, Zhaofeng Li, Jerry Zhang, Vikram Narayanan, Anton Burtsev
+
+Recent advances in programming languages and automated formal reasoning have changed the balance between the complexity and practicality of developing formally verified systems. Our work leverages Verus, a new verifier for Rust that combines ideas of linear types, permissioned reasoning, and automated verification based on satisfiability modulo theories (SMT), for the development of a formally verified microkernel, Atmosphere.</summary>
+  </entry>
+  <entry>
+    <title>Quilt: Resource-aware Merging of Serverless Workflows</title>
+    <link href="https://doi.org/10.1145/3731569.3764830"/>
+    <id>https://doi.org/10.1145/3731569.3764830</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2025"/>
+    <summary>SOSP 2025 — Yuxuan Zhang, Sebastian Angel
+
+This paper describes Quilt, a serverless optimizer that automatically merges workflows that consist of many functions (possibly in different languages) into one process thereby avoiding high invocation latency, communication overhead, and long chains of cold starts. Instead of merging all functions, Quilt takes into account the provider's resource constraints to decide which functions to merge. Quilt is compatible with existing platforms without modification (Fission, OpenWhisk, and OpenFaaS), can merge functions in different languages (C, C++, Swift, Go, Rust) by acting at the level of LLVM IR, and requires no input or help from developers. Our evaluation shows that Quilt improves median workflow completion time by 45.63%–70.95% and throughput by 2.05×–12.87×.</summary>
+  </entry>
+  <entry>
+    <title>TickTock: Verified Isolation in a Production Embedded OS</title>
+    <link href="https://doi.org/10.1145/3731569.3764856"/>
+    <id>https://doi.org/10.1145/3731569.3764856</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2025"/>
+    <summary>SOSP 2025 — Vivien Rindisbacher, Evan Johnson, Nico Lehmann, Tyler Potyondy, Pat Pannuto, Stefan Savage, Deian Stefan, Ranjit Jhala
+
+We present a case study formally verifying process isolation in the Tock production microcontroller OS kernel. Tock combines hardware memory protection units and language-level techniques—by writing the kernel in Rust—to enforce isolation between user and kernel code. Our effort to verify Tock's process abstraction unearthed multiple, subtle bugs that broke isolation—many allowing malicious applications to compromise the whole OS. We describe this effort and TickTock, our fork of the Tock operating system kernel that eliminates isolation bugs by construction. TickTock uses Flux, an SMT-based Rust verifier, to formally specify and verify process isolation for all ARMv7-M platforms Tock supports and for three RISC-V 32-bit platforms. Our verification-guided design and implementation led to a new, granular process abstraction that is simpler than Tock's, has formal security guarantees (that are verified in half a minute), and outperforms Tock on certain critical code paths.</summary>
+  </entry>
+  <entry>
+    <title>Smaug: Modular Augmentation of LLVM for MPC</title>
+    <link href="https://doi.org/10.1109/sp61157.2025.00188"/>
+    <id>https://doi.org/10.1109/sp61157.2025.00188</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2025"/>
+    <summary>S&amp;P 2025 — Radhika Garg, Xiao Wang
+
+Secure multi-party computation (MPC) is a crucial tool for privacy-preserving computation, but it is getting in-creasingly complicated due to recent advancements and opti-mizations. Programming tools for MPC allow programmers to develop MPC applications without mastering all cryptography. However, most existing MPC programming tools fail to attract real users due to the lack of documentation, maintenance, and the ability to compose with legacy codebases. In this work, we build Smaug, a modular extension of LLVM. Smaug seamlessly brings all LLVM support to MPC programmers, including error messaging, documentation, code optimization, and frontend support to compile from various languages to LLVM intermediate representation (IR). Smaug can efficiently convert non-oblivious LLVM IR to their oblivious counterparts while applying popular optimizations as LLVM code trans-formations. With benchmarks written in C++ and Rust and backends for Yao and GMW protocols, we observe that Smaug performs as well as (and sometimes much better than) prior tools using domain-specific languages with similar backends. Finally, we use Smaug to compile open-source projects that implement Minesweeper and Blackjack, producing usable two-party games with ease.</summary>
+  </entry>
+  <entry>
+    <title>A Tale of Two Worlds, a Formal Story of WireGuard Hybridization</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity25/presentation/lafourcade"/>
+    <id>https://www.usenix.org/conference/usenixsecurity25/presentation/lafourcade</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2025"/>
+    <summary>USENIX Sec 2025 — Pascal Lafourcade, Dhekra Mahmoud, Sylvain Ruhault, Abdul Rahman Taleb
+
+PQ-WireGuard is a post-quantum variant of WireGuard Virtual Private Network, where Diffie-Hellman-based key exchange is replaced by post-quantum Key Encapsulation Mechanisms-based key exchange. In this paper, we first conduct a thorough formal analysis of PQ-WireGuard's original design, in which we point out and fix a number of weaknesses. This leads us to a new construction PQ-WireGuard^star. Secondly, we propose and formally analyze a new protocol, based on both WireGuard and PQ-WireGuardstar, named Hybrid-WireGuard, compliant with current best practices for post-quantum transition about hybridization techniques. For our analysis, we use the SAPIC+ framework that enables the generation of three state-of-the-art protocol models for the verification tools ProVerif, DeepSec and Tamarin from a single specification, leveraging the strengths of each tool. We formally prove that Hybrid-WireGuard is secure. Eventually, we propose a generic, efficient and usable Rust implementation of our new protocol.</summary>
+  </entry>
+  <entry>
+    <title>EKC: A Portable and Extensible Kernel Compartment for De-Privileging Commodity OS</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity25/presentation/yan-jiaqin"/>
+    <id>https://www.usenix.org/conference/usenixsecurity25/presentation/yan-jiaqin</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2025"/>
+    <summary>USENIX Sec 2025 — Jiaqin Yan, Qiujiang Chen, Shuai Zhou, Yuke Peng, Guoxing Chen, Yinqian Zhang
+
+Kernel compartmentalization through privilege separation is an effective solution for reducing the trusted computing base of modern operating systems (OS) with monolithic kernels. However, existing approaches to kernel compartmentalization often depend on higher-privileged software or platform-specific hardware features, posing challenges to their portable deployment and practical application. In this paper, we propose Embedded Kernel Compartment (EKC), a kernel compartment that embeds itself to a commodity OS as a privileged, isolated compartment. EKC is both portable across multiple ISAs without hardware modification and extensible to multiple OSes, even those developed in different languages. Moreover, EKC can serve both kernel components and user-space applications, enabling security critical tasks and providing sensitive data storage. We implemented a prototype of EKC in Rust, which has been successfully ported to run on multiple ISAs (RISC-V and ARM) and extended to be compatible with various OS kernels (FreeRTOS, rCore, and TinyLinux) with additional security services. Through comprehensive analysis and evaluation, the results demonstrate that EKC is a practical and effective solution for kernel compartmentalization.</summary>
+  </entry>
+  <entry>
+    <title>OwlC: Compiling Security Protocols to Verified, Secure, High-Performance Libraries</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity25/presentation/singh"/>
+    <id>https://www.usenix.org/conference/usenixsecurity25/presentation/singh</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2025"/>
+    <summary>USENIX Sec 2025 — Pratap Singh, Joshua Gancher, Bryan Parno
+
+Cryptographic security protocols, such as TLS or WireGuard, form the foundation of a secure Internet; hence, a long line of research has shown how to formally verify their high-level designs. Unfortunately, these formal guarantees have not yet reached real-world implementations of these protocols, which still rely on testing and ad-hoc manual audits for security and correctness. This gap may be explained, in part, by the substantial performance and/or development overhead imposed by prior efforts to verify implementations. To make it more practical to deploy verified implementations of security protocols, we present OwlC, the first fully automated , security-preserving compiler for verified, high-performance implementations of security protocols. From a high-level protocol specification proven computationally secure in the Owl language, OwlC emits an efficient, interoperable, side-channel resistant Rust library that is automatically formally verified to be correct. We produce verified libraries for all previously written Owl protocols, and we also evaluate OwlC on two new verified case studies: WireGuard and Hybrid Public-Key Encryption (HPKE). Our verified implementations interoperate with existing implementations, and their performance matches unverified industrial baselines on end-to-end benchmarks.</summary>
+  </entry>
+  <entry>
+    <title>Recover from Excessive Faults in Partially-Synchronous BFT SMR</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity25/presentation/gong-tiantian"/>
+    <id>https://www.usenix.org/conference/usenixsecurity25/presentation/gong-tiantian</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2025"/>
+    <summary>USENIX Sec 2025 — Tiantian Gong, Gustavo Franco Camilo, Kartik Nayak, Andrew Lewis-Pye, Aniket Kate
+
+Byzantine fault-tolerant (BFT) state machine replication (SMR) protocols form the basis of modern blockchains as they maintain a consistent state across all blockchain nodes while tolerating a bounded number of Byzantine faults. We analyze BFT SMR in the excessive fault setting where the actual number of Byzantine faults surpasses a protocol's tolerance. We start by devising the very first repair algorithm for linearly chained and quorum-based partially synchronous SMR to recover from faulty states caused by excessive faults. Such a procedure can be realized using any commission fault detection module—an algorithm that identifies the faulty replicas without falsely locating any correct replica. We achieve this with a slightly weaker liveness guarantee, as the original security notion is impossible to satisfy given excessive faults. We implement recoverable HotStuff in Rust. The throughput resumes to the normal level (without excessive faults) after recovery routines terminate for 7 replicas and is slightly reduced by leq 4.3% for 30 replicas. On average, it increases the latency by 12.87% for 7 replicas and 8.85% for 30 replicas. Aside from adopting existing detection modules, we also establish the sufficient condition for a general BFT SMR protocol to allow for complete and sound fault detection when up to (n-2) Byzantine replicas (out of n total replicas) attack safety. We start by providing the first closed-box fault detection algorithm for any SMR protocol without any ext</summary>
+  </entry>
+  <entry>
+    <title>Towards Practical, End-to-End Formally Verified X.509 Certificate Validators with Verdict</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity25/presentation/lin-zhengyao"/>
+    <id>https://www.usenix.org/conference/usenixsecurity25/presentation/lin-zhengyao</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2025"/>
+    <summary>USENIX Sec 2025 — Zhengyao Lin, Michael McLoughlin, Pratap Singh, Rory Brennan-Jones, Paul Hitchcox, Joshua Gancher, Bryan Parno
+
+Validating X.509 certificates is a critical part of Internet security, but the relevant standards are complex and ambiguous. Most X.509 validators also intentionally deviate from these standards in idiosyncratic ways, often for security or backward compatibility. Unsurprisingly, the result is a long history of security vulnerabilities. In this work, we present Verdict, the first end-to-end formally verified X.509 certificate validator with customizable validation policies. Verdict's formal guarantees cover certificate parsing, path building, and path validation. To make Verdict practical to both verify and to use, we specify its correctness generically in terms of a user-supplied validation policy written concisely in first-order logic, with a proof-producing compiler to efficient Rust code. To demonstrate Verdict's expressiveness, we use Verdict's policy framework to implement the X.509 validation policies in Google Chrome, Mozilla Firefox, and OpenSSL, and formally prove that they conform to a subset of RFC requirements. We instantiate Verdict with each policy and show that Verdict matches the corresponding baseline's behavior and state-of-the-art performance on over ten million certificates from Certificate Transparency logs.</summary>
+  </entry>
+  <entry>
+    <title>TYPEPULSE: Detecting Type Confusion Bugs in Rust Programs</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity25/presentation/chen-hung-mao"/>
+    <id>https://www.usenix.org/conference/usenixsecurity25/presentation/chen-hung-mao</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2025"/>
+    <summary>USENIX Sec 2025 — Hung-Mao Chen, Xu He, Shu Wang, Xiaokuan Zhang, Kun Sun
+
+Rust supports type conversions and safe Rust guarantees the security of these conversions through robust static type checking and strict ownership guidelines. However, there are instances where programmers need to use unsafe Rust for certain type conversions, especially those involving pointers. Consequently, these conversions may cause severe memory corruption problems. Despite extensive research on type confusion bugs in C/C++, studies on type confusion bugs in Rust are still lacking. Also, due to Rust's new features in the type system, existing solutions in C/C++ cannot be directly applied to Rust. In this paper, we develop a static analysis tool called TYPEPULSE to detect three main categories of type confusion bugs in Rust including misalignment, inconsistent layout, and mismatched scope. TYPEPULSE first performs a type conversion analysis to collect and determine trait bounds for type pairs. Moreover, it performs a pointer alias analysis to resolve the alias relationship of pointers. Following the integration of information into the property graph, it constructs type patterns and detects each type of bug in various conversion scenarios. We run TYPEPULSE on the top 3,000 Rust packages and uncover 71 new type confusion bugs, exceeding the total number of type confusion bugs reported in RUSTSEC over the past five years. We have received 32 confirmations from developers, along with one CVE ID and six RUSTSEC IDs.</summary>
+  </entry>
+  <entry>
+    <title>Vest: Verified, Secure, High-Performance Parsing and Serialization for Rust</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity25/presentation/cai-yi"/>
+    <id>https://www.usenix.org/conference/usenixsecurity25/presentation/cai-yi</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2025"/>
+    <summary>USENIX Sec 2025 — Yi Cai, Pratap Singh, Zhengyao Lin, Jay Bosamiya, Joshua Gancher, Milijana Surbatovich, Bryan Parno
+
+Many software vulnerabilities lurk in parsers and serializers, due to their need to be both high-performance and conformant with complex binary formats. To categorically eliminate these vulnerabilities, prior efforts have sought to deliver provable guarantees for parsing and serialization. Unfortunately, security, performance, and usability issues with these efforts mean that unverified parsers and serializers remain the status quo. Hence, we present Vest, the first framework for high-performance, formally verified binary parsers and serializers that combines expressivity and ease of use with state-of-the-art correctness and security guarantees, including—for the first time—resistance to basic digital side-channel attacks. Most developers interact with Vest by defining their binary format in an expressive, RFC-like DSL. Vest then generates and automatically verifies high-performance parser and serializer implementations in Rust. This process relies on an extensible library of verified parser/serializer combinators we have developed, and that expert developers can use directly. We evaluate Vest via three case studies: the Bitcoin block format, TLS 1.3 handshake messages, and the WebAssembly binary format. We show that Vest has executable performance on-par (or better) than hand-written, unverified parsers and serializers, and has orders of magnitude better verification performance relative to comparable prior work.</summary>
+  </entry>
+  <entry>
+    <title>Rust for Embedded Systems: Current State and Open Problems</title>
+    <link href="https://doi.org/10.1145/3658644.3690275"/>
+    <id>https://doi.org/10.1145/3658644.3690275</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2024"/>
+    <summary>CCS 2024 — Ayushi Sharma, Shashank Sharma, Sai Ritvik Tanksalkar, Santiago Torres-Arias, Aravind Machiry
+
+</summary>
+  </entry>
+  <entry>
+    <title>Symbolic Execution for Dynamic Kernel Analysis</title>
+    <link href="https://doi.org/10.1145/3658644.3690860"/>
+    <id>https://doi.org/10.1145/3658644.3690860</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2024"/>
+    <summary>CCS 2024 — Pansilu Pitigalaarachchi
+
+Linux kernel-based operating systems have a significant market share in the domains of enterprise/web servers, supercomputers, and mobile devices. Being a large open-source project, the Linux kernel undergoes many changes, with new functionalities (e.g. Support for Rust in the kernel) being added in each release. While the security analysis of the Linux kernel is of critical importance, it is a challenging task. Although symbolic execution based techniques have been used for kernel analysis in the past decade, existing tools have fundamental limitations in kernel thread analysis, such as the need for instrumentation of the target kernel and the lack of user control, command, and access to the target execution. This dissertation aims to address these limitations by proposing a new kernel symbolic execution engine for kernel thread analysis. We then intend to leverage the new engine to conduct a security analysis of Rust drivers written for the Linux kernel. As part of the analysis, we will perform symbolic execution on Rust drivers, detect bugs, and evaluate whether the integration of Rust drivers with the rest of the kernel, written in C, results in any security vulnerabilities.</summary>
+  </entry>
+  <entry>
+    <title>Demystifying Compiler Unstable Feature Usage and Impacts in the Rust Ecosystem</title>
+    <link href="https://doi.org/10.1145/3597503.3623352"/>
+    <id>https://doi.org/10.1145/3597503.3623352</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2024"/>
+    <summary>ICSE 2024 — Chenghao Li, Yifei Wu, Wenbo Shen, Zichen Zhao, Rui Chang, Chengwei Liu, Yang Liu, Kui Ren
+
+Rust programming language is gaining popularity rapidly in building reliable and secure systems due to its security guarantees and outstanding performance. To provide extra functionalities, the Rust compiler introduces Rust unstable features (RUF) to extend compiler functionality, syntax, and standard library support. However, these features are unstable and may get removed, introducing compilation failures to dependent packages. Even worse, their impacts propagate through transitive dependencies, causing large-scale failures in the whole ecosystem. Although RUF is widely used in Rust, previous research has primarily concentrated on Rust code safety, with the usage and impacts of RUF from the Rust compiler remaining unexplored. Therefore, we aim to bridge this gap by systematically analyzing the RUF usage and impacts in the Rust ecosystem. We propose novel techniques for extracting RUF precisely, and to assess its impact on the entire ecosystem quantitatively, we accurately resolve package dependencies. We have analyzed the whole Rust ecosystem with 590K package versions and 140M transitive dependencies. Our study shows that the Rust ecosystem uses 1000 different RUF, and at most 44% of package versions are affected by RUF, causing compiling failures for at most 12% of package versions. To mitigate wide RUF impacts, we further design and implement a RUF-compilation-failure recovery tool that can recover up to 90% of the failure. We believe our techniques, findings, and tools </summary>
+  </entry>
+  <entry>
+    <title>How Are Paid and Volunteer Open Source Developers Different? A Study of the Rust Project</title>
+    <link href="https://doi.org/10.1145/3597503.3639197"/>
+    <id>https://doi.org/10.1145/3597503.3639197</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2024"/>
+    <summary>ICSE 2024 — Yuxia Zhang, Mian Qin, Klaas-Jan Stol, Minghui Zhou, Hui Liu
+
+It is now commonplace for organizations to pay developers to work on specific open source software (OSS) projects to pursue their business goals. Such paid developers work alongside voluntary contributors, but given the different motivations of these two groups of developers, conflict may arise, which may pose a threat to a project's sustainability. This paper presents an empirical study of paid developers and volunteers in Rust, a popular open source programming language project. Rust is a particularly interesting case given considerable concerns about corporate participation. We compare volunteers and paid developers through contribution characteristics and long-term participation, and solicit volunteers' perceptions on paid developers. We find that core paid developers tend to contribute more frequently; commits contributed by onetime paid developers have bigger sizes; peripheral paid developers implement more features; and being paid plays a positive role in becoming a long-term contributor. We also find that volunteers do have some prejudices against paid developers. This study suggests that the dichotomous view of paid vs. volunteer developers is too simplistic and that further subgroups can be identified. Companies should become more sensitive to how they engage with OSS communities, in certain ways as suggested by this study.</summary>
+  </entry>
+  <entry>
+    <title>Is unsafe an Achilles' Heel? A Comprehensive Study of Safety Requirements in Unsafe Rust Programming</title>
+    <link href="https://doi.org/10.1145/3597503.3639136"/>
+    <id>https://doi.org/10.1145/3597503.3639136</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2024"/>
+    <summary>ICSE 2024 — Mohan Cui, Shuran Sun, Hui Xu, Yangfan Zhou
+
+Rust is an emerging, strongly-typed programming language focusing on efficiency and memory safety. With increasing projects adopting Rust, knowing how to use Unsafe Rust is crucial for Rust security. We observed that the description of safety requirements needs to be unified in Unsafe Rust programming. Current unsafe API documents in the standard library exhibited variations, including inconsistency and insufficiency. To enhance Rust security, we suggest unsafe API documents to list systematic descriptions of safety requirements for users to follow.</summary>
+  </entry>
+  <entry>
+    <title>RPG: Rust Library Fuzzing with Pool-based Fuzz Target Generation and Generic Support</title>
+    <link href="https://doi.org/10.1145/3597503.3639102"/>
+    <id>https://doi.org/10.1145/3597503.3639102</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2024"/>
+    <summary>ICSE 2024 — Zhiwu Xu, Bohao Wu, Cheng Wen, Bin Zhang, Shengchao Qin, Mengda He
+
+Rust libraries are ubiquitous in Rust-based software development. Guaranteeing their correctness and reliability requires thorough analysis and testing. Fuzzing is a popular bug-finding solution, yet it requires writing fuzz targets for libraries. Recently, some automatic fuzz target generation methods have been proposed. However, two challenges remain: (1) how to generate diverse API sequences that prioritize unsafe code and interactions to reveal bugs in Rust libraries; (2) how to provide support for the generic APIs and verify both syntactic and semantic validity of the fuzz targets to enable more comprehensive testing of Rust libraries. In this paper, we propose RPG, an automatic fuzz target synthesis technique to support Rust library fuzzing. RPG uses a pool-based search to generate diverse and unsafe API sequences, and synthesizes fuzz targets with generic support and validity check. The experimental results demonstrate that RPG enhances both the quality of the generated fuzz targets and the bug-finding ability through pool-based generation and generic support, substantially outperforming the state-of-the-art. Moreover, RPG has discovered 25 previously unknown bugs from 50 well-known Rust libraries available on Crates.io.</summary>
+  </entry>
+  <entry>
+    <title>Rust-lancet: Automated Ownership-Rule-Violation Fixing with Behavior Preservation</title>
+    <link href="https://doi.org/10.1145/3597503.3639103"/>
+    <id>https://doi.org/10.1145/3597503.3639103</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2024"/>
+    <summary>ICSE 2024 — Wenzhang Yang, Linhai Song, Yinxing Xue
+
+As a relatively new programming language, Rust is designed to provide both memory safety and runtime performance. To achieve this goal, Rust conducts rigorous static checks against its safety rules during compilation, effectively eliminating memory safety issues that plague C/C++ programs. Although useful, the safety rules pose programming challenges to Rust programmers, since programmers can easily violate safety rules when coding in Rust, leading their code to be rejected by the Rust compiler, a fact underscored by a recent user study. There exists a desire to automate the process of fixing safety-rule violations to enhance Rust's programmability.</summary>
+  </entry>
+  <entry>
+    <title>Semantic Analysis of Macro Usage for Portability</title>
+    <link href="https://doi.org/10.1145/3597503.3623323"/>
+    <id>https://doi.org/10.1145/3597503.3623323</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2024"/>
+    <summary>ICSE 2024 — Brent Pappas, Paul Gazzillo
+
+C is an unsafe language. Researchers have been developing tools to port C to safer languages such as Rust, Checked C, or Go. Existing tools, however, resort to preprocessing the source file first, then porting the resulting code, leaving barely recognizable code that loses macro abstractions. To preserve macro usage, porting tools need analyses that understand macro behavior to port to equivalent constructs. But macro semantics differ from typical functions, precluding simple syntactic transformations to port them. We introduce the first comprehensive framework for analyzing the portability of macro usage. We decompose macro behavior into 26 fine-grained properties and implement a program analysis tool, called Maki, that identifies them in real-world code with 94% accuracy. We apply Maki to 21 programs containing a total of 86,199 macro definitions. We found that real-world macros are much more portable than previously known. More than a third (37%) are easy-to-port, and Maki provides hints for porting more complicated macros. We find, on average, 2x more easy-to-port macros and up to 7x more in the best case compared to prior work. Guided by Maki's output, we found and hand-ported macros in three real-world programs. We submitted patches to Linux maintainers that transform eleven macros, nine of which have been accepted.</summary>
+  </entry>
+  <entry>
+    <title>Anvil: Verifying Liveness of Cluster Management Controllers</title>
+    <link href="https://www.usenix.org/conference/osdi24/presentation/sun-xudong"/>
+    <id>https://www.usenix.org/conference/osdi24/presentation/sun-xudong</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2024"/>
+    <summary>OSDI 2024 — Xudong Sun, Wenjie Ma, Jiawei Tyler Gu, Zicheng Ma, Tej Chajed, Jon Howell, Andrea Lattuada, Oded Padon
+
+Modern clouds depend crucially on an extensible ecosystem of thousands of controllers, each managing critical systems (e.g., a ZooKeeper cluster). A controller continuously reconciles the current state of the system to a desired state according to a declarative description. However, controllers have bugs that make them never achieve the desired state, due to concurrency, asynchrony, and failures; there are cases where after an inopportune failure, a controller can make no further progress. Formal verification is promising for avoiding bugs in distributed systems, but most work so far focused on safety, whereas reconciliation is fundamentally not a safety property. This paper develops the first tool to apply formal verification to the problem of controller correctness, with a general specification we call eventually stable reconciliation, written as a concise temporal logic liveness property. We present Anvil, a framework for developing controller implementations in Rust and verifying that the controllers correctly implement eventually stable reconciliation. We use Anvil to verify three Kubernetes controllers for managing ZooKeeper, RabbitMQ, and FluentBit, which can readily be deployed in Kubernetes platforms and are comparable in terms of features and performance to widely used unverified controllers.</summary>
+  </entry>
+  <entry>
+    <title>DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency</title>
+    <link href="https://www.usenix.org/conference/osdi24/presentation/ma-haoran"/>
+    <id>https://www.usenix.org/conference/osdi24/presentation/ma-haoran</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2024"/>
+    <summary>OSDI 2024 — Haoran Ma, Yifan Qiao, Shi Liu, Shan Yu, Yuanjiang Ni, Qingda Lu, Jiesheng Wu, Yiying Zhang
+
+Despite being a powerful concept, distributed shared memory (DSM) has not been made practical due to the extensive synchronization needed between servers to implement memory coherence. This paper shows a practical DSM implementation based on the insight that the ownership model embedded in programming languages such as Rust automatically constrains the order of read and write, providing opportunities for significantly simplifying the coherence implementation if the ownership semantics can be exposed to and leveraged by the runtime. This paper discusses the design and implementation of DRust, a Rust-based DSM system that outperforms the two state-of-the-art DSM systems GAM and Grappa by up to 2.64× and 29.16× in throughput, and scales much better with the number of servers.</summary>
+  </entry>
+  <entry>
+    <title>SquirrelFS: using the Rust compiler to check file-system crash consistency</title>
+    <link href="https://www.usenix.org/conference/osdi24/presentation/leblanc"/>
+    <id>https://www.usenix.org/conference/osdi24/presentation/leblanc</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2024"/>
+    <summary>OSDI 2024 — Hayley LeBlanc, Nathan Taylor, James Bornholt, Vijay Chidambaram
+
+This work introduces a new approach to building crash-safe file systems for persistent memory. We exploit the fact that Rust's typestate pattern allows compile-time enforcement of a specific order of operations. We introduce a novel crash-consistency mechanism, Synchronous Soft Updates, that boils down crash safety to enforcing ordering among updates to file-system metadata. We employ this approach to build SquirrelFS, a new file system with crash-consistency guarantees that are checked at compile time. SquirrelFS avoids the need for separate proofs, instead incorporating correctness guarantees into the typestate itself. Compiling SquirrelFS only takes tens of seconds; successful compilation indicates crash consistency, while an error provides a starting point for fixing the bug. We evaluate SquirrelFS against state of the art file systems such as NOVA and WineFS, and find that SquirrelFS achieves similar or better performance on a wide range of benchmarks and applications.</summary>
+  </entry>
+  <entry>
+    <title>VeriSMo: A Verified Security Module for Confidential VMs</title>
+    <link href="https://www.usenix.org/conference/osdi24/presentation/zhou"/>
+    <id>https://www.usenix.org/conference/osdi24/presentation/zhou</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2024"/>
+    <summary>OSDI 2024 — Ziqiao Zhou, Anjali, Weiteng Chen, Sishuai Gong, Chris Hawblitzel, Weidong Cui, Awarded Best Paper!
+
+Hardware vendors have introduced confidential VM architectures (e.g., AMD SEV-SNP, Intel TDX and Arm CCA) in recent years. They eliminate the trust in the hypervisor and lead to the need for security modules such as AMD Secure VMService Module (SVSM). These security modules aim to provide a guest with security features that previously were offered by the hypervisor. Since the security of such modules is critical, Rust is used to implement them for its known memory safety features. However, using Rust for implementation does not guarantee correctness, and the use of unsafe Rust compromises the memory safety guarantee. In this paper, we introduce VERISMO, the first verified security module for confidential VMs on AMD SEV-SNP. VERISMO is fully functional and provides security features such as code integrity, runtime measurement, and secret management. More importantly, as a Rust-based implementation, VERISMO is fully verified for functional correctness, secure information flow, and VM confidentiality and integrity. The key challenge in verifying VERISMO is that the untrusted hypervisor can interrupt VERISMO's execution and modify the hardware state at any time. We address this challenge by dividing verification into two layers. The upper layer handles the concurrent hypervisor execution, while the lower layer handles VERISMO's own concurrent execution. When compared with a C-based implementation, VERISMO achieves similar performance. When verifying VERISMO, we identified a subtl</summary>
+  </entry>
+  <entry>
+    <title>ERASan: Efficient Rust Address Sanitizer</title>
+    <link href="https://doi.org/10.1109/sp54263.2024.00258"/>
+    <id>https://doi.org/10.1109/sp54263.2024.00258</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2024"/>
+    <summary>S&amp;P 2024 — Jiun Min, Dongyeon Yu, Seongyun Jeong, Dokyung Song, Yuseok Jeon
+
+Rust is a rapidly growing system programming language that ensures a speed comparable to traditional C/C++ system programming languages, along with the additional benefit of guaranteed memory safety. However, Rust’s strict security rules make implementing and executing some features challenging. To address this, Rust has introduced unsafe Rust, which is less constrained by these strict rules. Nevertheless, these unsafe Rust, where strict Rust security rules are not fully applied, can cause temporal and spatial memory bugs that account for 22% of the Rust bugs reported between 2016 and 2023.In this paper, we propose an efficient address sanitizer design customized for Rust, called ERASan, to detect memory bugs in Rust programs more efficiently than prior work. Based on our thorough analysis of safe and unsafe Rust programming language standards as well as memory bugs found in real-world Rust programs over the past years, we design and implement ERASan to only instrument memory accesses in both safe and unsafe code areas where Rust cannot guarantee safety. We evaluate ERASan with several real-world applications. ERASan removes an average of 90.03% of ASan’s memory access checks. Due to this, ERASan significantly reduces ASan’s performance overhead by an average of 239.05% without harming its bug-finding ability.</summary>
+  </entry>
+  <entry>
+    <title>MetaSafe: Compiling for Protecting Smart Pointer Metadata to Ensure Safe Rust Integrity</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity24/presentation/kayondo"/>
+    <id>https://www.usenix.org/conference/usenixsecurity24/presentation/kayondo</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2024"/>
+    <summary>USENIX Sec 2024 — Martin Kayondo, Inyoung Bang, Yeongjun Kwak, Hyungon Moon, Yunheung Paek
+
+Rust is a programming language designed with a focus on memory safety. It introduces new concepts such as ownership and performs static bounds checks at compile time to ensure spatial and temporal memory safety. For memory operations or data types whose safety the compiler cannot prove at compile time, Rust either explicitly excludes such portions of the program, termed unsafe Rust, from static analysis, or it relies on runtime enforcement using smart pointers. Existing studies have shown that potential memory safety bugs in such unsafe Rust can bring down the entire program, proposing in-process isolation or compartmentalization as a remedy. However, in this study, we show that the safe Rust remains susceptible to memory safety bugs even with the proposed isolation applied. The smart pointers upon which safe Rust's memory safety is built rely on metadata often stored alongside program data, possibly within reach of attackers. Manipulating this metadata, an attacker can nullify safe Rust's memory safety checks dependent on it, causing memory access bugs and exploitation. In response to this issue, we propose MetaSafe, a mechanism that safeguards smart pointer metadata from such attacks. MetaSafe stores smart pointer metadata in a gated memory region where only a predefined set of metadata management functions can write, ensuring that each smart pointer update does not cause safe Rust's memory safety violation. We have implemented MetaSafe by extending the official Rust compil</summary>
+  </entry>
+  <entry>
+    <title>RustSan: Retrofitting AddressSanitizer for Efficient Sanitization of Rust</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity24/presentation/cho-kyuwon"/>
+    <id>https://www.usenix.org/conference/usenixsecurity24/presentation/cho-kyuwon</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2024"/>
+    <summary>USENIX Sec 2024 — Kyuwon Cho, Jongyoon Kim, Kha Dinh Duy, Hajeong Lim, Hojoon Lee
+
+Rust is gaining traction as a safe systems programming language with its strong type and memory safety guarantees. However, Rust's guarantees are not infallible. The use of unsafe Rust, a subvariant of Rust, allows the programmer to temporarily escape the strict Rust language semantics to trade security for flexibility. Memory errors within unsafe blocks in Rust have far-reaching ramifications for the program's safety. As a result, the conventional dynamic memory error detection (e.g., fuzzing) has been adapted as a common practice for Rust and proved its effectiveness through a trophy case of discovered CVEs. RUSTSAN is a retrofitted design of AddressSanitizer (ASan) for efficient dynamic memory error detection of Rust programs. Our observation is that a significant portion of instrumented memory access sites in a Rust program compiled with ASan is redundant, as the Rust security guarantees can still be valid at the site. RUSTSAN identifies and instruments the sites that definitely or may undermine Rust security guarantees while lifting instrumentation on safe sites. To this end, RUSTSAN employs a cross-IR program analysis for accurate tracking of unsafe sites and also extends ASan's shadow memory scheme for checking non-uniform memory access validation necessary for Rust. We conduct a comprehensive evaluation of RUSTSAN in terms of detection capability and performance using 57 Rust crates. RUSTSAN successfully detected all 31 tested cases of CVE-issued memory errors. Also, </summary>
+  </entry>
+  <entry>
+    <title>SWOOSH: Efficient Lattice-Based Non-Interactive Key Exchange</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity24/presentation/gajland"/>
+    <id>https://www.usenix.org/conference/usenixsecurity24/presentation/gajland</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2024"/>
+    <summary>USENIX Sec 2024 — Phillip Gajland, Bor de Kock, Miguel Quaresma, Giulio Malavolta, Peter Schwabe
+
+The advent of quantum computers has sparked significant interest in post-quantum cryptographic schemes, as a replacement for currently used cryptographic primitives. In this context, lattice-based cryptography has emerged as the leading paradigm to build post-quantum cryptography. However, all existing viable replacements of the classical Diffie-Hellman key exchange require additional rounds of interactions, thus failing to achieve all the benefits of this protocol. Although earlier work has shown that lattice-based Non-Interactive Key Exchange (NIKE) is theoretically possible, it has been considered too inefficient for real-life applications. In this work, we challenge this folklore belief and provide the first evidence against it. We construct an efficient lattice-based NIKE whose security is based on the standard module learning with errors (M-LWE) problem in the quantum random oracle model. Our scheme is obtained in two steps: (i) A passively-secure construction that achieves a strong notion of correctness, coupled with (ii) a generic compiler that turns any such scheme into an actively-secure one. To substantiate our efficiency claim, we provide an optimised implementation of our passively-secure construction in Rust and Jasmin. Our implementation demonstrates the scheme's applicability to real-world scenarios, yielding public keys of approximately 220 KBs. Moreover, the computation of shared keys takes fewer than 12 million cycles on an Intel Skylake CPU, offering a pos</summary>
+  </entry>
+  <entry>
+    <title>TrustBoost: Boosting Trust among Interoperable Blockchains</title>
+    <link href="https://doi.org/10.1145/3576915.3623080"/>
+    <id>https://doi.org/10.1145/3576915.3623080</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2023"/>
+    <summary>CCS 2023 — Peiyao Sheng, Xuechao Wang, Sreeram Kannan, Kartik Nayak, Pramod Viswanath
+
+Currently there exist many blockchains with weak trust guarantees, limiting applications and participation. Existing solutions to boost the trust using a stronger blockchain, e.g., via checkpointing, requires the weaker blockchain to give up sovereignty. In this paper, we propose a family of protocols in which multiple blockchains interact to create a combined ledger with boosted trust. We show that even if several of the interacting blockchains cease to provide security guarantees, the combined ledger continues to be secure - our Trustboost protocols achieve the optimal threshold of tolerating the insecure blockchains. This optimality, along with the necessity of blockchain interactions, is formally shown within the classic shared memory model, tackling the long standing open challenge of solving consensus in the presence of both Byzantine objects and processes. Furthermore, our proposed construction of Trustboost simply operates via smart contracts and require no change to the underlying consensus protocols of the participating blockchains, a form of "consensus on top of consensus''. The protocols are lightweight and can be used on specific (e.g., high value) transactions; we demonstrate the practicality by implementing and deploying Trustboost as cross-chain smart contracts in the Cosmos ecosystem using approximately 3,000 lines of Rust code, made available as open source [52]. Our evaluation shows that using 10 Cosmos chains in a local testnet, Trustboost has a gas cost o</summary>
+  </entry>
+  <entry>
+    <title>Concrat: An Automatic C-to-Rust Lock API Translator for Concurrent Programs</title>
+    <link href="https://doi.org/10.1109/icse48619.2023.00069"/>
+    <id>https://doi.org/10.1109/icse48619.2023.00069</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2023"/>
+    <summary>ICSE 2023 — Jaemin Hong, Sukyoung Ryu
+
+Concurrent programs suffer from data races. To prevent data races, programmers use locks. However, programs can eliminate data races only when they acquire and release correct locks at correct timing. The lock API of C, in which people have developed a large portion of legacy system programs, does not validate the correct use of locks. On the other hand, Rust, a recently developed system programming language, provides a lock API that guarantees the correct use of locks via type checking. This makes rewriting legacy system programs in Rust a promising way to retrofit safety into them. Unfortunately, manual C-to-Rust translation is extremely laborious due to the discrepancies between their lock APIs. Even the state-of-the-art automatic C-to-Rust translator retains the C lock API, expecting developers to replace them with the Rust lock API. In this work, we propose an automatic tool to replace the C lock API with the Rust lock API. It facilitates C-to-Rust translation of concurrent programs with less human effort than the current practice. Our tool consists of a Rust code transformer that takes a lock summary as an input and a static analyzer that efficiently generates precise lock summaries. We show that the transformer is scalable and widely applicable while preserving the semantics; it transforms 66 KLOC in 2.6 seconds and successfully handles 74% of real-world programs. We also show that the analyzer is scalable and precise; it analyzes 66 KLOC in 4.3 seconds.</summary>
+  </entry>
+  <entry>
+    <title>Safe Low-Level Code Without Overhead is Practical</title>
+    <link href="https://doi.org/10.1109/icse48619.2023.00183"/>
+    <id>https://doi.org/10.1109/icse48619.2023.00183</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2023"/>
+    <summary>ICSE 2023 — Solal Pirelli, George Candea
+
+Developers write low-level systems code in unsafe programming languages due to performance concerns. The lack of safety causes bugs and vulnerabilities that safe languages avoid. We argue that safety without run-time overhead is possible through type invariants that prove the safety of potentially unsafe operations. We empirically show that Rust and C# can be extended with such features to implement safe network device drivers without run-time overhead, and that Ada has these features already.</summary>
+  </entry>
+  <entry>
+    <title>BWoS: Formally Verified Block-based Work Stealing for Parallel Processing</title>
+    <link href="https://www.usenix.org/conference/osdi23/presentation/wang-jiawei"/>
+    <id>https://www.usenix.org/conference/osdi23/presentation/wang-jiawei</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2023"/>
+    <summary>OSDI 2023 — Jiawei Wang, Bohdan Trach, Ming Fu, Diogo Behrens, Jonathan Schwender, Yutao Liu, Jitang Lei, Viktor Vafeiadis
+
+Work stealing is a widely-used scheduling technique for parallel processing on multicore. Each core owns a queue of tasks and avoids idling by stealing tasks from other queues. Prior work mostly focuses on balancing workload among cores, disregarding whether stealing may adversely impact the owner's performance or hinder synchronization optimizations. Real-world industrial runtimes for parallel processing heavily rely on work-stealing queues for scalability, and such queues can become bottlenecks to their performance. We present Block-based Work Stealing (BWoS), a novel and pragmatic design that splits per-core queues into multiple blocks. Thieves and owners rarely operate on the same blocks, greatly removing interferences and enabling aggressive optimizations on the owner's synchronization with thieves. Furthermore, BWoS enables a novel probabilistic stealing policy that guarantees thieves steal from longer queues with higher probability. In our evaluation, using BWoS improves performance by up to 1.25x in the Renaissance macrobenchmark when applied to Java GC, provides average 1.26x speedup in JSON processing when applied to Go runtime, and improves maximum throughput of Hyper HTTP server by 1.12x when applied to Rust Tokio runtime. In microbenchmarks, it provides 8-11x better performance than state-of-the-art designs. We have formally verified and optimized BWoS on weak memory models with a model-checking-based framework.</summary>
+  </entry>
+  <entry>
+    <title>Security and Performance in the Delegated User-level Virtualization</title>
+    <link href="https://www.usenix.org/conference/osdi23/presentation/chen"/>
+    <id>https://www.usenix.org/conference/osdi23/presentation/chen</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2023"/>
+    <summary>OSDI 2023 — Jiahao Chen, Dingji Li, Zeyu Mi, Yuxuan Liu, Binyu Zang, Haibing Guan, Haibo Chen
+
+Today’s mainstream virtualization systems are plagued by severe security threats due to the large attack surface exposed by in-kernel hypervisor components such as KVM. To address this issue, this paper proposes a novel design called delegated virtualization, which decouples the commodity hypervisor into two planes: the hypervisor plane for hypervisor control (which is typically small and has fixed logic) and the VM plane for handling virtual machine (VM) requests and exceptions at runtime. As our investigation reveals that all known hypervisor vulnerabilities that threaten the host kernel lie in the VM plane, delegated virtualization completely offloads the in-kernel VM plane to a user-space hypervisor called DuVisor that directly interacts with its VM without exiting to the host kernel, based on a small hardware extension (481 lines of Chisel). We have implemented the hardware extension on an open-source RISC-V CPU on FireSim and built a Rust-based DuVisor atop it. The evaluation results demonstrate that DuVisor significantly reduces the attack surface with negligible performance overhead (&lt; 5%). DuVisor’s source code is publicly available at https://github.com/IPADS-DuVisor .</summary>
+  </entry>
+  <entry>
+    <title>FLUTE: Fast and Secure Lookup Table Evaluations</title>
+    <link href="https://doi.org/10.1109/sp46215.2023.10179345"/>
+    <id>https://doi.org/10.1109/sp46215.2023.10179345</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2023"/>
+    <summary>S&amp;P 2023 — Andreas Brüggemann, Robin Hundt, Thomas H. Schneider, Ajith Suresh, Hossein Yalame
+
+The concept of using Lookup Tables (LUTs) instead of Boolean circuits is well-known and been widely applied in a variety of applications, including FPGAs, image processing, and database management systems. In cryptography, using such LUTs instead of conventional gates like AND and XOR results in more compact circuits and has been shown to substantially improve online performance when evaluated with secure multi-party computation. Several recent works on secure floating-point computations and privacy-preserving machine learning inference rely heavily on existing LUT techniques. However, they suffer from either large overhead in the setup phase or subpar online performance.We propose FLUTE, a novel protocol for secure LUT evaluation with good setup and online performance. In a two-party setting, we show that FLUTE matches or even outperforms the online performance of all prior approaches, while being competitive in terms of overall performance with the best prior LUT protocols. In addition, we provide an open-source implementation of FLUTE written in the Rust programming language, and implementations of the Boolean secure two-party computation protocols of ABY2.0 and silent OT. We find that FLUTE outperforms the state of the art by two orders of magnitude in the online phase while retaining similar overall communication.</summary>
+  </entry>
+  <entry>
+    <title>Owl: Compositional Verification of Security Protocols via an Information-Flow Type System</title>
+    <link href="https://doi.org/10.1109/sp46215.2023.10179477"/>
+    <id>https://doi.org/10.1109/sp46215.2023.10179477</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2023"/>
+    <summary>S&amp;P 2023 — Joshua Gancher, Sydney Gibson, Pratap Narayan Singh, Samvid Dharanikota, Bryan Jeffery Parno
+
+Computationally sound protocol verification tools promise to deliver full-strength cryptographic proofs for security protocols. Unfortunately, current tools lack either modularity or automation. We propose a new approach based on a novel use of information flow and refinement types for sound cryptographic proofs. Our framework, Owl, allows type-based modular descriptions of security protocols, wherein disjoint subprotocols can be programmed and automatically proved secure separately.We give a formal security proof for Owl via a core language which supports symmetric and asymmetric primitives, Diffie-Hellman operations, and hashing via random oracles. We also implement a type checker for Owl and a prototype extraction mechanism to Rust, and evaluate both on 14 case studies, including (simplified forms of) SSH key exchange and Kerberos.</summary>
+  </entry>
+  <entry>
+    <title>"I wouldn't want my unsafe code to run my pacemaker": An Interview Study on the Use, Comprehension, and Perceived Risks of Unsafe Rust</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/holtervennhoff"/>
+    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/holtervennhoff</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2023"/>
+    <summary>USENIX Sec 2023 — Sandra Höltervennhoff, Philip Klostermeyer, Noah Wöhler, Yasemin Acar, Sascha Fahl
+
+Modern software development still struggles with memory safety issues as a significant source of security bugs. The Rust programming language addresses memory safety and provides further security features. However, Rust offers developers the ability to opt out of some of these guarantees using unsafe Rust. Previous work found that the source of many security vulnerabilities is unsafe Rust. In this paper, we are the first to see behind the curtain and investigate developers' motivations for, experiences with, and risk assessment of using unsafe Rust in depth. Therefore, we conducted 26 semi-structured interviews with experienced Rust developers. We find that developers aim to use unsafe Rust sparingly and with caution. However, we also identify common misconceptions and tooling fatigue that can lead to security issues, find that security policies for using unsafe Rust are widely missing and that participants underestimate the security risks of using unsafe Rust. We conclude our work by discussing the findings and recommendations for making the future use of unsafe Rust more secure.</summary>
+  </entry>
+  <entry>
+    <title>A Verified Confidential Computing as a Service Framework for Privacy Preservation</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/chen-hongbo"/>
+    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/chen-hongbo</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2023"/>
+    <summary>USENIX Sec 2023 — Hongbo Chen, Haobin Hiroki Chen, Mingshen Sun, Kang Li, Zhaofeng Chen, XiaoFeng Wang
+
+As service providers are moving to the cloud, users are forced to provision sensitive data to the cloud. Confidential computing leverages hardware Trusted Execution Environment (TEE) to protect data in use, no longer requiring users' trust to the cloud. The emerging service model, Confidential Computing as a Service (CCaaS), is adopted by service providers to offer service similar to the Function-as-a-Serivce manner. However, privacy concerns are raised in CCaaS, especially in multi-user scenarios. CCaaS need to assure the data providers that the service does not leak their privacy to any unauthorized parties and clear their data after the service. To address such privacy concerns with security guarantees, we first formally define the security objective, Proof of Being Forgotten (PoBF), and prove under which security constraints PoBF can be satisfied. Then, these constraints serve as guidelines in the implementation of the PoBF-compliant Framework (PoCF). PoCF consists of a generic library for different hardware TEEs, CCaaS prototype enclaves, and a verifier to prove PoBF-compliance. PoCF leverages Rust's robust type system and security features, to construct a verified state machine with privacy-preserving contracts. Last, the experiment results show that the protections introduced by PoCF incur minor runtime performance overhead.</summary>
+  </entry>
+  <entry>
+    <title>Capstone: A Capability-based Foundation for Trustless Secure Memory Access</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/yu-jason"/>
+    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/yu-jason</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2023"/>
+    <summary>USENIX Sec 2023 — Jason Zhijingcheng Yu, Conrad Watt, Aditya Badole, Trevor E. Carlson, Prateek Saxena
+
+Capability-based memory isolation is a promising new architectural primitive. Software can access low-level memory only via capability handles rather than raw pointers, which provides a natural interface to enforce security restrictions. Existing architectural capability designs such as CHERI provide spatial safety, but fail to extend to other memory models that security-sensitive software designs may desire. In this paper, we propose Capstone, a more expressive architectural capability design that supports multiple existing memory isolation models in a trustless setup, i.e., without relying on trusted software components. We show how Capstone is well-suited for environments where privilege boundaries are fluid (dynamically extensible), memory sharing/delegation are desired both temporally and spatially, and where such needs are to be balanced with availability concerns. Capstone can also be implemented efficiently. We present an implementation sketch and through evaluation show that its overhead is below 50% in common use cases. We also prototype a functional emulator for Capstone and use it to demonstrate the runnable implementations of six real-world memory models without trusted software components: three types of enclave-based TEEs, a thread scheduler, a memory allocator, and Rust-style memory safety—all within the interface of Capstone.</summary>
+  </entry>
+  <entry>
+    <title>Jinn: Hijacking Safe Programs with Trojans</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/dharsee"/>
+    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/dharsee</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2023"/>
+    <summary>USENIX Sec 2023 — Komail Dharsee, John Criswell
+
+Untrusted hardware supply chains enable malicious, powerful, and permanent alterations to processors known as hardware trojans. Such hardware trojans can undermine any software-enforced security policies deployed on top of the hardware. Existing defenses target a select set of hardware components, specifically those that implement hardware-enforced security mechanisms such as cryptographic cores, user/kernel privilege isolation, and memory protections. We observe that computing systems exercise general purpose processor logic to implement software-enforced security policies. This makes general purpose logic security critical since tampering with it could violate software-based security policies. Leveraging this insight, we develop a novel class of hardware trojans, which we dub Jinn trojans, that corrupt general-purpose hardware to enable flexible and powerful high level attacks. Jinn trojans deactivate compiler-based security-enforcement mechanisms, making type-safe software vulnerable to memory-safety attacks. We prototyped design-time Jinn trojans in the gem5 simulator and used them to attack programs written in Rust, inducing memory-safety vulnerabilities to launch control-flow hijacking attacks. We find that Jinn trojans can effectively compromise software-enforced security policies by compromising a single bit of architectural state with as little as 8 bits of persistent trojan-internal state. Thus, we show that Jinn trojans are effective even when planted in general pu</summary>
+  </entry>
+  <entry>
+    <title>Trojan Source: Invisible Vulnerabilities</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/boucher"/>
+    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/boucher</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2023"/>
+    <summary>USENIX Sec 2023 — Nicholas Boucher, Ross Anderson
+
+We present a new type of attack in which source code is maliciously encoded so that it appears different to a compiler and to the human eye. This attack exploits subtleties in text-encoding standards such as Unicode to produce source code whose tokens are logically encoded in a different order from the one in which they are displayed, leading to vulnerabilities that cannot be perceived directly by human code reviewers. 'Trojan Source' attacks, as we call them, pose an immediate threat both to first-party software and of supply-chain compromise across the industry. We present working examples of Trojan Source attacks in C, C++, C#, JavaScript, Java, Rust, Go, Python SQL, Bash, Assembly, and Solidity. We propose definitive compiler-level defenses, and describe other mitigating controls that can be deployed in editors, repositories, and build pipelines while compilers are upgraded to block this attack. We document an industry-wide coordinated disclosure for these vulnerabilities; as they affect most compilers, editors, and repositories, the exercise teaches how different firms, open-source communities, and other stakeholders respond to vulnerability disclosure.</summary>
+  </entry>
+  <entry>
+    <title>TRust: A Compilation Framework for In-process Isolation to Protect Safe Rust against Untrusted Code</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/bang"/>
+    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/bang</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2023"/>
+    <summary>USENIX Sec 2023 — Inyoung Bang, Martin Kayondo, Hyungon Moon, Yunheung Paek
+
+Rust was invented to help developers build highly safe systems. It comes with a variety of programming constructs that put emphasis on safety and control of memory layout. Rust enforces strict discipline about a type system and ownership model to enable compile-time checks of all spatial and temporal safety errors. Despite this advantage in security, the restrictions imposed by Rust’s type system make it difficult or inefficient to express certain designs or computations. To ease or simplify their programming, developers thus often include untrusted code from unsafe Rust or external libraries written in other languages. Sadly, the programming practices embracing such untrusted code for flexibility or efficiency subvert the strong safety guarantees by safe Rust. This paper presents TRUST, a compilation framework which against untrusted code present in the program, provides trustworthy protection of safe Rust via in-process isolation. Its main strategy is allocating objects in an isolated memory region that is accessible to safe Rust but restricted from being written by the untrusted. To enforce this, TRUST employs software fault isolation and x86 protection keys. It can be applied directly to any Rust code without requiring manual changes. Our experiments reveal that TRUST is effective and efficient, incurring runtime overhead of only 7.55% and memory overhead of 13.30% on average when running 11 widely used crates in Rust.</summary>
+  </entry>
+  <entry>
+    <title>VRust</title>
+    <link href="https://doi.org/10.1145/3548606.3560552"/>
+    <id>https://doi.org/10.1145/3548606.3560552</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2022"/>
+    <summary>CCS 2022 — Siwei Cui, Gang Zhao, Yifei Gao, Tien Tavu, Jeff Huang
+
+Solana is a rapidly-growing high-performance blockchain powered by a Proof of History (PoH) consensus mechanism and a novel stateless programming model that decouples code from data. With parallel execution on the PoH Sealevel runtime (instead of PoW), it achieves 100X-1000X speedups compared to Ethereum in terms of transactions per second. With the new programming model, new constraints (owner, signer, keys, bump seeds) and vulnerabilities (missing checks, overflows, type confusion, etc.) must be carefully verified to ensure the security of Solana smart contracts.</summary>
+  </entry>
+  <entry>
+    <title>Garbage collection makes rust easier to use</title>
+    <link href="https://doi.org/10.1145/3510003.3510107"/>
+    <id>https://doi.org/10.1145/3510003.3510107</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2022"/>
+    <summary>ICSE 2022 — Michael J. Coblenz, Michelle L. Mazurek, Michael Hicks
+
+Rust is a general-purpose programming language that is both type-and memory-safe. Rust does not use a garbage collector, but rather achieves these properties through a sophisticated, but complex, type system. Doing so makes Rust very efficient, but makes Rust relatively hard to learn and use. We designed Bronze, an optional, library-based garbage collector for Rust. To see whether Bronze could make Rust more usable, we conducted a randomized controlled trial with volunteers from a 633--person class, collecting data from 428 students in total. We found that for a task that required managing complex aliasing, Bronze users were more likely to complete the task in the time available, and those who did so required only about a third as much time (4 hours vs. 12 hours). We found no significant difference in total time, even though Bronze users re-did the task without Bronze afterward. Surveys indicated that ownership, borrowing, and lifetimes were primary causes of the challenges that users faced when using Rust.</summary>
+  </entry>
+  <entry>
+    <title>Learning and programming challenges of rust</title>
+    <link href="https://doi.org/10.1145/3510003.3510164"/>
+    <id>https://doi.org/10.1145/3510003.3510164</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2022"/>
+    <summary>ICSE 2022 — Shuofei Zhu, Ziyi Zhang, Boqin Qin, Aiping Xiong, Linhai Song
+
+Rust is a young systems programming language designed to provide both the safety guarantees of high-level languages and the execution performance of low-level languages. To achieve this design goal, Rust provides a suite of safety rules and checks against those rules at the compile time to eliminate many memory-safety and thread-safety issues. Due to its safety and performance, Rust's popularity has increased significantly in recent years, and it has already been adopted to build many safety-critical software systems.</summary>
+  </entry>
+  <entry>
+    <title>Cross-Language Attacks</title>
+    <link href="https://doi.org/10.14722/ndss.2022.24078"/>
+    <id>https://doi.org/10.14722/ndss.2022.24078</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2022"/>
+    <summary>NDSS 2022 — Samuel Mergendahl, Nathan Burow, Hamed Okhravi
+
+Memory corruption attacks against unsafe programming languages like C/C++ have been a major threat to computer systems for multiple decades.Various sanitizers and runtime exploit mitigation techniques have been shown to only provide partial protection at best.Recently developed 'safe' programming languages such as Rust and Go hold the promise to change this paradigm by preventing memory corruption bugs using a strong type system and proper compile-time and runtime checks.Gradual deployment of these languages has been touted as a way of improving the security of existing applications before entire applications can be developed in safe languages.This is notable in popular applications such as Firefox and Tor.In this paper, we systematically analyze the security of multi-language applications.We show that because language safety checks in safe languages and exploit mitigation techniques applied to unsafe languages (e.g., Control-Flow Integrity) break different stages of an exploit to prevent control hijacking attacks, an attacker can carefully maneuver between the languages to mount a successful attack.In essence, we illustrate that the incompatible set of assumptions made in various languages enables attacks that are not possible in each language alone.We study different variants of these attacks and analyze Firefox to illustrate the feasibility and extent of this problem.Our findings show that gradual deployment of safe programming languages, if not done with extreme care, can</summary>
+  </entry>
+  <entry>
+    <title>Provably-Safe Multilingual Software Sandboxing using WebAssembly</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity22/presentation/bosamiya"/>
+    <id>https://www.usenix.org/conference/usenixsecurity22/presentation/bosamiya</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2022"/>
+    <summary>USENIX Sec 2022 — Jay Bosamiya, Wen Shih Lim, Bryan Parno
+
+Many applications, from the Web to smart contracts, need to safely execute untrusted code. We observe that WebAssembly (Wasm) is ideally positioned to support such applications, since it promises safety and performance, while serving as a compiler target for many high-level languages. However, Wasm's safety guarantees are only as strong as the implementation that enforces them. Hence, we explore two distinct approaches to producing provably sandboxed Wasm code. One draws on traditional formal methods to produce mathematical, machine-checked proofs of safety. The second carefully embeds Wasm semantics in safe Rust code such that the Rust compiler can emit safe executable code with good performance. Our implementation and evaluation of these two techniques indicate that leveraging Wasm gives us provably-safe multilingual sandboxing with performance comparable to standard, unsafe approaches.</summary>
+  </entry>
+</feed>

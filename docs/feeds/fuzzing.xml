@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Paper Tracker — Fuzzing</title>
+  <id>./feeds/fuzzing.xml</id>
+  <link href="./"/>
+  <updated>2026-10-16T05:26:02Z</updated>
+  <entry>
+    <title>Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models</title>
+    <link href="https://doi.org/10.1145/3744916.3787818"/>
+    <id>https://doi.org/10.1145/3744916.3787818</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Wang Bin, Ao Yang, Kedan Li, Liu Aofan, Hui Li, Guibo Luo, Weixiang Huang, Yan Zhuang
+
+In the domain of software security testing, Directed Grey-Box Fuzzing (DGF) has garnered widespread attention for its efficient target localization and excellent detection performance. However, existing approaches measure only the physical distance between seed execution paths and target locations, overlooking logical relationships among code segments. This omission can yield redundant or misleading guidance in complex binaries, weakening DGF’s real-world effectiveness. To address this, we introduce attention distance, a novel metric that leverages a large language model’s contextual analysis to compute attention scores between code elements and reveal their intrinsic connections. Under the same AFLGo configuration—without altering any fuzzing components other than the distance metric—replacing physical distances with attention distances across 38 real vulnerability reproduction experiments delivers a 3.43× average increase in testing efficiency over the traditional method. Compared to state-of-the-art directed fuzzers DAFL and WindRanger, our approach achieves 2.89× and 7.13× improvements, respectively. To further validate the generalizability of attention distance, we integrate it into DAFL and WindRanger, where it also consistently enhances their original performance.</summary>
+  </entry>
+  <entry>
+    <title>BTreeFuzz: Enhanced Feedback Mechanism for ROS Program Fuzzer Based on Behavior Tree</title>
+    <link href="https://doi.org/10.1145/3744916.3773261"/>
+    <id>https://doi.org/10.1145/3744916.3773261</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Hee Yeon Kim, Gyunghoon Kim, Dong Hoon Lee, Wonsuk Choi
+
+Robots are increasingly taking on human roles and functions, and societal expectations for these machines to perform critical tasks and eliminate the problem of human error continue to rise. The robot operating system (ROS) is considered the de facto standard that has been widely used to develop robotic programs. However, even though robot malfunctions should be minimized, it remains highly challenging to develop ROS programs without software vulnerabilities. As a result, many ROS programs still contain software vulnerabilities that can lead to serious malfunctions. To address this concern, researchers have recently presented several fuzzing techniques to automatically detect these vulnerabilities in ROS programs. A feedback mechanism for fuzzing requires a specific metric tailored to the features of ROS programs. However, existing ROS program fuzzers have been unable to provide adequate feedback mechanisms to make this possible. For instance, ROFER, a state-of-the-art ROS program fuzzer, cannot correctly differentiate between multiple distinct robot statuses based on its feedback mechanism metric, and often mistakenly identifies identical statuses as being different from each other, making it ineffective at detecting unique crashes.</summary>
+  </entry>
+  <entry>
+    <title>Configuration-Sensitive Linux Kernel Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3773136"/>
+    <id>https://doi.org/10.1145/3744916.3773136</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yuheng Shen, Jianzhong Liu, Yuhan Chen, Yifei Chu, Qiang Zhang, G L Yin, Heyuan Shi, Yu Jiang
+
+Fuzzing operating system kernels to discover deep and complex bugs is difficult to accomplish, as kernels reside between hardware and user applications, exposing a variety of input vectors that affect their internal state. Previous approaches mainly use a kernel’s system call interface to deliver test payloads into the kernel, but reaching states and triggering bugs also require collaborative efforts from other input vectors, such as runtime parameters. Kernel runtime parameters greatly affect the execution behavior of the kernel under test, as they alter internal execution flows and thus require kernel fuzzers to manipulate them in conjunction with invoking system calls to effectively root out bugs. In this paper, we present CSGO, a kernel fuzzer that discovers more in-depth bugs through fuzzing kernel runtime parameters in conjunction with system calls. CSGO’s approach is achieved through the following designs. First, CSGO generates valid test case generation syntax for kernel configurations by extracting available parameters exposed by the kernel. Then, for the extracted parameters, CSGO statically deduces relations between the configurations and kernel system calls for initial generation guidance. Finally, during fuzzing, CSGO dynamically refines the relations between the configurations and system calls by interpreting execution feedback. We implemented CSGO and evaluated its approach on recent versions of the Linux kernel. Our results show that CSGO achieves an average o</summary>
+  </entry>
+  <entry>
+    <title>Context-Free Property Oriented Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3773273"/>
+    <id>https://doi.org/10.1145/3744916.3773273</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiaqiang Yao, Meixi Liu, Zhenbang Chen, Yongchao Xing, Jinjian Luo, Yunlai Luo, Guofeng Zhang, Yufeng Zhang
+
+Fuzzing is effective for finding software bugs. However, the bugs specified in context-free properties are difficult for the existing fuzzers. These bugs are triggered when the program execution contains specific sequences of operations, e.g., push and pop operations on the stack, and locking and unlocking operations on the lock. As far as we know, existing approaches do not support fuzzing for non-regular context-free properties, which are more expressive and can be used to specify bugs in many scenarios.</summary>
+  </entry>
+  <entry>
+    <title>Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities</title>
+    <link href="https://doi.org/10.1145/3744916.3773205"/>
+    <id>https://doi.org/10.1145/3744916.3773205</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zirui Chen, Zhipeng Xue, Jiayuan Zhou, Xing Hu, Xin Xia, Xiaohu Yang
+
+Exploits are commonly used to demonstrate the presence of library vulnerabilities and validate their impact across different versions. However, their direct application to alternative versions often fails due to breaking changes introduced during evolution. These failures stem from both changes in triggering conditions (e.g., API refactorings) and broken dynamic environments (e.g., build or runtime errors), which are challenging to interpret and adapt manually. Existing techniques primarily focus on code-level trace alignment through fuzzing, which is both time-consuming and insufficient for handling environment-level failures. Moreover, they often fall short when dealing with complicated triggering condition changes across versions. To overcome this, we propose Diffploit, an iterative, diff-driven exploit migration method structured around two key modules: the Context Module and the Migration Module. The Context Module constructs contexts derived from analyzing behavioral discrepancies between the target and reference versions, which capture the failure symptom and its related diff hunks. Leveraging these contexts, the Migration Module guides an LLM-based adaptation through an iterative feedback loop, balancing exploration of diff candidates and gradual refinement to resolve reproduction failures effectively. We evaluate Diffploit on a large-scale dataset containing 102 Java CVEs and 689 version-migration tasks across 79 libraries. Diffploit successfully migrates 84.2% explo</summary>
+  </entry>
+  <entry>
+    <title>DyMA-Fuzz: Dynamic Direct Memory Access Abstraction for Re-hosted Monolithic Firmware Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3787828"/>
+    <id>https://doi.org/10.1145/3744916.3787828</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Guy Farrelly, Michael Chesser, Seyit Ahmet Camtepe, Damith Chinthana Ranasinghe
+
+The rise of smart devices in critical domains—including automotive, medical, industrial—demands robust firmware testing. Fuzzing firmware in re-hosted environments is a promising method for automated testing at scale, but remains difficult due to the tight coupling of code with a microcontroller’s peripherals. Existing fuzzing frameworks primarily address input challenges in providing inputs for Memory-Mapped I/O or interrupts, but largely overlook Direct Memory Access (DMA), a key high-throughput interface used that bypasses the CPU.</summary>
+  </entry>
+  <entry>
+    <title>EchoFuzz: Empowering Smart Contract Fuzzing with Large Language Models</title>
+    <link href="https://doi.org/10.1145/3744916.3773166"/>
+    <id>https://doi.org/10.1145/3744916.3773166</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiayu Li, Peng Qian, Guanyan Li, Rui Wang, Peixin Wang, Zhiqing Tang, Fuchen Ma, Yuanliang Chen
+
+Smart contracts, serving as the cornerstone of decentralized applications, autonomously manage trillion-dollar digital assets, making them attractive targets for attacks. Fuzzing has emerged as a promising technique for detecting vulnerabilities in smart contracts, yet existing methods face two main challenges. (1) The logical gap in state transitions and combinatorial redundancy hinders effective tradeoffs between bug detection efficiency and state space exploration cost, leading to critical execution paths to be overlooked. (2) Rule-based sequence mutation strategies suffer from path redundancy and inadequate guidance from contract logic, resulting in performance bottlenecks that stall the exploration of in-depth vulnerability-oriented paths.</summary>
+  </entry>
+  <entry>
+    <title>FrameShift: Resizing Fuzzer Inputs Without Breaking Them</title>
+    <link href="https://doi.org/10.1145/3744916.3787765"/>
+    <id>https://doi.org/10.1145/3744916.3787765</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Harrison Green, Claire Le Goues, Fraser Brown
+
+Coverage-guided fuzzers are powerful automated bug-finding tools. They mutate program inputs, observe coverage, and save any input that hits an unexplored path for future mutation. Unfortunately, without knowledge of input formats—for example, the relationship between formats’ data fields and sizes—fuzzers are prone to generate destructive frameshift mutations. These time-wasting mutations yield malformed inputs that are rejected by the target program. To avoid such breaking mutations, this paper proposes a novel, lightweight technique that preserves the structure of inputs during mutation by detecting and using relation fields.</summary>
+  </entry>
+  <entry>
+    <title>Fuzzing Java Optimizing Compilers with Complex Inter-Class Structures Guided by Heterogeneous Program Graphs</title>
+    <link href="https://doi.org/10.1145/3744916.3773212"/>
+    <id>https://doi.org/10.1145/3744916.3773212</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Shiyu Qiu, Ming Wen, Zifan Xie, Hai Jin
+
+Modern Java compilers, such as Just-In-Time (JIT) and Ahead-Of-Time (AOT) compilers, often infer and analyze complex inter-class structures to perform program optimizations while preserving semantic correctness. However, incorrect inference of these structures during compilation can lead to critical bugs, as observed in production compilers like HotSpot and R8. Despite their effectiveness, existing Java fuzzing tools fail to adequately explore inter-class relationships, focusing instead on simpler intra-class or intra-method constructs. To bridge this gap, we present InterFuzz, the first fuzzing framework designed to systematically generate Java test cases with complex inter-class structures. InterFuzz introduces a novel concept of Heterogeneous Program Graph (HPG) to abstract and manipulate inter-class relationships. It then employs Inter-Class Mutators to construct intricate interactions, and utilizes graph complexities to guide test generation toward high-diversity code. Our evaluation shows that InterFuzz effectively uncovers compiler bugs that elude traditional fuzzers, having discovered 24 new bugs across HotSpot, ART, and R8. Among these, 20 bugs are confirmed by developers and 16 bugs hinge on intricate inter-class structures.</summary>
+  </entry>
+  <entry>
+    <title>Fuzzing JavaScript Engines by Fusing JavaScript and WebAssembly</title>
+    <link href="https://doi.org/10.1145/3744916.3764551"/>
+    <id>https://doi.org/10.1145/3744916.3764551</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jiayi Lin, Changhua Luo, Mingxue Zhang, Lanteng Lin, Penghui Li, Chenxiong Qian
+
+JavaScript engines are a fundamental part of modern browsers, and many efforts have been invested in testing them to enhance their security. However, the incorporation of WebAssembly into JavaScript engines introduces new attack surfaces that have not received sufficient attention. Existing fuzzers for JavaScript engines primarily focus on JavaScript, neglecting WebAssembly code and its interactions with JavaScript. We introduce Mad-Eye, the first fuzzer that can test the JavaScript-WebAssembly interaction using a novel cross-language code fusion technique. Evaluations of Mad-Eye on V8, SpiderMonkey, and JavaScriptCore detected 21 previously unknown vulnerabilities, with 20 confirmed and 18 fixed and merged into mainstream browsers by the developers, who acknowledged our reports with vulnerability bounties.</summary>
+  </entry>
+  <entry>
+    <title>Generator Solving for Symbolic Execution</title>
+    <link href="https://doi.org/10.1145/3744916.3764561"/>
+    <id>https://doi.org/10.1145/3744916.3764561</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Siwei Wei, Yan Cai
+
+Automated test input generation based on symbolic execution has garnered significant research interest. However, the main drawback of symbolic execution is its poor scalability. Since the overhead associated with constraint modeling and solving is high, generating only one test input per SMT query is inefficient. In this paper, we introduce the concept of generator solving. Instead of solving for only one particular solution, we propose to find a generator that can be called multiple times to continuously yield new test inputs. This approach offers several benefits: (1) it allows efficient generation of as many test inputs as needed, thereby significantly improving the input generation efficiency of symbolic execution methods; (2) the continuously generated inputs facilitate a more comprehensive exploration of the solution set, potentially triggering new program behaviors; and (3) compared to hybrid approaches based on mutation, using a generator ensures the satisfiability of the target constraints. We present three key techniques for generator solving: (1) reusing invertible model converters in Z3 as generators; (2) constructing hierarchical range-based samplers to sample solutions of range constraints; and (3) employing optimistic simplification strategies to enhance the generality of the solving process. We have implemented GenSlv, a prototypical generator solver specifically designed for automated test case generation based on symbolic execution. Evaluation results demons</summary>
+  </entry>
+  <entry>
+    <title>GPTrace: Effective Crash Deduplication Using LLM Embeddings</title>
+    <link href="https://doi.org/10.1145/3744916.3773161"/>
+    <id>https://doi.org/10.1145/3744916.3773161</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Patrick Herter, Vincent Ahlrichs, Ridvan Açilan, Julian Horsch
+
+Fuzzing is a highly effective method for uncovering software vulnerabilities, but analyzing the resulting data typically requires substantial manual effort. This is amplified by the fact that fuzzing campaigns often find a large number of crashing inputs, many of which share the same underlying bug. Crash deduplication is the task of finding such duplicate crashing inputs and thereby reducing the data that needs to be examined. Many existing deduplication approaches rely on comparing stack traces or other information that is collected when a program crashes. Although various metrics for measuring the similarity of such pieces of information have been proposed, many do not yield satisfactory deduplication results. In this work, we present GPTrace, a deduplication workflow that leverages a large language model to evaluate the similarity of various data sources associated with crashes by computing embedding vectors and supplying those as input to a clustering algorithm. We evaluate our approach on over 300 000 crashing inputs belonging to 50 ground truth labels from 14 different targets. The deduplication results produced by GPTrace show a noticeable improvement over hand-crafted stack trace comparison methods and even more complex state-of-the-art approaches that are less flexible.</summary>
+  </entry>
+  <entry>
+    <title>Locus: Agentic Predicate Synthesis for Directed Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3773102"/>
+    <id>https://doi.org/10.1145/3744916.3773102</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jie Zhu, Chihao Shen, Ziyang Li, Jiahao Yu, Yizheng Chen, Kexin Pei
+
+Directed fuzzing aims to find program inputs that lead to specified target program states. It has broad applications, such as debugging system crashes, confirming reported bugs, and generating exploits for potential vulnerabilities. This task is inherently challenging because target states are often deeply nested in the program, while the search space manifested by numerous possible program inputs is prohibitively large. Existing approaches rely on branch distances or manually-specified constraints to guide the search; however, the branches alone are often insufficient to precisely characterize progress toward reaching the target states, while the manually specified constraints are often tailored for specific bug types and thus difficult to generalize to diverse target states and programs.</summary>
+  </entry>
+  <entry>
+    <title>Metamorphic Fuzzing for Multi-Agent Path Finding Algorithms</title>
+    <link href="https://doi.org/10.1145/3744916.3787841"/>
+    <id>https://doi.org/10.1145/3744916.3787841</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Luxia Lin, Xudong Zhang, Shihao Zhu, Yan Cai
+
+Multi-Agent Path Finding (MAPF) is a fundamental problem in multi-agent systems, with broad applications in warehouse logistics, robotics, and autonomous driving. Ensuring that MAPF solvers consistently return a solution whenever one exists and deliver high-quality plans is critical for real-world deployment. However, MAPF algorithms remain insufficiently tested. The high-dimensional, tightly coupled input space arising from map topology and agent configurations makes systematic testing extremely challenging.</summary>
+  </entry>
+  <entry>
+    <title>Misbehavior Forecasting for Focused Autonomous Driving Systems Testing</title>
+    <link href="https://doi.org/10.1145/3744916.3787829"/>
+    <id>https://doi.org/10.1145/3744916.3787829</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — M. M. Abid Naziri, Stefano Carlo Lambertenghi, Andrea Stocco, Marcelo d’Amorim
+
+Simulation-based testing is the standard practice for assessing the reliability of self-driving cars’ software before deployment. Existing bug-finding techniques are either unreliable or expensive. We build on the insight that near misses observed during simulations may point to potential failures. We propose Foresee, a technique that identifies near misses using a misbehavior forecaster that computes possible future states of the ego-vehicle under test. Foresee performs local fuzzing in the neighborhood of each candidate near miss to surface previously unknown failures. In our empirical study, we evaluate the effectiveness of different configurations of Foresee using several scenarios provided in the CARLA simulator on both end-to-end and modular self-driving systems and examine its complementarity with the state-of-the-art fuzzer DriveFuzz. Our results show that Foresee is both more effective and more efficient than the baselines. Foresee exposes 128.70% and 38.09% more failures than a random approach and a state-of-the-art failure predictor while being 2.49 × and 1.42 × faster, respectively. Moreover, when used in combination with DriveFuzz, Foresee enhances failure detection by up to 93.94%.</summary>
+  </entry>
+  <entry>
+    <title>On Interaction Effects in Greybox Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3773128"/>
+    <id>https://doi.org/10.1145/3744916.3773128</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Konstantinos Kitsios, Marcel Böhme, Alberto Bacchelli
+
+A greybox fuzzer is an automated software testing tool that generates new test inputs by applying randomly chosen mutators (e.g., flipping a bit or deleting a block of bytes) to a seed input in random order and adds all coverage-increasing inputs to the corpus of seeds. We hypothesize that the order in which mutators are applied to a seed input has an impact on the effectiveness of greybox fuzzers. In our experiments, we fit a linear model to a dataset that contains the effectiveness of all possible mutator pairs and indeed observe the conjectured interaction effect. This points us to more efficient fuzzing by choosing the most promising mutator sequence with a higher likelihood.</summary>
+  </entry>
+  <entry>
+    <title>Optimization-Aware Test Generation for Deep Learning Compilers</title>
+    <link href="https://doi.org/10.1145/3744916.3773216"/>
+    <id>https://doi.org/10.1145/3744916.3773216</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Qingchao Shen, Zan Wang, Haoyang Ma, Yongqiang Tian, Lili Huang, Zibo Xiao, Junjie Chen, Shing-Chi Cheung
+
+Deep Learning (DL) compilers have been widely utilized to optimize DL models for efficient deployment across various hardware. Due to their vital role in the DL ecosystem, ensuring their reliability is critical. Such model optimizations are often designed to match specific computational graph structures. However, existing DL compiler fuzzing techniques do not generate tests for each optimization aware of its matched graph structures. In this paper, we propose OATest, a novel technique that synthesizes optimization-aware tests by extracting patterns from documented tests and integrating them into diverse computational graph contexts. To address the key technical challenge of synthesizing valid and optimization-aware computational graphs, OATest introduces two synthesis strategies: (1) reusing compatible inputs/outputs from existing nodes and (2) creating new nodes with compatible inputs/outputs, establishing effective connections between patterns and contexts. OATest is evaluated on two popular DL compilers, TVM and ONNXRuntime, regarding the bugs revealed by crashes and inconsistencies. The experimental results show that OATest significantly outperforms the state-of-the-art DL compiler fuzzing techniques by detecting more bugs and covering more optimization code in TVM and ONNXRuntime. Particularly, OATest uncovers 56 previously unknown bugs, 42/24 of which have been confirmed/fixed by developers.</summary>
+  </entry>
+  <entry>
+    <title>Parse this! Summoning Context-Sensitive Inputs with Goblin</title>
+    <link href="https://doi.org/10.1145/3744916.3773270"/>
+    <id>https://doi.org/10.1145/3744916.3773270</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Robert Lorch, Muhammad Daniyal Dar, Cesare Tinelli, Omar Chowdhury
+
+Grammar-based fuzzers have been effective at identifying bugs in software systems with highly structured input formats (e.g., XML). Many existing grammar-based fuzzers rely on context-free grammars (CFGs) to represent input structure; however, CFGs are often insufficient to capture the context-sensitive constraints common in real-world inputs. While application-specific fuzzers can often handle such constraints, they lack the generality needed to adapt to new applications. We present Goblin, a new input generation tool that addresses this gap. Given a context-free grammar annotated with semantic constraints, Goblin generates inputs that both conform to the grammar and satisfy the constraints. A distinguishing feature of Goblin is its support—via an external SMT solver—for constraints expressed in arbitrary SMT theories. Inspired by DPLL-style SAT solvers, Goblin enjoys formal guarantees of solution soundness, solution completeness, and refutation soundness. We evaluate Goblin by comparing it with prior work and by integrating it into a grammar-based network protocol fuzzer.</summary>
+  </entry>
+  <entry>
+    <title>RusyFuzz: Unhandled Exception Guided Fuzzing for Rust OS Kernel</title>
+    <link href="https://doi.org/10.1145/3744916.3773138"/>
+    <id>https://doi.org/10.1145/3744916.3773138</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Yuwei Liu, Yanhao Wang, Minghua Wang, Lin Huang, Purui Su, Tao Wei
+
+Rust’s strong type system and ownership model eliminate many traditional memory safety issues in OS kernels. However, logic errors—such as unchecked indexing and failed unwrap operations—can still cause panic!s that crash the entire system. Existing kernel fuzzers, designed primarily for C-based kernels and reliant on KCOV, treat all crashes uniformly and fail to account for Rust-specific failure modes.</summary>
+  </entry>
+  <entry>
+    <title>SAINT: Service-level Integration Test Generation with Program Analysis and LLM-based Agents</title>
+    <link href="https://doi.org/10.1145/3744916.3773185"/>
+    <id>https://doi.org/10.1145/3744916.3773185</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Rangeet Pan, Raju Pavuluri, Ruikai Huang, Tyler Stennett, Rahul Krishna, Alessandro Orso, Saurabh Kumar Sinha
+
+Enterprise applications are typically tested at multiple levels, with service-level testing playing an important role in validating application functionality. Existing service-level testing tools, especially for RESTful APIs, often employ fuzzing and/or depend on OpenAPI specifications which are not readily available in real-world enterprise codebases. Moreover, these tools are limited in their ability to generate functional tests that effectively exercise meaningful scenarios. In this work, we present saint, a novel white-box testing approach for service-level testing of enterprise Java applications. saint combines static analysis, large language models (LLMs), and LLM-based agents to automatically generate endpoint and scenario-based tests. The approach builds two key models: an endpoint model, capturing syntactic and semantic information about service endpoints, and an operation dependency graph, capturing inter-endpoint ordering constraints. saint then employs LLM-based agents to generate tests. Endpoint-focused tests aim to maximize code and database interaction coverage. Scenario-based tests are synthesized by extracting application use cases from code and refining them into executable tests via planning, action, and reflection phases of the agentic loop. We evaluated saint on eight Java applications, including a proprietary enterprise application. Our results illustrate the effectiveness of saint in coverage, fault detection, and scenario generation. Moreover, a develo</summary>
+  </entry>
+  <entry>
+    <title>Scaling Security Testing by Addressing the Reachability Gap</title>
+    <link href="https://doi.org/10.1145/3744916.3773116"/>
+    <id>https://doi.org/10.1145/3744916.3773116</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Gaetano Sapia, Marcel Böhme
+
+In order to scale automated security testing, we must first solve the reachability gap. Existing approaches to test specific features of a software system always assume some way of interacting with the system. For instance, the most popular approach, fuzzing, either assumes command line access, network access, an execution to amplify, or so-called fuzz drivers to send generated inputs to the system’s process or its components. Yet, scaling security testing requires so much more than sending inputs. To test a specific feature, we might need to enable specific configuration options in specific files, to set up a specific runtime environment, to write some source code to exchange messages with the system over the network, or to issue system calls to the OS kernel (e.g., to test a device driver). We call the challenge of producing both the environment and input required to trigger specific internal functionality in a system as the reachability gap.</summary>
+  </entry>
+  <entry>
+    <title>StorFuzz: Using Data Diversity to Overcome Fuzzing Plateaus</title>
+    <link href="https://doi.org/10.1145/3744916.3773179"/>
+    <id>https://doi.org/10.1145/3744916.3773179</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Leon Weiss, Tobias Holl, Kevin Borgolte
+
+Fuzzing is widely used to discover software bugs and vulnerabilities. Unfortunately, real-world long-running fuzzing campaigns often plateau and no progress can be made anymore, leaving code areas untested. State-of-the-art fuzzers leverage code coverage to measure progress and reach new areas, but this is insufficient to capture all program behavior, as code coverage may be the same for different behaviors, thus preventing progress and masking bugs.</summary>
+  </entry>
+  <entry>
+    <title>Temporal Specification Oriented Fuzzing for Trigger-Action-Programming Smart Home Integrations</title>
+    <link href="https://doi.org/10.1145/3744916.3764543"/>
+    <id>https://doi.org/10.1145/3744916.3764543</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Jinglin Dai, Yifan Xiong, Lezhi Ma, Shangqing Liu, Lei Bu
+
+The convergence of Internet of Things (IoT) and home automation (HA) has revolutionized human-device interaction, typically through trigger-action programming paradigms such as If This Then That (IFTTT). While empowering user-customized automation, this integration introduces critical challenges: unexpected behaviors from improper rule configurations, and cybersecurity threats propagated through interconnected rule chains. Researchers model the integrations with the finite state machine, characterize these risks using linear temporal logic (LTL), and employ model checking techniques to check whether the system conforms to the properties. However, model checking suffers from the inherent state space explosion problem, so that relevant methods face difficulty in handling large-scale systems. Furthermore, the HA-IoT domain notably lacks standardized benchmark datasets for validating LTL-related methods.</summary>
+  </entry>
+  <entry>
+    <title>Uncovering Failures in Cyber-Physical System State Transitions: A Fuzzing-Based Approach Applied to sUAS</title>
+    <link href="https://doi.org/10.1145/3744916.3787797"/>
+    <id>https://doi.org/10.1145/3744916.3787797</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Theodore P. Chambers, Arturo Miguel Russell Bernal, Michael Vierhauser, Jane Cleland‐Huang
+
+The increasing deployment of small Uncrewed Aerial Systems (sUAS) in diverse and often safety-critical environments demands rigorous validation of onboard decision logic under various conditions. In this paper, we present SaFUZZ, a state-aware fuzzing pipeline that validates core behavior associated with state transitions, automated failsafes, and human operator interactions in sUAS applications operating under various timing conditions and environmental disturbances. We create fuzzing specifications to detect behavioral deviations, and then dynamically generate associated Fault Trees to visualize states, modes, and environmental factors that contribute to the failure, thereby helping project stakeholders to analyze the failure and identify its root causes. We validated SaFUZZ against a real-world sUAS system and were able to identify several points of failure not previously detected by the system’s development team. The fuzzing was conducted in a high-fidelity simulation environment, and outcomes were validated on physical sUAS in a real-world field testing setting. The findings from the study demonstrated SaFUZZ’s ability to provide a practical and scalable approach to uncovering diverse state transition failures in a real-world sUAS application.</summary>
+  </entry>
+  <entry>
+    <title>Variability-Aware Fuzzing</title>
+    <link href="https://doi.org/10.1145/3744916.3773230"/>
+    <id>https://doi.org/10.1145/3744916.3773230</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Meah Tahmeed Ahmed, Arnab Dev, Shiyi Wei
+
+Modern software systems often provide a vast configuration space to enhance reusability and adaptability, but this configurability also significantly complicates bug finding. While existing static and dynamic variability-aware analysis approaches systematically explore the configuration space, they often suffer from scalability limitations. Conversely, grey-box fuzzing has demonstrated remarkable success in vulnerability detection through lightweight, iterative input space exploration, yet the state-of-the-art configuration fuzzers overlook the potential of integrating variability-aware analysis within the fuzzing process. In this paper, we present VAFuzz, a novel variability-aware fuzzer that integrates principled dynamic variability-aware analysis within the fuzzing process to enhance configuration space exploration. VAFuzz introduces new variability-aware seed selection and mutations to drive the fuzzing process. These are enabled by a new presence condition seed queue that tracks coverage and crash contributions across the configuration space, and a map that captures the relationship between data seeds and presence conditions. Our evaluation on a diverse set of programs show that VAFuzz outperforms the state-of-the-art configuration fuzzers on 21 out of 25 programs in terms of code coverage. It also detects more vulnerabilities than these baselines, including previous unknown bugs.</summary>
+  </entry>
+  <entry>
+    <title>VDBFuzz: Understanding and Detecting Crash Bugs in Vector Database Management Systems</title>
+    <link href="https://doi.org/10.1145/3744916.3773139"/>
+    <id>https://doi.org/10.1145/3744916.3773139</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Shenao Wang, Zhao Liu, Yanjie Zhao, Quanchen Zou, Haoyu Wang
+
+Vector Database Management Systems (VDBMSs) have become critical in LLM-integrated applications. However, their inherent complexity, including high-dimensional data structures, diverse indexing strategies, and heterogeneous implementations, makes them prone to reliability issues. Among these, crash bugs caused by boundary condition failures, such as invalid configurations and mismatched data dimensions, are particularly severe. These bugs can result in serious consequences like data loss, corrupted indexes, and cascading failures. To address this gap, we propose VDBFuzz, the first fuzzing framework specifically designed to detect VDBMS crash bugs through boundary value testing. VDBFuzz systematically leverages techniques to collect high-quality seeds, generate edge-case inputs, and explore complex API interactions. We evaluated VDBFuzz on 8 representative VDBMSs, including native systems (e.g., Weaviate, Milvus), libraries (e.g., Faiss, hnswlib), and extended systems (e.g., pgvector, sqlite-vec). VDBFuzz achieved up to 3x higher code coverage compared to state-of-the-art tools such as RESTler and Schemathesis, uncovering 19 previously unknown bugs, including 13 crash vulnerabilities and 6 runtime exceptions. These results highlight VDBFuzz’s effectiveness in improving the robustness and reliability of VDBMSs.</summary>
+  </entry>
+  <entry>
+    <title>ADGFUZZ: Assignment Dependency-Guided Fuzzing for Robotic Vehicles</title>
+    <link href="https://doi.org/10.14722/ndss.2026.231014"/>
+    <id>https://doi.org/10.14722/ndss.2026.231014</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Yuncheng Wang, Yaowen Zheng, Puzhuo Liu, Dongliang Fang, Jiaxing Cheng, Dingyi Shi, Limin Sun
+
+Robotic vehicles (RVs) play an increasingly vital role in modern society, with widespread applications in both commercial and military contexts.RV control software is the core of RV systems, which maintains proper operation by continuously computing the vehicle's internal state, sensor readings, and external inputs to adjust the system's behavior accordingly.However, the vast combination space of configurable parameters, command inputs, and environment-sensed data in RV software introduces significant security risks to the system.Existing fuzzing techniques face substantial challenges in effectively exploring this vast input space while uncovering deep bugs.To address these challenges, we propose ADGFUZZ, a novel fuzzing framework specifically designed to detect assignment statement bugs in RV control software.ADGFUZZ statically constructs an Assignment Dependency Graph (ADG) to capture inter-variable dependencies within the program.These dependencies are then propagated to the RV input space by leveraging naming similarities, resulting in a targeted set of inputs referred to as the matched input set (MIS).Building upon this, ADGFUZZ performs entropy-aware fuzzing over the MISs, thereby enhancing the overall efficiency of bug discovery.In our evaluation, ADGFUZZ uncovered 87 unique bugs across three RV types, 78 of which were previously unknown.All found bugs were responsibly disclosed to the developers, and 16 have been confirmed for fixing.</summary>
+  </entry>
+  <entry>
+    <title>An LLM-Driven Fuzzing Framework for Detecting Logic Instruction Bugs in PLCs</title>
+    <link href="https://doi.org/10.14722/ndss.2026.241081"/>
+    <id>https://doi.org/10.14722/ndss.2026.241081</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Jiaxing Cheng, Ming 明 Zhou 周, Haining Wang, Xin Chen, Yuncheng Wang, Yibo Qu, Limin Sun
+
+Programmable Logic Controllers (PLCs) automate industrial operations using vendor-supplied logic instruction libraries compiled into device firmware.These libraries may contain security flaws that, when exploited through physical control routines, network-facing services, or PLC runtime subsystems, may lead to privilege violations, memory corruption, or data leakage.This paper presents LogicFuzz, the first fuzzing framework designed specifically to target logic instructions in PLC firmware.LogicFuzz constructs a semantic dependency graph (SDG) that captures both operational semantics and inter-instruction dependencies in PLC code.Leveraging the SDG together with an enable-signal mechanism, LogicFuzz automatically synthesizes instruction-tailored seed programs, significantly reducing manual effort and enabling controlled, resettable fuzzing on real PLC hardware.To uncover bugs conditioned on control-flow triggers (i.e., invocation patterns), LogicFuzz mutates the SDG to diversify instruction-invocation contexts.To expose data-triggered faults, it performs coverage-guided parameter mutation under valid semantic constraints.In addition, LogicFuzz integrates a multisource oracle that monitors runtime logs, status LEDs, and communication states to detect instruction-level failures during fuzzing.We evaluate LogicFuzz on six production PLCs from three major vendors and uncover 19 instruction-level bugs, including four previously unknown vulnerabilities.</summary>
+  </entry>
+  <entry>
+    <title>Anota: Identifying Business Logic Vulnerabilities via Annotation-Based Sanitization</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240938"/>
+    <id>https://doi.org/10.14722/ndss.2026.240938</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Meng Wang, Philipp Görz, Joschua Schilling, Keno Haßler, Liwei Guo, Thorsten Holz, Ali Abbasi
+
+SQL Injection DataBase Witcher [12], Atropos [14] 4 Cross-Site Request Forgery (CSRF) System Call WebFuzzAuto [20] 5 Path Traversal System Call Atropos [14], PHUZZ [25] 6 Out-of-bounds Read Memory ASan [2] 7 OS Command Injection System Call Witcher [12], Atropos [14] 8 Use After Free Memory ASan [2] 9 Missing Authorization Object Access/Code Exec. 10 Unrestricted Upload of File System Call Atropos [14], UFuzzer [18], URadar [26] 11 Code Injection System Call/Data Flow 12 Improper Input Validation System Call Witcher [12], Atropos [14] 13 Command Injection System Call Witcher [12], Atropos</summary>
+  </entry>
+  <entry>
+    <title>Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240902"/>
+    <id>https://doi.org/10.14722/ndss.2026.240902</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Jan Drescher, David A. Klein, Martin Johns
+
+Site Isolation (SI) is a recent browser security architecture that isolates web applications by site in separate, sandboxed renderer processes to mitigate Spectre and renderer compromises [2].A site is defined as the tuple of scheme (e.g., https) and extended Top-Level Domain plus one subdomain (short eTLD+1, e.g., example.com).The security of Site Isolation relies on process isolation provided by the operating system.It also relies on the security of the privileged browser process.The browser process communicates with all renderer processes via inter-process communication (IPC) to provide them with cross-site networking and communication capabilities.These capabilities are restricted by the sameorigin policy and Cross-Origin Resource Sharing (CORS).The browser process must correctly track the site context of every renderer process and enforce these security policies.Bugs in the site mapping or the policy enforcement lead to Site Isolation bypass vulnerabilities that allow an attacker to execute malicious JavaScript in the context of another site or steal cookies.Site Isolation was rolled out in 2018 in Chrome [2] and in 2021 in Firefox [3].At the moment of writing, Safari developers started implementing Site Isolation.Most Site Isolation bypass bugs discovered since then required the attacker to have compromised the sandboxed renderer process to be exploitable.This produced a relatively high barrier.But assuming that the sandbox is secure and sandbox escapes are impossible, </summary>
+  </entry>
+  <entry>
+    <title>BACnet or ``BADnet''? On the (In)Security of Implicitly Reserved Fields in BACnet</title>
+    <link href="https://doi.org/10.14722/ndss.2026.230794"/>
+    <id>https://doi.org/10.14722/ndss.2026.230794</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Qiguang Zhang, Junzhou Luo, Zhen Ling, Yue zhang, Chongqing Lei, Christopher Morales, Xinwen Fu
+
+growing smart building technology market.According to a ReportLinker forecast [1], the global BAS market is projected to reach $277 billion by 2027, driven by the increasing demand for energy efficiency, safety, and comfort.BACnet International [2] reports that BACnet holds a 77% global market share, with 1,539 official manufacturers worldwide [3], underscoring its critical role in this evolving sector.While many known threats to BACnet stem from the lack of security measures such as encryption and integrity in the specification, our study has identified a class of implicitly reserved fields that may introduce software and system security issues.Although the protocol carefully defines field names and their corresponding lengths, their practical utilization may not fully leverage the theoretical maximum capacities.For instance, the Actual Window Size field (as specified on Page 847 of the BACnet standard [4]) is designed to occupy 8 bits, yet its values are limited to the range between 0 and 0x7F (127), implicitly leaving the upper range unused (i.e., up to 0xFF or 255).If manufacturers fail to implement proper input validation, inputs beyond the expected range could trigger undefined behavior, resulting in data corruption, system crashes, or arbitrary code execution by attackers.Fuzzing is an intuitive and widely adopted approach for uncovering BAS vulnerabilities arising from poor input validation.However, existing techniques [5]-relying on random mutations and neglecting BA</summary>
+  </entry>
+  <entry>
+    <title>Beyond Conventional Triggers: Auto-Contextualized Covert Triggers for Android Logic Bombs</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240348"/>
+    <id>https://doi.org/10.14722/ndss.2026.240348</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Ye Wang, Bo Luo, Fengjun Li
+
+Recent advances in static analysis, fuzzing, and learning-based detection have substantially improved the defense against trigger-based malware; however, these approaches mostly assume that trigger conditions are semantically explicit or distinguishable from normal application logic.In this paper, we present SensorBomb, a novel logic-bomb framework that exploits this assumption through auto-contextualized triggers and onboard sensor-actuator covert channels.Instead of relying on obscure or rare trigger conditions, SensorBomb constructs triggers tightly aligned with the host app's legitimate sensor usage, actuator behaviors, and functional context so that they appear indistinguishable from benign behavior.To do so, SensorBomb automatically analyzes the host app to select context-compatible sensors, actuators, and sensitive operations, constructs covert trigger channels, and dynamically adapts trigger patterns to evade static analysis, fuzzing, sensor state anomaly detection, and user suspicion.We implement three representative prototypes of such triggers and evaluate them across diverse devices and environments.Our results show that SensorBomb consistently evades state-of-theart detection techniques and achieves high trigger reliability with zero false positives.Large-scale injection experiments on real-world APKs further demonstrate that SensorBomb can be deployed without affecting normal app functionality.This work reveals a critical and previously underexplored attack surfa</summary>
+  </entry>
+  <entry>
+    <title>Bleeding Pathways: Vanishing Discriminability in LLM Hidden States Fuels Jailbreak Attacks</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240004"/>
+    <id>https://doi.org/10.14722/ndss.2026.240004</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Yingjie Zhang, Tong Liu, Zhe Zhao, Guozhu Meng, Kai Chen
+
+Large Language Models (LLMs) remain vulnerable to jailbreak attacks that exploit adversarial prompts to circumvent safety measures.Current safety fine-tuning approaches face two critical limitations.First, they often fail to strike a balance between security and utility, where stronger safety measures tend to over-reject harmless user requests.Second, they frequently miss malicious intent concealed within seemingly benign tasks, leaving models exposed to exploitation.Our work identifies a fundamental cause of these issues: during response generation, an LLM's capacity to differentiate harmful from safe outputs deteriorates.Experimental evidence confirms this, revealing that the separability between hidden states for safe and harmful responses diminishes as generation progresses.This weakening discrimination forces models to make compliance judgments earlier in the generation process, restricting their ability to recognize developing harmful intent and contributing to both aforementioned failures.To mitigate this vulnerability, we introduce DEEPALIGN -an inherent defense framework that enhances the safety of LLMs.By applying contrastive hidden-state steering at the midpoint of response generation, DEEPALIGN amplifies the separation between harmful and benign hidden states, enabling continuous intrinsic toxicity detection and intervention throughout the generation process.Moreover, it facilitates contextually appropriate safe responses to harmful queries, thereby expanding the </summary>
+  </entry>
+  <entry>
+    <title>BSFuzzer: Context-Aware Semantic Fuzzing for BLE Logic Flaw Detection</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240094"/>
+    <id>https://doi.org/10.14722/ndss.2026.240094</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Ting Yang, Yue Qin, Lan Zhang, Zhiyuan Fu, Junfan Chen, Jice Wang, Shangru Zhao, Qi Li
+
+Bluetooth Low Energy (BLE) has become a foundational communication standard for modern connected devices.However, its complex design introduces subtle logic flaws, such as misinterpreted fields or invalid state transitions, that can enable authentication bypass, unauthorized control, or Denial-of-Service (DoS) attacks.These issues often evade conventional fuzzing and formal analysis.To address this gap, we propose BSFuzzer, a black-box, context-aware semantic fuzzing framework guided by the Bluetooth Core Specification.BSFuzzer uses a Large Language Model (LLM) agent to semantically parse the Bluetooth specification, extracting state machines and packet semantics from text, diagrams, and context.It then generates two types of mutations: field-level violations of protocol rules and statelevel disruptions of key transitions.These are composed into structured test sequences and executed on target devices.The LLM agent is further used to verify responses against expected behaviors, enabling detection of subtle logic flaws beyond the reach of traditional fuzzers.We evaluated BSFuzzer on 19 real-world BLE devices, including 9 System-on-Chip (SoC) modules and 10 smartphones.It uncovered 36 security issues, including 34 previously unknown bugs, 9 of which have received CVE identifiers.Two critical flaws were recognized by a major vendor through bug bounty programs.The experimental results indicate that BSFuzzer attains high accuracy in both LLM-based specification analysis (up to 97%</summary>
+  </entry>
+  <entry>
+    <title>DOM-XSS Detection via Webpage Interaction Fuzzing and URL Component Synthesis</title>
+    <link href="https://doi.org/10.14722/ndss.2026.231467"/>
+    <id>https://doi.org/10.14722/ndss.2026.231467</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Nuno Sabino, Darion Cassel, Rui Abreu, Pedro Ad??o, Lujo Bauer, Limin Jia, Limin Jia
+
+DOM-based cross-site scripting (DOM-XSS) is a prevalent form of web vulnerability.Prior work on automated detection and confirmation of such vulnerabilities at scale has several limitations.First, prior work does not interact with the page and thus misses vulnerabilities in event handlers whose execution depends on user actions.Second, prior work does not find URL components, such as GET parameters and fragment values that, when instantiated with specific keys/values, execute more code paths.To address this, we introduce SWIPE, a DOM-XSS analysis infrastructure that uses fuzzing to generate user interactions to trigger event handlers and leverages dynamic symbolic execution (DSE) to automatically synthesize URL parameters and fragments.We run SWIPE on 44,480 URLs found in pages from the Tranco top 30,000 popular domains.Compared to prior work, SWIPE's fuzzer finds 15% more vulnerabilities.Additionally, we find that a lack of parameters and fragments in URLs significantly hinders DOM-XSS detection, and show that SWIPE's DSE engine can synthesize previously unseen URL parameters and fragments that trigger 20 new vulnerabilities.</summary>
+  </entry>
+  <entry>
+    <title>Efficiently Detecting DBMS Bugs through Bottom-up Syntax-based SQL Generation</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240198"/>
+    <id>https://doi.org/10.14722/ndss.2026.240198</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Yu Liang, Peng Liu
+
+Syntax-based testing is a promising technique for finding bugs in Database Management Systems (DBMSs).All existing syntax-based SQL generation tools apply a Top-down generation method.To construct a SQL query (syntax tree), the generator forward explores the SQL grammar starting from the root node, and it stops when no further grammar rule can be applied to the leaves of the syntax tree.However, the Top-down generation method tends to put more effort into exploring the shallow grammar close to the root and neglects the feature-rich grammar deeper in the grammar space.Therefore, it is not efficient in finding DBMS bugs.This paper proposes a new Bottom-up syntax-based SQL generation technique that puts more testing resources into exploring the feature-rich grammar rules.The exploration of SQL grammar begins with one interesting grammar rule that outlines the syntax of feature-rich SQL functionalities.The generator then backtracks (Bottom-up) this grammar rule to the root to create a syntax path that unveils this interesting grammar.Multiple Bottom-up generated syntax paths are then expanded and merged to create diverse SQL queries for fuzzing.A prototype tool, SQLBull, adopts the Bottom-up generation technique for fuzzing.In the evaluation, SQLBull found 63 zero-day bugs from 5 well-tested DBMSs: MySQL, MariaDB, CockroachDB, DuckDB, and PostgreSQL.It outperforms all existing tools in both bug-finding and code coverage.The evaluation results verify the effectiveness of the Botto</summary>
+  </entry>
+  <entry>
+    <title>FirmAgent: Leveraging Fuzzing to Assist LLM Agents with IoT Firmware Vulnerability Discovery</title>
+    <link href="https://doi.org/10.14722/ndss.2026.231943"/>
+    <id>https://doi.org/10.14722/ndss.2026.231943</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Jiangan Ji, Chao Zhang, Shuitao Gan, Lin Jian, Hangtian Liu, Tieming Liu, Lei Zheng, Zhipeng Jia
+
+The rapid proliferation of IoT devices has introduced substantial security vulnerabilities.Existing vulnerability detection techniques exhibit various weaknesses: static analysis solutions (including large language models, LLMs) suffer from high false positives and provide no PoC (proof-of-concept) samples, while dynamic analysis solutions (e.g., fuzzing) often have high false negatives.To address these challenges, we present FirmAgent, the first hybrid solution that leverages fuzzing to assist LLM agents in finding vulnerabilities in IoT firmware.Our design is motivated by the key observation that fuzzing can accurately identify input-related code points in firmware, while static analysis can thoroughly analyze program paths starting from those code points.FirmAgent utilizes fuzzing to collect runtime input points (i.e., taint sources) and reconstruct potential vulnerability paths.Then, it applies an LLM agent to perform context-aware taint analysis along the potential paths and another LLM agent to refine the fuzzing-generated testcase to generate PoC testcases.We evaluate FirmAgent on 14 real-world IoT firmware.It identifies 182 vulnerabilities with a precision of 91%, including 140 previously unknown vulnerabilities, 17 of which have been assigned CVE numbers.Our results demonstrate that FirmAgent substantially outperforms SOTA tools in both detection capability and precision. Direct assignment from string constantsArgument is a hardcoded string C Initialization from the </summary>
+  </entry>
+  <entry>
+    <title>Fuzzilicon: A Post-Silicon Microcode-Guided x86 CPU Fuzzer</title>
+    <link href="https://doi.org/10.14722/ndss.2026.231486"/>
+    <id>https://doi.org/10.14722/ndss.2026.231486</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Johannes Lenzen, Mohamadreza Rostami, Lichao Wu, Ahmad‐Reza Sadeghi
+
+to faithfully implement their Instruction Set Architectures (ISAs) and enforce strict isolation between processes.However, this assumption has been increasingly challenged by the discovery of critical architectural and microarchitectural-level vulnerabilities [1]-[4].These attacks demonstrate that flaws in CPU microarchitectural can be exploited to leak data, bypass protections, or undermine system integrity, even for secure and well-written software [5].Indeed, modern processors, particularly in the x86 family, are highly complex, with layers of undocumented behavior implemented in proprietary µcode [6].As designs become increasingly complex and opaque, the risk of hardware-level security flaws continues to grow [7].To detect hardware-level vulnerabilities, researchers have traditionally relied on techniques such as formal verification [8]-[12], runtime detection [13], [14], information flow tracking [15]-[17], and hardware fuzzing [18], [19].Among them, hardware fuzzing has emerged as a promising approach due to its scalability and adaptability to various designs [20]-[41].Hardware fuzzing has evolved into two distinct approaches: pre-silicon fuzzing, which targets Register-Transfer Level (RTL) models during hardware development, and post-silicon fuzzing, which evaluates manufactured processors under real execution conditions [20]-[41].While presilicon fuzzing is widely studied in literature thanks to the deep observability and fine-grained instrumentation within the RTL mo</summary>
+  </entry>
+  <entry>
+    <title>GoldenFuzz: Generative Golden Reference Hardware Fuzzing</title>
+    <link href="https://doi.org/10.14722/ndss.2026.231663"/>
+    <id>https://doi.org/10.14722/ndss.2026.231663</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Lichao Wu, Mohamadreza Rostami, Huimin Li, Nikhilesh Singh, Ahmad‐Reza Sadeghi
+
+</summary>
+  </entry>
+  <entry>
+    <title>HyperMirage: Direct State Manipulation in Hybrid Virtual CPU Fuzzing</title>
+    <link href="https://doi.org/10.14722/ndss.2026.231763"/>
+    <id>https://doi.org/10.14722/ndss.2026.231763</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Manuel Andreas, Fabian Specht, Marius Momeu
+
+</summary>
+  </entry>
+  <entry>
+    <title>Identifying Logical Vulnerabilities in QUIC Implementations</title>
+    <link href="https://doi.org/10.14722/ndss.2026.231777"/>
+    <id>https://doi.org/10.14722/ndss.2026.231777</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Kaihua Wang, Jianjun Chen, Pinji Chen, Jianwei Zhuge, Jiaju Bai, Haixin Duan
+
+QUIC is a modern transport protocol increasingly adopted by major platforms and services, making its security and correctness critically important.However, the complexity of QUIC specification and implementations introduces opportunities for subtle and dangerous logic flaws.Existing QUIC testing tools primarily focus on memory-related vulnerabilities and are illequipped to detect logical vulnerabilities.Therefore, the discovery of logical vulnerabilities is currently still highly dependent on manual auditing.In this paper, we introduce MerCuriuzz, a novel black-box fuzzing framework designed to automatically uncover logical vulnerabilities in QUIC implementations.We evaluated MerCuriuzz against 16 widely used QUIC implementations and discovered 14 previously unknown logical vulnerabilities affecting popular implementations such as quiche, xquic, and aioquic.Those vulnerabilities can pose severe security risks, enabling attackers to exhaust server resources, crash services, or deny legitimate users access to the server.We categorize those vulnerabilities into six categories and propose mitigation strategies.We also responsibly disclosed our findings to the affected vendors, and 11 of them were confirmed and rewarded by the vendors, such as Cloudflare and Alibaba Cloud.</summary>
+  </entry>
+  <entry>
+    <title>IoTBec: An Accurate and Efficient Recurring Vulnerability Detection Framework for Black Box IoT devices</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240634"/>
+    <id>https://doi.org/10.14722/ndss.2026.240634</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Haoran Yang, Jiaming Guo, Shuangning Yang, Guoli Zhao, Qingqi Liu, Chi Zhang, Zhenlu Tan, Lixiao Shan
+
+The proliferation of IoT devices has driven a rise in vulnerability exploits.Existing vulnerability detection approaches heavily rely on firmware or source code for analysis.This reliance critically compromises their efficiency in real-world black-box scenarios.To address this limitation, we propose IoTBec, a novel firmware and source-code independent framework for recurring vulnerability detection.IoTBec innovatively constructs a Vulnerability Interface Signature (VIS) based on black-box interfaces and known vulnerability information.The signature is designed to match potential recurring vulnerabilities against target devices.The framework then deeply integrates this signature-based detection with Large Language Model (LLM)-driven fuzzing.Upon a match, IoTBec automatically leverages LLMs to generate targeted fuzzing payloads for verification.To evaluate IoTBec, we conducted extensive experiments on devices from five major IoT vendors.Results show that IoTBec discovers over 7 times more vulnerabilities than the current state-of-the-art (SOTA) black-box fuzzing methods, with 100% precision and 93.37% recall.Overall, IoTBec detected 183 vulnerabilities, 169 of which were assigned CVE IDs.Among these, 53 were newly discovered and had an average CVSS 3.x score of 8.61, covering buffer overflows, command injection, and CSRF issues.Notably, through LLM-driven fuzzing, IoTBec also discovered 25 previously unknown vulnerabilities.The experimental evidence suggests that IoTBec's uniqu</summary>
+  </entry>
+  <entry>
+    <title>MUTATO: Enhancing Fuzz Drivers with Adaptive API Option Mutation</title>
+    <link href="https://doi.org/10.14722/ndss.2026.230820"/>
+    <id>https://doi.org/10.14722/ndss.2026.230820</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Shuangxiang Kan, Cheng Xiao, Yuekang Li
+
+Fuzz testing is a cornerstone technique for uncovering vulnerabilities and improving the reliability of software systems.Recent studies reveal that the primary bottleneck in modern coverage-guided fuzzing lies not within the fuzzers themselves, but in the construction of fuzz drivers-particularly their limited flexibility in exploring option parameters within library APIs.Existing approaches predominantly focus on mutating input data, often neglecting configuration options that fundamentally influence API behavior and may conceal critical vulnerabilities.To address this gap, we present MUTATO, a new multi-dimensional fuzz driver enhancement approach that systematically and adaptively mutates both input data and option parameters using a coverage-guided, epsilon-greedy strategy.Unlike prior work that requires intrusive modifications to fuzzers or targets only program-level options, MUTATO operates at the driver level, ensuring fuzzer-agnostic applicability and seamless integration with both manual and automatically generated drivers.We further introduce an option parameter fuzzing language (OPFL) to guide the enhancement of drivers.Extensive experiments on 10 widely used C/C++ libraries demonstrate that MUTATO-enhanced drivers achieve, on average, 14% and 13% higher code coverage compared to original AFL++ and LibFuzzer drivers, respectively, and uncover 12 previously unknown vulnerabilities, including 3 CVEs.Notably, we identified 4 vulnerabilities within 5 hours in APIs that</summary>
+  </entry>
+  <entry>
+    <title>PhyFuzz: Detecting Sensor Vulnerabilities with Physical Signal Fuzzing</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240029"/>
+    <id>https://doi.org/10.14722/ndss.2026.240029</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Zhicong Zheng, Jinghui Wu, Shilin Xiao, Yanze Ren, Chen Yan, Xiaoyu Ji, Wenyuan Xu
+
+Sensor vulnerabilities can be exploited by physical signal attacks to cause erroneous sensor measurements, endangering systems that rely on sensors to make critical decisions.While hundreds of existing studies have discovered numerous sensor vulnerabilities, they are all driven by manual expert analysis and require a time-consuming process of trial and error.The absence of automated approaches to assist in the detection of sensor vulnerabilities has posed a major roadblock to bridging the gap between sensor security research and industrial applications.In this paper, we propose PhyFuzz, a new physical signal fuzzing paradigm that relies on physical testing signals to detect existing and potentially new types of sensor vulnerabilities without humans in the loop.To cope with the unprecedented challenges of fuzzing with physical signals, such as the infinite searching space of signal parameters and the black-box design of diverse sensor hardware, we design a unique fuzzing algorithm that enables efficient testing signal construction and effective feature discretization for sensor vulnerability identification and assessment.We implement PhyFuzz as a prototype that can support fuzz testing with acoustic, laser, and electromagnetic signals.Our experiment shows that it can identify 46 vulnerabilities on 13 sensors of 9 different types, including 6 undisclosed cases.</summary>
+  </entry>
+  <entry>
+    <title>PortRush: Detect Write Port Contention Side-Channel Vulnerabilities via Hardware Fuzzing</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240587"/>
+    <id>https://doi.org/10.14722/ndss.2026.240587</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Peihong Lin, Pengfei Wang, Lei Zhou, Gen Zhang, Xu Zhou, Wei Xie, Zhiyuan Jiang, Kai Lü
+
+CPU vulnerabilities pose ongoing security challenges in modern CPU architectures.Among the CPU vulnerabilities, write port contention-caused by multiple functional modules simultaneously competing for a limited number of shared write ports-remains insufficiently studied.In this paper, we study write port contention side-channel vulnerabilities in CPUs and propose PORTRUSH, a novel fuzzing framework designed to detect and validate such vulnerabilities at the register-transfer level (RTL).First, PORTRUSH constructs a Write Request Graph (WRG) to statically identify potential write port contention instances by modeling write paths and priority relationships among functional modules that target shared storage elements.Second, within the WRG, PORTRUSH implements a Hierarchical Aggregation and Decoding method to efficiently detect write port contention by monitoring relevant hardware signals across design hierarchies.Third, PORTRUSH employs a Contention-guided Hardware Fuzzing approach to trigger write port contention and automatically combine contention-triggered instruction sequences with transient execution attack patterns, enabling validation of write port contention side-channel vulnerabilities.We evaluate PORTRUSH on three RISC-V CPUs (BOOM, NutShell, and Rocket Core) and demonstrate its effectiveness in identifying and triggering write port contention.Furthermore, we validate that the discovered vulnerabilities can be exploited in realistic write port contention attack scena</summary>
+  </entry>
+  <entry>
+    <title>ReFuzz: Reusing Tests for Processor Fuzzing with Contextual Bandits</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240118"/>
+    <id>https://doi.org/10.14722/ndss.2026.240118</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Chen Chen, Zaiyan Xu, Mohamadreza Rostami, David Liu, Dileep M. Kalathil, Ahmad‐Reza Sadeghi, Jeyavijayan Rajendran
+
+Processor designs rely on iterative modifications and reuse well-established designs.However, this reuse of prior designs also leads to similar vulnerabilities across multiple processors.As processors grow increasingly complex with iterative modifications, efficiently detecting vulnerabilities from modern processors is critical.Inspired by software fuzzing, hardware fuzzing has recently demonstrated its effectiveness in detecting processor vulnerabilities.Yet, to our best knowledge, existing processor fuzzers fuzz each design individually, lacking the capability to understand known vulnerabilities in prior processors to finetune fuzzing to identify similar or new variants of vulnerabilities.To address this gap, we present ReFuzz, an adaptive fuzzing framework that leverages contextual bandit to reuse highly effective tests from prior processors to fuzz a processor-undertest (PUT) within a given ISA.By intelligently mutating tests that trigger vulnerabilities in prior processors, ReFuzz detects similar and new variants of vulnerabilities in PUTs.ReFuzz uncovered three new security vulnerabilities and two new functional bugs.ReFuzz detected one vulnerability by reusing a test that triggers a known vulnerability in a prior processor.One functional bug exists across three processors that share design modules.The second bug has two variants.Additionally, ReFuzz reuses highly effective tests to enhance efficiency in coverage, achieving an average 511.23×coverage speedup and up to 9</summary>
+  </entry>
+  <entry>
+    <title>RTCON: Context-Adaptive Function-Level Fuzzing for RTOS Kernels</title>
+    <link href="https://doi.org/10.14722/ndss.2026.241600"/>
+    <id>https://doi.org/10.14722/ndss.2026.241600</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Eunkyu Lee, Junyoung Park, Insu Yun
+
+Real-Time Operating System (RTOS) is widely used in embedded systems with its various subsystems such as Bluetooth and Wi-Fi.As its functionalities grow, its attack surface also expands, exposing it to more security threats.To address this, dynamic testing techniques like fuzzing have been widely applied to embedded systems.However, for RTOS, these techniques struggle to effectively test deeply located functions within the kernel due to their complexity.In this paper, we present RTCON, a context-adaptive functionlevel fuzzer for RTOS kernels.RTCON performs function-level fuzzing on any target functions within the RTOS kernel by adaptively generating function contexts during fuzzing.Additionally, RTCON employs Multi-layer Classification to classify crashes by confidence levels, helping analysts focus on high-confidence crashes.We implemented the prototype of RTCON and evaluated it on four popular RTOS kernels: Zephyr, RIOT, FreeRTOS, and ThreadX.As a result, RTCON discovered 27 bugs, including 25 new bugs.We reported all of them to maintainers and received 14 CVEs.RTCON also demonstrated its effectiveness in crash classification, achieving a 92.7% precision for high-confidence crashes, compared to a 5.8% precision for low-confidence crashes.</summary>
+  </entry>
+  <entry>
+    <title>SIPConfusion: Exploiting SIP Semantic Ambiguities for Caller ID and SMS Spoofing</title>
+    <link href="https://doi.org/10.14722/ndss.2026.230116"/>
+    <id>https://doi.org/10.14722/ndss.2026.230116</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Qi Wang, Jianjun Chen, Jingcheng Yang, Jiahe Zhang, Yaru Yang, Haixin Duan
+
+Session Initiation Protocol (SIP) is a cornerstone of modern real-time communication systems, powering voice calls, text messaging, and multimedia sessions across services such as VoIP, VoLTE, and RCS.While SIP provides mechanisms for authentication and identity assertion, its inherent flexibility poses the risk of semantic ambiguity among implementations that can be exploited by attackers.In this paper, we present SIPCHIMERA, a novel black-box fuzzing framework designed to systematically identify ambiguitybased identity spoofing vulnerabilities across SIP implementations.We evaluated SIPCHIMERA against six widely used opensource SIP servers-including Asterisk and OpenSIPS-and nine popular user agents, uncovering that attackers could spoof their identity via manipulating identity headers and circumvent authentication.We demonstrate the real-world impact of these vulnerabilities by evaluating five VoIP devices, seven commercial SIP deployments, and three carrier-grade RCS-based SMS platforms.Our experiments show that attackers can exploit these vulnerabilities to perform caller ID spoofing in VoIP calls and send spoofed SMS messages over RCS, impersonating arbitrary users or services.We have responsibly disclosed our findings to affected vendors and received positive acknowledgments.We finally propose remedies to mitigate those issues.</summary>
+  </entry>
+  <entry>
+    <title>SYSYPHUZZ: the Pressure of More Coverage</title>
+    <link href="https://doi.org/10.14722/ndss.2026.230921"/>
+    <id>https://doi.org/10.14722/ndss.2026.230921</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Zezhong Ren, Han Zheng, Zhiyao Feng, Qinying Wang, Marcel Busch, Yuqing Zhang, Chao Zhang, Mathias Payer
+
+Kernel fuzzing effectively uncovers vulnerabilities.While existing kernel fuzzers primarily focus on maximizing code coverage, coverage alone does not guarantee thorough exploration.Moreover, existing fuzzers, aimed at maximizing coverage, have plateaued.This pressing situation highlights the need for a new direction: code frequency-oriented kernel fuzzing.However, increasing the exploration of low-frequency kernel code faces two key challenges: (1) Resource constraints make it hard to schedule sufficient tasks for low-frequency regions without causing task explosion.(2) Random mutations often break context dependencies of syscalls targeting low-frequency regions, reducing the effectiveness of fuzzing.In our paper, we first perform a fine-grained study of imbalanced code coverage by evaluating Syzkaller in the Linux kernel and, as a response, propose SYSYPHUZZ, a kernel fuzzer designed to boost exploration of under-tested code regions.SYSYPHUZZ introduces Selective Task Scheduling to dynamically prioritize and manage exploration tasks, avoiding task explosion.It also employs Context-Preserving Mutation strategy to reduce the risk of disrupting important execution contexts.We evaluate SYSYPHUZZ against the state-of-the-art (SOTA) kernel fuzzers, Syzkaller and SyzGPT.Our results show that SYSYPHUZZ significantly reduces the number of under-explored code regions and discovers 31 unique bugs missed by Syzkaller and 27 bugs missed by SyzGPT.Moreover, SYSYPHUZZ finds five bugs miss</summary>
+  </entry>
+  <entry>
+    <title>Through the Authentication Maze: Detecting Authentication Bypass Vulnerabilities in Firmware Binaries</title>
+    <link href="https://doi.org/10.14722/ndss.2026.242757"/>
+    <id>https://doi.org/10.14722/ndss.2026.242757</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Nanyu Zhong, Yuekang Li, Yanyan Zou, Jiaxu Zhao, Jinwei Dong, Yang Xiao, Bingwei Peng, Yeting Li
+
+Embedded web services are widely integrated into network devices such as routers and gateways.These services are often exposed to public networks, making them attractive targets for authentication bypass attacks.Such vulnerabilities allow attackers to gain privileged access without valid credentials, posing serious risks to device integrity and network security.Existing detection techniques rely heavily on manual analysis or rigid heuristics, making them ineffective against diverse and evolving authentication schemes.We present AuthSpark, a novel dynamic analysis framework for detecting authentication bypass vulnerabilities in firmware binaries.AuthSpark leverages execution trace similarity between successful and failed authentication attempts to locate credential checks.It then tracks authentication-related variable propagation to identify authentication success logic.Finally, it employs a customized greybox fuzzer with taskspecific power scheduling and mutation strategies to explore bypass paths.We evaluate AuthSpark on firmware from 32 realworld devices containing 14 known vulnerabilities.AuthSpark successfully identifies 42 out of 44 credential checks and detects 14 of the known vulnerabilities.More importantly, when applied to the latest firmware versions, AuthSpark discovers six zeroday authentication bypass vulnerabilities, four of which received official assignments (three CVEs and one PSV).These results highlight AuthSpark 's effectiveness and its potential to uncove</summary>
+  </entry>
+  <entry>
+    <title>User-Space Dependency-Aware Rehosting for Linux-Based Firmware Binaries</title>
+    <link href="https://doi.org/10.14722/ndss.2026.230249"/>
+    <id>https://doi.org/10.14722/ndss.2026.230249</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Chuan Qin, Cen Zhang, Yaowen Zheng, Puzhuo Liu, Jian Zhang, Yeting Li, Weidong Zhang, Yang Liu
+
+Firmware rehosting is a fundamental emulation technique that enables dynamic analysis of firmware binaries at scale.Successfully rehosting Linux-based firmware services requires proper emulation of both system-level functionalities like device interfaces and user-space dependencies such as configuration files, inter-process communications.However, existing solutions inadequately leverage user-space knowledge.The init routine, which is the first user-space process sets up operating environments, is often incompletely executed, leading to incomplete initialization.Besides, all emulation failures are treated uniformly, failing to distinguish between direct system-level emulation issues and their indirect effects on user-space dependencies.To fill this gap, we developed FIRMWELL, a framework which first models firmware rehosting as the coordinated emulation of both the target binary and its user-space dependencies.It first rehosts the init routine for environment construction and then launches the target, which is a procedure that typically involves more than one hundred processes.When emulation failures occur, FIRMWELL identifies the blocking process, analyzes incorrectly emulated resources, and applies targeted fixes.The key strategy is to address user-space dependency failures by correcting the underlying system-level emulation errors, while employing program analysis for precise resource value inference.In evaluation of 14,049 firmware images, FIRMWELL successfully rehosted 6</summary>
+  </entry>
+  <entry>
+    <title>kSTEP: Characterization and Deterministic Testing of Linux CPU Scheduler Bugs</title>
+    <link href="https://www.usenix.org/conference/osdi26/presentation/cao"/>
+    <id>https://www.usenix.org/conference/osdi26/presentation/cao</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="OSDI 2026"/>
+    <summary>OSDI 2026 — Tingjia Cao, Shawn (Wanxiang) Zhong, Caeden Whitaker, Ke Han, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau
+
+We present an in-depth study of CPU scheduler bugs, covering both functional violations and misalignments between implementation and policy. Our study shows that these bugs are hard to observe and even harder to trigger. To close this gap, we introduce kSTEP. kSTEP gives testers fine-grained control over scheduler-invoking events and runs them deterministically on isolated CPUs. kSTEP produces noise-free, repeatable traces that expose subtle behavior. We then build a coverage-guided fuzzer on top of kSTEP for automated CPU scheduler testing. We demonstrate kSTEP’s effectiveness by reproducing seven real-world scheduler bugs and uncovering four new ones. kSTEP is publicly available at https://github.com/kstep-dev/kstep .</summary>
+  </entry>
+  <entry>
+    <title>State-Aware Fuzzing of JavaScript Engines with LLM-Guided Instrumentation</title>
+    <link href="https://doi.org/10.1145/3830418.3843900"/>
+    <id>https://doi.org/10.1145/3830418.3843900</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2026"/>
+    <summary>SOSP 2026 — Wai Kin Wong, Dongwei Xiao, Anthony Cheuk Tung Lai, Ping Fan Ke, Shuai Wang
+
+The security of the modern web depends on the correctness of JavaScript (JS) engines, yet these complex systems remain vulnerable to high-impact bugs. A critical limitation of state-of-the-art fuzzers is the coverage plateau: once a fuzzer saturates the control-flow graph, edge coverage loses its ability to guide discovery. Because complex engine behaviors, such as JIT optimization tiers and hidden class transitions, often share identical edge coverage, standard coverage metrics are blind to the distinct internal states required to trigger deep errors. To bridge this gap, we present StateLens, a framework that employs Large Language Models (LLM) to automate the discovery of deep internal states. Blindly placing instrumentation probes at all states is infeasible due to the vast state space and the high runtime overhead. State-Lens introduces a novel agent-based reasoning pipeline that emulates the intuition of a security researcher. By iteratively traversing code and developer comments, our agents intelligently select high-value instrumentation targets, effectively separating logic-driving states from irrelevant data. This results in synthesizable, high-signal feedback probes that map the engine's hidden configurations. This instrumentation feeds a dual-feedback mechanism, effectively guiding the fuzzer toward unexplored engine semantics. Our evaluation confirms that StateLens significantly outperforms state-of-the-art fuzzers and uncovers 68 new bugs.</summary>
+  </entry>
+  <entry>
+    <title>T amias : Feedback-Guided Systematic Concurrency Exploration for Transparent Distributed System Fuzzing</title>
+    <link href="https://doi.org/10.1145/3830418.3843891"/>
+    <id>https://doi.org/10.1145/3830418.3843891</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2026"/>
+    <summary>SOSP 2026 — Congyu Liu, Yaoxu Song, Pedro Fonseca, Yongle Zhang
+
+Existing distributed system fuzzers are limited by coarsegrained, nondeterministic event control and weak support for systematic schedule mutation. They rely on timing perturbations (e.g., injecting delays), which can influence execution but do not precisely realize the fine-grained event orderings that trigger many distributed bugs. In addition, they do not integrate systematic schedule exploration with mutation, making exploration less effective in large search spaces.</summary>
+  </entry>
+  <entry>
+    <title>Validating Rust Compilers with Trait-Type Constraint Graph</title>
+    <link href="https://doi.org/10.1145/3830418.3843907"/>
+    <id>https://doi.org/10.1145/3830418.3843907</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="SOSP 2026"/>
+    <summary>SOSP 2026 — Xin Lai, Ming Wen, Xiaofei Liao, Hai Jin
+
+Rust is increasingly adopted in safety-critical systems software, making the reliability of its compiler particularly important. Defects in the Rust compiler can lead to incorrect compiler behavior and compromise the reliability of the compilation process. Systematic validation of the compiler is therefore imperative. Through an empirical analysis of real-world Rust compiler bugs, we find that the trait mechanism remains a primary source of hard-to-detect compiler bugs that existing validation tools consistently miss. To address this, we propose a validation methodology based on a novel concept of Trait-Type Constraint Graph (TTCG), a graph that captures semantic relationships between traits and types and enables the derivation of the Trait Constraint Space (TCS) for systematic exploration. Guided by TTCG, our tool TraitFuzzer first leverages large language models to rewrite seed programs into trait-dense forms, and then applies TTCG-guided mutations to drive the compiler toward under-tested trait-solving logic and cross-feature interactions. In total, TraitFuzzer has discovered 51 bugs, 45 of which have already been confirmed. Further analysis reveals that 41 bugs can only be triggered with trait structures. More importantly, none of these bugs can be detected by the baseline approaches. Our tool, together with the reported bugs, has also received positive feedback from the community.</summary>
+  </entry>
+  <entry>
+    <title>Batch Me If You Can: Coverage-Guided RPKI Fuzzing at Scale</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00188"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00188</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Haya Schulmann, Niklas Vogel
+
+</summary>
+  </entry>
+  <entry>
+    <title>Camveil: Unveiling Security Camera Vulnerabilities Through Multi-Protocol Coordinated Fuzzing</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00002"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00002</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Fuchen Ma, Yuqiao Yang, Yuanliang Chen, Yanyang Zhao, Ting Chen, Yu Jiang
+
+</summary>
+  </entry>
+  <entry>
+    <title>Crucible: Retrofitting Commodity CPUs with Vulnerabilities via Transparent Software Emulation</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00186"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00186</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Tristan Hornetz, Lukas Gerlach, Michael Schwarz
+
+Transient-execution attacks such as Meltdown, Foreshadow, and MDS expose fundamental flaws in modern CPUs, yet reproducing and comparing them today is increasingly complex: vulnerable CPUs are scarce, lab setups cannot be shared easily, and results are hard to compare. These challenges make it difficult to evaluate detection tools, study exploits, or integrate attacks into teaching environments. As vulnerable CPUs become rarer, hands-on experimentation and consistent benchmarking gradually become infeasible, complicating both research and education in microarchitectural security. In this paper, we introduce Crucible, a software-only framework that transparently simulates Meltdown-type transient execution vulnerabilities on any x86 CPU. Crucible simulates transient execution after a fault by shadowing the instruction stream in a different process to emulate key microarchitectural effects, such as cache leakage, transient windows, and fence behavior. Crucible runs unmodified public proofs-of-concept and even complete exploits with leakage patterns that match real hardware. We reproduce 3 full end-to-end exploits for well-known vulnerabilities, such as key extraction from VeraCrypt with Meltdown, on unaffected hardware. Crucible supports testing of binary-only applications and integrates with state-of-the-art fuzzers, which detect simulated vulnerabilities with results comparable to real CPUs. We further simulate two artificial vulnerabilities to evaluate generalization in fuzze</summary>
+  </entry>
+  <entry>
+    <title>deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00060"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00060</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — G. C. Androutsopoulos, Antonio Bianchi
+
+Although Rust ensures memory safety by default, it also permits the use of unsafe code, which can introduce memory safety vulnerabilities if misused. Unfortunately, existing tools for detecting memory bugs in Rust typically exhibit limited detection capabilities, inadequately handle Rust-specific types, or rely heavily on manual intervention. To address these limitations, we present deepSURF, a tool that integrates static analysis with Large Language Model (LLM)-guided fuzzing harness generation to effectively identify memory safety vulnerabilities in Rust libraries, specifically targeting unsafe code. deepSURF introduces a novel approach for handling generics by substituting them with custom types and generating tailored implementations for the required traits, enabling the fuzzer to simulate user-defined behaviors within the fuzzed library. Additionally, deepSURF employs LLMs to augment fuzzing harnesses dynamically, facilitating exploration of complex API interactions and significantly increasing the likelihood of exposing memory safety vulnerabilities. We evaluated deepSURF on 63 real-world Rust crates, successfully rediscovering 30 known memory safety bugs and uncovering 12 previously-unknown vulnerabilities (out of which 11 have been assigned RustSec IDs and 3 have been patched), demonstrating clear improvements over state-of-the-art tools.</summary>
+  </entry>
+  <entry>
+    <title>Fizzle: A Framework for Deterministic and Reproducible Network Fuzzing</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00091"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00091</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Nathaniel Bennett, Tyler Tucker, Carson Stillman, William Enck, Patrick Traynor, Kevin Butler
+
+</summary>
+  </entry>
+  <entry>
+    <title>Fuzzing the Physical Space: Physics-Aware Testing of Black-Box Industrial Control Systems</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00178"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00178</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Burak Sahin, David Oygenblik, Mingxuan Yao, Yizhi Huang, Brendan Saltaformaggio, Saman Zonouz
+
+</summary>
+  </entry>
+  <entry>
+    <title>Jazzer: Coverage-Guided Fuzzing for Semantic Vulnerabilities in the Java Ecosystem</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00134"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00134</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Sergej Dechand, Tobias Wienand, Fabian Meumertzheim, Peter Samarin, Simon Resch, Khaled Yakdan, Thorsten Holz, Flavio Toffalini
+
+</summary>
+  </entry>
+  <entry>
+    <title>PILOT: Command-Line Interface Fuzzing Via Path-Guided, Iterative Large Language Model Prompting</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00211"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00211</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Momoko Shiraishi, Yinzhi Cao, Takahiro Shinagawa
+
+</summary>
+  </entry>
+  <entry>
+    <title>SmuFuzz: Enable Deep System Management Mode Fuzzing in Fully Featured UEFI Runtime Environment</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00011"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00011</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Jianqiang Wang, Yi Xiang, Meng Wang, Qinying Wang, Ali Abbasi, Thorsten Holz
+
+</summary>
+  </entry>
+  <entry>
+    <title>Specializing Language Models for Textual Fuzzing via Reinforcement Learning</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00184"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00184</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Jiayi Lin, Liangcai Su, Junzhe Li, Chenxiong Qian
+
+</summary>
+  </entry>
+  <entry>
+    <title>StepStone: LLM-Based GPU Kernel Driver Fuzzing via User-Space Libraries</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00124"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00124</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Xiaochen Zou, Juefei Pu, A. Srivastav, Jonathan Cox, Zhengchuan Liang, Yuan Tan, X. H. Li, Y C Zhu
+
+</summary>
+  </entry>
+  <entry>
+    <title>Stop Starving or Stuffing Me: Boosting Firmware Fuzzing Efficiency with On-Demand Input Delivery</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00155"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00155</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Shandian Shen, Wei Zhou, Keming Zhao, Peng Liu, Chung Hwan Kim, Le Guan
+
+</summary>
+  </entry>
+  <entry>
+    <title>TRIGFUZZ: Triggering Conditions Guided Directed Fuzzing</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00156"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00156</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Yiyang Chen, Nuoqi Gui, Long Wang, L Lin-Lin Chen, Xuanqing Shi, Xi Cao, Chao Zhang
+
+</summary>
+  </entry>
+  <entry>
+    <title>Web Application Vulnerability Repair Via Context-Aware Fault Localization and Directed Differential Fuzzing</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00237"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00237</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Ce Wang, W C Meng
+
+</summary>
+  </entry>
+  <entry>
+    <title>zkFuzz: Foundation and Framework for Effective Fuzzing of Zero-Knowledge Circuits</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00049"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00049</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Hideaki Takahashi, Jihwan Kim, Suman Jana, Junfeng Yang
+
+Zero-knowledge (ZK) circuits enable privacy-preserving computations and are central to many cryptographic protocols. Systems like Circom simplify ZK development by combining witness computation and circuit constraints in one program. However, even small errors can compromise security of ZK programs -- under-constrained circuits may accept invalid witnesses, while over-constrained ones may reject valid ones. Static analyzers are often imprecise with high false positives, and formal tools struggle with real-world circuit scale. Additionally, existing tools overlook several critical behaviors, such as intermediate computations and program aborts, and thus miss many vulnerabilities. Our theoretical contribution is the Trace-Constraint Consistency Test (TCCT), a foundational, language-independent formulation of ZK circuit bugs. TCCT provides a unified semantics that subsumes prior definitions and captures both under- and over-constrained vulnerabilities, exposing the full space of ZK bugs that elude prior tools. Our systems contribution is zkFuzz, a novel program mutation-based fuzzing framework for detecting TCCT violations. zkFuzz systematically mutates the computational logic of Zk programs guided by a novel fitness function, and injects carefully crafted inputs using tailored heuristics to expose bugs. We evaluated zkFuzz on 452 real-world ZK circuits written in Circom, a leading programming system for ZK development. zkFuzz successfully identified 85 bugs, including 59 zero-d</summary>
+  </entry>
+  <entry>
+    <title>Autonomy Comes with Costs: Detecting Denial-of-Service Vulnerabilities Caused by Resource Abusing in LLM-based Agents</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/luo"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/luo</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Jiaqi Luo, Jiarun Dai, Fengyu Liu, Songyang Peng, Youkun Shi, Tong Bu, Geng Hong, Xudong Pan
+
+LLM-based agents have recently attracted significant attention. By leveraging the semantic understanding capabilities of large language models (LLMs), these agents can autonomously perform complex tasks according to user requests, such as downloading files and summarizing content. However, the lack of comprehensive resource governance renders them susceptible to abuse, potentially leading to resource exhaustion and denial-of-service (DoS) conditions. In this work, we present the first systematic security study of resource management in LLM-based agents. We identify three representative patterns of resource lifecycle management, each of which enables distinct avenues for DoS exploitation. Building on these insights, we propose AgentDoS, a novel directed grey-box fuzzing framework designed to detect DoS vulnerabilities arising from resource exhaustion. AgentDoS first analyzes the resource lifecycle within the agent and then leverages an LLM to generate functionality-specific seed prompts in natural language that drive the agent toward excessive resource consumption. We evaluated AgentDoS on 20 widely used open-source LLM-based agents and discovered 36 zero-day vulnerabilities affecting 16 agents, 15 of which have over 10,000 stars on GitHub. To date, 15 CVE IDs have been assigned for these vulnerabilities.</summary>
+  </entry>
+  <entry>
+    <title>Bond: Constraint-Directed Fuzzing for Automated Validation of Taint Analysis Results in Linux-based IoT Firmware</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-jiaqian"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/peng-jiaqian</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Jiaqian Peng, Puzhuo Liu, Kai Cheng, Zhaoteng Yan, Jie Liu, Chengnian Sun, Hongsong Zhu
+
+Firmware vulnerabilities in IoT devices pose serious security threats, yet state-of-the-art taint analysis tools often generate large numbers of reports with limited validation. We present Bond, a directed fuzzing framework that bridges static taint analysis and dynamic vulnerability validation. Bond introduces constraint-guided input mutation by integrating three categories of constraints with six semantic types, enabling efficient exploration of paths associated with taint reports. We evaluate Bond on 19 IoT devices from 8 vendors, covering 2,776 taint reports produced by four state-of-the-art taint analyzers. Bond successfully validated 1,349 reports as real vulnerabilities, including 155 previously unknown vulnerabilities, of which 108 have been assigned CVE/PSV identifiers. On 60 known vulnerabilities, Bond achieved a 91.67% recall rate. Compared with four leading IoT fuzzers, Bond improves vulnerability validation by up to 5.5X. Ablation studies further demonstrate the effectiveness of Bond's key components and constraint extraction. These results establish Bond as a practical and effective framework for validating firmware taint analysis results.</summary>
+  </entry>
+  <entry>
+    <title>Bulbasaur: Branch-Guided Online Mutator Generation for Greybox Fuzzing</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/wang-yiyi"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/wang-yiyi</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Yiyi Wang, Dongsong Yu, Ruiqi Dong, Yiyang Chen, Xiaogang Zhu, Chao Zhang
+
+Coverage-guided greybox fuzzing (CGF) hinges on generating inputs that satisfy branch constraints in order to explore deep code regions. Existing CGF techniques propose various approaches to improve the probability of solving such constraints. However, they still rely on general-purpose mutators, which lack the ability to precisely manipulate relevant input bytes to satisfy complex constraints. Our analysis reveals that LLMs can more accurately solve branch constraints by generating tailored mutators. These mutators enable the fuzzer to perform localized and reusable modifications on inputs that reach target branches, producing precise mutations to satisfy target constraints. To achieve this, we propose Bulbasaur, a branch-guided framework for online LLM-based mutator generation. Bulbasaur employs hard frontier-guided branch selection to identify critical branches, continuously collects and organizes relevant static and dynamic context to support high-quality mutator generation, and adopts an efficient and adaptive strategy to apply generated mutators during fuzzing. We evaluate Bulbasaur on the FuzzBench and UniFuzz benchmarks. The results show that Bulbasaur improves line and branch coverage by up to 23.18% and 24.46%, respectively, over state-of-the-art fuzzers, discovers 21 vulnerabilities missed by all baselines, and identifies 15 previously unknown vulnerabilities on OSS-Fuzz, all of which have been assigned CVE identifiers.</summary>
+  </entry>
+  <entry>
+    <title>CombiSan: Unifying Software Sanitizers for Comprehensive Fuzzing</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/marini"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/marini</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Matteo Marini, Floris Gorter, Daniele Cono D'Elia, Cristiano Giuffrida
+
+Modern C/C++ bug detection efforts heavily rely on fuzzing with software sanitizers. However, the most popular sanitizers have limited interoperability. As a result, developers often enable each sanitizer in isolation, if at all, requiring multiple runs. This sequential execution undermines performance and tests code in a non-uniform manner. In this paper, we present CombiSan, a fuzzing-optimized sanitizer that simultaneously detects all the addressability, uninitialized memory, and other undefined behavior issues covered by the three most popular sanitizers: ASan, MSan, and UBSan. CombiSan features a unified shadow memory design that efficiently tracks both the addressability and the initialization state of every byte of program memory. In addition, CombiSan's instrumentation seamlessly integrates with state-of-the-art detection of other undefined behavior classes. As bugs found by different sanitizers may mask each other by terminating execution early, CombiSan defers its analysis of all aggregated issues to test case completion. In our evaluation, CombiSan detected 81 new bugs in 10 programs tested daily by OSS-Fuzz. On average, fuzzing with CombiSan is 1.7x faster than sequentially testing with ASan+UBSan and MSan. Moreover, our results demonstrate that CombiSan has the same bug detection accuracy as these sanitizers, despite running for significantly fewer CPU hours.</summary>
+  </entry>
+  <entry>
+    <title>Concurrency Fuzzing of the Linux Kernel with eBPF</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/xu-jiacheng"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/xu-jiacheng</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Jiacheng Xu, Dylan Wolff, Xing Yi Han, Jialin Li, Abhik Roychoudhury
+
+Concurrency is indispensable for modern software systems to meet performance and scalability demands, yet concurrency bugs remain notoriously difficult to detect and reproduce. Controlled Concurrency Testing (CCT) mitigates this challenge by systematically exploring thread interleavings through scheduling control. However, existing CCT approaches for OS kernels largely rely on external enforcement mechanisms, such as custom hypervisors or invasive kernel patches, resulting in substantial overhead and limited maintainability and extensibility. In this work, we present SECT, the first kernel-native concurrency fuzzing framework that rethinks scheduling as a first-class exploration mechanism. SECT introduces a novel CCT scheduler with temporal isolation scheduling and embeds programmable scheduling policies directly into the kernel dispatch path via eBPF, enabling fine-grained control over thread interleavings without customized hypervisors or extensive kernel core modification. In addition, SECT provides a preemption-safe instrumentation mechanism for injecting scheduling points at critical kernel events and incorporates a two-phase fuzzing workflow to jointly explore both sequential and concurrent behaviors. Our evaluation demonstrates that SECT achieves 38% more branches, 57% overhead reduction and 11.4× speed-up in bug exposure compared to the state-of-the-art kernel concurrency fuzzers. Moreover, SECT discovers eight previously unknown concurrency-related bugs in the Linux </summary>
+  </entry>
+  <entry>
+    <title>Death by a Thousand Drips: Uncovering Critical Resource Leaks in the Windows Ecosystem</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/dong-feng"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/dong-feng</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Feng Dong, Jianting Gao, Yunpeng Tian, Weifeng Yuan, Mu Zhang, Zesen Ye, Jietao Yang, Zhiniang Peng
+
+Windows remote services are a critical attack surface due to their privileged execution and widespread deployment. Under the shared service-host model (svchost.exe), a single resource-exhaustion bug can trigger fate-sharing failures across co-resident services. Yet most vulnerability discovery remains crash-centric and is thus blind to silent, long-horizon resource leaks (e.g., memory/handle exhaustion) that do not cause immediate exceptions, while the closed-source Windows ecosystem limits the applicability of source-level sanitizers. We present REDOSPECTOR, a fuzzing framework for discovering resource-oriented Denial-of-Service (DoS) vulnerabilities in opaque Windows binaries. REDOSPECTOR combines (1) lightweight in-process hook-based telemetry by intercepting native ntdll heap routines, (2) an amplification-based oracle that identifies persistent leaks via repeated execution and growth-trend analysis, and (3) a hybrid seed-generation pipeline that leverages static binary analysis and Large Language Models (LLMs) to reach deep protocol states. Evaluated on the latest builds of Windows 11 (24H2) and Windows Server Preview, REDOSPECTOR uncovers 19 vulnerabilities in core services (including MSMQ, Remote Desktop Gateway, and CDP), leading to 12 assigned CVEs. Microsoft confirmed seven pre-authentication DoS issues in CDP and performed architectural adjustments, demonstrating that REDOSPECTOR can expose resource-mismanagement flaws that evade conventional fuzzing.</summary>
+  </entry>
+  <entry>
+    <title>Discovering, characterizing and exploiting controllable-copy objects for kernel data-only attacks with CopyKat</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/koschel"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/koschel</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Jakob Koschel, Andrea Mambretti, Alessandro Sorniotti, Pietro Moretto, Claudio Migliorelli, Andrea Di Dio, Cristiano Giuffrida, Anil Kurmus
+
+Modern kernel hardening mechanisms considerably reduce the viability of control-flow hijacking attacks, prompting attackers to shift their focus to data-only attacks. These attacks depend on corrupting non-control data to amplify limited memory-corruption primitives into more powerful capabilities such as arbitrary writes. Prior work has identified small sets of such objects in specific circumstances. However, no existing approach discovers and characterizes them at scale. In this paper, we introduce CopyKat, a fully automated pipeline for identifying and characterizing Controllable-Copy Objects (CCOs): heap-allocated kernel structures whose fields can be corrupted to redirect a store or memory-transfer operation involving attacker-controlled data. We propose a multi-stage methodology with progressive filtering of objects. Through lightweight taint-analysis applied to a fuzzing campaign, we uncover candidate CCOs. Then, we confirm such taint by using a precise taint engine, thereby enhancing our precision. Finally, we perform the corruption of the CCO using a concolic execution engine to verify the controllability of the object. We also collect the necessary path and value constraints for exploitation. We find 122 verified CCOs and build 8 end-to-end exploits involving different exploitation patterns, showcasing the correctness of our characterization and the flexibility of the discovered objects.</summary>
+  </entry>
+  <entry>
+    <title>DRVFuzz: Data-Sensitive RISC-V CPU Fuzzing</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/yu-zehong"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/yu-zehong</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Zehong Yu, Yuanliang Chen, Zhen Yan, Xudong Zhang, Zhensheng Xian, Yu Jiang
+
+The rapid adoption of RISC-V across modern computing systems has made the security integrity of its implementations a paramount concern. Logic bugs in RISC-V cores can lead to critical failures, such as faulty privilege transitions and architectural state corruption. While hardware fuzzing has emerged as a powerful technique for automated bug discovery, existing frameworks remain largely data-agnostic. By prioritizing instruction sequence diversity while treating operands as incidental random values, these tools often fail to trigger guarded microarchitectural states that manifest only under precise, data-dependent conditions. In this work, we present DRVFuzz, a data-sensitive fuzzing framework designed to expose hardware vulnerabilities by explicitly modeling and navigating the data-sensitive semantics. First, DRVFuzz introduces a sensitive data model (SDModel) that hierarchically codifies ISA semantics to synthesize tailored operands, including boundary values and exception triggers. Second, to effectively exploring data-dependent paths, DRVFuzz employs transition-guided fuzzing, prioritizing testcases that trigger previously unseen state transitions as labeled by the SDModel. We evaluated DRVFuzz on six real-world RISC-V CPUs with varying microarchitectural complexity, uncovering 22 previously unknown bugs (19 new CVEs).</summary>
+  </entry>
+  <entry>
+    <title>FirmReBugger: A Benchmark Framework for Monolithic Firmware Fuzzers</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/duong"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/duong</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Mathew Duong, Michael Chesser, Guy Farrelly, Surya Nepal, Damith C. Ranasinghe
+
+Monolithic Firmware is widespread. Unsurprisingly, fuzz testing firmware is an active research field with new advances addressing the unique challenges in the domain. However, understanding and evaluating improvements by deriving metrics such as code coverage and unique crashes are problematic, leading to a desire for a reliable bug-based benchmark. To address the need, we design and build FirmReBugger, a holistic framework for fairly assessing monolithic firmware fuzzers with a realistic, diverse, bug-based benchmark. FirmReBugger proposes using bug oracles—C syntax expressions of bug descriptors—with an interpreter to automate analysis and accurately report on bugs discovered, discriminating between states of detected , triggered , reached and not reached . Importantly, our idea of benchmarking does not modify the target binary and simply replays fuzzing seeds to isolate the benchmark implementation from the fuzzer while providing a simple means to extend with new bug oracles. Further, analyzing fuzzing roadblocks, we created FirmBench, a set of diverse, real-world binary targets with 313 software bug oracles. Incorporating our analysis of roadblocks challenging monolithic firmware fuzzing, the bench provides for rapid evaluation of future advances. We implement FirmReBugger in a FuzzBench-for-Firmware type service and use FirmBench to evaluate 9 state-of-the art monolithic firmware fuzzers in the style of a reproducibility study, using a 10 CPU-year effort, to report our f</summary>
+  </entry>
+  <entry>
+    <title>Fuzzing Open-Source GPU Hardware with SIMT Program Generation</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/gao-zibo"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/gao-zibo</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Zibo Gao, Jie Wang, Qihang Zhou, Lixiao Shan, Junjie Hu, Xiaoqi Jia, Zhiqiang Lv
+
+GPUs have become critical components in computing systems. In the post-Moore's Law era, the demand for performance is driving increasing GPU microarchitectural complexity, which in turn gives rise to new vulnerabilities. In this paper, we present the first framework for fuzzing GPU hardware designs at the Register Transfer Level (RTL) to automatically discover vulnerabilities. At the core of FuzzGPU is a novel generator that randomly constructs valid SIMT test programs with complex data and control flow, explicitly exercising the GPU execution model and thereby triggering diverse hardware behaviors. This bridges a key gap: prior processor fuzzers predominantly target CPUs and largely ignore GPU hardware. FuzzGPU further implements a GPU-specific differential testing harness. It tackles microarchitectural non-determinism (e.g., caches and memory timing) and enables trace-driven differential testing against an ISA-level oracle. This technique unlocks vulnerability detection and localization with instruction-level precision. We evaluated FuzzGPU on two real-world open-source GPUs, Vortex and Ventus OpenGPGPU, uncovering 20 previously unknown bugs, including 17 RTL bugs and 3 ISS bugs, 10 of which were assigned CVE identifiers.</summary>
+  </entry>
+  <entry>
+    <title>Generating Precise Format Specification for Network Protocols Through Adversarial LLM Interactions</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/ye"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/ye</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Hengdi Ye, Bing Shui, Jielun Wu, Yufan Zhou, Baowen Xu, Qingkai Shi
+
+This paper aims to address a significant gap in inferring precise format specifications for network protocols, particularly regarding the exact constraints on network packet fields. That is, while current methods can often derive accurate syntactic structures that divide a network packet into multiple fields, they typically struggle to capture the semantic dependencies or constraints among those fields. To address this issue, our central insight is that large language models (LLMs) have proven effective across various tasks, and adversarial interactions among these tasks can significantly alleviate the hallucination problem. Based on the insight, we propose a novel approach to generating precise protocol formats by adversarially combining LLM-based specification inference and code generation. By inputting the structured RFC documents of network protocols into LLMs, we generate both packet formats and reference packet parsers that iteratively refine one another to reduce hallucinations: the packet formats allow us to create a variety of network packets for parser testing, while runtime checks in the parsers help identify format errors. Our evaluation of 8 protocols shows a significant increase in precision and recall, achieving a 326% improvement over the state of the art in inferring field constraints. Furthermore, the improved format specifications enable effective fuzzing, leading to the discovery of 24 zero-day vulnerabilities in widely used protocol implementations.</summary>
+  </entry>
+  <entry>
+    <title>H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Qihang Peng, Siyuan Tian, Yongxin Qiu, Jinyang Huang, Yaru Yang, Xiang Li, Jia Zhang, Yiming Zhang
+
+Content Delivery Networks (CDNs) are adopting HTTP/3 to enhance performance; however, they often need to convert it to HTTP/1.1 for compatibility. This conversion creates significant attack surfaces and may reintroduce confirmed or even patched vulnerabilities in HTTP/2 or HTTP/1. Unfortunately, existing tools struggle to adapt to the HTTP/3 environment and efficiently leverage accumulated attack knowledge. To overcome these challenges and systematically measure HTTP/3-to-HTTP/1.1 conversion anomalies within the black-box CDN environment, we present H3Act, a dual-agent, knowledge-driven fuzzing framework targeting HTTP/3-to-HTTP/1.1 semantic conversion anomalies. Our approach combines Large Language Models (LLMs) with Hybrid Retrieval-Augmented Generation (RAG) to automatically transform protocol specifications and historical threat intelligence into high-precision HTTP/3 test payloads, enabling regression testing of semantic translation risks. In a large-scale study of 9 commercial CDNs, including Cloudflare, Cloudfront, and Tencent CDN, we found a significant regression in protocol security, which means vulnerabilities in old protocols are reintroduced in HTTP/3. Our research identified 7 common attack vectors across various categories, including request smuggling, cache poisoning, and Denial-of-Service (DoS) amplification. Every CDN is vulnerable to at least one attack vector. We have responsibly disclosed these vulnerabilities and have received confirmations from some ven</summary>
+  </entry>
+  <entry>
+    <title>KernelRCA: Facilitating Root Cause Analysis of Memory Corruptions in Linux Kernel with Contextual Causality Chain</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/gu-kangzheng"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/gu-kangzheng</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Kangzheng Gu, Yifan Zhang, Yuan Zhang, Min Yang
+
+Continuous fuzzing infrastructure has found a large number of bugs. In this case, automatic root cause analysis (RCA) has been proposed to reduce the expensive manual effort to understand the root cause of a bug. However, existing root-cause representations are designed as isolated forms. Analysts still need to manually infer the integrated bug-triggering procedure including calling context and data dependency, which is very difficult for OS kernels due to their complexity. In this paper, we propose contextual causality chain (CC-chain), a novel root-cause representation to intuitively reflect the integrated bug-triggering procedure of memory corruptions in the Linux kernel. CC-chain shows the bug-contributing instructions to explain corresponding unexpected behaviors that lead to a bug, as well as calling contexts and data dependencies among these instructions to help analysts rapidly understand how a bug happens. To automatically construct the CC-chain, we design a root cause analysis system KernelRCA including selective tracing, contextual information recovery, and chain-style root cause analysis. KernelRCA successfully diagnoses 54 various kinds of real-world memory corruptions in the Linux kernel and performs better than existing crash reports and KASAN reports. A user study shows that KernelRCA's reports significantly facilitate bug understanding and fixing for human analysts.</summary>
+  </entry>
+  <entry>
+    <title>Khost: KVM-based Near Native MCU Firmware Rehosting</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/wang-chunlin"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/wang-chunlin</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Chunlin Wang, Yicheng Yang, Yuan Zhang, Haoyu Xiao, Yifan Zhang, Jiarun Dai
+
+Microcontroller Unit (MCU)-based devices constitute a critical layer of the Internet of Things (IoT) infrastructure, so ensuring their security is of paramount importance. Rehosting-based dynamic MCU firmware analysis is an effective approach to securing these devices. However, existing rehosting frameworks commonly suffer from substantial performance overhead due to emulation or diminished execution scope. To address these limitations, we propose Khost, a near-native, scope-preserving rehosting framework. It extends the KVM by introducing a lightweight extended CPU, an auxiliary page table, and a software-based interrupt controller, enabling MCU firmware to be rehosted on high-performance platforms with minimum overhead. It also provides a memory-mapped I/O (MMIO) monitor for quick peripheral interactions and a wrapper for firmware to enable coverage collection and configure the existing fuzzing engines flexibly. Evaluations on two standard benchmarks show that Khost reduces overhead by 90.0% to 95.5% for complex computational tasks and by up to 98.5% for MCU system-level operations, compared to QEMU. Furthermore, fuzzing on 12 real-world firmware with Khost achieves up to 197.5× higher throughput and improves basic block coverage by 6x compared to existing fuzzing tools. Additionally, Khost successfully uncovers 5 previously unknown bugs.</summary>
+  </entry>
+  <entry>
+    <title>PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/jia-zhipeng"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/jia-zhipeng</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Zhipeng Jia, Xiaokang Yin, Shuitao Gan, Chao Zhang, Hangtian Liu, Jiangan Ji, Enzhou Song, Ruijie Cai
+
+Multilingual IoT typically refers to the use of multiple languages to implement its web services, such as C, Python, Lua, etc. While some user-accessible interfaces are visualized through the frontend for interaction, a large number of interfaces remain hidden and are not exposed to the frontend in multilingual IoT. Additionally, their parameters often exhibit complex hierarchical structures. Effectively extracting interface specifications from multilingual devices for vulnerability discovery is an urgent problem that remains unresolved. In this paper, we present PANGOLIN, a novel fuzzing solution designed for multilingual IoT devices. First, we utilize LLMs to analyze API dispatching mechanisms and identify interfaces. Then, we introduce an LLM agent to perform cross-language analysis and generate input parameter specifications. Lastly, we utilize response-driven feedback to correct parameter specifications. This knowledge enables semantics-aware fuzzing that can explore deeper code paths and discover more vulnerabilities. PANGOLIN successfully discovered 68 previously unknown vulnerabilities, i.e., 2.96X more than SOTA tool LABRADOR. Notably, 45 of these vulnerabilities were found in hidden interfaces, whereas EAGLEYE was only able to identify 4 such cases. As of the time of writing, all vulnerabilities have been reported to vendors and acknowledged, with 31 vulnerability IDs assigned.</summary>
+  </entry>
+  <entry>
+    <title>TrioFuzz: A Three-Tier Architecture for Adaptive Strategy Selection in Fuzzing</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/dong-ruiqi"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/dong-ruiqi</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Ruiqi Dong, Yiyi Wang, Kunpeng Zhang, Dongsong Yu, Xiaogang Zhu, Shaohua Wang, Shuai Wang, Chao Zhang
+
+Adaptive strategy selection is a promising direction for improving fuzzing effectiveness, yet existing learning-based approaches often fail to outperform random selection in practice. We identify the root cause as an architectural mismatch rather than an algorithmic limitation. Our empirical study reveals that strategy effectiveness shifts at minute-level timescales, while existing in-loop architectures require tens of minutes per learning cycle. This order-of-magnitude gap prevents timely adaptation regardless of which learning algorithm is used. We propose TrioFuzz, a new fuzzing engine that decouples learning from execution through a three-tier thread architecture. A centralized learning thread aggregates feedback from parallel execution threads, compressing the adaptation cycle to under one minute. TrioFuzz integrates the same learning algorithms as prior work, isolating the architectural contribution from algorithmic factors. Our ablation study shows that learning algorithms perform significantly better under our proposed architecture than under their original in-loop implementations. Notably, native MOpt underperforms baselines, but becomes the top performer under TrioFuzz's architecture. Evaluation on FuzzBench and OSS-Fuzz shows that TrioFuzz achieves the highest coverage on 7 out of 9 FuzzBench targets and 8 out of 10 OSS-Fuzz projects, triggers 17% more vulnerabilities than AFL++ on Magma, and discovers 19 new CVEs in 6 real-world projects</summary>
+  </entry>
+  <entry>
+    <title>When AIOps Become "AI Oops": Subverting LLM-driven IT Operations via Telemetry Manipulation</title>
+    <link href="https://www.usenix.org/conference/usenixsecurity26/presentation/pasquini"/>
+    <id>https://www.usenix.org/conference/usenixsecurity26/presentation/pasquini</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="USENIX Sec 2026"/>
+    <summary>USENIX Sec 2026 — Dario Pasquini, Evgenios M. Kornaropoulos, Giuseppe Ateniese, Omer Akgul, Athanasios Theocharis, Petros Efstathopoulos
+
+AI for IT Operations (AIOps) is transforming how organizations manage complex software systems by automating anomaly detection, incident diagnosis, and remediation. Modern AIOps solutions increasingly rely on autonomous LLM-based agents to interpret telemetry data and take corrective actions with minimal human intervention, promising faster response times and operational cost savings. In this work, we perform the first security analysis of AIOps solutions, showing that, once again, AI-driven automation comes with a profound security cost. We demonstrate that adversaries can manipulate system telemetry to mislead AIOps agents into taking actions that compromise the integrity of the infrastructure they manage. We introduce techniques to reliably inject telemetry data using error-inducing requests that influence agent behavior through a form of adversarial reward-hacking; plausible but incorrect system error interpretations that steer the agent's decision-making. Our attack methodology, AIOpsDoom, is fully automated–combining reconnaissance, fuzzing, and LLM-driven adversarial input generation–and operates without any prior knowledge of the target system. To counter this threat, we propose AIOpsShield, a defense mechanism that sanitizes telemetry data by exploiting its structured nature and the minimal role of user-generated content. Our experiments show that AIOpsShield reliably blocks telemetry-based attacks without affecting normal agent performance. Ultimately, this work exp</summary>
+  </entry>
+  <entry>
+    <title>A Qualitative Analysis of Fuzzer Usability and Challenges</title>
+    <link href="https://doi.org/10.1145/3719027.3765055"/>
+    <id>https://doi.org/10.1145/3719027.3765055</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Yunze Zhao, Wentao Guo, Harrison Goldstein, Daniel Votipka, Kelsey R. Fulton, Michelle L. Mazurek
+
+Fuzzing is a widely adopted technique for uncovering software vulnerabilities by generating random or mutated test inputs to trigger unexpected behavior. However, little is known about how developers actually use fuzzing tools in practice, the challenges they face, and where current tools fall short. This study investigates the human side of fuzzing via 18 semi-structured interviews with fuzzing users across diverse domains. These interviews explore participants' workflows, frustrations, and expectations around fuzzing, revealing critical usability gaps and design opportunities. Our results can inform the next generation of fuzzing tools to improve user experience, reduce manual effort, and enable more effective integration of fuzzing into real-world workflows.</summary>
+  </entry>
+  <entry>
+    <title>ConTest: Taming the Cyber-physical Input Space in Fuzz Testing with Control Theory</title>
+    <link href="https://doi.org/10.1145/3719027.3765129"/>
+    <id>https://doi.org/10.1145/3719027.3765129</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Jinwen Wang, Hongchao Zhang, Chuanrui Jiang, Andrew Clark, Ning Zhang
+
+With the proliferation of Cyber-Physical Systems (CPSs) in daily life, the security of these systems is becoming an pressing problem. Fuzz testing has recently gained attention as a promising approach for automatically detecting vulnerabilities, however, the prohibitively large search space of physical and cyber inputs remains an open research challenge. To address this gap, the paper draws on control theory, leveraging physics-informed control models to guide exploration of the input space. We design and develop ConTest, a fuzzing tool that leverages Lyapunov functions of the control model for both detection and mutation to efficiently search through the parameter space with a provable guarantee on the effectiveness of bug-finding effectiveness under bounded dynamic model errors. We implemented a prototype of ConTest and deployed it to detect spatial and temporal input validation bugs in two representative robotic vehicle (RV) platforms, ArduPilot and PX4. A total of 253 input validation bugs were found, 58 of them being zero-day bugs, and 54 of them were acknowledged by the vendors.</summary>
+  </entry>
+  <entry>
+    <title>DiveFuzz: Enhancing CPU Fuzzing via Diverse Instruction Construction</title>
+    <link href="https://doi.org/10.1145/3719027.3765167"/>
+    <id>https://doi.org/10.1145/3719027.3765167</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Zihui Guo, Miaomiao Yuan, Yanqi Yang, Liwei Chen, Gang Shi, Dan Meng
+
+Comprehensive exploration of the CPU architectural states in fuzzing is akin to generating diverse test cases, which include a reasonable distribution of opcode and diversity in instruction execution results (typically measured through write-back data). However, our analysis of state-of-the-art CPU fuzzers reveals that they exhibit high repetition in write-back data and an imbalanced distribution of opcodes during fuzzing. This paper presents DiveFuzz, which diversifies write-back data by finely controlling the operands of instructions at runtime, coupled with correlated contextual semantics, to generate instruction streams with diverse write-back data and semantic associations. Furthermore, DiveFuzz introduces a novel mutator that monitors the fuzzing process to dynamically adjust opcode distribution and accurately eliminate false positives. Our evaluations show that DiveFuzz significantly increases the diversity of instruction write-back data and achieves a more balanced opcode distribution compared to state-of-the-art fuzzers. Across five common coverage metrics, DiveFuzz achieves coverage 204× faster than DifuzzRTL and 114× faster than Cascade. We evaluated DiveFuzz on four well-known open-source RISC-V CPUs—XiangShan, CVA6, Rocket, and NutShell—uncovering 26 new bugs, 15 of which have CVE identifiers.</summary>
+  </entry>
+  <entry>
+    <title>Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks</title>
+    <link href="https://doi.org/10.1145/3719027.3765142"/>
+    <id>https://doi.org/10.1145/3719027.3765142</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Zeyang Zhuang, Zilun Wang, Wei Meng, Michael Rung-Tsong Lyu
+
+Rust has been extensively used in software and system development due to its guarantees for memory and concurrency safety. Fuzzing is a popular bug detection technique for examining the correctness and robustness of programs. However, we identify that current state-of-the-art Rust fuzzers are significantly impeded by the ubiquitous presence of Rust runtime safety checks, resulting in poor effectiveness and efficiency. These checks, which are inserted either implicitly by the compiler or explicitly by the compiler or developers, could cause a high number of panic crashes and early program termination in fuzzing. Consequently, current fuzzers are unable to effectively explore deep code behind the runtime safety checks, leaving potential vulnerabilities undetected.</summary>
+  </entry>
+  <entry>
+    <title>Error Messages to Fuzzing: Detecting XPS Parsing Vulnerabilities in Windows Printing Components</title>
+    <link href="https://doi.org/10.1145/3719027.3744807"/>
+    <id>https://doi.org/10.1145/3719027.3744807</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Yunpeng Tian, Feng Dong, Junhai Wang, Mu Zhang, Zhiniang Peng, Zesen Ye, Xiapu Luo, Haoyu Wang
+
+Windows printing services remain a notable vector for attacks. Previous studies have predominantly targeted vulnerabilities within various control aspects of printing services, such as spooler services and firmware updates. Yet, we contend that an essential aspect of data processing—the document parser within printer drivers—has been overlooked in past research. We present a coverage-based fuzzing system, PrintXPSurge, specifically crafted to detect weaknesses in the XPS printer driver's parsing function. To craft semantically correct XPS files, we leverage a large language model-assisted repair approach to automate the creation of semantically correct XPS files that comply with necessary constraints. To ensure our fuzzing process effectively interacts with the XPS printer driver, we develop a progressive state reconstruction method that addresses individual dependency requirements across the entire printing service workflow. Furthermore, when a crash is detected, we employ backtracing to confirm its origin in the XPS parser, isolating it from other components in the pipeline. Our evaluation reveals that PrintXPSurge surpasses existing top Windows fuzzers in performance, successfully identifying 102 bugs in 10 drivers from major brands, including 17 zero-day vulnerabilities confirmed by Microsoft and third-party vendors.</summary>
+  </entry>
+  <entry>
+    <title>Fuzzing Processing Pipelines for Zero-Knowledge Circuits</title>
+    <link href="https://doi.org/10.1145/3719027.3744791"/>
+    <id>https://doi.org/10.1145/3719027.3744791</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Christoph Hochrainer, Anastasia Isychev, Valentin Wüstholz, Maria Christakis
+
+Zero-knowledge (ZK) protocols have recently found numerous practical applications, such as in authentication, online-voting, and blockchain systems. These protocols are powered by highly complex pipelines that process deterministic programs, called circuits, written in one of many domain-specific programming languages, e.g., Circom, Noir, and others. Logic bugs in circuit-processing pipelines could have catastrophic consequences and cause significant financial and reputational damage. As an example, consider that a logic bug in a ZK pipeline could result in attackers stealing identities or assets. It is, therefore, critical to develop effective techniques for checking their correctness.</summary>
+  </entry>
+  <entry>
+    <title>Intent-aware Fuzzing for Android Hardened Application</title>
+    <link href="https://doi.org/10.1145/3719027.3744858"/>
+    <id>https://doi.org/10.1145/3719027.3744858</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Seongyun Jeong, Minseong Choi, Haehyun Cho, Seokwoo Choi, Hyungsub Kim, Yuseok Jeon
+
+The widespread adoption of app hardening techniques in Android applications makes it more challenging for current analysis techniques to analyze hardened apps, leading to limited analysis coverage. This limitation is mainly due to the difficulties in obtaining detailed information about Intents, which is essential for component communication and the execution of specific events in Android applications.</summary>
+  </entry>
+  <entry>
+    <title>Needle in a Haystack: Automated and Scalable Vulnerability Hunting in the Windows ALPC Sea</title>
+    <link href="https://doi.org/10.1145/3719027.3765180"/>
+    <id>https://doi.org/10.1145/3719027.3765180</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Haoyi Liu, Feng Dong, Yunpeng Tian, Mu Zhang, Xuefeng Li, Fangming Gu, Zhiniang Peng, Haoyu Wang
+
+Windows services utilizing Remote Procedure Call (RPC) and Component Object Model (COM) technology over the underlying Advanced Local Procedure Call (ALPC) transport present a significant attack surface. However, previous research often focused on known vulnerability patterns or required time-consuming reverse engineering, which hinders scalable vulnerability discovery. We developed a tool designed to automate and scale the fuzzing of ALPC communications. It employs a record-and-replay based strategy, capturing live system-wide ALPC traffic and replaying mutated payloads directly at the ALPC layer, thereby overcoming the scalability barrier posed by the manual preparation required with conventional methods. Furthermore, it integrates dedicated detection techniques to identify information leakage vulnerabilities that crash-centric fuzzers often miss. After evaluating various versions of Windows operating systems, we discovered 12 vulnerabilities confirmed by Microsoft, 10 of which have already been assigned CVE numbers.</summary>
+  </entry>
+  <entry>
+    <title>P rome F uzz : A Knowledge-Driven Approach to Fuzzing Harness Generation with Large Language Models</title>
+    <link href="https://doi.org/10.1145/3719027.3765222"/>
+    <id>https://doi.org/10.1145/3719027.3765222</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Yuwei Liu, Junquan Deng, Xiangkun Jia, Yanhao Wang, Minghua Wang, Lin Huang, Tao Wei, Purui Su
+
+API-level fuzzing has become increasingly important for discovering subtle bugs in modern software, yet generating effective fuzzing harnesses remains a complex and error-prone task. Existing approaches often rely on limited consumer code or shallow program analysis, which fail to capture deep API semantics and interdependencies, resulting in poor coverage and high false positive rates. Recent methods incorporating Large Language Models (LLMs) have improved harness generation by leveraging pretrained knowledge, but they still struggle with hallucinations and lack domain-specific understanding.</summary>
+  </entry>
+  <entry>
+    <title>Protocol-Aware Firmware Rehosting for Effective Fuzzing of Embedded Network Stacks</title>
+    <link href="https://doi.org/10.1145/3719027.3765125"/>
+    <id>https://doi.org/10.1145/3719027.3765125</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Moritz Bley, Tobias Scharnowski, Simon Wör­ner, Moritz Schloegel, Thorsten Holz
+
+One of the biggest attack surfaces of embedded systems is their network interfaces, which enable communication with other devices.Unlike their general-purpose counterparts, embedded systems are designed for specialized use cases, resulting in unique and diverse communication stacks.Unfortunately, current approaches for evaluating the security of these embedded network stacks require manual effort or access to hardware, and they generally focus only on small parts of the embedded system.A promising alternative is firmware rehosting, which enables fuzz testing of the entire firmware by generically emulating the physical hardware.However, existing rehosting methods often struggle to meaningfully explore network stacks due to their complex, multi-layered input formats.This limits their ability to uncover deeply nested software faults.To address this problem, we introduce a novel method to automatically detect and handle the use of network protocols in firmware called Pemu.By automatically deducing the available network protocols, Pemu can transparently generate valid network packets that encapsulate fuzzing data, allowing the fuzzing input to flow directly into deeper layers of the firmware logic.Our approach thus enables a deeper, more targeted, and layer-by-layer analysis of firmware components that were previously difficult or impossible to test.Our evaluation demonstrates that Pemu consistently improves the code coverage of three existing rehosting tools for embedded network </summary>
+  </entry>
+  <entry>
+    <title>RVISmith: Fuzzing Compilers for RVV Intrinsics</title>
+    <link href="https://doi.org/10.1145/3719027.3744790"/>
+    <id>https://doi.org/10.1145/3719027.3744790</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Yibo He, Cunjian Huang, Xianmiao Qu, Hongdeng Chen, Wei Ming Yang, Tao Xie
+
+Modern processors are equipped with single instruction multiple data (SIMD) instructions for fine-grained data parallelism. Compiler auto-vectorization techniques that target SIMD instructions face performance limitations due to insufficient information available at compile time, requiring programmers to manually manipulate SIMD instructions. SIMD intrinsics, a type of built-in function provided by modern compilers, enable programmers to manipulate SIMD instructions within high-level programming languages. Bugs in compilers for SIMD intrinsics can introduce potential threats to software security, producing unintended calculation results, data loss, program crashes, etc.</summary>
+  </entry>
+  <entry>
+    <title>SyzParam : Incorporating Runtime Parameters into Kernel Driver Fuzzing</title>
+    <link href="https://doi.org/10.1145/3719027.3744838"/>
+    <id>https://doi.org/10.1145/3719027.3744838</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Yue Sun, Yan Kang, Chenggang Wu, Kangjie Lu, Jiming Wang, Xingwei Li, Yuhao Hu, Jikai Ren
+
+Under the monolithic architecture of the Linux kernel, all its components operate within the same address space. Notably, device drivers constitute over half of the kernel codebase yet are particularly prone to bugs. Therefore, exploring vulnerabilities in drivers is critical for ensuring kernel security. Extensive research has been done to fuzz kernel drivers through system calls and hardware interrupts. Through a comprehensive study of the Linux Kernel Device Model, we identified that the execution of device drivers is also influenced by runtime parameters, including device attributes and kernel module parameters. Our analysis reveals that large portions of the uncovered code are masked by these parameters, which are exposed to the userspace through a specialized virtual file system known as sysfs. Furthermore, adjacent devices interconnected within the same device tree also impact drivers' behavior.</summary>
+  </entry>
+  <entry>
+    <title>SyzSpec: Specification Generation for Linux Kernel Fuzzing via Under-Constrained Symbolic Execution</title>
+    <link href="https://doi.org/10.1145/3719027.3744811"/>
+    <id>https://doi.org/10.1145/3719027.3744811</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Hao Yu, Juefei Pu, X. H. Li, Zhiyun Qian, Ardalan Amiri Sani
+
+Fuzzing has become one of the most effective and widely used techniques for discovering bugs and vulnerabilities, particularly in large-scale and complex programs like operating system kernels. A notable example is the kernel fuzzer syzkaller, which has identified over 6,800 bugs in the Linux kernel, with more than 5,500 already fixed. A crucial reason behind the success of the syzkaller is its collection of syscall descriptions, which are typically provided by human experts. Although some methods exist for automatically generating these syscall descriptions for device drivers, they often fall short when dealing with complex user inputs. These existing methods either lack precision or have a limited analysis scope, resulting in incomplete syscall descriptions.</summary>
+  </entry>
+</feed>
