@@ -1,17 +1,15 @@
 name: Update papers
 
+# 정기 수집은 연구실 서버의 cron(scripts/cron_update.sh)에서 한다.
+# usenix.org가 GitHub Actions IP를 403으로 막기 때문. 여기서는 수동 실행만 남겨둔다
+# (수동 실행 시 USENIX 학회는 실패하고 기존 데이터가 유지된다).
 on:
-  schedule:
-    - cron: "0 18 * * *"   # 매일 03:00 KST
   workflow_dispatch:
     inputs:
       full:
         description: "모든 연도 다시 수집"
         type: boolean
         default: false
-  push:
-    branches: [main]
-    paths: ["config/**", "tracker/**"]   # 학회/토픽 설정을 바꾸면 바로 재생성
 
 permissions:
   contents: write

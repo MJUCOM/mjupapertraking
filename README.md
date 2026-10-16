@@ -12,7 +12,8 @@ docs/                 GitHub Pages로 서비스되는 사이트
   data/meta.json      학회/토픽/통계
   data/discovered.json 자동 발견된 프로시딩 DOI 접두어
   feeds/<topic>.xml   토픽별 Atom 피드 (예: feeds/rust.xml)
-.github/workflows/update.yml  매일 03:00 KST 자동 수집 후 커밋
+scripts/cron_update.sh       매일 cron으로 수집 → 커밋 → push (서버에서 실행)
+.github/workflows/update.yml  수동 실행용 (usenix.org가 Actions IP를 403으로 막아 정기 수집은 cron에서)
 ```
 
 ## 데이터 소스
@@ -44,20 +45,35 @@ python tracker/update.py --no-fetch # 수집 없이 meta/피드만 다시 생성
 cd docs && python -m http.server 8000   # http://localhost:8000
 ```
 
-### GitHub에 올려서 자동화
+### 자동 수집 + 로컬에서 보기 (현재 구성)
 
-1. GitHub에 새 저장소를 만들고 이 폴더를 push.
-2. Settings → Pages → *Deploy from a branch* → `main` / `/docs`.
-3. Settings → Actions → General → Workflow permissions → **Read and write** 허용.
-4. (선택) OpenAlex 무료 API 키(https://openalex.org/settings/api)를 Secrets에 `OPENALEX_API_KEY`로 등록.
+저장소: https://github.com/MJUCOM/paper-tracker (비공개). 서버의 cron이 매일 03:00(KST)에
+`scripts/cron_update.sh`를 실행해 수집 → 커밋 → push 한다 (로그: `logs/`).
+사이트는 아래 한 줄로 띄운다.
+
+```bash
+./serve.sh          # git pull 후 http://localhost:8000
+```
+
+원격 서버에서 실행 중이면 `ssh -L 8000:localhost:8000 <서버>`로 포트를 넘겨서 본다.
+
+### 웹에 공개하려면
+
+1. Settings → Pages → *Deploy from a branch* → `main` / `/docs` (비공개 저장소는 GitHub Pro 필요 — GitHub Education으로 무료).
+2. 또는 Cloudflare Pages에 저장소를 연결 (빌드 명령 없음, 출력 디렉터리 `docs`).
+
+### 설정 메모
+
+- cron 확인/해제: `crontab -l` / `crontab -e`에서 `cron_update.sh` 줄 삭제.
+- GitHub Actions는 USENIX 페이지가 403으로 막혀서 수동 실행 전용으로 남겨 두었다 (Workflow permissions: Read and write 설정 완료).
+- (선택) OpenAlex 무료 API 키(https://openalex.org/settings/api)를 Secrets에 `OPENALEX_API_KEY`로 등록.
    키가 없어도 동작하지만 같은 IP 공유 무료 한도를 쓴다.
-5. Actions 탭에서 *Update papers*를 수동 실행해 동작 확인. 이후 매일 자동 실행.
 
 ## 키워드 추가
 
 - **사이트에서 바로**: "키워드 추가" 칸에 `WebAssembly, wasm` 처럼 입력(쉼표=OR) 또는 `/eBPF|BPF verifier/` 같은 정규식.
   브라우저(localStorage)에만 저장된다. "topics.yml용 복사" 버튼으로 YAML 조각을 복사할 수 있다.
-- **영구 등록**: `config/topics.yml`에 추가하고 push → 워크플로가 돌면서 토픽 탭과 `feeds/<id>.xml` 피드가 생긴다.
+- **영구 등록**: `config/topics.yml`에 추가한 뒤 `python3 tracker/update.py --no-fetch`를 실행하면 토픽 탭과 `feeds/<id>.xml` 피드가 바로 생긴다 (다음 cron 실행 때도 자동 반영).
 
 ```yaml
   - id: wasm
