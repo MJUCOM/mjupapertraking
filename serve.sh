@@ -7,4 +7,4 @@ cd "$(dirname "$0")"
 git pull --ff-only --quiet || echo "git pull 실패 — 기존 데이터로 실행합니다" >&2
 port="${1:-8000}"
 echo "Paper Tracker: http://localhost:${port}"
-exec python3 -m http.server "$port" --directory docs
+exec python3 -m http.server "$port" --bind 127.0.0.1 --directory docs

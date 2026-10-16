@@ -49,13 +49,18 @@ cd docs && python -m http.server 8000   # http://localhost:8000
 
 저장소: https://github.com/MJUCOM/paper-tracker (비공개). 서버의 cron이 매일 03:00(KST)에
 `scripts/cron_update.sh`를 실행해 수집 → 커밋 → push 한다 (로그: `logs/`).
-사이트는 아래 한 줄로 띄운다.
+사이트는 서버 내부(127.0.0.1:8000)에서만 열린다. cron이 재부팅 시와 5분마다
+`scripts/keep_serving.sh`로 확인하고, 꺼져 있으면 다시 띄운다.
+
+내 PC에서 보기:
 
 ```bash
-./serve.sh          # git pull 후 http://localhost:8000
+ssh -N -L 8000:127.0.0.1:8000 wldns190@163.152.163.130   # 접속해 둔 채로
+# 브라우저에서 http://localhost:8000  (Rust: http://localhost:8000/#topic=rust)
 ```
 
-원격 서버에서 실행 중이면 `ssh -L 8000:localhost:8000 <서버>`로 포트를 넘겨서 본다.
+VS Code Remote-SSH로 접속해 있다면 Ports 탭에서 8000을 포워딩해도 된다.
+수동으로 띄우려면 `./serve.sh` (git pull 후 127.0.0.1:8000).
 
 ### 웹에 공개하려면
 
@@ -64,7 +69,7 @@ cd docs && python -m http.server 8000   # http://localhost:8000
 
 ### 설정 메모
 
-- cron 확인/해제: `crontab -l` / `crontab -e`에서 `cron_update.sh` 줄 삭제.
+- cron 확인/해제: `crontab -l` / `crontab -e` — `cron_update.sh`(매일 수집), `keep_serving.sh`(사이트 유지) 줄.
 - GitHub Actions는 USENIX 페이지가 403으로 막혀서 수동 실행 전용으로 남겨 두었다 (Workflow permissions: Read and write 설정 완료).
 - (선택) OpenAlex 무료 API 키(https://openalex.org/settings/api)를 Secrets에 `OPENALEX_API_KEY`로 등록.
    키가 없어도 동작하지만 같은 IP 공유 무료 한도를 쓴다.
