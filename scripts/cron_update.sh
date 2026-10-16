@@ -8,7 +8,7 @@ exec >>"logs/update-$(date +%Y-%m).log" 2>&1
 echo "=== $(date '+%F %T') ==="
 
 git pull --ff-only --quiet || { echo "git pull 실패"; exit 1; }
-python3 tracker/update.py || { echo "update.py 실패"; exit 1; }
+SITE_URL="https://mjucom.github.io/mjupapertraking/" python3 tracker/update.py || { echo "update.py 실패"; exit 1; }
 
 git add docs/
 if git diff --cached --quiet; then

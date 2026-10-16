@@ -45,31 +45,17 @@ python tracker/update.py --no-fetch # 수집 없이 meta/피드만 다시 생성
 cd docs && python -m http.server 8000   # http://localhost:8000
 ```
 
-### 자동 수집 + 로컬에서 보기 (현재 구성)
+### 사이트
 
-저장소: https://github.com/MJUCOM/paper-tracker (비공개). 서버의 cron이 매일 03:00(KST)에
-`scripts/cron_update.sh`를 실행해 수집 → 커밋 → push 한다 (로그: `logs/`).
-사이트는 서버 내부(127.0.0.1:8000)에서만 열린다. cron이 재부팅 시와 5분마다
-`scripts/keep_serving.sh`로 확인하고, 꺼져 있으면 다시 띄운다.
+**https://mjucom.github.io/mjupapertraking/** (GitHub Pages, `main` 브랜치 `/docs`)
 
-내 PC에서 보기:
-
-```bash
-ssh -N -L 8000:127.0.0.1:8000 wldns190@163.152.163.130   # 접속해 둔 채로
-# 브라우저에서 http://localhost:8000  (Rust: http://localhost:8000/#topic=rust)
-```
-
-VS Code Remote-SSH로 접속해 있다면 Ports 탭에서 8000을 포워딩해도 된다.
-수동으로 띄우려면 `./serve.sh` (git pull 후 127.0.0.1:8000).
-
-### 웹에 공개하려면
-
-1. Settings → Pages → *Deploy from a branch* → `main` / `/docs` (비공개 저장소는 GitHub Pro 필요 — GitHub Education으로 무료).
-2. 또는 Cloudflare Pages에 저장소를 연결 (빌드 명령 없음, 출력 디렉터리 `docs`).
+서버의 cron이 매일 03:00(KST)에 `scripts/cron_update.sh`를 실행해 수집 → 커밋 → push 하면
+GitHub Pages가 자동으로 다시 배포한다 (로그: `logs/`).
+로컬에서 미리 보려면 `./serve.sh` (127.0.0.1:8000).
 
 ### 설정 메모
 
-- cron 확인/해제: `crontab -l` / `crontab -e` — `cron_update.sh`(매일 수집), `keep_serving.sh`(사이트 유지) 줄.
+- cron 확인/해제: `crontab -l` / `crontab -e` — `cron_update.sh` 줄 (매일 수집).
 - GitHub Actions는 USENIX 페이지가 403으로 막혀서 수동 실행 전용으로 남겨 두었다 (Workflow permissions: Read and write 설정 완료).
 - (선택) OpenAlex 무료 API 키(https://openalex.org/settings/api)를 Secrets에 `OPENALEX_API_KEY`로 등록.
    키가 없어도 동작하지만 같은 IP 공유 무료 한도를 쓴다.
