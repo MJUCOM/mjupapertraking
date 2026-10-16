@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Paper Tracker — Rust</title>
-  <id>./feeds/rust.xml</id>
-  <link href="./"/>
-  <updated>2026-10-16T06:19:36Z</updated>
+  <id>https://mjucom.github.io/mjupapertraking/feeds/rust.xml</id>
+  <link href="https://mjucom.github.io/mjupapertraking/"/>
+  <updated>2026-10-16T18:05:31Z</updated>
   <entry>
     <title>An Empirical Study of WebAssembly Usage in Node.js</title>
     <link href="https://doi.org/10.1145/3744916.3764533"/>
