@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Paper Tracker — Fuzzing</title>
-  <id>./feeds/fuzzing.xml</id>
-  <link href="./"/>
-  <updated>2026-10-16T05:26:02Z</updated>
+  <id>https://MJUCOM.github.io/paper-tracker/feeds/fuzzing.xml</id>
+  <link href="https://MJUCOM.github.io/paper-tracker/"/>
+  <updated>2026-10-16T06:12:10Z</updated>
   <entry>
     <title>Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models</title>
     <link href="https://doi.org/10.1145/3744916.3787818"/>
