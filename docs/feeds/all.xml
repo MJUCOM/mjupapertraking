@@ -3,7 +3,7 @@
   <title>Paper Tracker — All papers</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/all.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-10-17T18:05:20Z</updated>
+  <updated>2026-10-18T18:05:32Z</updated>
   <entry>
     <title>"Game Changer" or "Overenthusiastic Drunk Acquaintance"? Generative AI Use by Blind and Low Vision Software Professionals in the Workplace</title>
     <link href="https://doi.org/10.1145/3744916.3773172"/>
@@ -102,7 +102,7 @@ Language Models (LMs) are widely used in software engineering for code generatio
     <category term="ICSE 2026"/>
     <summary>ICSE 2026 — Xinyi Gong, Liangze Yin, Yuhan Li, Ke Kang, Wei Dong, Shanshan Li, Ji Wang
 
-</summary>
+The IC3 algorithm represents a groundbreaking advancement in the field of model checking. However, its heavy reliance on numerous and frequent constraint-solving calls poses significant challenges when verifying complex programs. We observe that many of the constraints solved within IC3 share remarkable similarities. Based on this observation, we propose an IC3 acceleration verification method by reusing unsatisfiable cores and satisfying models of previous constraints. This method constructs an Unsatisfiable Core Library (UCL) and a Satisfying Model Library (SML) to store and index crucial unsatisfiable cores and satisfying models generated during the verification process. When a new constraint-solving request is received, our method preemptively determines the satisfiability of the constraint using the existing unsatisfiable cores and satisfying models. This approach can significantly reduce the number of required solver calls, thereby enhancing the verification efficiency. We have implemented our method on Kind2 and evaluated it on the standard benchmark suite of Kind2. Experimental evaluation demonstrates that, for complex examples, our method can reduce the number of solver calls by an order of magnitude, and achieves a 4.35-fold speedup with even less memory consumption.</summary>
   </entry>
   <entry>
     <title>Accurate Inference of Termination Conditions</title>
@@ -140,7 +140,7 @@ Language model-based code generation and completion tools have been widely adopt
     <id>https://doi.org/10.1145/3744916.3787821</id>
     <updated>2026-10-16T00:00:00Z</updated>
     <category term="ICSE 2026"/>
-    <summary>ICSE 2026 — Jiayi Hu, Jingling Sun, Chong Wang, Yihao Huang, Jincao Feng, Yilongfei Xu, Yong Li, Kailong Wang
+    <summary>ICSE 2026 — Jiayi Hu, Jingling Sun, Chong Wang, Yihao Huang, J Feng, Yilongfei Xu, Yong Li, Kailong Wang
 
 Translating natural language (NL) specifications into Linear Temporal Logic (LTL) formulas is critical for bridging human intent and formal system verification. While large language models (LLMs) have made this task more feasible, adapting NL2LTL systems to different domains remains challenging due to varied linguistic conventions. Existing methods typically rely on manually crafted translation rules or pattern-specific templates, which are costly to construct and do not generalize across domains. A core challenge is that NL–LTL datasets provide paired examples but do not explicitly indicate which linguistic elements reflect pattern-specific translation conventions. To address this problem, we propose AdaRule, a feedback-guided approach for pattern-adaptive NL2LTL translation via automatic rule induction. The key insight is that even without explicit supervision, we can leverage LLMs to perform NL2LTL translation using only basic, general-purpose rules. By comparing the predicted LTL with ground truth LTL formulas, the LLM can identify where the general rules fall short and uses this feedback to induce new translation rules that capture pattern-specific conventions. AdaRule consists of two collaborative LLM-based components: a Translator that performs the NL2LTL conversion, and a Learner that analyzes failed translations to generate corrective rules. These rules are incorporated into the Translator’s prompts to improve future predictions. Through iterative learning, AdaRule p</summary>
   </entry>
@@ -362,7 +362,7 @@ Microservice architectures are inherently vulnerable to partial failures, and th
     <category term="ICSE 2026"/>
     <summary>ICSE 2026 — Jun Lyu, He Zhang, Yusong Yuan, Lanxin Yang, Yue Li, Manuel Rigger
 
-</summary>
+Project maintainers on platforms like GitHub usually provide a document (e.g., a Readme) describing how to build and use their software, whose instructions, often written in natural language, might sometimes be ambiguous or platform-specific. This task can be eased by containerization, which allows developers to define the build environments required for their software and to enable automatic builds. Docker is the leading platform in this field and relies on Dockerfiles for correct execution. Practitioners who want to use and build projects that do not include a Dockerfile need to develop it themselves. They often need to perform multiple builds by trial and error to discover the correct build steps and build dependencies (e.g., third-party library necessary for software builds). To address this challenge, we propose a novel approach and tool called Dockerfile Refinement and Fixing Tool (DRAFT), which can automatically generate a working Dockerfile by a Large Language Model (LLM). The core idea of DRAFT is that it emulates developers’ behavior iteratively. Specifically, DRAFT is used to iteratively generate prompts to instruct the LLM to generate patches for an initially generated Dockerfile until it executes successfully. Subsequently, it attempts to optimize the Dockerfile to reduce the size of the image it builds. We evaluated DRAFT on 35 projects and compared it with the Dockerfiles generated by Copilot (based on ChatGPT 4.0), Actions_remaker, Repo2docker, Boxing, and Sta</summary>
   </entry>
   <entry>
     <title>Automating API Documentation from Crowdsourced Knowledge</title>
@@ -422,7 +422,7 @@ Tuning a software system’s configuration is essential to meet performance requ
     <category term="ICSE 2026"/>
     <summary>ICSE 2026 — Jiayi Sun, Hongbo Fang, Junming Zhang, Jiakai Shi, Ruitao Lai, Anita Ihuman, Richard Littauer, Shurui Zhou
 
-</summary>
+While open source software (OSS) communities thrive on collaboration, conflicts such as toxic behavior and discrimination can surface, threatening project sustainability. To address these concerns, many communities have adopted a Code of Conduct (CoC) as a mechanism for governing and moderating members’ behavior. Prior research has explored the motivations behind CoC adoption and their content updates, but it remains unclear how different communities are using and maintaining CoCs over time after initial adoption and how adoption impacts communities. To bridge these gaps, in our study, we compile a large-scale dataset of CoCs along with their change histories from GitHub to quantitatively (1) understand the evolution of CoC content and identify change patterns across different communities, and (2) investigate the potential impact of CoC adoption on community engagement. Our results show that OSS communities with a CoC attract more new contributors in both the short- and long-term. However, CoC adoption also leads to a short-term increase in disengagement among existing contributors, with very limited effects on long-term disengagement. The insights from this study can provide guidance for maintaining CoCs and offer statistically significant evidence of their impact.</summary>
   </entry>
   <entry>
     <title>Beyond Correctness: Exposing LLM-generated Logical Flaws in Reasoning via Multi-step Automated Theorem Proving</title>
@@ -502,7 +502,7 @@ The growing dependence on mobile phones and their apps has made multi-user inter
     <category term="ICSE 2026"/>
     <summary>ICSE 2026 — Yirui He, Yongbo Chen, Jessy Ayala, Yecheng Zhou, Qiran Wang, Joshua Garcia
 
-</summary>
+As an increasing number of software systems reach sizes of hundreds of millions of lines of code, relying solely on code-level abstractions is impractical, posing profound challenges to software maintenance. Java Platform Module System (JPMS) provides architectural abstractions that enable Java engineers to control the required and provided interfaces of a module. Despite numerous advantages of enforced strong encapsulation provided by JPMS, developers still break those encapsulations to access the internal elements of a module. Such practice is referred to as Breaking the Strong Encapsulation (BSE). This behavior not only complicates the migration to newer versions (e.g., Java 9) but also threatens the integrity and safety of software projects. Since the BSE problem is still underexplored, in this work, we conduct the first empirical study to identify and characterize this widespread and impactful problem. We first collect a comprehensive dataset containing 4,079 GitHub issues and then investigate those issues from various perspectives, including symptoms, abuse sources, desired functionalities, and resolutions. Our empirical study highlights a tension in the Java module system: module developers aim to enforce strong encapsulation while module users frequently attempt to break the encapsulation. Our finding also emphasizes the need for both practitioners and researchers to develop effective strategies to mitigate these problems, offering an understanding of BSE characterist</summary>
   </entry>
   <entry>
     <title>Breaking the Alphabet: Rethinking File Ordering in Code Review</title>
@@ -562,7 +562,7 @@ Code smells are suboptimal design choices in source code that are conjectured to
     <category term="ICSE 2026"/>
     <summary>ICSE 2026 — Liuyao Dai, Adam Weingram, Weicong Chen, Xiaoyi Lu
 
-</summary>
+As distributed AI workloads scale in complexity, GPU-based collective communication libraries (xCCLs) such as NCCL are becoming increasingly critical for efficient data movement across heterogeneous hardware. Characterizing and optimizing the interactions between hardware architectures, communication algorithm designs, and low-level primitive configurations is essential to fully utilize GPU and interconnect resources while ensuring scalability. However, existing analysis methods often lack depth, limit optimization insights, leave significant performance gains untapped, or lack generality. To address these limitations, we propose a novel primitive-centric profiling and analysis method that integrates architectural, algorithmic, and primitive-level insights to comprehensively qualify and quantify performance-critical parameters in GPU-based CCLs. We implement and evaluate this method in our tool CCLInsight. Evaluating three large-scale GPU clusters with diverse GPU architectures (64 H100s, 64 RTX 5000s, and 256 A100s) for design analysis, and a fourth 256-GPU H200 cluster for application-level evaluation, CCLInsight uncovers critical parameter influences on communication efficiency and scalability, as well as exposing a new CCL performance scaling law, the collapsed optimal configuration scaling law. Adjusting parameters based on this analysis, we demonstrate a 43.90% improvement in NCCL and a 40.64× speedup in MSCCL over default configurations in the collective communication </summary>
   </entry>
   <entry>
     <title>Change And Cover: Last-Mile, Pull Request-Based Regression Test Augmentation</title>
@@ -772,7 +772,7 @@ Performance debugging in WebAssembly (Wasm) runtimes is essential for ensuring t
     <category term="ICSE 2026"/>
     <summary>ICSE 2026 — Alexander Schultheiß, Alexander Boll, Paul Maximilian Bittner, Sandra Greiner, Thomas Thüm, Timo Kehrer
 
-</summary>
+Patching is a fundamental software maintenance and evolution task enabling the (semi-)automated propagation of changes across different software versions. Established and widely used language-agnostic patchers, such as GNU patch and Git cherry-pick, work on textual artifact representations (i.e., text files) and typically rely on line numbers and contexts (i.e., surrounding unchanged text fragments) to apply changes. This strategy often fails if source and target of a patch differ, provoking cumbersome manual effort. In this paper, we study the effectiveness of commonly-used patchers, and propose a novel technique that significantly increases patch automation. First, we curate and analyze a large dataset of more than 400000 patch scenarios (i.e., cherry picks) from 5000 GitHub projects. Next, we examine the effectiveness of established patchers on the gathered patch scenarios. Third, we develop a novel language-agnostic patch technique, mpatch, that utilizes a source-to-target matching to determine suitable change locations. By comparing mpatch to other patchers, we find that it can correctly apply 44% more patches automatically than other language-agnostic patchers, while it also requires fewer manual fixes in cases that cannot be automated completely. Thus, mpatch considerably reduces the burden of manually fixing failed patches in practice, specifically in projects with frequent patch applications.</summary>
   </entry>
   <entry>
     <title>Defects4REST: A Benchmark of Real-World Defects to Enable Controlled Testing and Debugging Studies for REST APIs</title>

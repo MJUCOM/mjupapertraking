@@ -3,7 +3,7 @@
   <title>Paper Tracker — Rust</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/rust.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-10-17T18:05:20Z</updated>
+  <updated>2026-10-18T18:05:32Z</updated>
   <entry>
     <title>An Empirical Study of WebAssembly Usage in Node.js</title>
     <link href="https://doi.org/10.1145/3744916.3764533"/>
@@ -52,7 +52,7 @@ A great number of software packages combine code in high-level languages, such a
     <category term="ICSE 2026"/>
     <summary>ICSE 2026 — Zeyang Zhuang, Wei Meng, Michael Rung-Tsong Lyu
 
-</summary>
+Rust is a modern programming language designed for strict memory and concurrency safety. Despite the safety checks, unsafe code in Rust can introduce memory safety issues. Unsafe type conversion, which reinterprets data from one type to another type, can alter the type spatial and temporal properties, leading to memory safety and data corruption issues. Since an unsafely converted value could violate a programmer’s intended conversion semantics and allows attackers to access the sensitive memory, type confusion bugs have critical security implications. Despite the increasing number of Rust type confusion bugs, the problem has not been systematically studied and addressed by the Rust community. In this paper, we propose DeRust, the first and a novel static analysis tool for detecting Rust type confusion bugs. By precisely tracking the inter-procedural data flows from unsafe type conversions to sensitive operations, DeRust can effectively and efficiently identify type confusion bugs. Our evaluation shows that DeRust can detect all the type confusion bugs in the benchmark datasets, and further helped report 54 previously unknown bugs in the top 1000 Rust packages with 13 RustSec IDs assigned.</summary>
   </entry>
   <entry>
     <title>RusyFuzz: Unhandled Exception Guided Fuzzing for Rust OS Kernel</title>
@@ -165,6 +165,16 @@ Rust is increasingly adopted in safety-critical systems software, making the rel
 Although Rust ensures memory safety by default, it also permits the use of unsafe code, which can introduce memory safety vulnerabilities if misused. Unfortunately, existing tools for detecting memory bugs in Rust typically exhibit limited detection capabilities, inadequately handle Rust-specific types, or rely heavily on manual intervention. To address these limitations, we present deepSURF, a tool that integrates static analysis with Large Language Model (LLM)-guided fuzzing harness generation to effectively identify memory safety vulnerabilities in Rust libraries, specifically targeting unsafe code. deepSURF introduces a novel approach for handling generics by substituting them with custom types and generating tailored implementations for the required traits, enabling the fuzzer to simulate user-defined behaviors within the fuzzed library. Additionally, deepSURF employs LLMs to augment fuzzing harnesses dynamically, facilitating exploration of complex API interactions and significantly increasing the likelihood of exposing memory safety vulnerabilities. We evaluated deepSURF on 63 real-world Rust crates, successfully rediscovering 30 known memory safety bugs and uncovering 12 previously-unknown vulnerabilities (out of which 11 have been assigned RustSec IDs and 3 have been patched), demonstrating clear improvements over state-of-the-art tools.</summary>
   </entry>
   <entry>
+    <title>MadeYouReset: Exploiting HTTP/2 Server-Side Resets for Large-Scale DoS</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00218"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00218</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Gal Bar Nahum, Anat Bremler Barr, Yaniv Harel
+
+We present MadeYouReset, a novel DoS vulnerability that exploits a fundamental design flaw in HTTP/2 servers. In this attack, malicious clients send specially crafted, invalid yet protocol-compliant control frames, which cause the server to issue RST_STREAM frames, thereby terminating (resetting) the stream from the protocol's perspective. In practice, these resets do not cancel the associated backend processing on the server. As a result, the attacker is able to circumvent the protocol-enforced concurrent stream limit, allowing unbounded in-flight requests and creating a potent vector for denial-of-service. We demonstrate that numerous HTTP/2 server implementations are vulnerable to MadeYouReset. We further show that it effectively bypasses current defenses designed for the Rapid Reset vulnerability, which involved client-initiated resets by explicitly sending RST_STREAM frames. Notably, Rapid Reset was published in 2023, while already under active exploitation, leading to large-scale service crashes. In this paper, we analyze the vulnerability's behavior and measure its impact and sensitivity to major parameters. We demonstrate that the potential damage from MadeYouReset is comparable to that of Rapid Reset. We explore mitigation strategies and detection techniques. As part of our responsible disclosure, MadeYouReset was assigned a general CVE (CVE-2025-8671). To date, six additional product-specific CVEs have been issued. Corresponding patches have been applied across majo</summary>
+  </entry>
+  <entry>
     <title>Oxidizer: Toward Concise and High-fidelity Rust Decompilation</title>
     <link href="https://doi.org/10.1109/sp63933.2026.00257"/>
     <id>https://doi.org/10.1109/sp63933.2026.00257</id>
@@ -172,7 +182,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Yibo Liu, Zion Leonahenahe Basque, Arvind S. Raj, Chavin Udomwongsa, Chang Zhu, Jie Hu, Changyu Zhao, Fangzhou Dong
 
-</summary>
+Rust is an increasingly popular language that has gained traction among developers. As a memory-safe language, Rust reduces the burden for developers to create reliable and fast software. However, the same features can also hinder reverse engineering tasks. For instance, malware developers have also picked up on the trend of Rust, using it to make their malware more reliable and difficult to analyze. Reverse engineering tasks often rely on decompilers to recover the source code from these binaries. However, analysts find it difficult to analyze Rust binaries using modern C decompilers. Modern $\mathbf{C}$ decompilers fail on Rust binaries because they fail to recover high-level Rust abstractions from low-level implementations. As a result, the decompiled output is often verbose and inaccurate. Therefore, we believe that to achieve high-quality Rust decompilation, a decompiler must bridge the gap between high-level Rust abstractions and lowlevel implementations. In this paper, we study how $\mathbf{C}$ decompilers fail at decompiling Rust binaries. We identify a comprehensive list of decompilation failures, find the root causes of these failures, and develop a novel decompiler, Oxidizer, for decompiling Rust binaries to Rust pseudocode. We evaluate Oxidizer on 28 popular Rust projects across multiple optimization levels and compiler versions, comparing it against angr, Hex-Rays, Ghidra, and Binary Ninja. Oxidizer outperforms all baselines on most conciseness and fidelity metri</summary>
   </entry>
   <entry>
     <title>An Integer Overflow Endgame: Compiler and Architecture Support for Default-On Integer Overflow Mitigation</title>
@@ -263,6 +273,16 @@ Rust has been extensively used in software and system development due to its gua
     <summary>CCS 2025 — Karthikeyan Bhargavan, Lasse Letager Hansen, Franziskus Kiefer, Jonas Schneider-Bensch, Bas Spitters
 
 We present an effective methodology for the formal verification of practical cryptographic protocol implementations written in Rust. Within a single proof framework, we show how to develop machine-checked proofs of diverse properties like runtime safety, parsing correctness, and cryptographic protocol security. All analysis tasks are driven by the software developer who writes annotations in the Rust source code and chooses a backend prover for each task, ranging from a generic proof assistant like F* to dedicated crypto-oriented provers like ProVerif and SSProve Our main contribution is a demonstration of this methodology on Bert13, a portable, post-quantum implementation of TLS 1.3 written in Rust and verified both for security and functional correctness. To our knowledge, this is the first security verification result for a protocol implementation written in Rust, and the first verified post-quantum TLS 1.3 library.</summary>
+  </entry>
+  <entry>
+    <title>ImportSnare: Directed 'Code Manual' Hijacking in Retrieval-Augmented Code Generation</title>
+    <link href="https://doi.org/10.1145/3719027.3765161"/>
+    <id>https://doi.org/10.1145/3719027.3765161</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Kai Ye, Liangcai Su, Chenxiong Qian
+
+Code generation has emerged as a pivotal capability of Large Language Models (LLMs), revolutionizing development efficiency for programmers of all skill levels. However, the complexity of data structures and algorithmic logic often results in functional deficiencies and security vulnerabilities in generated code, reducing it to a prototype requiring extensive manual debugging. While Retrieval-Augmented Generation (RAG) can enhance correctness and security by leveraging external code manuals, it simultaneously introduces new attack surfaces. In this paper, we pioneer the exploration of attack surfaces in Retrieval-Augmented Code Generation (RACG), focusing on malicious dependency hijacking. We demonstrate how poisoned documentation containing hidden malicious dependencies (e.g., ''matplotlib_safe'') can subvert RACG, exploiting dual trust chains: LLM reliance on RAG and developers' blind trust in LLM suggestions. To construct poisoned documents, we propose ImportSnare, a novel attack framework employing two synergistic strategies: 1) Position-aware beam search optimizes hidden ranking sequences to elevate poisoned documents in retrieval results, and 2) Multilingual inductive suggestions generate jailbreaking sequences to manipulate LLMs into recommending malicious dependencies. Through extensive experiments across Python, Rust, and JavaScript, ImportSnare achieves significant attack success rates (over 50% for popular libraries such as matplotlib and seaborn) in general, and i</summary>
   </entry>
   <entry>
     <title>Securing Mixed Rust with Hardware Capabilities</title>
@@ -472,7 +492,7 @@ Many software vulnerabilities lurk in parsers and serializers, due to their need
     <category term="CCS 2024"/>
     <summary>CCS 2024 — Ayushi Sharma, Shashank Sharma, Sai Ritvik Tanksalkar, Santiago Torres-Arias, Aravind Machiry
 
-</summary>
+Embedded software is used in safety-critical systems such as medical devices and autonomous vehicles, where software defects, including security vulnerabilities, have severe consequences. Most embedded codebases are developed in unsafe languages, specifically C/C++, and are riddled with memory safety vulnerabilities. To prevent such vulnerabilities, Rust, a performant memory-safe systems language, provides an optimal choice for developing embedded software. Rust interoperability enables developing Rust applications on top of existing C codebases. Despite this, even the most resourceful organizations continue to develop embedded software in C/C++. This paper performs the first systematic study to holistically understand the current state and challenges of using Rust for embedded systems. Our study is organized across three research questions. We collected a dataset of 6,408 Rust embedded software spanning various categories and 6 Static Application Security Testing (SAST) tools. We performed a systematic analysis of our dataset and surveys with 225 developers to investigate our research questions. We found that existing Rust software support is inadequate, SAST tools cannot handle certain features of Rust embedded software, resulting in failures, and the prevalence of advanced types in existing Rust software makes it challenging to engineer interoperable code. In addition, we found various challenges faced by developers in using Rust for embedded systems development.</summary>
   </entry>
   <entry>
     <title>Symbolic Execution for Dynamic Kernel Analysis</title>

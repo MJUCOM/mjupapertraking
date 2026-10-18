@@ -3,7 +3,7 @@
   <title>Paper Tracker — Fuzzing</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/fuzzing.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-10-17T18:05:20Z</updated>
+  <updated>2026-10-18T18:05:32Z</updated>
   <entry>
     <title>Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models</title>
     <link href="https://doi.org/10.1145/3744916.3787818"/>
@@ -402,7 +402,7 @@ to faithfully implement their Instruction Set Architectures (ISAs) and enforce s
     <category term="NDSS 2026"/>
     <summary>NDSS 2026 — Manuel Andreas, Fabian Specht, Marius Momeu
 
-</summary>
+.</summary>
   </entry>
   <entry>
     <title>Identifying Logical Vulnerabilities in QUIC Implementations</title>
@@ -453,6 +453,16 @@ Sensor vulnerabilities can be exploited by physical signal attacks to cause erro
     <summary>NDSS 2026 — Peihong Lin, Pengfei Wang, Lei Zhou, Gen Zhang, Xu Zhou, Wei Xie, Zhiyuan Jiang, Kai Lü
 
 CPU vulnerabilities pose ongoing security challenges in modern CPU architectures.Among the CPU vulnerabilities, write port contention-caused by multiple functional modules simultaneously competing for a limited number of shared write ports-remains insufficiently studied.In this paper, we study write port contention side-channel vulnerabilities in CPUs and propose PORTRUSH, a novel fuzzing framework designed to detect and validate such vulnerabilities at the register-transfer level (RTL).First, PORTRUSH constructs a Write Request Graph (WRG) to statically identify potential write port contention instances by modeling write paths and priority relationships among functional modules that target shared storage elements.Second, within the WRG, PORTRUSH implements a Hierarchical Aggregation and Decoding method to efficiently detect write port contention by monitoring relevant hardware signals across design hierarchies.Third, PORTRUSH employs a Contention-guided Hardware Fuzzing approach to trigger write port contention and automatically combine contention-triggered instruction sequences with transient execution attack patterns, enabling validation of write port contention side-channel vulnerabilities.We evaluate PORTRUSH on three RISC-V CPUs (BOOM, NutShell, and Rocket Core) and demonstrate its effectiveness in identifying and triggering write port contention.Furthermore, we validate that the discovered vulnerabilities can be exploited in realistic write port contention attack scena</summary>
+  </entry>
+  <entry>
+    <title>ProtocolGuard: Detecting Protocol Non-compliance Bugs via LLM-guided Static Analysis and Dynamic Verification</title>
+    <link href="https://doi.org/10.14722/ndss.2026.240521"/>
+    <id>https://doi.org/10.14722/ndss.2026.240521</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="NDSS 2026"/>
+    <summary>NDSS 2026 — Xiangpu Song, Longjia Pei, Jianliang Wu, Yingpei Zeng, Gaoshuo He, Chaoshun Zuo, Xiaofeng Liu, Qingchuan Zhao
+
+—Network protocol implementations are expected to strictly comply with their specifications to ensure reliable and secure communications. However, the inherent ambiguity of natural-language specifications often leads to developers’ misinterpretations, causing protocol implementations to deviate from standard behaviors. These deviations result in subtle non-compliance bugs that can cause interoperability issues and critical security vulnerabilities. Unlike memory corruption bugs, these bugs typically do not exhibit explicit error behaviors, resulting in existing bug oracles being insufficient to thoroughly detect them. Moreover, existing works require heavy manual effort to verify findings and analyze root causes, severely limiting their scalability in practice. In this paper, we present ProtocolGuard, a novel framework that systematically detects non-compliance bugs by combining LLM-guided static analysis with fuzzing-based dynamic verification. ProtocolGuard first extracts normative rules from protocol specifications using a hybrid method, and performs LLM-guided program slicing to extract code slices relevant to each rule. It then leverages LLMs to detect semantic inconsistencies between these rules and code logic, and dynamically verify whether these bugs can be triggered. To facilitate bug verification, ProtocolGuard first uses LLMs to automatically generate assertion statements and instrument the code to turn silent inconsistencies into observable assertion failures. The</summary>
   </entry>
   <entry>
     <title>ReFuzz: Reusing Tests for Processor Fuzzing with Contextual Bandits</title>
@@ -562,7 +572,7 @@ Rust is increasingly adopted in safety-critical systems software, making the rel
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Haya Schulmann, Niklas Vogel
 
-</summary>
+The Resource Public Key Infrastructure (RPKI) has become essential to secure inter-domain routing. Despite its critical role, RPKI software remains largely untested beyond shallow parsing. Existing fuzzers, like AFL++ or libFuzzer, do not work well for RPKI as they assume a single, self-contained input per execution, while RPKI repositories contain hundreds of interdependent cryptographically linked objects. Existing fuzzers fail to handle this complexity and lack the ability for precise coverage attribution in multi-object repositories, breaking feedback-based exploration and thereby missing most severe vulnerabilities in RPKI validation. In this paper, we overcome these limitations through novel fuzzing techniques, including continuous sampling and using functions as side-channels for per-object coverage attribution in large input repositories. We further show how parsing inputs to a labeled tree allows structural and semantic mutations while preserving cryptographic validity in mutated repositories. We implement our new techniques into a powerful fuzzing tool called CAT, combining non-sequential fuzzing with our template-agnostic ASN. 1 mutation engine to achieve 66x throughput improvement over sequential fuzzing and exploring 24 - 47% more unique code paths compared to libFuzzer and previous work. Evaluating CAT on RPKI validators uncovered 21 previously unknown vulnerabilities with 8 CVEs already assigned (CVSS 7.5-9.8). These include a buffer overflow, Denial-ofService </summary>
   </entry>
   <entry>
     <title>Camveil: Unveiling Security Camera Vulnerabilities Through Multi-Protocol Coordinated Fuzzing</title>
@@ -572,7 +582,17 @@ Rust is increasingly adopted in safety-critical systems software, making the rel
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Fuchen Ma, Yuqiao Yang, Yuanliang Chen, Yanyang Zhao, Ting Chen, Yu Jiang
 
-</summary>
+Security cameras are widely deployed in safetycritical environments, supporting real-time video streaming and device control via protocols such as RTSP, ONVIF, and HTTP. Vulnerabilities in these systems can lead to frozen video feeds or surveillance failures, potentially resulting in property or safety losses. While fuzzing is a useful technique for discovering vulnerabilities, existing protocol and IoT fuzzers typically treat each protocol independently, overlooking the cross-protocol dependencies present in real-world cameras. To address this gap, we propose CAMVEIL, a fuzzing framework designed to uncover vulnerabilities in security cameras through multi-protocol coordinated fuzzing. The key insight is that certain protocols can modify the internal state of the camera, indirectly affecting the behavior of other protocols, making some vulnerabilities only discoverable through state-dependent, cross-protocol interaction. To exercise such interactions, CAMVEIL builds a protocol-aware camera status model that abstracts internal camera states and defines their dependencies across protocols. Guided by this model, CAMVEIL generates coordinated test sequences to explore interleaved protocol behaviors. Additionally, it integrates a logic-aware monitoring component that continuously analyzes response packets to detect semantic inconsistencies or abnormal control flows. Using this approach, CAMVEIL has discovered 22 previously unknown vulnerabilities across 9 industrial camera models</summary>
+  </entry>
+  <entry>
+    <title>Contextualizing Sink Knowledge for Java Vulnerability Discovery</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00223"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00223</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Fabian Fleischer, Cen Zhang, Joonun Jang, Jeongin Cho, Meng Xu, Taesoo Kim
+
+Java applications are prone to vulnerabilities stemming from the insecure use of security-sensitive APIs, such as file operations enabling path traversal or deserialization routines allowing remote code execution. These sink APIs encode critical information for vulnerability discovery: the program-specific constraints required to reach them and the exploitation conditions necessary to trigger security flaws. Despite this, existing fuzzers largely overlook such vulnerability-specific knowledge, limiting their effectiveness. We present Gondar, a sink-centric fuzzing framework that systematically leverages sink API semantics for targeted vulnerability discovery. Gondar first identifies reachable and exploitable sink call sites through CWE-specific scanning combined with LLM-assisted static filtering. It then deploys two specialized agents that work collaboratively with a coverage-guided fuzzer: an exploration agent generates inputs to reach target call sites by iteratively solving path constraints, while an exploitation agent synthesizes proof-of-concept exploits by reasoning about and satisfying vulnerability-triggering conditions. The agents and fuzzer continuously exchange seeds and runtime feedback, complementing each other. We evaluated GONDAR on real-world Java benchmarks, where it discovers four times more vulnerabilities than Jazzer, the state-of-the-art Java fuzzer. Notably, an earlier GONDAR version contributed to Team Atlanta's first-place CRS in the DARPA AI Cyber Ch</summary>
   </entry>
   <entry>
     <title>Crucible: Retrofitting Commodity CPUs with Vulnerabilities via Transparent Software Emulation</title>
@@ -602,7 +622,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Nathaniel Bennett, Tyler Tucker, Carson Stillman, William Enck, Patrick Traynor, Kevin Butler
 
-</summary>
+Networked systems regularly receive untrusted inputs. When improperly handled, adversaries thus have the ability to remotely crash or compromise such systems. While many techniques have been proposed to detect these vulnerabilities, their ability to handle asynchronous and nondeterministic behavior significantly limit their coverage of real systems. In this paper we present Fizzle, a high-performance deterministic simulation testing framework for fuzzing network applications. Fizzle interposes system library calls to enforce sequential execution for multi-threading, simulate multi-modal network connections, and control system randomization in a manner that is transparent to the target application. By tracking synchronization and I/O primitives, Fizzle deterministically identifies when an application has finished processing input, thereby dramatically expanding the suite of protocols that it can accurately fuzz relative to other approaches. We show that Fizzle maintains 100% stability across ProFuzzBench targets and highly concurrent applications including Unbound, Redis and Open5GS. This resultantly leads to improved coverage and newly discovered/disclosed CVEs for projects that have already been subject to fuzzing. Surprisingly, Fizzle significantly outperforms existing network fuzzers despite carrying out substantial bookkeeping of external state and enforcing sequential execution of threads, achieving up to 20x more executions per second. Fizzle is designed to be highly co</summary>
   </entry>
   <entry>
     <title>Fuzzing the Physical Space: Physics-Aware Testing of Black-Box Industrial Control Systems</title>
@@ -612,7 +632,17 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Burak Sahin, David Oygenblik, Mingxuan Yao, Yizhi Huang, Brendan Saltaformaggio, Saman Zonouz
 
-</summary>
+Industrial Control Systems (ICS) operate essential physical processes in critical infrastructure sectors such as energy, water, and transportation. Existing ICS fuzzing techniques often assume white-box access or modify controller firmware, and black-box methods uncover only corrupted inputs, leaving a critical gap in detecting physical security violations that emerge gradually from valid commands on locked-down controllers. We present ICSFlux, the first physics-aware black-box fuzzing framework that systematically discovers physical security violations. ICSFlux leverages physical models and physical security constraints (defined during the ICS design phase) to infer the temporal evolution of physical states. By estimating potential trajectories that converge toward unsafe physical states, ICSFlux partitions the physical space by proximity to violation and directs test generation toward high-risk partitions. This physics-guided approach generalizes across heterogeneous ICS deployments and eliminates reliance on application-specific heuristics. We evaluate ICSFlux on 11 industrial testbeds (e.g., chemical manufacturing plant and water treatment utility) and discover 20 physical security violations.</summary>
+  </entry>
+  <entry>
+    <title>INSIGHT: Automatic Generation of Explanations for Efficient Identification of Hardware Bugs and Underspecifications</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00201"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00201</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Vincent Quentin Ulitzsch, Alessandro Bertani, Peter W. Deutsch, David Langus Rodriguez, Kelly Xu, A Gupta, Sharad Malik, Mengjia Yan
+
+Hardware verification is a critical task in processor development. Functional correctness bugs that escape verification can manifest as serious security vulnerabilities, allowing attackers to violate control and dataflow integrity. A common verification strategy to eliminate functional correctness bugs during design time is to compare the architectural behavior of a device under test, i.e., the hardware implementation, against a golden reference implementation, using model checking or fuzzing to expose mismatches. In practice, a single bug often manifests in many mismatch-triggering programs. Moreover, due to ISA underspecification, not every mismatch corresponds to a bug. Without additional guidance, model checkers repeatedly rediscover programs that trigger the same bug or ISA underspecification, while fuzzers generate large numbers of triggering programs that stem from the same underlying cause, causing substantial manual overhead. This paper presents INSIGHT, a framework that automatically synthesizes generalized, machine-readable explanations of mismatches between a processor implementation and its reference model. INSIGHT (i) guides model checkers towards exposing distinct bugs and underspecifications and (ii) clusters large program corpora by shared explanations, enabling automatic deduplication. INSIGHT translates explanation synthesis into a combinatorial optimization problem and solves it efficiently using Integer Linear Programming solvers. We implement and evaluat</summary>
   </entry>
   <entry>
     <title>Jazzer: Coverage-Guided Fuzzing for Semantic Vulnerabilities in the Java Ecosystem</title>
@@ -622,7 +652,17 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Sergej Dechand, Tobias Wienand, Fabian Meumertzheim, Peter Samarin, Simon Resch, Khaled Yakdan, Thorsten Holz, Flavio Toffalini
 
-</summary>
+Fuzz testing has proven highly effective in uncovering software faults in low-level languages such as C and C++}. Yet, memory-safe ecosystems like the Java Virtual Machine (JVM), which powers the majority of enterprise applications, have received limited attention from fuzzing research. Recent high-impact vulnerabilities such as Log4Shell and Spring4Shell highlight that memory-safe languages remain susceptible to severe security risks, including logic errors, injection vulnerabilities, and unsafe deserialization. Such vulnerability classes typically lie beyond the detection capabilities of traditional fuzzing frameworks, which are primarily designed to detect memory safety violations. In this paper, we address this gap with Jazzer11https://github.com/CodeIntelligenceTesting/jazzer, a fuzzing framework specifically designed for JVM applications. Jazzer adapts proven fuzzing techniques to the JVM via bytecode instrumentation, translating Java's high-level constructs into low-level coverage and trace feedback. To detect vulnerabilities beyond memory corruption, it complements C/C++ sanitizers with guiding oracles that hook into JVM APIs and provide guidance within sinks to uncover Java-specific vulnerabilities. Our comprehensive evaluation against JQF, the state-of-theart Java fuzzer, shows that Jazzer achieves higher coverage and faster execution speed across eleven diverse libraries, while discovering 18 bugs missed by prior work. Finally, we demonstrate real-world impact thro</summary>
+  </entry>
+  <entry>
+    <title>NetPanic: the Attack Surface You Can't Syscall</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00236"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00236</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Tianshuo Han, Zong Cao, Zhen Dong, Xiaoman Luo, zj Song, Jian Liu
+
+The Linux kernel network stack exposes a critical remote attack surface, yet kernel security research has historically focused on the local attack surface, especially the post-breach local privilege escalation attacks. This has left a direct, pre-authentication attack vector dangerously overlooked. To address this gap, we present the first systematic, fuzzing-based audit of this attack surface. Our work first identifies the unique challenges that render existing fuzzers ineffective for this task: Extreme Input Complexity and the challenge of Dual-channel Input Coordination. To overcome them, we present NetPanic, a novel fuzzer built on a Fuzzer-in-the-Middle architecture. This design inherently solves the coordination challenge by orchestrating real communication between two network stack instances. Simultaneously, it provides a stream of valid packets that serves as a highquality baseline for our execution-guided structure-mutation strategy, which addresses the input complexity challenge. Our evaluation of NetPanic on the latest Linux kernel yielded significant results. It discovered 15 new, remotely triggerable vulnerabilities, none of which could be found or reproduced by the state-of-the-art kernel fuzzer Syzkaller. In direct comparison, NetPanic demonstrated vastly superior performance, achieving over 100 times the execution throughput and an average code coverage improvement of over 400 %. This performance gap, combined with a targeted ablation study, provides a dual va</summary>
   </entry>
   <entry>
     <title>PILOT: Command-Line Interface Fuzzing Via Path-Guided, Iterative Large Language Model Prompting</title>
@@ -632,7 +672,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Momoko Shiraishi, Yinzhi Cao, Takahiro Shinagawa
 
-</summary>
+Command-line interface (CLI) fuzzing tests programs by mutating both command-line options and input file contents, thus enabling discovery of vulnerabilities that only manifest under specific option-input combinations. Prior works of CLI fuzzing face the challenges of generating semanticsrich option strings and input files, which cannot reach deeply embedded target functions. This often leads to a missed detection of such a deep vulnerability using existing CLI fuzzing techniques. In this paper, we design a novel Path-guided, Iterative LLM-Orchestrated Testing framework, called PILOT, to generate effective initial seeds for fuzzing CLI applications. The key insight is to provide potential call paths to target functions as context to LLM so that it can better generate CLI option strings and input files. Then, PILOT iteratively repeats the process, and provides reached functions as additional context so that target functions are reached. Our evaluation on real-world CLI applications demonstrates that PILOT, combined with existing fuzzers, achieves higher coverage than state-of-the-art fuzzing approaches and discovers 51 zero-day vulnerabilities. We responsibly disclosed all the vulnerabilities to their developers and so far 41 have been confirmed by their developers with 33 being fixed and five assigned CVE identifiers.</summary>
   </entry>
   <entry>
     <title>SmuFuzz: Enable Deep System Management Mode Fuzzing in Fully Featured UEFI Runtime Environment</title>
@@ -642,7 +682,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Jianqiang Wang, Yi Xiang, Meng Wang, Qinying Wang, Ali Abbasi, Thorsten Holz
 
-</summary>
+As part of the UEFI standard, System Management Mode (SMM) was introduced on x86 processors to handle critical hardware events. With strict access control to this operating mode, SMM applications run at a high privilege level (known as Ring-2), in which they have (almost) unlimited access to system resources. However, vendors commonly use memory-unsafe system programming languages to develop SMM applications, which makes them vulnerable to memory corruption and an appealing target for attackers. Fuzzing is an effective method for detecting memory corruption vulnerabilities across a wide range of applications. Unfortunately, existing approaches for testing SMM applications lack a UEFI runtime environment to properly support SMM application execution. Without this environment, application data is often not correctly initialized. Once such uninitialized data is accessed during fuzzing, it causes premature exits or unintentional crashes. As a result, existing methods can only explore shallow parts and often produce high false-positive rates. In this paper, we propose SmuFuzz, a fuzzing framework designed to detect vulnerabilities in closed-source SMM applications distributed by vendors. SmuFuzz overcomes prior limitations by partially rehosting SMM applications within a custom infrastructure that provides a fully featured UEFI runtime environment. This infrastructure provides the necessary dependencies and runtime for SMM application preparation, initialization, and finalization.</summary>
   </entry>
   <entry>
     <title>Specializing Language Models for Textual Fuzzing via Reinforcement Learning</title>
@@ -652,7 +692,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Jiayi Lin, Liangcai Su, Junzhe Li, Chenxiong Qian
 
-</summary>
+Fuzzing is effective for vulnerability discovery but struggles with complex targets such as compilers, interpreters, and database engines, which accept textual input that must satisfy intricate syntactic and semantic constraints. Although language models (LMs) have attracted interest for this task due to their vast latent knowledge and reasoning potential, their practical adoption has been limited. The major challenges stem from insufficient exploration of deep program logic among real-world codebases, and the high cost of leveraging larger models. To overcome these challenges, we propose R1-Fuzz, the first framework that leverages reinforcement learning (RL) to train cost-efficient LMs and integrate them for complex textual fuzzing. R1-FUZZ introduces two key designs: coverage-slicing-based question construction and a distance-based reward calculation. Using these methods, R1-Fuzz performs RL-based post-training on a constructed dataset of questions, utilizing our fine-grained reward signals. We use R1-FUZZ to train a cost-efficient LM named R1-Fuzz-7B, derived from the Qwen2.5-7B model, to excel at fuzzing input generation. Then, R1-Fuzz designs a fuzzing workflow that tightly integrates LMs to reason deep program semantics during practical fuzzing. Evaluations on diverse real-world targets show that R1-FUZZ-7B can rival or even outperform much larger models (e.g., GPT-o4-mini, Deepseek-V3) in real-world fuzzing, achieving up to 75% higher coverage than state-of-the-art fuz</summary>
   </entry>
   <entry>
     <title>StepStone: LLM-Based GPU Kernel Driver Fuzzing via User-Space Libraries</title>
@@ -662,7 +702,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Xiaochen Zou, Juefei Pu, A. Srivastav, Jonathan Cox, Zhengchuan Liang, Yuan Tan, X. H. Li, Y C Zhu
 
-</summary>
+GPU device driver fuzzing is an underexplored area. GPUs are directly accessible by untrusted users and represent a huge attack surface (e.g., NVIDIA driver has over a million lines of code). While continuous fuzzing has mitigated many kernel bugs within core subsystems, GPU device drivers have not received sufficient attention. SyzDescribe, a state-of-theart tool for generating fuzzing interfaces for device drivers, significantly improves device driver fuzzing, but falls short given the complexity of GPU device drivers. In this paper, we observed that syscalls are not the only interface one can use to fuzz a device driver. In fact, user-space libraries provide an alternative interface, which can also be utilized for device driver fuzzing. Fuzzing user-space libraries has a number of advantages, such as more functionality-specific and user-friendly APIs, and comprehensive documentation providing valuable information about the API interfaces. To capitalize on this fact, we leverage Large Language Models (LLMs), which are highly effective in understanding and extracting information from both code and natural language (both exist in API documents). Therefore, we introduce StepStone, a novel approach that leverages LLMs to generate syzkaller descriptions for GPU libraries (e.g., CUDA, Vulkan), and fuzz these libraries to indirectly fuzz GPU kernel drivers. Our experiments show that StepStone achieves two to four times the level of coverage when compared with SyzDescribe, KernelGP</summary>
   </entry>
   <entry>
     <title>Stop Starving or Stuffing Me: Boosting Firmware Fuzzing Efficiency with On-Demand Input Delivery</title>
@@ -672,7 +712,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Shandian Shen, Wei Zhou, Keming Zhao, Peng Liu, Chung Hwan Kim, Le Guan
 
-</summary>
+Firmware fuzzing has gained attention for its ability to identify firmware bugs. While progress has been made in firmware emulation to support fuzzing, current approaches often directly integrate fuzzing tools for general software. However, unlike general software, which receives input as it encounters I/O functions, firmware input can be received asynchronously and independently of the firmware's execution, with uncertain timing and quantity. Without full awareness of firmware's exceptions, existing solutions often imprudently deliver fuzzer-generated input to the firmware in an ad-hoc way. This either overwhelms the processing function of the firmware (i.e., stuffing problem) or fails to deliver enough input data to trigger input processing functions (i.e., starving problem). In both cases, fuzzing capability is weakened. In this paper, we comprehensively investigate the input delivery issue, a unique and less studied field in firmware fuzzing. To accurately determine the optimal timing and quantity for delivering test cases, we leverage the fact that firmware has to check input availability before using any data. Therefore, we employ static and dynamic analysis to map each input processing route into three stages: input retrieval, availability check, and processing. This recovered semantic information allows the fuzzer to accurately deliver input at the availability check points within the expected length range. Since firmware may have multiple input routes, we also optimi</summary>
   </entry>
   <entry>
     <title>TRIGFUZZ: Triggering Conditions Guided Directed Fuzzing</title>
@@ -682,7 +722,17 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Yiyang Chen, Nuoqi Gui, Long Wang, L Lin-Lin Chen, Xuanqing Shi, Xi Cao, Chao Zhang
 
-</summary>
+Directed fuzzing aims to trigger specific vulnerabilities by steering execution towards predefined target code. However, state-of-the-art directed fuzzers predominantly focus on reaching the target code quickly, often lacking effective follow-up strategies to satisfy the vulnerability constraints required to trigger them. We find that this can be a key factor limiting their performance in directed fuzzing tasks such as crash reproduction. The main challenge is that existing directed fuzzers cannot accurately identify the triggering conditions of target vulnerabilities and effectively exploit them to guide fuzzing. To address this challenge, we propose TrigFuzz, a directed fuzzing solution guided by triggering conditions. Our approach leverages pre-trained large language models (LLMs) to automatically generate the triggering conditions of target vulnerabilities. We design a formalized representation for generated triggering conditions, along with a novel dynamic triggering validation technique to verify their correctness. The verified conditions are further transformed into “triggering distance” metrics that serve as fuzzing runtime feedback to guide seed scheduling and mutation strategies, enabling directed fuzzing to effectively generate vulnerability-triggering test cases. Our evaluations demonstrate that TrigFuzz can generate highquality triggering conditions for 96.67 % of target vulnerabilities and outperform state-of-the-art directed fuzzers with over a $1.72 \times$ sp</summary>
+  </entry>
+  <entry>
+    <title>TÄMU: Emulating Trusted Applications at the (GlobalPlatform)-API Layer</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00139"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00139</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Philipp Mao, Li Shi, Marcel Busch, Mathias Payer
+
+Mobile devices rely on Trusted Execution Environments (TEEs) to execute security-critical code and protect sensitive assets. This security-critical code is modularized in components known as Trusted Applications (TAs). Vulnerabilities in TAs can compromise the TEE and, thus, the entire system. However, the closed-source nature and fragmentation of mobile TEEs severely hinder dynamic analysis of TAs, limiting testing efforts to mostly static analyses. This paper presents TÄMU, a rehosting platform enabling dynamic analysis of TAs, specifically fuzzing and debugging, by interposing their execution at the API layer. To scale to many TAs across different TEEs, TÄMU leverages the standardization of TEE APIs, driven by the GlobalPlatform specifications. For the remaining TEE-specific APIs not shared across different TEEs, TÄMU introduces the notion of greedy highlevel emulation, a technique that allows prioritizing manual rehosting efforts based on the potential coverage gain during fuzzing. We implement TÄMU and use it to emulate 67 TAs across four TEEs. Our fuzzing campaigns yielded 17 zero-day vulnerabilities across 11 TAs. These results indicate a deficit of dynamic analysis capabilities across the TEE ecosystem, where not even vendors with source code unlocked these capabilities for themselves. TÄMU promises to close this gap by bringing effective and practical dynamic analysis to the mobile TEE domain.</summary>
   </entry>
   <entry>
     <title>Web Application Vulnerability Repair Via Context-Aware Fault Localization and Directed Differential Fuzzing</title>
@@ -692,7 +742,7 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Ce Wang, W C Meng
 
-</summary>
+Web applications handle sensitive data, yet exploitation of their vulnerabilities can cause significant losses due to their widespread use. While vulnerability detection techniques have become increasingly sophisticated, timely remediation remains challenging due to substantial manual effort requirements. Automated vulnerability repair has become increasingly mature, yet research targeting web applications remains limited due to challenges posed by dynamic languages like PHP, which powers 73.1 % of websites. Leveraging existing LLM-based repair work is non-trivial as these systems rely on specialized toolchains and readily available test suites that web applications rarely provide. We propose SlicePatch, a novel automated vulnerability repair framework for PHP web applications. SlicePatch leverages PoC-driven dynamic profiling to capture runtime program behavior and retain vulnerability-specific code paths in a context-aware manner. The isolated vulnerable code slices, distilled from the broader application codebase, guide LLMs to generate precise patches while cutting invocation cost. We pioneer directed differential fuzzing that helps validate and refine patch candidates iteratively without requiring test suites. Our extensive evaluation across 96 real-world vulnerabilities and $\mathbf{7}$ LLMs shows that SlicePatch attains a $\mathbf{9 4. 7 9 \%}$ repair success rate, significantly outperforming baselines by over $\mathbf{3 0 \%}$.</summary>
   </entry>
   <entry>
     <title>zkFuzz: Foundation and Framework for Effective Fuzzing of Zero-Knowledge Circuits</title>
@@ -945,63 +995,13 @@ Zero-knowledge (ZK) protocols have recently found numerous practical application
 The widespread adoption of app hardening techniques in Android applications makes it more challenging for current analysis techniques to analyze hardened apps, leading to limited analysis coverage. This limitation is mainly due to the difficulties in obtaining detailed information about Intents, which is essential for component communication and the execution of specific events in Android applications.</summary>
   </entry>
   <entry>
-    <title>Needle in a Haystack: Automated and Scalable Vulnerability Hunting in the Windows ALPC Sea</title>
-    <link href="https://doi.org/10.1145/3719027.3765180"/>
-    <id>https://doi.org/10.1145/3719027.3765180</id>
+    <title>MileSan: Detecting Exploitable Microarchitectural Leakage via Differential Hardware-Software Taint Tracking</title>
+    <link href="https://doi.org/10.1145/3719027.3765066"/>
+    <id>https://doi.org/10.1145/3719027.3765066</id>
     <updated>2026-10-16T00:00:00Z</updated>
     <category term="CCS 2025"/>
-    <summary>CCS 2025 — Haoyi Liu, Feng Dong, Yunpeng Tian, Mu Zhang, Xuefeng Li, Fangming Gu, Zhiniang Peng, Haoyu Wang
+    <summary>CCS 2025 — Tobias Kovats, Flavien Solt, Katharina Ceesay-Seitz, Kaveh Razavi
 
-Windows services utilizing Remote Procedure Call (RPC) and Component Object Model (COM) technology over the underlying Advanced Local Procedure Call (ALPC) transport present a significant attack surface. However, previous research often focused on known vulnerability patterns or required time-consuming reverse engineering, which hinders scalable vulnerability discovery. We developed a tool designed to automate and scale the fuzzing of ALPC communications. It employs a record-and-replay based strategy, capturing live system-wide ALPC traffic and replaying mutated payloads directly at the ALPC layer, thereby overcoming the scalability barrier posed by the manual preparation required with conventional methods. Furthermore, it integrates dedicated detection techniques to identify information leakage vulnerabilities that crash-centric fuzzers often miss. After evaluating various versions of Windows operating systems, we discovered 12 vulnerabilities confirmed by Microsoft, 10 of which have already been assigned CVE numbers.</summary>
-  </entry>
-  <entry>
-    <title>P rome F uzz : A Knowledge-Driven Approach to Fuzzing Harness Generation with Large Language Models</title>
-    <link href="https://doi.org/10.1145/3719027.3765222"/>
-    <id>https://doi.org/10.1145/3719027.3765222</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2025"/>
-    <summary>CCS 2025 — Yuwei Liu, Junquan Deng, Xiangkun Jia, Yanhao Wang, Minghua Wang, Lin Huang, Tao Wei, Purui Su
-
-API-level fuzzing has become increasingly important for discovering subtle bugs in modern software, yet generating effective fuzzing harnesses remains a complex and error-prone task. Existing approaches often rely on limited consumer code or shallow program analysis, which fail to capture deep API semantics and interdependencies, resulting in poor coverage and high false positive rates. Recent methods incorporating Large Language Models (LLMs) have improved harness generation by leveraging pretrained knowledge, but they still struggle with hallucinations and lack domain-specific understanding.</summary>
-  </entry>
-  <entry>
-    <title>Protocol-Aware Firmware Rehosting for Effective Fuzzing of Embedded Network Stacks</title>
-    <link href="https://doi.org/10.1145/3719027.3765125"/>
-    <id>https://doi.org/10.1145/3719027.3765125</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2025"/>
-    <summary>CCS 2025 — Moritz Bley, Tobias Scharnowski, Simon Wör­ner, Moritz Schloegel, Thorsten Holz
-
-One of the biggest attack surfaces of embedded systems is their network interfaces, which enable communication with other devices.Unlike their general-purpose counterparts, embedded systems are designed for specialized use cases, resulting in unique and diverse communication stacks.Unfortunately, current approaches for evaluating the security of these embedded network stacks require manual effort or access to hardware, and they generally focus only on small parts of the embedded system.A promising alternative is firmware rehosting, which enables fuzz testing of the entire firmware by generically emulating the physical hardware.However, existing rehosting methods often struggle to meaningfully explore network stacks due to their complex, multi-layered input formats.This limits their ability to uncover deeply nested software faults.To address this problem, we introduce a novel method to automatically detect and handle the use of network protocols in firmware called Pemu.By automatically deducing the available network protocols, Pemu can transparently generate valid network packets that encapsulate fuzzing data, allowing the fuzzing input to flow directly into deeper layers of the firmware logic.Our approach thus enables a deeper, more targeted, and layer-by-layer analysis of firmware components that were previously difficult or impossible to test.Our evaluation demonstrates that Pemu consistently improves the code coverage of three existing rehosting tools for embedded network </summary>
-  </entry>
-  <entry>
-    <title>RVISmith: Fuzzing Compilers for RVV Intrinsics</title>
-    <link href="https://doi.org/10.1145/3719027.3744790"/>
-    <id>https://doi.org/10.1145/3719027.3744790</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2025"/>
-    <summary>CCS 2025 — Yibo He, Cunjian Huang, Xianmiao Qu, Hongdeng Chen, Wei Ming Yang, Tao Xie
-
-Modern processors are equipped with single instruction multiple data (SIMD) instructions for fine-grained data parallelism. Compiler auto-vectorization techniques that target SIMD instructions face performance limitations due to insufficient information available at compile time, requiring programmers to manually manipulate SIMD instructions. SIMD intrinsics, a type of built-in function provided by modern compilers, enable programmers to manipulate SIMD instructions within high-level programming languages. Bugs in compilers for SIMD intrinsics can introduce potential threats to software security, producing unintended calculation results, data loss, program crashes, etc.</summary>
-  </entry>
-  <entry>
-    <title>SyzParam : Incorporating Runtime Parameters into Kernel Driver Fuzzing</title>
-    <link href="https://doi.org/10.1145/3719027.3744838"/>
-    <id>https://doi.org/10.1145/3719027.3744838</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2025"/>
-    <summary>CCS 2025 — Yue Sun, Yan Kang, Chenggang Wu, Kangjie Lu, Jiming Wang, Xingwei Li, Yuhao Hu, Jikai Ren
-
-Under the monolithic architecture of the Linux kernel, all its components operate within the same address space. Notably, device drivers constitute over half of the kernel codebase yet are particularly prone to bugs. Therefore, exploring vulnerabilities in drivers is critical for ensuring kernel security. Extensive research has been done to fuzz kernel drivers through system calls and hardware interrupts. Through a comprehensive study of the Linux Kernel Device Model, we identified that the execution of device drivers is also influenced by runtime parameters, including device attributes and kernel module parameters. Our analysis reveals that large portions of the uncovered code are masked by these parameters, which are exposed to the userspace through a specialized virtual file system known as sysfs. Furthermore, adjacent devices interconnected within the same device tree also impact drivers' behavior.</summary>
-  </entry>
-  <entry>
-    <title>SyzSpec: Specification Generation for Linux Kernel Fuzzing via Under-Constrained Symbolic Execution</title>
-    <link href="https://doi.org/10.1145/3719027.3744811"/>
-    <id>https://doi.org/10.1145/3719027.3744811</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2025"/>
-    <summary>CCS 2025 — Hao Yu, Juefei Pu, X. H. Li, Zhiyun Qian, Ardalan Amiri Sani
-
-Fuzzing has become one of the most effective and widely used techniques for discovering bugs and vulnerabilities, particularly in large-scale and complex programs like operating system kernels. A notable example is the kernel fuzzer syzkaller, which has identified over 6,800 bugs in the Linux kernel, with more than 5,500 already fixed. A crucial reason behind the success of the syzkaller is its collection of syscall descriptions, which are typically provided by human experts. Although some methods exist for automatically generating these syscall descriptions for device drivers, they often fall short when dealing with complex user inputs. These existing methods either lack precision or have a limited analysis scope, resulting in incomplete syscall descriptions.</summary>
+Microarchitectural performance optimizations introduce information flows inside CPU implementations that exceed those defined by the Instruction Set Architecture (ISA). Microarchitectural vulnerabilities, such as constant-time violations and various classes of transient execution attacks, are subsets of these excessive information flows. We observe that an exploitable microarchitectural leakage is an excessive information flow that can affect the time it takes for the CPU to execute a particular instruction, creating a timing covert channel. We design MileSan, the first RTL sanitizer that is capable of detecting exploitable microarchitectural leakage by checking for the architecturally-observable differences between architectural and microarchitectural information flows. For a given program and CPU implementation, MileSan computes architectural flows using software taint tracking and microarchitectural flows using RTL taint tracking. Evaluating the exploitability of proof of concepts generated by previous microarchitectural fuzzers, we find cases that are in fact not exploitable and discover the particular microarchitectural components that enable exploitation for the rest. In addition to assessing exploitability, MileSan enables the generation of random test programs with strictly-defined architectural information flows of secret data using a novel technique called taint-aware in-situ simulation. Leveraging this capability, we build RandOS, a new microarchitectural fuzzer th</summary>
   </entry>
 </feed>

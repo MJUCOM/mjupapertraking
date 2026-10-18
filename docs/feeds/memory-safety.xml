@@ -3,7 +3,7 @@
   <title>Paper Tracker — Memory Safety</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/memory-safety.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-10-17T18:05:20Z</updated>
+  <updated>2026-10-18T18:05:32Z</updated>
   <entry>
     <title>BFix: Automated Safe Memory-Leak Fixing for Binary Code</title>
     <link href="https://doi.org/10.1145/3744916.3773234"/>
@@ -23,6 +23,16 @@ This is the artifact for BFix. For docker image, please check V2 edition: https:
     <summary>ICSE 2026 — Minghua Wang, Yuwei Liu, Huang Lj
 
 Rust’s ownership and type system offer strong memory safety guarantees, but unsafe code and runtime panics still present significant risks. Formal verification is essential to ensure memory safety, but developing verification harnesses remains a challenging and manual task. Although large language models (LLMs) have shown strong performance in various code analysis tasks, directly applying them to harness generation often results in inaccurate API invocations, inefficient nondeterministic data generation, and fabricated fixes.</summary>
+  </entry>
+  <entry>
+    <title>Rusted Types: Static Detection of Rust Type Confusion Bugs</title>
+    <link href="https://doi.org/10.1145/3744916.3764571"/>
+    <id>https://doi.org/10.1145/3744916.3764571</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Zeyang Zhuang, Wei Meng, Michael Rung-Tsong Lyu
+
+Rust is a modern programming language designed for strict memory and concurrency safety. Despite the safety checks, unsafe code in Rust can introduce memory safety issues. Unsafe type conversion, which reinterprets data from one type to another type, can alter the type spatial and temporal properties, leading to memory safety and data corruption issues. Since an unsafely converted value could violate a programmer’s intended conversion semantics and allows attackers to access the sensitive memory, type confusion bugs have critical security implications. Despite the increasing number of Rust type confusion bugs, the problem has not been systematically studied and addressed by the Rust community. In this paper, we propose DeRust, the first and a novel static analysis tool for detecting Rust type confusion bugs. By precisely tracking the inter-procedural data flows from unsafe type conversions to sensitive operations, DeRust can effectively and efficiently identify type confusion bugs. Our evaluation shows that DeRust can detect all the type confusion bugs in the benchmark datasets, and further helped report 54 previously unknown bugs in the top 1000 Rust packages with 13 RustSec IDs assigned.</summary>
   </entry>
   <entry>
     <title>RusyFuzz: Unhandled Exception Guided Fuzzing for Rust OS Kernel</title>
@@ -105,6 +115,16 @@ Despite extensive efforts to harden the Linux kernel-the foundation powering num
 Open-source software projects are foundational to modern software ecosystems, with the Linux kernel standing out as a critical exemplar due to its ubiquity and complexity.Although security patches are continuously integrated into the Linux mainline kernel, downstream maintainers often delay their adoption, creating windows of vulnerability.A key reason for this lag is the difficulty in identifying security-critical patches, particularly those addressing exploitable vulnerabilities such as out-of-bounds (OOB) accesses and use-after-free (UAF) bugs.This challenge is exacerbated by intentionally silent bug fixes, incomplete or missing CVE assignments, delays in CVE issuance, and recent changes to the CVE assignment criteria for the Linux kernel.Prior efforts such as GraphSPD, have proposed binary classifiers to distinguish security versus non-security patches.However, these approaches do not provide fine-grained categorization of vulnerability types, which is essential for prioritizing fixes for high-impact bugs like OOB and UAF.Our work aims to take such coarsely labeled security patches and classify them into fine-grained categories, i.e., OOB, UAF, or non-OOB-UAF types.While fine-grained patch classification approaches exist, they exhibit limitations in both coverage and accuracy.In this work, we identify previously unexplored opportunities to significantly improve fine-grained patch classification.Specifically, by leveraging cues from commit titles/messages and diffs alongsi</summary>
   </entry>
   <entry>
+    <title>Batch Me If You Can: Coverage-Guided RPKI Fuzzing at Scale</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00188"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00188</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Haya Schulmann, Niklas Vogel
+
+The Resource Public Key Infrastructure (RPKI) has become essential to secure inter-domain routing. Despite its critical role, RPKI software remains largely untested beyond shallow parsing. Existing fuzzers, like AFL++ or libFuzzer, do not work well for RPKI as they assume a single, self-contained input per execution, while RPKI repositories contain hundreds of interdependent cryptographically linked objects. Existing fuzzers fail to handle this complexity and lack the ability for precise coverage attribution in multi-object repositories, breaking feedback-based exploration and thereby missing most severe vulnerabilities in RPKI validation. In this paper, we overcome these limitations through novel fuzzing techniques, including continuous sampling and using functions as side-channels for per-object coverage attribution in large input repositories. We further show how parsing inputs to a labeled tree allows structural and semantic mutations while preserving cryptographic validity in mutated repositories. We implement our new techniques into a powerful fuzzing tool called CAT, combining non-sequential fuzzing with our template-agnostic ASN. 1 mutation engine to achieve 66x throughput improvement over sequential fuzzing and exploring 24 - 47% more unique code paths compared to libFuzzer and previous work. Evaluating CAT on RPKI validators uncovered 21 previously unknown vulnerabilities with 8 CVEs already assigned (CVSS 7.5-9.8). These include a buffer overflow, Denial-ofService </summary>
+  </entry>
+  <entry>
     <title>deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses</title>
     <link href="https://doi.org/10.1109/sp63933.2026.00060"/>
     <id>https://doi.org/10.1109/sp63933.2026.00060</id>
@@ -115,6 +135,26 @@ Open-source software projects are foundational to modern software ecosystems, wi
 Although Rust ensures memory safety by default, it also permits the use of unsafe code, which can introduce memory safety vulnerabilities if misused. Unfortunately, existing tools for detecting memory bugs in Rust typically exhibit limited detection capabilities, inadequately handle Rust-specific types, or rely heavily on manual intervention. To address these limitations, we present deepSURF, a tool that integrates static analysis with Large Language Model (LLM)-guided fuzzing harness generation to effectively identify memory safety vulnerabilities in Rust libraries, specifically targeting unsafe code. deepSURF introduces a novel approach for handling generics by substituting them with custom types and generating tailored implementations for the required traits, enabling the fuzzer to simulate user-defined behaviors within the fuzzed library. Additionally, deepSURF employs LLMs to augment fuzzing harnesses dynamically, facilitating exploration of complex API interactions and significantly increasing the likelihood of exposing memory safety vulnerabilities. We evaluated deepSURF on 63 real-world Rust crates, successfully rediscovering 30 known memory safety bugs and uncovering 12 previously-unknown vulnerabilities (out of which 11 have been assigned RustSec IDs and 3 have been patched), demonstrating clear improvements over state-of-the-art tools.</summary>
   </entry>
   <entry>
+    <title>GHost in the Shell: A GPU-to-Host Memory Attack and its Mitigation</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00047"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00047</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Sihyun Roh, Woohyuk Choi, Jaeyoung Chung, Yoochan Lee, Suhwan Song, Byoungyoung Lee
+
+Modern heterogeneous computing platforms increasingly unify CPU and GPU address spaces for improved programmability and performance. To this end, recent Linux kernels and NVIDIA GPU drivers adopt Heterogeneous Memory Management (HMM), which allows GPU kernels to directly access host memory. While this simplifies development, it may introduce a critical security risk. In this paper, we expose a new attack surface introduced by HMM and present GHost-Attack, the first GPU-originated exploitation technique capable of compromising host process memory. By exploiting memory-safety bugs in GPU kernels or executing attacker-supplied kernels, GHost-Attack enables attackers to bypass Address Space Layout Randomization (ASLR) and hijack control flow in widely used applications such as PyTorch and Chrome. To counter this threat, we further propose Shell (Secure HMM Enforcement with LLVM), a practical defense that restores memory isolation between GPU and host in HMMenabled systems. Shell statically identifies shared memory regions and enforces fine-grained access control at runtime using the GPU driver's page-fault mechanism. We implement Shell by modifying Clang/LLVM and the open-source NVIDIA GPU driver. Our evaluation demonstrates that Shell effectively blocks all variants of GHOST-ATTACK with negligible performance overhead, preserving the security, compatibility, and performance benefits of HMM.</summary>
+  </entry>
+  <entry>
+    <title>Jazzer: Coverage-Guided Fuzzing for Semantic Vulnerabilities in the Java Ecosystem</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00134"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00134</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Sergej Dechand, Tobias Wienand, Fabian Meumertzheim, Peter Samarin, Simon Resch, Khaled Yakdan, Thorsten Holz, Flavio Toffalini
+
+Fuzz testing has proven highly effective in uncovering software faults in low-level languages such as C and C++}. Yet, memory-safe ecosystems like the Java Virtual Machine (JVM), which powers the majority of enterprise applications, have received limited attention from fuzzing research. Recent high-impact vulnerabilities such as Log4Shell and Spring4Shell highlight that memory-safe languages remain susceptible to severe security risks, including logic errors, injection vulnerabilities, and unsafe deserialization. Such vulnerability classes typically lie beyond the detection capabilities of traditional fuzzing frameworks, which are primarily designed to detect memory safety violations. In this paper, we address this gap with Jazzer11https://github.com/CodeIntelligenceTesting/jazzer, a fuzzing framework specifically designed for JVM applications. Jazzer adapts proven fuzzing techniques to the JVM via bytecode instrumentation, translating Java's high-level constructs into low-level coverage and trace feedback. To detect vulnerabilities beyond memory corruption, it complements C/C++ sanitizers with guiding oracles that hook into JVM APIs and provide guidance within sinks to uncover Java-specific vulnerabilities. Our comprehensive evaluation against JQF, the state-of-theart Java fuzzer, shows that Jazzer achieves higher coverage and faster execution speed across eleven diverse libraries, while discovering 18 bugs missed by prior work. Finally, we demonstrate real-world impact thro</summary>
+  </entry>
+  <entry>
     <title>NanoTag: Systems Support for Efficient Byte-Granular Overflow Detection on ARM MTE</title>
     <link href="https://doi.org/10.1109/sp63933.2026.00231"/>
     <id>https://doi.org/10.1109/sp63933.2026.00231</id>
@@ -122,7 +162,17 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Mingkai Li, Hang Ye, Joseph L. Devietti, Suman Jana, Tanvir Ahmed Khan
 
-</summary>
+Memory safety bugs, such as buffer overflows and use-after-frees, are the leading causes of software safety issues in production. Software-based approaches, e.g., Address Sanitizer (ASAN), can detect such bugs with high precision, but with prohibitively high overhead. ARM's Memory Tagging Extension (MTE) offers a promising alternative to detect these bugs in hardware with a much lower overhead. In this paper, we perform a thorough investigation of the first production implementation of ARM MTE (Google Pixel 8) and observe that MTE can only achieve coarse precision in bug detection compared with software-based approaches such as ASAN, mainly due to its 16-byte tag granularity. To address this issue, we present nanotag11.We open-source our work at https://github.com/ice-rlab/NanoTag, a system to probabilistically detect buffer overflows at byte granularity in unmodified MTE-enabled binaries with minimal changes to memory allocators, introducing an explicit detectionperformance tradeoff for in-house testing. NanoTag detects buffer overflows at byte granularity by setting up a tripwire for tag granules that may require intra-granule overflow detection. The memory access to the tripwire causes additional overflow detection in the software while using MTE's hardware to detect bugs for the rest of the accesses. We implement nanotag based on the Scudo Hardened Allocator, the default memory allocator on Android since Android 11. Our evaluation results across popular benchmarks and rea</summary>
+  </entry>
+  <entry>
+    <title>Oxidizer: Toward Concise and High-fidelity Rust Decompilation</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00257"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00257</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Yibo Liu, Zion Leonahenahe Basque, Arvind S. Raj, Chavin Udomwongsa, Chang Zhu, Jie Hu, Changyu Zhao, Fangzhou Dong
+
+Rust is an increasingly popular language that has gained traction among developers. As a memory-safe language, Rust reduces the burden for developers to create reliable and fast software. However, the same features can also hinder reverse engineering tasks. For instance, malware developers have also picked up on the trend of Rust, using it to make their malware more reliable and difficult to analyze. Reverse engineering tasks often rely on decompilers to recover the source code from these binaries. However, analysts find it difficult to analyze Rust binaries using modern C decompilers. Modern $\mathbf{C}$ decompilers fail on Rust binaries because they fail to recover high-level Rust abstractions from low-level implementations. As a result, the decompiled output is often verbose and inaccurate. Therefore, we believe that to achieve high-quality Rust decompilation, a decompiler must bridge the gap between high-level Rust abstractions and lowlevel implementations. In this paper, we study how $\mathbf{C}$ decompilers fail at decompiling Rust binaries. We identify a comprehensive list of decompilation failures, find the root causes of these failures, and develop a novel decompiler, Oxidizer, for decompiling Rust binaries to Rust pseudocode. We evaluate Oxidizer on 28 popular Rust projects across multiple optimization levels and compiler versions, comparing it against angr, Hex-Rays, Ghidra, and Binary Ninja. Oxidizer outperforms all baselines on most conciseness and fidelity metri</summary>
   </entry>
   <entry>
     <title>QuickSafe: Targeted Hardening Against Memory Corruption</title>
@@ -133,6 +183,16 @@ Although Rust ensures memory safety by default, it also permits the use of unsaf
     <summary>S&amp;P 2026 — Johannes Blaser, Floris Gorter, Klaus v. Gleissenthall, Herbert Bos
 
 Despite decades of research, memory safety solutions see limited adoption, as they often incur high overheads, are complex to deploy, or cover only a narrow scope of bugs. In this paper, we present QuickSafe - a targeted approach to harden programs against exploitation of known but unresolved memory errors with minimal overhead. QuickSafe yields a stopgap patch that is immediately available, while the bug awaits eventual resolution. Where most existing automatic patch generators rely on inserting runtime constraint checks in the code to stop exploits, QuickSafe instead isolates memory objects associated with a known bug from the rest of the program. Object isolation can be implemented in different ways, depending on hardware support and desired security guarantees. To assess the viability, we present two such implementations. On traditional architectures, we allocate vulnerable objects on dedicated pages flanked by inaccessible guard pages. On platforms that support Memory Tagging Extensions (MTE), we offer stronger guarantees by enforcing disjoint tag domains. To reliably identify the objects associated with a given memory error, we introduce TagASan - an extension of AddressSanitizer (ASan) that uses tagged pointers to trace faulting accesses back to their originating allocation sites. As an additional contribution, we present a new dataset of 223 real-world memory errors across ten prominent projects to measure the performance of automatic patch generators. We evaluate Qui</summary>
+  </entry>
+  <entry>
+    <title>SpecAuditor: Generating Audit Specifications for LLM-Driven Bug Detection</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00206"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00206</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Miaoqian Lin, Hao Chen
+
+Static analysis has been widely used for bug detection in real-world systems. However, traditional static analysis depends on manually written rules that match specific code forms. They often fail to handle semantically equivalent code variants and diverse bug patterns. Recent advances in large language models (LLMs) provide new opportunities for bug detection due to their capability to understand code semantics. However, directly applying LLMs to bug auditing is ineffective and expensive. Without clear guidance, LLMs fall back on memorized common patterns. They struggle with system-specific semantics and rare bug patterns that require domain knowledge. Therefore, it is necessary to provide high-quality audit specifications that clearly describe where to audit and under what conditions a bug occurs, for guiding LLMs to perform effective bug detection. In this paper, we propose SpecAuditor, an end-to-end framework that automatically generates and applies audit specifications for LLM-driven bug detection. SpecAuditor leverages historical bug patches to obtain specifications and then uses them to detect new bugs. Instead of directly extracting syntactic patterns from patches, SpecAuditor generalizes specifications at the semantic level to obtain new, broader specifications, thereby significantly extending the coverage of bug detection. In particular, SpecAuditor proceeds in three stages: (1) It extracts seed specifications from bug patches and validates them via differential che</summary>
   </entry>
   <entry>
     <title>ARM MTE Performance in Practice</title>
@@ -582,7 +642,7 @@ Network-facing applications are commonly exposed to all kinds of attacks, especi
     <category term="CCS 2024"/>
     <summary>CCS 2024 — Ayushi Sharma, Shashank Sharma, Sai Ritvik Tanksalkar, Santiago Torres-Arias, Aravind Machiry
 
-</summary>
+Embedded software is used in safety-critical systems such as medical devices and autonomous vehicles, where software defects, including security vulnerabilities, have severe consequences. Most embedded codebases are developed in unsafe languages, specifically C/C++, and are riddled with memory safety vulnerabilities. To prevent such vulnerabilities, Rust, a performant memory-safe systems language, provides an optimal choice for developing embedded software. Rust interoperability enables developing Rust applications on top of existing C codebases. Despite this, even the most resourceful organizations continue to develop embedded software in C/C++. This paper performs the first systematic study to holistically understand the current state and challenges of using Rust for embedded systems. Our study is organized across three research questions. We collected a dataset of 6,408 Rust embedded software spanning various categories and 6 Static Application Security Testing (SAST) tools. We performed a systematic analysis of our dataset and surveys with 225 developers to investigate our research questions. We found that existing Rust software support is inadequate, SAST tools cannot handle certain features of Rust embedded software, resulting in failures, and the prevalence of advanced types in existing Rust software makes it challenging to engineer interoperable code. In addition, we found various challenges faced by developers in using Rust for embedded systems development.</summary>
   </entry>
   <entry>
     <title>Safeslab: Mitigating Use-After-Free Vulnerabilities via Memory Protection Keys</title>
@@ -593,6 +653,16 @@ Network-facing applications are commonly exposed to all kinds of attacks, especi
     <summary>CCS 2024 — Marius Momeu, Simon Schnückel, Kai Angnis, Michalis Polychronakis, Vasileios P. Kemerlis
 
 Restricting dangling pointers from accessing freed memory is a promising technique for mitigating use-after-free vulnerabilities in memory-unsafe programming languages. However, existing solutions suffer from high performance overheads, as they rely on conventional page table manipulation to make dangling pointers inaccessible. In this paper, we present Safeslab: a heap-hardening extension that aims to mitigate use-after-free vulnerabilities via a novel and efficient address aliasing approach. Safeslab assigns multiple virtual aliases to each memory page in the system, and manages their access rights via the recently introduced Memory Protection Keys hardware extension, which is designed to provide a fast alternative to page tables for memory management. This allows Safeslab to drastically reduce the number of page table modifications, while blocking dangling pointers efficiently. We integrated Safeslab into the Linux kernel, replacing its default heap allocator (SLUB). The results of our experimental evaluation with real-world benchmarks show that Safeslab incurs a negligible runtime overhead of up to 4% and moderate memory waste.</summary>
+  </entry>
+  <entry>
+    <title>SeMalloc: Semantics-Informed Memory Allocator</title>
+    <link href="https://doi.org/10.1145/3658644.3670363"/>
+    <id>https://doi.org/10.1145/3658644.3670363</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2024"/>
+    <summary>CCS 2024 — Ruizhe Wang, Meng Xu, N. Asokan
+
+Use-after-free (UAF) is a critical and prevalent problem in memory unsafe languages. While many solutions have been proposed, balancing security, run-time cost, and memory overhead (an impossible trinity) is hard. In this paper, we show one way to balance the trinity by passing more semantics about the heap object to the allocator for it to make informed allocation decisions. More specifically, we propose a new notion of thread-, context-, and flow-sensitive 'type', SemaType, to capture the semantics and prototype a SemaType-based allocator that aims for the best trade-off amongst the impossible trinity. In SeMalloc, only heap objects allocated from the same call site and via the same function call stack can possibly share a virtual memory address, which effectively stops type-confusion attacks and makes UAF vulnerabilities harder to exploit. Through extensive empirical evaluation, we show that SeMalloc is realistic: (a) SeMalloc is effective in thwarting all real-world vulnerabilities we tested; (b) benchmark programs run even slightly faster with SeMalloc than the default heap allocator, at a memory overhead averaged from 41% to 84%; and (c) SeMalloc balances security and overhead strictly better than other closely related works.</summary>
   </entry>
   <entry>
     <title>Top of the Heap: Efficient Memory Error Protection of Safe Heap Objects</title>
@@ -933,75 +1003,5 @@ Capability-based memory isolation is a promising new architectural primitive. So
     <summary>USENIX Sec 2023 — Ming Yuan, Bodong Zhao, Penghui Li, Jiashuo Liang, Xinhui Han, Xiapu Luo, Chao Zhang
 
 Concurrency use-after-free (UAF) vulnerabilities account for a large portion of UAF vulnerabilities in Linux drivers. Many solutions have been proposed to find either concurrency bugs or UAF vulnerabilities, but few of them can be directly applied to efficiently find concurrency UAF vulnerabilities. In this paper, we propose the first concurrency directed greybox fuzzing solution DDRace to discover concurrency UAF vulnerabilities efficiently in Linux drivers. First, we identify candidate use-after-free locations as target sites and extract the relevant concurrency elements to reduce the exploration space of directed fuzzing. Second, we design a novel vulnerability related distance metric and an interleaving priority scheme to guide the fuzzer to better explore UAF vulnerabilities and thread interleavings. Lastly, to make test cases reproducible, we design an adaptive kernel state migration scheme to assist continuous fuzzing. We have implemented a prototype of DDRace, and evaluated it on upstream Linux drivers. Results show that DDRace is effective at discovering concurrency use-after-free vulnerabilities. It finds 4 unknown vulnerabilities and 8 known ones, which is more effective than other state-of-the-art solutions.</summary>
-  </entry>
-  <entry>
-    <title>FloatZone: Accelerating Memory Error Detection using the Floating Point Unit</title>
-    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/gorter"/>
-    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/gorter</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="USENIX Sec 2023"/>
-    <summary>USENIX Sec 2023 — Floris Gorter, Enrico Barberis, Raphael Isemann, Erik van der Kouwe, Cristiano Giuffrida, Herbert Bos
-
-Memory sanitizers are powerful tools to detect spatial and temporal memory errors, such as buffer overflows and use-after-frees. Fuzzers and software testers often rely on these tools to discover the presence of bugs. Sanitizers, however, incur significant runtime overhead. For example, AddressSanitizer (ASan), the most widely used sanitizer, incurs a slowdown of 2x. The main source of this overhead consists of the sanitizer checks, which involve at least a memory lookup, a comparison, and a conditional branch instruction. Applying these checks to confirm the validity of the memory accesses in a program can greatly slow down the execution. We introduce FloatZone, a compiler-based sanitizer to detect spatial and temporal memory errors in C/C++ programs using lightweight checks that leverage the Floating Point Unit (FPU). We show that the combined effects of "lookup, compare, and branch" can be achieved with a single floating point addition that triggers an underflow exception in the case of a memory violation. This novel method to detect illegal accesses greatly improves performance by avoiding the drawbacks of traditional comparisons: it prevents branch mispredictions, enables higher instruction-level parallelism due to offloading to the FPU, and also reduces the cache miss rate due to the lack of shadow memory. Our evaluation shows that FloatZone significantly outperforms existing systems, with just 37% runtime overhead on SPEC CPU2006 and CPU2017. Moreover, we measure an av</summary>
-  </entry>
-  <entry>
-    <title>IvySyn: Automated Vulnerability Discovery in Deep Learning Frameworks</title>
-    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/christou"/>
-    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/christou</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="USENIX Sec 2023"/>
-    <summary>USENIX Sec 2023 — Neophytos Christou, Di Jin, Vaggelis Atlidakis, Baishakhi Ray, Vasileios P. Kemerlis
-
-We present IvySyn, the first fully-automated framework for discovering memory error vulnerabilities in Deep Learning (DL) frameworks. IvySyn leverages the statically-typed nature of native APIs in order to automatically perform type-aware mutation-based fuzzing on low-level kernel code. Given a set of offending inputs that trigger memory safety (and runtime) errors in low-level, native DL (C/C++) code, IvySyn automatically synthesizes code snippets in high-level languages (e.g., in Python), which propagate error-triggering input via high(er)-level APIs. Such code snippets essentially act as "Proof of Vulnerability", as they demonstrate the existence of bugs in native code that an attacker can target through various high-level APIs. Our evaluation shows that IvySyn significantly outperforms past approaches, both in terms of efficiency and effectiveness, in finding vulnerabilities in popular DL frameworks. Specifically, we used IvySyn to test Tensor-Flow and PyTorch. Although still an early prototype, IvySyn has already helped the TensorFlow and PyTorch framework developers to identify and fix 61 previously-unknown security vulnerabilities, and assign 39 unique CVEs.</summary>
-  </entry>
-  <entry>
-    <title>Jinn: Hijacking Safe Programs with Trojans</title>
-    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/dharsee"/>
-    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/dharsee</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="USENIX Sec 2023"/>
-    <summary>USENIX Sec 2023 — Komail Dharsee, John Criswell
-
-Untrusted hardware supply chains enable malicious, powerful, and permanent alterations to processors known as hardware trojans. Such hardware trojans can undermine any software-enforced security policies deployed on top of the hardware. Existing defenses target a select set of hardware components, specifically those that implement hardware-enforced security mechanisms such as cryptographic cores, user/kernel privilege isolation, and memory protections. We observe that computing systems exercise general purpose processor logic to implement software-enforced security policies. This makes general purpose logic security critical since tampering with it could violate software-based security policies. Leveraging this insight, we develop a novel class of hardware trojans, which we dub Jinn trojans, that corrupt general-purpose hardware to enable flexible and powerful high level attacks. Jinn trojans deactivate compiler-based security-enforcement mechanisms, making type-safe software vulnerable to memory-safety attacks. We prototyped design-time Jinn trojans in the gem5 simulator and used them to attack programs written in Rust, inducing memory-safety vulnerabilities to launch control-flow hijacking attacks. We find that Jinn trojans can effectively compromise software-enforced security policies by compromising a single bit of architectural state with as little as 8 bits of persistent trojan-internal state. Thus, we show that Jinn trojans are effective even when planted in general pu</summary>
-  </entry>
-  <entry>
-    <title>MTSan: A Feasible and Practical Memory Sanitizer for Fuzzing COTS Binaries</title>
-    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/chen-xingman"/>
-    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/chen-xingman</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="USENIX Sec 2023"/>
-    <summary>USENIX Sec 2023 — Xingman Chen, Yinghao Shi, Zheyu Jiang, Yuan Li, Ruoyu Wang, Haixin Duan, Haoyu Wang, Chao Zhang
-
-Fuzzing has been widely adopted for finding vulnerabilities in programs, especially when source code is not available. But the effectiveness and efficiency of binary fuzzing are curtailed by the lack of memory sanitizers for binaries. This lack of binary sanitizers is due to the information loss in compiling programs and challenges in binary instrumentation. In this paper, we present a feasible and practical hardware-assisted memory sanitizer, MTSan, for binary fuzzing. MTSan can detect both spatial and temporal memory safety violations at runtime. It adopts a novel progressive object recovery scheme to recover objects in binaries and uses a customized binary rewriting solution to instrument binaries with the memory-tagging-based memory safety sanitizing policy. Further, MTSan uses a hardware feature, ARM Memory Tagging Extension (MTE) to significantly reduce its runtime overhead. We implemented a prototype of MTSan on AArch64 and systematically evaluated its effectiveness and performance. Our evaluation results show that MTSan could detect more memory safety violations than existing binary sanitizers whiling introducing much lower runtime and memory overhead.</summary>
-  </entry>
-  <entry>
-    <title>PUMM: Preventing Use-After-Free Using Execution Unit Partitioning</title>
-    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/yagemann"/>
-    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/yagemann</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="USENIX Sec 2023"/>
-    <summary>USENIX Sec 2023 — Carter Yagemann, Simon P. Chung, Brendan Saltaformaggio, Wenke Lee
-
-Critical software is written in memory unsafe languages that are vulnerable to use-after-free and double free bugs. This has led to proposals to secure memory allocators by strategically deferring memory reallocations long enough to make such bugs unexploitable. Unfortunately, existing solutions suffer from high runtime and memory overheads. Seeking a better solution, we propose to profile programs to identify units of code that correspond to the handling of individual tasks. With the intuition that little to no data should flow between separate tasks at runtime, reallocation of memory freed by the currently executing unit is deferred until after its completion; just long enough to prevent use-after-free exploitation. To demonstrate the efficacy of our design, we implement a prototype for Linux, PUMM, which consists of an offline profiler and an online enforcer that transparently wraps standard libraries to protect C/C++ binaries. In our evaluation of 40 real-world and 3,000 synthetic vulnerabilities across 26 programs, including complex multi-threaded cases like the Chakra JavaScript engine, PUMM successfully thwarts all real-world exploits, and only allows 4 synthetic exploits, while reducing memory overhead by 52.0% over prior work and incurring an average runtime overhead of 2.04%.</summary>
-  </entry>
-  <entry>
-    <title>TRust: A Compilation Framework for In-process Isolation to Protect Safe Rust against Untrusted Code</title>
-    <link href="https://www.usenix.org/conference/usenixsecurity23/presentation/bang"/>
-    <id>https://www.usenix.org/conference/usenixsecurity23/presentation/bang</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="USENIX Sec 2023"/>
-    <summary>USENIX Sec 2023 — Inyoung Bang, Martin Kayondo, Hyungon Moon, Yunheung Paek
-
-Rust was invented to help developers build highly safe systems. It comes with a variety of programming constructs that put emphasis on safety and control of memory layout. Rust enforces strict discipline about a type system and ownership model to enable compile-time checks of all spatial and temporal safety errors. Despite this advantage in security, the restrictions imposed by Rust’s type system make it difficult or inefficient to express certain designs or computations. To ease or simplify their programming, developers thus often include untrusted code from unsafe Rust or external libraries written in other languages. Sadly, the programming practices embracing such untrusted code for flexibility or efficiency subvert the strong safety guarantees by safe Rust. This paper presents TRUST, a compilation framework which against untrusted code present in the program, provides trustworthy protection of safe Rust via in-process isolation. Its main strategy is allocating objects in an isolated memory region that is accessible to safe Rust but restricted from being written by the untrusted. To enforce this, TRUST employs software fault isolation and x86 protection keys. It can be applied directly to any Rust code without requiring manual changes. Our experiments reveal that TRUST is effective and efficient, incurring runtime overhead of only 7.55% and memory overhead of 13.30% on average when running 11 widely used crates in Rust.</summary>
-  </entry>
-  <entry>
-    <title>DangZero</title>
-    <link href="https://doi.org/10.1145/3548606.3560625"/>
-    <id>https://doi.org/10.1145/3548606.3560625</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2022"/>
-    <summary>CCS 2022 — Floris Gorter, Koen Koning, Herbert Bos, Cristiano Giuffrida
-
-Use-after-free vulnerabilities remain difficult to detect and mitigate, making them a popular source of exploitation. Existing solutions incur impractical performance/memory overhead, require specialized hardware, and/or guarantee only protection, but not detection.</summary>
   </entry>
 </feed>
