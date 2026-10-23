@@ -3,7 +3,7 @@
   <title>Paper Tracker — Memory Safety</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/memory-safety.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-10-22T18:05:30Z</updated>
+  <updated>2026-10-23T18:05:41Z</updated>
   <entry>
     <title>BFix: Automated Safe Memory-Leak Fixing for Binary Code</title>
     <link href="https://doi.org/10.1145/3744916.3773234"/>
