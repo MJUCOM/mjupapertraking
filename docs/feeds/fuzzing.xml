@@ -3,7 +3,7 @@
   <title>Paper Tracker — Fuzzing</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/fuzzing.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-10-25T18:05:34Z</updated>
+  <updated>2026-10-26T18:05:49Z</updated>
   <entry>
     <title>Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models</title>
     <link href="https://doi.org/10.1145/3744916.3787818"/>
@@ -140,7 +140,7 @@ Directed fuzzing aims to find program inputs that lead to specified target progr
     <id>https://doi.org/10.1145/3744916.3787841</id>
     <updated>2026-10-16T00:00:00Z</updated>
     <category term="ICSE 2026"/>
-    <summary>ICSE 2026 — Luxia Lin, Xudong Zhang, Shihao Zhu, Yan Cai
+    <summary>ICSE 2026 — 林鲁霞, Xudong Zhang, Shihao Zhu, Yan Cai
 
 Multi-Agent Path Finding (MAPF) is a fundamental problem in multi-agent systems, with broad applications in warehouse logistics, robotics, and autonomous driving. Ensuring that MAPF solvers consistently return a solution whenever one exists and deliver high-quality plans is critical for real-world deployment. However, MAPF algorithms remain insufficiently tested. The high-dimensional, tightly coupled input space arising from map topology and agent configurations makes systematic testing extremely challenging.</summary>
   </entry>
@@ -462,7 +462,7 @@ CPU vulnerabilities pose ongoing security challenges in modern CPU architectures
     <category term="NDSS 2026"/>
     <summary>NDSS 2026 — Xiangpu Song, Longjia Pei, Jianliang Wu, Yingpei Zeng, Gaoshuo He, Chaoshun Zuo, Xiaofeng Liu, Qingchuan Zhao
 
-—Network protocol implementations are expected to strictly comply with their specifications to ensure reliable and secure communications. However, the inherent ambiguity of natural-language specifications often leads to developers’ misinterpretations, causing protocol implementations to deviate from standard behaviors. These deviations result in subtle non-compliance bugs that can cause interoperability issues and critical security vulnerabilities. Unlike memory corruption bugs, these bugs typically do not exhibit explicit error behaviors, resulting in existing bug oracles being insufficient to thoroughly detect them. Moreover, existing works require heavy manual effort to verify findings and analyze root causes, severely limiting their scalability in practice. In this paper, we present ProtocolGuard, a novel framework that systematically detects non-compliance bugs by combining LLM-guided static analysis with fuzzing-based dynamic verification. ProtocolGuard first extracts normative rules from protocol specifications using a hybrid method, and performs LLM-guided program slicing to extract code slices relevant to each rule. It then leverages LLMs to detect semantic inconsistencies between these rules and code logic, and dynamically verify whether these bugs can be triggered. To facilitate bug verification, ProtocolGuard first uses LLMs to automatically generate assertion statements and instrument the code to turn silent inconsistencies into observable assertion failures. The</summary>
+Network protocol implementations are expected to strictly comply with their specifications to ensure reliable and secure communications.However, the inherent ambiguity of natural-language specifications often leads to developers' misinterpretations, causing protocol implementations to deviate from standard behaviors.These deviations result in subtle noncompliance bugs that can cause interoperability issues and critical security vulnerabilities.Unlike memory corruption bugs, these bugs typically do not exhibit explicit error behaviors, resulting in existing bug oracles being insufficient to thoroughly detect them.Moreover, existing works require heavy manual effort to verify findings and analyze root causes, severely limiting their scalability in practice.In this paper, we present ProtocolGuard, a novel framework that systematically detects non-compliance bugs by combining LLM-guided static analysis with fuzzing-based dynamic verification.ProtocolGuard first extracts normative rules from protocol specifications using a hybrid method, and performs LLM-guided program slicing to extract code slices relevant to each rule.It then leverages LLMs to detect semantic inconsistencies between these rules and code logic, and dynamically verify whether these bugs can be triggered.To facilitate bug verification, ProtocolGuard first uses LLMs to automatically generate assertion statements and instrument the code to turn silent inconsistencies into observable assertion failures.Then, it produ</summary>
   </entry>
   <entry>
     <title>ReFuzz: Reusing Tests for Processor Fuzzing with Contextual Bandits</title>
