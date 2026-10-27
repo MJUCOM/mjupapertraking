@@ -3,7 +3,7 @@
   <title>Paper Tracker — All papers</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/all.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-10-26T18:05:49Z</updated>
+  <updated>2026-10-27T18:05:16Z</updated>
   <entry>
     <title>"Game Changer" or "Overenthusiastic Drunk Acquaintance"? Generative AI Use by Blind and Low Vision Software Professionals in the Workplace</title>
     <link href="https://doi.org/10.1145/3744916.3773172"/>
@@ -40,7 +40,7 @@ Graphical user interface (UI) software has undergone a fundamental transformatio
     <id>https://doi.org/10.1145/3744916.3773164</id>
     <updated>2026-10-16T00:00:00Z</updated>
     <category term="ICSE 2026"/>
-    <summary>ICSE 2026 — Alejandro Velasco, Daniel Rodriguez-Cardenas, Dipin Khati, David N. Palacio, Lutfar Rahman Alif, Denys Poshyvanyk
+    <summary>ICSE 2026 — Alejandro Velasco, Daniel Rodríguez-Cárdenas, Dipin Khati, David N. Palacio, Lutfar Rahman Alif, Denys Poshyvanyk
 
 Recent advances in large language models (LLMs) have accelerated their adoption in software engineering contexts. However, concerns persist about the structural quality of the code they produce. In particular, LLMs often replicate poor coding practices, introducing code smells (i.e., patterns that hinder readability, maintainability, or design integrity). Although prior research has examined the detection or repair of smells, we still lack a clear understanding of how and when these issues emerge in generated code.</summary>
   </entry>
