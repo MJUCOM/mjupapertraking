@@ -3,7 +3,7 @@
   <title>Paper Tracker — Fuzzing</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/fuzzing.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-03T18:05:29Z</updated>
+  <updated>2026-11-04T18:05:28Z</updated>
   <entry>
     <title>Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models</title>
     <link href="https://doi.org/10.1145/3744916.3787818"/>
@@ -392,7 +392,7 @@ to faithfully implement their Instruction Set Architectures (ISAs) and enforce s
     <category term="NDSS 2026"/>
     <summary>NDSS 2026 — Lichao Wu, Mohamadreza Rostami, Huimin Li, Nikhilesh Singh, Ahmad‐Reza Sadeghi
 
-</summary>
+Modern hardware systems, driven by demands for high performance and application-specific functionality, have grown increasingly complex, introducing large surfaces for bugs and security-critical vulnerabilities. Fuzzing has emerged as a scalable solution for discovering such flaws. Yet, existing hardware fuzzers suffer from limited semantic awareness, inefficient test refinement, and high computational overhead due to reliance on slow device simulation. In this paper, we present GoldenFuzz, a novel two-stage hardware fuzzing framework that partially decouples test case refinement from coverage and vulnerability exploration. GoldenFuzz leverages a fast, ISA-compliant Golden Reference Model (GRM) as a ``digital twin'' of the Device Under Test (DUT). It fuzzes the GRM first, enabling rapid, low-cost test case refinement, accelerating deep architectural exploration and vulnerability discovery on DUT. During the fuzzing pipeline, GoldenFuzz iteratively constructs test cases by concatenating carefully chosen instruction blocks that balance the subtle inter- and intra-instructions quality. A feedback-driven mechanism leveraging insights from both high- and low-coverage samples further enhances GoldenFuzz's capability in hardware state exploration. Our evaluation of three RISC-V processors, RocketChip, BOOM, and CVA6, demonstrates that GoldenFuzz significantly outperforms existing fuzzers in achieving the highest coverage with minimal test case length and computational overhead. Gold</summary>
   </entry>
   <entry>
     <title>HyperMirage: Direct State Manipulation in Hybrid Virtual CPU Fuzzing</title>
@@ -715,6 +715,16 @@ GPU device driver fuzzing is an underexplored area. GPUs are directly accessible
 Firmware fuzzing has gained attention for its ability to identify firmware bugs. While progress has been made in firmware emulation to support fuzzing, current approaches often directly integrate fuzzing tools for general software. However, unlike general software, which receives input as it encounters I/O functions, firmware input can be received asynchronously and independently of the firmware's execution, with uncertain timing and quantity. Without full awareness of firmware's exceptions, existing solutions often imprudently deliver fuzzer-generated input to the firmware in an ad-hoc way. This either overwhelms the processing function of the firmware (i.e., stuffing problem) or fails to deliver enough input data to trigger input processing functions (i.e., starving problem). In both cases, fuzzing capability is weakened. In this paper, we comprehensively investigate the input delivery issue, a unique and less studied field in firmware fuzzing. To accurately determine the optimal timing and quantity for delivering test cases, we leverage the fact that firmware has to check input availability before using any data. Therefore, we employ static and dynamic analysis to map each input processing route into three stages: input retrieval, availability check, and processing. This recovered semantic information allows the fuzzer to accurately deliver input at the availability check points within the expected length range. Since firmware may have multiple input routes, we also optimi</summary>
   </entry>
   <entry>
+    <title>The Fault in Our Drafts: Vulnerabilities in RPKI Specification and Software</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00224"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00224</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Oliver Jacobsen, Tobias Kirsch, Haya Schulmann, Niklas Vogel, Michael Waidner
+
+The Resource Public Key Infrastructure (RPKI) secures the Internet's routing system by defining a complex trust and validation framework for certificates, Route Origin Authorizations (ROAs), manifests, and Certificate Revocation Lists (CRLs). These mechanisms are specified across dozens of RFCs. This paper presents the first comprehensive analysis of the causal link between flaws in RPKI Requests for Comments (RFCs) and vulnerabilities in implementations and real-world deployments. We reveal how vague, conflicting, or underspecified requirements in 50 RPKI RFCs propagate into inconsistent implementation behavior and operational failures. We conduct the first large-scale, impact-driven evaluation of RPKI specifications. Our methodology combines differential fuzzing of major RPKI implementations with Internet-wide crawling and validation log analysis, enabling us to trace practical vulnerabilities back to flawed RFC requirements. We uncover 61 previously undocumented inconsistencies in validation behavior, trace 23 directly to RFC flaws, and identify two novel vulnerabilities that were assigned CVEs. Our findings reveal that these are not isolated coding errors but rather systemic issues inherent in how RPKI standards are written, interpreted, and implemented. To mitigate these threats, we propose concrete recommendations and introduce a novel alerting service that monitors and reports live inconsistencies in RPKI deployments. Our open-source datasets, code, and tools support r</summary>
+  </entry>
+  <entry>
     <title>TRIGFUZZ: Triggering Conditions Guided Directed Fuzzing</title>
     <link href="https://doi.org/10.1109/sp63933.2026.00156"/>
     <id>https://doi.org/10.1109/sp63933.2026.00156</id>
@@ -732,7 +742,7 @@ Directed fuzzing aims to trigger specific vulnerabilities by steering execution 
     <category term="S&amp;P 2026"/>
     <summary>S&amp;P 2026 — Philipp Mao, Li Shi, Marcel Busch, Mathias Payer
 
-Mobile devices rely on Trusted Execution Environments (TEEs) to execute security-critical code and protect sensitive assets. This security-critical code is modularized in components known as Trusted Applications (TAs). Vulnerabilities in TAs can compromise the TEE and, thus, the entire system. However, the closed-source nature and fragmentation of mobile TEEs severely hinder dynamic analysis of TAs, limiting testing efforts to mostly static analyses. This paper presents TÄMU, a rehosting platform enabling dynamic analysis of TAs, specifically fuzzing and debugging, by interposing their execution at the API layer. To scale to many TAs across different TEEs, TÄMU leverages the standardization of TEE APIs, driven by the GlobalPlatform specifications. For the remaining TEE-specific APIs not shared across different TEEs, TÄMU introduces the notion of greedy highlevel emulation, a technique that allows prioritizing manual rehosting efforts based on the potential coverage gain during fuzzing. We implement TÄMU and use it to emulate 67 TAs across four TEEs. Our fuzzing campaigns yielded 17 zero-day vulnerabilities across 11 TAs. These results indicate a deficit of dynamic analysis capabilities across the TEE ecosystem, where not even vendors with source code unlocked these capabilities for themselves. TÄMU promises to close this gap by bringing effective and practical dynamic analysis to the mobile TEE domain.</summary>
+Mobile devices rely on Trusted Execution Environments (TEEs) to execute security-critical code and protect sensitive assets. This security-critical code is modularized in components known as Trusted Applications (TAs). Vulnerabilities in TAs can compromise the TEE and, thus, the entire system. However, the closed-source nature and fragmentation of mobile TEEs severely hinder dynamic analysis of TAs, limiting testing efforts to mostly static analyses. This paper presents TÄMU, a rehosting platform enabling dynamic analysis of TAs, specifically fuzzing and debugging, by interposing their execution at the API layer. To scale to many TAs across different TEEs, TÄMU leverages the standardization of TEE APIs, driven by the GlobalPlatform specifications. For the remaining TEE-specific APIs not shared across different TEEs, TÄMU introduces the notion of greedy high-level emulation, a technique that allows prioritizing manual rehosting efforts based on the potential coverage gain during fuzzing. We implement TÄMU and use it to emulate 67 TAs across four TEEs. Our fuzzing campaigns yielded 17 zero-day vulnerabilities across 11 TAs. These results indicate a deficit of dynamic analysis capabilities across the TEE ecosystem, where not even vendors with source code unlocked these capabilities for themselves. TÄMU promises to close this gap by bringing effective and practical dynamic analysis to the mobile TEE domain.</summary>
   </entry>
   <entry>
     <title>Web Application Vulnerability Repair Via Context-Aware Fault Localization and Directed Differential Fuzzing</title>
@@ -993,15 +1003,5 @@ Zero-knowledge (ZK) protocols have recently found numerous practical application
     <summary>CCS 2025 — Seongyun Jeong, Minseong Choi, Haehyun Cho, Seokwoo Choi, Hyungsub Kim, Yuseok Jeon
 
 The widespread adoption of app hardening techniques in Android applications makes it more challenging for current analysis techniques to analyze hardened apps, leading to limited analysis coverage. This limitation is mainly due to the difficulties in obtaining detailed information about Intents, which is essential for component communication and the execution of specific events in Android applications.</summary>
-  </entry>
-  <entry>
-    <title>MileSan: Detecting Exploitable Microarchitectural Leakage via Differential Hardware-Software Taint Tracking</title>
-    <link href="https://doi.org/10.1145/3719027.3765066"/>
-    <id>https://doi.org/10.1145/3719027.3765066</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2025"/>
-    <summary>CCS 2025 — Tobias Kovats, Flavien Solt, Katharina Ceesay-Seitz, Kaveh Razavi
-
-Microarchitectural performance optimizations introduce information flows inside CPU implementations that exceed those defined by the Instruction Set Architecture (ISA). Microarchitectural vulnerabilities, such as constant-time violations and various classes of transient execution attacks, are subsets of these excessive information flows. We observe that an exploitable microarchitectural leakage is an excessive information flow that can affect the time it takes for the CPU to execute a particular instruction, creating a timing covert channel. We design MileSan, the first RTL sanitizer that is capable of detecting exploitable microarchitectural leakage by checking for the architecturally-observable differences between architectural and microarchitectural information flows. For a given program and CPU implementation, MileSan computes architectural flows using software taint tracking and microarchitectural flows using RTL taint tracking. Evaluating the exploitability of proof of concepts generated by previous microarchitectural fuzzers, we find cases that are in fact not exploitable and discover the particular microarchitectural components that enable exploitation for the rest. In addition to assessing exploitability, MileSan enables the generation of random test programs with strictly-defined architectural information flows of secret data using a novel technique called taint-aware in-situ simulation. Leveraging this capability, we build RandOS, a new microarchitectural fuzzer th</summary>
   </entry>
 </feed>
