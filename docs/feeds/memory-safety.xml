@@ -3,7 +3,7 @@
   <title>Paper Tracker — Memory Safety</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/memory-safety.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-05T18:05:46Z</updated>
+  <updated>2026-11-06T18:06:43Z</updated>
   <entry>
     <title>BFix: Automated Safe Memory-Leak Fixing for Binary Code</title>
     <link href="https://doi.org/10.1145/3744916.3773234"/>
@@ -80,7 +80,7 @@ Hypervisors are under threat by critical memory safety vulnerabilities, with poi
     <id>https://doi.org/10.14722/ndss.2026.240753</id>
     <updated>2026-10-16T00:00:00Z</updated>
     <category term="NDSS 2026"/>
-    <summary>NDSS 2026 — Yubo Du, Youtao Zhang A, Jun Yang
+    <summary>NDSS 2026 — Yubo Du, Youtao Zhang, Jun Yang
 
 Low-level programming languages like C and C++ offer dynamic memory management capabilities but are vulnerable to Use-After-Free (UAF) vulnerabilities due to improper deallocation handling.These vulnerabilities, arising from accessing memory through dangling pointers, pose significant risks.While various defense mechanisms have been proposed, existing solutions often face challenges such as high performance overhead, excessive memory usage, or inadequate security guarantees, limiting their practicality.Pointer Nullification (PN) has gained attention as a promising UAF mitigation technique by tracking pointers and nullifying them upon buffer deallocation.However, existing PN techniques incur inefficiencies due to precisely associating each pointer with its target buffer, leading to expensive metadata lookups.Moreover, they overlook spatial locality in pointer storage, resulting in a larger number of registrations than necessary.This paper introduces Fast Pointer Nullification (FPN), a new PN-based defense that organizes metadata at the region level to eliminate costly search operations and uses block-based registration to efficiently capture pointer locality.Experiments on SPEC CPU benchmarks and real-world applications demonstrate that FPN provides strong security guarantees while significantly reducing performance and memory overhead compared to prior PN techniques.2 https://cloud.google.com/security</summary>
   </entry>
