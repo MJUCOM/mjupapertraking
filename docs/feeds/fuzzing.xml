@@ -3,7 +3,7 @@
   <title>Paper Tracker — Fuzzing</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/fuzzing.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-07T18:05:41Z</updated>
+  <updated>2026-11-08T18:05:41Z</updated>
   <entry>
     <title>Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models</title>
     <link href="https://doi.org/10.1145/3744916.3787818"/>
@@ -283,16 +283,6 @@ Robotic vehicles (RVs) play an increasingly vital role in modern society, with w
     <summary>NDSS 2026 — Jiaxing Cheng, Ming 明 Zhou 周, Haining Wang, Xin Chen, Yuncheng Wang, Yibo Qu, Limin Sun
 
 Programmable Logic Controllers (PLCs) automate industrial operations using vendor-supplied logic instruction libraries compiled into device firmware.These libraries may contain security flaws that, when exploited through physical control routines, network-facing services, or PLC runtime subsystems, may lead to privilege violations, memory corruption, or data leakage.This paper presents LogicFuzz, the first fuzzing framework designed specifically to target logic instructions in PLC firmware.LogicFuzz constructs a semantic dependency graph (SDG) that captures both operational semantics and inter-instruction dependencies in PLC code.Leveraging the SDG together with an enable-signal mechanism, LogicFuzz automatically synthesizes instruction-tailored seed programs, significantly reducing manual effort and enabling controlled, resettable fuzzing on real PLC hardware.To uncover bugs conditioned on control-flow triggers (i.e., invocation patterns), LogicFuzz mutates the SDG to diversify instruction-invocation contexts.To expose data-triggered faults, it performs coverage-guided parameter mutation under valid semantic constraints.In addition, LogicFuzz integrates a multisource oracle that monitors runtime logs, status LEDs, and communication states to detect instruction-level failures during fuzzing.We evaluate LogicFuzz on six production PLCs from three major vendors and uncover 19 instruction-level bugs, including four previously unknown vulnerabilities.</summary>
-  </entry>
-  <entry>
-    <title>Anota: Identifying Business Logic Vulnerabilities via Annotation-Based Sanitization</title>
-    <link href="https://doi.org/10.14722/ndss.2026.240938"/>
-    <id>https://doi.org/10.14722/ndss.2026.240938</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="NDSS 2026"/>
-    <summary>NDSS 2026 — Meng Wang, Philipp Görz, Joschua Schilling, Keno Haßler, Liwei Guo, Thorsten Holz, Ali Abbasi
-
-SQL Injection DataBase Witcher [12], Atropos [14] 4 Cross-Site Request Forgery (CSRF) System Call WebFuzzAuto [20] 5 Path Traversal System Call Atropos [14], PHUZZ [25] 6 Out-of-bounds Read Memory ASan [2] 7 OS Command Injection System Call Witcher [12], Atropos [14] 8 Use After Free Memory ASan [2] 9 Missing Authorization Object Access/Code Exec. 10 Unrestricted Upload of File System Call Atropos [14], UFuzzer [18], URadar [26] 11 Code Injection System Call/Data Flow 12 Improper Input Validation System Call Witcher [12], Atropos [14] 13 Command Injection System Call Witcher [12], Atropos</summary>
   </entry>
   <entry>
     <title>Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations</title>
@@ -653,6 +643,16 @@ Hardware verification is a critical task in processor development. Functional co
     <summary>S&amp;P 2026 — Sergej Dechand, Tobias Wienand, Fabian Meumertzheim, Peter Samarin, Simon Resch, Khaled Yakdan, Thorsten Holz, Flavio Toffalini
 
 Fuzz testing has proven highly effective in uncovering software faults in low-level languages such as C and C++}. Yet, memory-safe ecosystems like the Java Virtual Machine (JVM), which powers the majority of enterprise applications, have received limited attention from fuzzing research. Recent high-impact vulnerabilities such as Log4Shell and Spring4Shell highlight that memory-safe languages remain susceptible to severe security risks, including logic errors, injection vulnerabilities, and unsafe deserialization. Such vulnerability classes typically lie beyond the detection capabilities of traditional fuzzing frameworks, which are primarily designed to detect memory safety violations. In this paper, we address this gap with Jazzer11https://github.com/CodeIntelligenceTesting/jazzer, a fuzzing framework specifically designed for JVM applications. Jazzer adapts proven fuzzing techniques to the JVM via bytecode instrumentation, translating Java's high-level constructs into low-level coverage and trace feedback. To detect vulnerabilities beyond memory corruption, it complements C/C++ sanitizers with guiding oracles that hook into JVM APIs and provide guidance within sinks to uncover Java-specific vulnerabilities. Our comprehensive evaluation against JQF, the state-of-theart Java fuzzer, shows that Jazzer achieves higher coverage and faster execution speed across eleven diverse libraries, while discovering 18 bugs missed by prior work. Finally, we demonstrate real-world impact thro</summary>
+  </entry>
+  <entry>
+    <title>LLMThief: Evaluating Configuration Leaking Risks in Commercial LLM App Stores</title>
+    <link href="https://doi.org/10.1109/sp63933.2026.00195"/>
+    <id>https://doi.org/10.1109/sp63933.2026.00195</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="S&amp;P 2026"/>
+    <summary>S&amp;P 2026 — Pinji Chen, Jinlong Jiang, Jianjun Chen, Feiran Qin, Minghao Zhang, Jiahe Zhang, Haixin Duan, Kaiwen Shen
+
+Configuration leaking attack is an emerging security threat in large language model applications (LLM apps), where adversaries can manipulate the LLM app to reveal its sensitive configurations, such as system prompts, external APIs, and knowledge files. Despite their critical implications, these attacks remain understudied within commercial LLM app stores, leaving open questions about their real-world effectiveness, prevalence, and impacts. In this paper, we propose LLMThief, a novel end-to-end framework designed to systematically evaluate configuration leaking risks in LLM app stores. LLMThief comprises three phases. First, it extracts grounding information from store-level features to construct a high-quality seed pool of attack prompts. Second, it leverages shadow LLM apps as probing oracles and a genetic algorithm to identify adaptive mutation strategies. Third, it fuzzes victim LLM apps with the resulting insightful prompts and uses a fine-tuned LLM to determine whether a configuration leakage has occurred. We evaluated LLMThief on ground truth datasets across 6 widely used LLM app stores, including OpenAI GPT Store, ByteDance Coze, and Baidu Wenxin. Evaluation results show that LLMThief can effectively leak the confidential configuration of LLM apps and significantly outperforms baselines. Beyond performance evaluation, our large-scale analysis of 4,164 real-world LLM apps reveals a range of critical risks, including system prompt leaks, external API exposures, and know</summary>
   </entry>
   <entry>
     <title>NetPanic: the Attack Surface You Can't Syscall</title>
