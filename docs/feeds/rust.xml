@@ -3,7 +3,27 @@
   <title>Paper Tracker — Rust</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/rust.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-12T18:05:39Z</updated>
+  <updated>2026-11-13T18:05:47Z</updated>
+  <entry>
+    <title>RustGo: Fairly Directed Greybox Fuzzing for Enforcing Rust Memory Safety</title>
+    <link href="https://doi.org/10.1145/3830454.3832621"/>
+    <id>https://doi.org/10.1145/3830454.3832621</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <category term="CCS 2026"/>
+    <summary>CCS 2026 — Dongyeon Yu, Jiun Min, Yewan Na, Mijung Kim, Taegyu Kim, Yuseok Jeon
+
+Rust is a popular systems programming language that provides strong memory safety and introduces low-performance overhead. While Rust guarantees memory safety through strict security policies, such as ownership, memory bugs can still occur in unsafe-related Rust codes where these policies are not fully enforced. Although such unsafe Rust code accounts for only a small portion of the entire code (e.g., 10%), existing approaches fuzz the entire code-including safe Rust, whose memory safety is already enforced by the Rust compiler-resulting in inefficient use of fuzzing resources. In this paper, we propose RustGo, the new Rust-directed greybox fuzzer that effectively and fairly focuses on code regions potentially containing memory bugs. For this, RustGo automatically identifies potential memory bug targets and accurately prunes the paths irrelevant to each target by leveraging Rust-specific static analysis. For each identified target, RustGo includes a new fuzzing approach that maintains an independent state and applies dynamic pruning to maximize balanced and focused fuzzing. We evaluate RustGo on various real-world Rust applications. On average, RustGo prunes 78.49% of irrelevant paths, reaches targets x 2.09 to x 5.08 faster than existing fuzzers, and identifies 13 unknown bugs (six assigned RUSTSEC IDs and one assigned CVE ID).</summary>
+  </entry>
+  <entry>
+    <title>The Illusion of Rust Safety: Detecting Modular Unsafe Functions with LLMs</title>
+    <link href="https://doi.org/10.1145/3830454.3832709"/>
+    <id>https://doi.org/10.1145/3830454.3832709</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <category term="CCS 2026"/>
+    <summary>CCS 2026 — Xiang Cheng, Fan Sang, Yibin Yang, Hang Zhang, Sangdon Park, Xiaokuan Zhang, Taesoo Kim
+
+</summary>
+  </entry>
   <entry>
     <title>An Empirical Study of WebAssembly Usage in Node.js</title>
     <link href="https://doi.org/10.1145/3744916.3764533"/>
