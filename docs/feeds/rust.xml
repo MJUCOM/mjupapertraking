@@ -3,7 +3,37 @@
   <title>Paper Tracker — Rust</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/rust.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-13T18:05:47Z</updated>
+  <updated>2026-11-14T18:06:00Z</updated>
+  <entry>
+    <title>Lemur: Scalable Post-Quantum Synchronized Multi-Signatures</title>
+    <link href="https://doi.org/10.1145/3830454.3846676"/>
+    <id>https://doi.org/10.1145/3830454.3846676</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <category term="CCS 2026"/>
+    <summary>CCS 2026 — Yini Lin, Muhammed F. Esgin, Amin Sakzad, Ron Steinfeld, Markku-Juhani Olavi Saarinen
+
+Synchronized multi-signatures allow for non-interactive aggregation of signatures generated within the same time step. This primitive is particularly well-suited for high-throughput blockchain protocols like Ethereum, where many distributed signers validate the same block within a synchronized slot. In this work, we present Lemur, a post-quantum synchronized multi-signature from (module) lattices that improves upon the state-of-the-art in efficiency, scalability, and flexibility. Lemur follows the blueprint of Squirrel/Chipmunk (CCS 2022/2023) but introduces a fundamental redesign of the foundations of the overall framework. Our revisit of the framework is also motivated by the fact that our evaluation of Chipmunk's parameter sets, using the state-of-the-art lattice security estimation methods, suggests a substantially lower concrete security level (around 30 bits rather than the claimed 112 bits). First, we revisit the underlying building block of key-homomorphic one-time signature (KOTS) and introduce a novel security reduction based on a new lattice problem: the Dual Hint-MLWE assumption, which may be of independent interest. We then provide a formal reduction from the standard Module-LWE problem to Dual Hint-MLWE, which overall enables us to base the security of Lemur on the standard Module-LWE and Module-SIS assumptions. By shifting from a statistical security argument to a computational one, our KOTS design enjoys much better compactness and scalability. Second, we opti</summary>
+  </entry>
+  <entry>
+    <title>MAYA: A Short Shuffle Argument With Fast Verification</title>
+    <link href="https://doi.org/10.1145/3830454.3846704"/>
+    <id>https://doi.org/10.1145/3830454.3846704</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <category term="CCS 2026"/>
+    <summary>CCS 2026 — Thi Van Thao Doan, Olivier Pereira, Thomas Peters
+
+Shuffle arguments account for the largest part of the audit data of end-to-end verifiable elections when simple homomorphic tallying cannot be applied. The mixnets that have been deployed in government or public elections (e.g., in Australia, Estonia, Israel, Norway, Spain or Switzerland), generate proofs with a size that scales linearly with the number of ciphertexts, and account for GB of data when millions of ciphertexts need to be shuffled. We present MAYA, a shuffle argument with O(?og n) communication complexity and a transparent setup requiring no trusted parameters, making the currently dominant cost of the shuffle argument a small fraction of the audit data size and verification time. Our construction instantiates a commitment-consistent shuffle framework using a succinct argument based on generalized k -ary folding that efficiently supports an arbitrary number of ciphertexts, while preserving the aggregation structure used in operational mixnet deployments. We implement MAYA in Rust and compare it with Verificatum, the current state-of-the-art and heavily-optimized mixnet implementation. For n = 10 6 ciphertexts, our implementation produces arguments whose length is .002% of those of Verificatum, have a similar computation time, and require only 10% of the Verificatum argument verification time. Overall, MAYA considerably reduces the cost of hosting election verification data and speeds-up the election verification process, supporting effective election verification</summary>
+  </entry>
+  <entry>
+    <title>Practical Silent Threshold Signatures and Silent Threshold Encryption for Dynamic Committees</title>
+    <link href="https://doi.org/10.1145/3830454.3846609"/>
+    <id>https://doi.org/10.1145/3830454.3846609</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <category term="CCS 2026"/>
+    <summary>CCS 2026 — Yifei He, Zheng Zhou, Yuehua Chen, Zhi Guan, Zhong Chen
+
+Silent threshold signatures (STS) and encryption (STE) enable threshold cryptography without interactive distributed key generation, allowing a group of N parties to non-interactively generate a joint public signature verification key or an encryption key. However, modern distributed systems (such as Ethereum) rely on small, dynamically changing committees of size n ≪ N for efficiency, and existing silent threshold schemes either fail to support this dynamic setting or suffer from severe scalability issues. To the best of our knowledge, the only prior STS construction for dynamic committees, Dyna-hinTS, requires an aggregation time of O(N log N) per epoch, tightly coupling the cost to the global system size rather than the small active committee. Furthermore, no STE scheme for dynamic committees has been proposed yet. In this work, we present practical silent threshold signature and encryption schemes for dynamic committees, reducing the aggregation cost so that it depends only on the committee size n . For signatures, we redesign the Dyna-hinTS framework by replacing its Plonk-style SNARKs with linear pairing checks and a new polynomial commitment for representing the committee, yielding an aggregation time of O(n log 2 n). We also introduce the first silent threshold encryption scheme for dynamic committees with matching efficiency. We further significantly optimize the silent setup phase common to prior STS and STE schemes, reducing each party's one-time setup (i.e., gener</summary>
+  </entry>
   <entry>
     <title>RustGo: Fairly Directed Greybox Fuzzing for Enforcing Rust Memory Safety</title>
     <link href="https://doi.org/10.1145/3830454.3832621"/>
@@ -12,7 +42,7 @@
     <category term="CCS 2026"/>
     <summary>CCS 2026 — Dongyeon Yu, Jiun Min, Yewan Na, Mijung Kim, Taegyu Kim, Yuseok Jeon
 
-Rust is a popular systems programming language that provides strong memory safety and introduces low-performance overhead. While Rust guarantees memory safety through strict security policies, such as ownership, memory bugs can still occur in unsafe-related Rust codes where these policies are not fully enforced. Although such unsafe Rust code accounts for only a small portion of the entire code (e.g., 10%), existing approaches fuzz the entire code-including safe Rust, whose memory safety is already enforced by the Rust compiler-resulting in inefficient use of fuzzing resources. In this paper, we propose RustGo, the new Rust-directed greybox fuzzer that effectively and fairly focuses on code regions potentially containing memory bugs. For this, RustGo automatically identifies potential memory bug targets and accurately prunes the paths irrelevant to each target by leveraging Rust-specific static analysis. For each identified target, RustGo includes a new fuzzing approach that maintains an independent state and applies dynamic pruning to maximize balanced and focused fuzzing. We evaluate RustGo on various real-world Rust applications. On average, RustGo prunes 78.49% of irrelevant paths, reaches targets x 2.09 to x 5.08 faster than existing fuzzers, and identifies 13 unknown bugs (six assigned RUSTSEC IDs and one assigned CVE ID).</summary>
+Rust is a popular systems programming language that provides strong memory safety and introduces low-performance overhead. While Rust guarantees memory safety through strict security policies, such as ownership, memory bugs can still occur in unsafe-related Rust codes where these policies are not fully enforced. Although such unsafe Rust code accounts for only a small portion of the entire code (e.g., 10%), existing approaches fuzz the entire code—including safe Rust, whose memory safety is already enforced by the Rust compiler—resulting in inefficient use of fuzzing resources. In this paper, we propose RustGo, a new Rust-directed greybox fuzzer that effectively and fairly focuses on code regions potentially containing memory bugs. For this, RustGo automatically identifies potential memory bug targets and accurately prunes the paths irrelevant to each target by leveraging Rust-specific static analysis. For each identified target, RustGo includes a new fuzzing approach that maintains an independent state and applies dynamic pruning to maximize balanced and focused fuzzing. We evaluate RustGo on various real-world Rust applications. On average, RustGo prunes 78.49% of irrelevant paths, reaches targets X 2.09 to X 5.08 faster than existing fuzzers, and identifies 13 unknown bugs (six assigned RUSTSEC IDs and one assigned CVE ID).</summary>
   </entry>
   <entry>
     <title>The Illusion of Rust Safety: Detecting Modular Unsafe Functions with LLMs</title>
@@ -22,7 +52,7 @@ Rust is a popular systems programming language that provides strong memory safet
     <category term="CCS 2026"/>
     <summary>CCS 2026 — Xiang Cheng, Fan Sang, Yibin Yang, Hang Zhang, Sangdon Park, Xiaokuan Zhang, Taesoo Kim
 
-</summary>
+Memory safety vulnerabilities account for approximately 70% of reported security bugs, prompting the adoption of Rust, a systems programming language designed to prevent such issues through compile-time checks. While Rust categorizes code into safe and unsafe regions, we identify a previously understudied class of vulnerabilities: modular unsafe functions (MUF) in Rust code. These functions appear safe to the compiler but are, in fact, unsafe within the whole module's APIs and can cause undefined behavior without using the unsafe keyword, leading to a misleading sense of safety and unsound issues in Rust. We present the first systematic study of mufs, defining five root cause categories from empirical analysis. We develop Coin, a detection system using fine-tuned large language models for vulnerability identification and proof-of-concept generation. Coin achieves 63.7% precision and 80.4% recall on labeled evaluation set, outperforming existing tools. On evaluation of 10,000 randomly sampled Rust crates, Coin identified 26 unknown mufs with 14 developer confirmations and 10 CVE assignments.</summary>
   </entry>
   <entry>
     <title>An Empirical Study of WebAssembly Usage in Node.js</title>
