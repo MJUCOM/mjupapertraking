@@ -3,7 +3,7 @@
   <title>Paper Tracker — All papers</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/all.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-14T18:06:00Z</updated>
+  <updated>2026-11-15T18:05:42Z</updated>
   <entry>
     <title>"It Scams In The Family:" GenAI Voice Cloning Scams among Sighted and Families with Blind or Low Vision Members</title>
     <link href="https://doi.org/10.1145/3830454.3846559"/>
@@ -242,7 +242,7 @@ Decentralized finance (DeFi) brings financial services to programmable, permissi
     <category term="CCS 2026"/>
     <summary>CCS 2026 — Neetesh Saxena, Daisuke Mashima
 
-</summary>
+The 8th Joint Workshop on CPS &amp; IoT Security and Privacy is set to take place in The Hague, Netherlands, on November 15, 2026, in conjunction with the ACM Conference on Computer and Communications Security (CCS'26). This workshop marks the amalgamation of two workshops held in 2019: one focused on the security and privacy of cyber-physical systems, while the other one centered on the security and privacy of IoT. The primary objective of this workshop is to create a collaborative forum that brings together academia, industry experts, and governmental entities, encouraging them to contribute cutting-edge research, share demonstrations or hands-on experiences, and engage in discussions. This year, our call for contributions encompassed a broad spectrum, including full research papers, work-in-progress submissions, and one-page abstracts. The workshop attracted 44 submissions in total and the workshop program includes 14 accepted full/short papers on the security and privacy of CPS/IoT. Furthermore, the workshop will feature a distinguished keynote presentation from Prof. Nils Ole Tippenhauer offering deep insights into the latest developments, challenges, and emerging trends in cyber security. The complete CPSIoTSec'26 workshop proceedings are available at https://doi.org/10.1145/3830454.3847009.</summary>
   </entry>
   <entry>
     <title>A First-Principles Evaluation of Graph-Based Network Intrusion Detection Systems</title>
@@ -322,7 +322,7 @@ While cryptography is often positioned as inherently pro-social, its methods and
     <category term="CCS 2026"/>
     <summary>CCS 2026 — Yuwan Yuwan, Yuxiang Sun, Ke Liang, Junlin Li, Kangjie Chen, Run Wang
 
-</summary>
+Text-to-image (T2I) models can synthesize high-fidelity images that closely follow natural-language prompts, but they also pose serious safety risks by enabling the generation of sexually explicit content that is inappropriate in many real-world contexts, such as public or workplace settings. Despite prior efforts to erase or suppress such inappropriate concepts in T2I models, they often leave substantial residual inappropriate content after erasure. Based on our empirical analysis, we attribute this gap to a mismatch between concepts specified in natural language and the internal concept representations the model relies on during image synthesis. This can cause erasure efforts to not always align well with how visual content is realized in practice. To address this gap, we move beyond using natural-language descriptions to define concepts and erasure targets, instead grounding concepts in visual patterns and identifying erasure targets through internal generative signals. Building on this idea, we propose Erasing the Ineffable (ETI), a vision-guided concept erasure framework that derives erasure targets from few-shot visual exemplars and suppresses the corresponding visual patterns while preserving unrelated concepts and generation quality. ETI connects visual supervision to concept erasure through internal attention mechanisms, enabling a prompt-agnostic process for targeted concept erasure. Extensive experiments demonstrate that ETI achieves strong performance for NSFW con</summary>
   </entry>
   <entry>
     <title>A Sound Translation from Tamarin to ProVerif: Enabling Comparative Analysis</title>
@@ -850,7 +850,7 @@ This research studies how Technical Support Scams (TSS) are being countered by a
     <id>https://doi.org/10.1145/3830454.3846921</id>
     <updated>2026-11-14T00:00:00Z</updated>
     <category term="CCS 2026"/>
-    <summary>CCS 2026 — Connor Glosner
+    <summary>CCS 2026 — Connor Everett Glosner
 
 Firmware runs before the operating system loads so its bugs are persistent, at the highest privilege level, and almost impossible to detect, 2024 alone brought 204 bootloader CVEs. My dissertation asks whether firmware, spanning from boot through kernel handoff, can be systematically analyzed for vulnerabilities and assessed for exploitability through automated techniques. Each result exposes the gap the next fills. My systematization of 43 bootloaders and 3,658 vulnerabilities shows the gap is structural, where many of the 43 bootloaders don't deploy common exploit mitigation techniques like ASLR or stack canaries, so ordinary memory-corruption bugs stay readily exploitable, and tooling is specialized per bootloader and attack surface. Automation must be generic. FuzzUEr, the first automated fuzzer for EDK II DXE protocol interfaces, shows whole-program static analysis (Firness) recovers enough interface semantics to replace manual modeling, which discovered 20 new bugs at 11× prior state-of-the-art coverage. But harnesses drive only one of a protocol's two input channels. Metis handles the second (i.e. dependency interactions) by rehosting arbitrary protocols in user space behind synthesized mocks, with 18 new vulnerabilities, 12 remotely triggerable, across 63 protocols at roughly 6× FuzzUEr's coverage. Yet which of these bugs are exploitable? Syzploit addresses this kernel-side by demonstrating how LLM agents synthesize working exploits reliably by utilizing deterministic</summary>
   </entry>
@@ -1002,6 +1002,6 @@ Vote privacy is a fundamental property of secure e-voting protocols. This is usu
     <category term="CCS 2026"/>
     <summary>CCS 2026 — Yan Zhong He, Guanchong Huang, Yao Liu, Song Fang
 
-</summary>
+By providing real-time surveillance and recording capabilities, wireless security cameras help deter criminal activities, enhance overall safety, and offer valuable evidence in the event of an incident. To achieve round-the-clock monitoring, wireless cameras have a daytime working mode that utilizes natural light, and a nighttime working mode that broadcasts infrared (IR) light for illuminance in dark environments. The automatic switch between these modes is based on measured light intensities intercepted by their embedded light sensors. We discover that this automatic switch mechanism can be manipulated. By combining laser manipulation and wireless traffic analysis, we implement CameraBlinder, a novel system that can blind wireless security cameras. Particularly, a low-power laser light can stealthily trigger the camera to switch into daytime mode at night and then turn off the IR light, blinding the camera. Meanwhile, the mode switch brings a corresponding change in wireless traffic patterns that can be observed to identify when the camera has been blinded. We perform real-world experiments across 22 camera models to verify the attack's effectiveness and efficiency. Notably, CameraBlinder can be successfully launched from a distance of up to 150 m.</summary>
   </entry>
 </feed>

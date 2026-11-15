@@ -3,7 +3,7 @@
   <title>Paper Tracker — Memory Safety</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/memory-safety.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-14T18:06:00Z</updated>
+  <updated>2026-11-15T18:05:42Z</updated>
   <entry>
     <title>AutoSOUP: Safety-Oriented Unit Proof Generation for Memory-Safety Verification</title>
     <link href="https://doi.org/10.1145/3830454.3846765"/>
@@ -60,7 +60,7 @@ GPUs accelerate a growing fraction of modern computing workloads. Yet, modern GP
     <id>https://doi.org/10.1145/3830454.3846803</id>
     <updated>2026-11-14T00:00:00Z</updated>
     <category term="CCS 2026"/>
-    <summary>CCS 2026 — Seyedhamed Ghavamnia, Maurice Hanisch, Julien Vanegue
+    <summary>CCS 2026 — Seyedhamed Ghavamnia, Maurice D. Hanisch, Julien Vanegue
 
 CHERI enforces spatial memory safety and referential pointer integrity by replacing integer pointers with unforgeable capabilities that carry bounds and permissions. This rules out many conventional pointer-fabrication attacks and shifts exploitation toward the reuse of existing privileged capabilities obtained through vulnerabilities or unintended disclosure. CheriBSD's library compartmentalization reduces such disclosure by isolating per-compartment execution stacks. However, heap memory remains shared across compartments, and may lead to capability leakage through both reuse and explicit sharing. In this paper, we show that CHERI's compartmentalization guarantees can be bypassed through two distinct attack vectors, even in the absence of allocator bugs. First, cross-compartment reuse of freed heap regions can leak privileged capabilities through residual allocator state. Second, unnecessary sharing of compartment-owned heap objects can leak capabilities to less-trusted compartments through ordinary program data structures and interfaces. To mitigate unnecessary sharing of live capabilities, we introduce type-directed capability sealing, which uses static analysis of library interfaces and CHERI sealing to preserve opaque-handle semantics for library-owned objects. As a complementary defense against residual capability reuse, we adapt the established practice of per-compartment allocation pools to CheriBSD's library-compartmentalization runtime. Our design integrates with C</summary>
   </entry>
@@ -113,16 +113,6 @@ In this paper, we present PoisonCap: scalable temporal safety with strict use-af
     <summary>CCS 2026 — Dongyeon Yu, Jiun Min, Yewan Na, Mijung Kim, Taegyu Kim, Yuseok Jeon
 
 Rust is a popular systems programming language that provides strong memory safety and introduces low-performance overhead. While Rust guarantees memory safety through strict security policies, such as ownership, memory bugs can still occur in unsafe-related Rust codes where these policies are not fully enforced. Although such unsafe Rust code accounts for only a small portion of the entire code (e.g., 10%), existing approaches fuzz the entire code—including safe Rust, whose memory safety is already enforced by the Rust compiler—resulting in inefficient use of fuzzing resources. In this paper, we propose RustGo, a new Rust-directed greybox fuzzer that effectively and fairly focuses on code regions potentially containing memory bugs. For this, RustGo automatically identifies potential memory bug targets and accurately prunes the paths irrelevant to each target by leveraging Rust-specific static analysis. For each identified target, RustGo includes a new fuzzing approach that maintains an independent state and applies dynamic pruning to maximize balanced and focused fuzzing. We evaluate RustGo on various real-world Rust applications. On average, RustGo prunes 78.49% of irrelevant paths, reaches targets X 2.09 to X 5.08 faster than existing fuzzers, and identifies 13 unknown bugs (six assigned RUSTSEC IDs and one assigned CVE ID).</summary>
-  </entry>
-  <entry>
-    <title>SCHERI: Provably Secure Speculation Under the Constant-Time Policy for CHERI</title>
-    <link href="https://doi.org/10.1145/3830454.3846718"/>
-    <id>https://doi.org/10.1145/3830454.3846718</id>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <category term="CCS 2026"/>
-    <summary>CCS 2026 — Shixin Song, Davide Davoli, Elias Storme, Márton Bognár, Dominique Devriese, Frank Piessens, Tamara Rezk
-
-Capability-based architectures such as CHERI provide strong support for the architectural isolation of software components. To additionally protect against microarchitectural leakage, software can be written in a constant-time fashion. Modern processors, however, rely heavily on speculative execution, which can invalidate the constant-time guarantees and leak isolated secrets transiently. In this work, we show that providing secure speculation for CHERI is non-trivial, and that existing proposals fail to preserve the confidentiality guarantees. We develop a formal framework for reasoning jointly about capability safety, speculative execution, and information-flow security, and use it to demonstrate potential leaks. We then present SCHERI, a new processor design within this framework, and formally prove that it provides end-to-end secure speculation guarantees for the constant-time policy. Our results provide formal foundations and practical guidance for building future capability-based processors, which are resilient to Spectre attacks for constant-time programs.</summary>
   </entry>
   <entry>
     <title>TANTRUM: Breaking the Heap Sandbox in JavaScript Engines via Protection Domain Fuzzing</title>
@@ -1003,5 +993,15 @@ In software development, the prevalence of unsafe languages such as C and C++ in
     <summary>USENIX Sec 2024 — Lukas Lamster, Martin Unterguggenberger, David Schrammel, Stefan Mangard
 
 Confidentiality, authenticity, integrity of data, and runtime security are ubiquitous concerns in modern computer systems. However, these security concerns have traditionally been addressed by separate mechanisms. Error-correcting codes (ECC) detect and correct DRAM errors, ensuring the integrity of stored data. Authenticated memory encryption provides data confidentiality and authenticity. Memory tagging enforces memory safety, thereby improving runtime security. The lack of a combined primitive increases system complexity, memory overheads, and the overall performance impact. In this work, we present Voodoo, the first combined scheme for authenticated encryption, DRAM error correction, and memory tagging. Our design extends the MAGIC mode for authenticated encryption and error correction proposed by Kounavis et al. With Voodoo, DRAM data is encrypted, and a tag-dependent message authentication code protects the integrity of the stored data while simultaneously allowing for the correction of DRAM faults. Thus, we can implement a wide range of tagged memory architectures without introducing additional memory requests or storage overheads. We present three tag encoding schemes providing up to 36 tag bits per cache line. Using the gem5 simulator, we implement and benchmark our design. Our evaluation shows a low runtime overhead of 1.4% on average compared to a system without any of the provided security features. We use a Monte-Carlo simulation of a DRAM fault model based on re</summary>
+  </entry>
+  <entry>
+    <title>A Generic Methodology for the Modular Verification of Security Protocol Implementations</title>
+    <link href="https://doi.org/10.1145/3576915.3623105"/>
+    <id>https://doi.org/10.1145/3576915.3623105</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2023"/>
+    <summary>CCS 2023 — Linard Arquint, Malte Schwerhoff, Vaibhav Mehta, Péter Müller
+
+Security protocols are essential building blocks of modern IT systems. Subtle flaws in their design or implementation may compromise the security of entire systems. It is, thus, important to prove the absence of such flaws through formal verification. Much existing work focuses on the verification of protocol models, which is not sufficient to show that their implementations are actually secure. Verification techniques for protocol implementations (e.g., via code generation or model extraction) typically impose severe restrictions on the used programming language and code design, which may lead to sub-optimal implementations. In this paper, we present a methodology for the modular verification of strong security properties directly on the level of the protocol implementations. Our methodology leverages state-of-the-art verification logics and tools to support a wide range of implementations and programming languages. We demonstrate its effectiveness by verifying memory safety and security of Go implementations of the Needham-Schroeder-Lowe, Diffie-Hellman key exchange, and WireGuard protocols, including forward secrecy and injective agreement for WireGuard. We also show that our methodology is agnostic to a particular language or program verifier with a prototype implementation for C.</summary>
   </entry>
 </feed>

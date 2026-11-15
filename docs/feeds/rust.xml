@@ -3,7 +3,7 @@
   <title>Paper Tracker — Rust</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/rust.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-14T18:06:00Z</updated>
+  <updated>2026-11-15T18:05:42Z</updated>
   <entry>
     <title>Lemur: Scalable Post-Quantum Synchronized Multi-Signatures</title>
     <link href="https://doi.org/10.1145/3830454.3846676"/>
@@ -13,6 +13,16 @@
     <summary>CCS 2026 — Yini Lin, Muhammed F. Esgin, Amin Sakzad, Ron Steinfeld, Markku-Juhani Olavi Saarinen
 
 Synchronized multi-signatures allow for non-interactive aggregation of signatures generated within the same time step. This primitive is particularly well-suited for high-throughput blockchain protocols like Ethereum, where many distributed signers validate the same block within a synchronized slot. In this work, we present Lemur, a post-quantum synchronized multi-signature from (module) lattices that improves upon the state-of-the-art in efficiency, scalability, and flexibility. Lemur follows the blueprint of Squirrel/Chipmunk (CCS 2022/2023) but introduces a fundamental redesign of the foundations of the overall framework. Our revisit of the framework is also motivated by the fact that our evaluation of Chipmunk's parameter sets, using the state-of-the-art lattice security estimation methods, suggests a substantially lower concrete security level (around 30 bits rather than the claimed 112 bits). First, we revisit the underlying building block of key-homomorphic one-time signature (KOTS) and introduce a novel security reduction based on a new lattice problem: the Dual Hint-MLWE assumption, which may be of independent interest. We then provide a formal reduction from the standard Module-LWE problem to Dual Hint-MLWE, which overall enables us to base the security of Lemur on the standard Module-LWE and Module-SIS assumptions. By shifting from a statistical security argument to a computational one, our KOTS design enjoys much better compactness and scalability. Second, we opti</summary>
+  </entry>
+  <entry>
+    <title>LoTRS: Practical Post-Quantum Structured Threshold Ring Signatures from Lattices</title>
+    <link href="https://doi.org/10.1145/3830454.3846671"/>
+    <id>https://doi.org/10.1145/3830454.3846671</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <category term="CCS 2026"/>
+    <summary>CCS 2026 — Nikai Jagganath, Muhammed F. Esgin, Ron Steinfeld, Amin Sakzad, Markku-Juhani Olavi Saarinen, Dongxi Liu
+
+Threshold ring signatures (TRS) enable a quorum of T users to jointly sign a message while hiding which T of the N ring members participated, supporting privacy-preserving endorsement in adhoc settings. That said, many deployments do not need anonymity over every T -subset of a ring: when the approval pattern is already public, a structured ring can be sufficient. In this work, we first formalize this setting as a structured threshold ring signature (sTRS) and introduce LoTRS1, a lattice-based sTRS that avoids a dedicated leader and keeps interaction to the optimal number of two rounds by separating the threshold signing relation from the anonymity mechanism. To the best of our knowledge, LoTRS is the first construction in which a TRS variant is obtained by combining: (i) an aggregated signing layer: a two-round lattice-based multisignature protocol producing an aggregated signature relation, with (ii) a selection-hiding layer: a 1-out-of-N proof that hides the chosen ring element supporting that relation. While it is natural to use a T-out-of-N proof to build a TRS, our LoTRS exploits a 1-out-of-N proof to significantly improve efficiency. LoTRS concretely instantiates the aggregated signing layer using DualMS (Crypto'23) and the selection-hiding layer arising from Esgin et al.'s lattice-based one-out-of-many proof (IEEE S&amp;P'22). Our (T, N ·T)-LoTRS construction achieves polylog(N,T) signature size and outperforms (T, N)-TRS schemes significantly. For example, for N = 100 an</summary>
   </entry>
   <entry>
     <title>MAYA: A Short Shuffle Argument With Fast Verification</title>

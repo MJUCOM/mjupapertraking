@@ -3,7 +3,7 @@
   <title>Paper Tracker — Fuzzing</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/fuzzing.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-14T18:06:00Z</updated>
+  <updated>2026-11-15T18:05:42Z</updated>
   <entry>
     <title>A Unified Approach to Bridge Snapshot Fuzzing from Low-Level Browser Vulnerabilities to Web Applications</title>
     <link href="https://doi.org/10.1145/3830454.3846926"/>
@@ -40,7 +40,7 @@ Dynamic testing is crucial for finding bugs in deployed software, but modern lib
     <id>https://doi.org/10.1145/3830454.3846921</id>
     <updated>2026-11-14T00:00:00Z</updated>
     <category term="CCS 2026"/>
-    <summary>CCS 2026 — Connor Glosner
+    <summary>CCS 2026 — Connor Everett Glosner
 
 Firmware runs before the operating system loads so its bugs are persistent, at the highest privilege level, and almost impossible to detect, 2024 alone brought 204 bootloader CVEs. My dissertation asks whether firmware, spanning from boot through kernel handoff, can be systematically analyzed for vulnerabilities and assessed for exploitability through automated techniques. Each result exposes the gap the next fills. My systematization of 43 bootloaders and 3,658 vulnerabilities shows the gap is structural, where many of the 43 bootloaders don't deploy common exploit mitigation techniques like ASLR or stack canaries, so ordinary memory-corruption bugs stay readily exploitable, and tooling is specialized per bootloader and attack surface. Automation must be generic. FuzzUEr, the first automated fuzzer for EDK II DXE protocol interfaces, shows whole-program static analysis (Firness) recovers enough interface semantics to replace manual modeling, which discovered 20 new bugs at 11× prior state-of-the-art coverage. But harnesses drive only one of a protocol's two input channels. Metis handles the second (i.e. dependency interactions) by rehosting arbitrary protocols in user space behind synthesized mocks, with 18 new vulnerabilities, 12 remotely triggerable, across 63 protocols at roughly 6× FuzzUEr's coverage. Yet which of these bugs are exploitable? Syzploit addresses this kernel-side by demonstrating how LLM agents synthesize working exploits reliably by utilizing deterministic</summary>
   </entry>
@@ -63,6 +63,16 @@ Analyzing embedded systems firmware for security vulnerabilities is challenging 
     <summary>CCS 2026 — Shibo Ai, Shao Chen Zhang, Hugo Lefeuvre, Margo Seltzer
 
 Compartmentalization is an approach that limits the amount of damage a bug or security breach can wreak by decomposing a program into isolated compartments that each run with the least degree of privilege necessary. When compartmentalizing a program, developers must carefully harden the communications between compartments (i.e., compartment interfaces) to prevent attacks from spreading across boundaries. Unfortunately, this hardening is error-prone and often ad-hoc, leading to Compartment Interface Vulnerabilities (CIVs), a class of bugs that can render compartmentalized programs no more secure than their monolithic counterparts. Despite the potential impact of these bugs, the community has little understanding of how effective today's interface defenses are. This work systematically evaluates the strengths and limitations of CIV defenses deployed in production-grade compartmentalized programs. We audit a representative corpus of 25 popular compartmentalized programs in OpenBSD using a combination of manual analysis, fuzzing, and LLM agents. Our study identifies 81 CIVs, some over a decade old, with impacts as varied as memory corruption, information leakage, and logic bugs, and as severe as arbitrary code execution. We systematize our findings to extract high-level patterns that characterize these issues and derive more effective approaches to address them. Our results expose the strengths of OpenBSD's approach, such as how its avoidance of shared memory eliminates entire cl</summary>
+  </entry>
+  <entry>
+    <title>Comprehending the Vulnerability Lifecycle: Targeting, Testing, and Repairing Security-Critical Systems</title>
+    <link href="https://doi.org/10.1145/3830454.3846920"/>
+    <id>https://doi.org/10.1145/3830454.3846920</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <category term="CCS 2026"/>
+    <summary>CCS 2026 — Han Zheng
+
+Modern software systems grow more capable by growing more complex, and vulnerabilities follow as a side effect. In security-critical systems such as the web browser, these flaws are routinely weaponized into working exploits, yet they keep emerging faster than developers can address them. What ultimately limits our ability to find and fix them is not effort but comprehension. This dissertation argues that securing a security-critical system is, in large part, a problem of improving comprehension across the vulnerability lifecycle, where each stage is bounded by a distinct kind of understanding. We make this explicit across three stages: comprehending the attack surface to decide what to test, comprehending finding techniques and the bugs they target to improve how we test, and comprehending the property behind a vulnerability to determine how to fix it correctly. We instantiate this roadmap through five works, a SoK of the browser's attack surface together with MendelFuzz , Grape , xLangChecker , and CodeMechanic , validated on security-critical softwares. Together they trace a feasible, comprehension-guided path through the vulnerability lifecycle, yielding new bountied vulnerabilities and more robust patches.</summary>
   </entry>
   <entry>
     <title>CVE-Genie : An LLM-Based Multi-Agent Framework for Reproducing CVEs</title>
@@ -142,7 +152,7 @@ Fuzzing and symbolic execution are two prominent methods for software testing an
     <category term="CCS 2026"/>
     <summary>CCS 2026 — Zizhuang Deng, Yiying Shan, Sanchuan Chen, Guozhu Meng, Qingxin Wang, Xueqing Zhang, Tong Liu
 
-</summary>
+Deep learning systems depend on a complex tool chain of software libraries and hardware backends. This complexity improves performance but also creates an under-explored attack surface: implementation precision bugs whose numerical instability can be exploited adversarially rather than treated as benign noise. We formalize this threat as Code Adversarial Attacks (CAAs), in which operator implementations exhibit divergent numerical behavior across execution environments, enabling supply-chain Trojan operators that behave correctly under standard environment but induce targeted failures in specific deployment environment. To detect this type of threats, we introduce NeuGo, a directed fuzzing framework for Adversarial Neuron Fuzzing that targets operator-level execution semantics. NeuGo focuses on internal operator-level states rather than model outputs: it (i) identifies numerically unstable operator states via constraint-aware sampling and sensitivity analysis, and (ii) applies gradient-based optimization to synthesize model inputs that guide execution into these latent defects, further confirmed with differential testing across multiple software-hardware configurations. We evaluated NeuGo on over 100 production models across sixteen execution environments, including PyTorch, TensorFlow, and ONNX Runtime on CPU, GPU, and XPU platforms. NeuGo identifies more than 30 reproducible implementation bugs in these widely-used frameworks and runtimes. We further demonstrate the securit</summary>
   </entry>
   <entry>
     <title>It's About Time: Detecting Timing Side-Channel Vulnerabilities in High-Level Synthesis Designs</title>
@@ -252,7 +262,7 @@ Large Language Models (LLMs) offer new capabilities for software security by int
     <category term="CCS 2026"/>
     <summary>CCS 2026 — Shiyan Peng, Yingbo Xu, Jiarun Dai, Yuchen Zhang, Yuan Zhang, Min Yang
 
-</summary>
+Secretly patched vulnerabilities (i.e., vulnerabilities fixed without public disclosure) are common in open-source software and can be easily overlooked during downstream security maintenance. Existing approaches mainly rely on static analysis or machine learning to identify candidate security patches. However, they do not directly determine whether such patch candidates actually correspond to reachable vulnerability-triggering executions in the pre-patch program. This paper presents SPFuzz, a patch-guided directed fuzzing framework for detecting secretly patched vulnerabilities through proof-of-concept (PoC) generation. Rather than classifying or validating patches themselves, SPFuzz takes a candidate security patch as input and uses it to attempt to trigger the underlying pre-patch vulnerability, thereby providing direct runtime evidence of the hidden risk. SPFuzz derives Vulnerability Triggering States (VTS), a patch-derived guidance signal that steers fuzzing toward vulnerability-triggering executions. SPFuzz further supports coordinated two-dimensional fuzzing across user inputs and command-line options, enhancing the effectiveness of PoC generation and enabling a more direct assessment of secretly patched vulnerabilities from candidate security patches. We evaluate SPFuzz on two datasets. On 34 recent CVE patches, SPFuzz successfully generated 18 PoCs, drastically outperforming option-aware fuzzers (18 vs. 7 cases). SPFuzz also outperforms state-of-the-art directed fuzz</summary>
   </entry>
   <entry>
     <title>SteamFuzz: Boosting Firmware Fuzzing via Automatic Message Window Inference</title>
@@ -993,15 +1003,5 @@ As part of the UEFI standard, System Management Mode (SMM) was introduced on x86
     <summary>S&amp;P 2026 — Jiayi Lin, Liangcai Su, Junzhe Li, Chenxiong Qian
 
 Fuzzing is effective for vulnerability discovery but struggles with complex targets such as compilers, interpreters, and database engines, which accept textual input that must satisfy intricate syntactic and semantic constraints. Although language models (LMs) have attracted interest for this task due to their vast latent knowledge and reasoning potential, their practical adoption has been limited. The major challenges stem from insufficient exploration of deep program logic among real-world codebases, and the high cost of leveraging larger models. To overcome these challenges, we propose R1-Fuzz, the first framework that leverages reinforcement learning (RL) to train cost-efficient LMs and integrate them for complex textual fuzzing. R1-FUZZ introduces two key designs: coverage-slicing-based question construction and a distance-based reward calculation. Using these methods, R1-Fuzz performs RL-based post-training on a constructed dataset of questions, utilizing our fine-grained reward signals. We use R1-FUZZ to train a cost-efficient LM named R1-Fuzz-7B, derived from the Qwen2.5-7B model, to excel at fuzzing input generation. Then, R1-Fuzz designs a fuzzing workflow that tightly integrates LMs to reason deep program semantics during practical fuzzing. Evaluations on diverse real-world targets show that R1-FUZZ-7B can rival or even outperform much larger models (e.g., GPT-o4-mini, Deepseek-V3) in real-world fuzzing, achieving up to 75% higher coverage than state-of-the-art fuz</summary>
-  </entry>
-  <entry>
-    <title>StepStone: LLM-Based GPU Kernel Driver Fuzzing via User-Space Libraries</title>
-    <link href="https://doi.org/10.1109/sp63933.2026.00124"/>
-    <id>https://doi.org/10.1109/sp63933.2026.00124</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="S&amp;P 2026"/>
-    <summary>S&amp;P 2026 — Xiaochen Zou, Juefei Pu, A. Srivastav, Jonathan Cox, Zhengchuan Liang, Yuan Tan, X. H. Li, Y C Zhu
-
-GPU device driver fuzzing is an underexplored area. GPUs are directly accessible by untrusted users and represent a huge attack surface (e.g., NVIDIA driver has over a million lines of code). While continuous fuzzing has mitigated many kernel bugs within core subsystems, GPU device drivers have not received sufficient attention. SyzDescribe, a state-of-theart tool for generating fuzzing interfaces for device drivers, significantly improves device driver fuzzing, but falls short given the complexity of GPU device drivers. In this paper, we observed that syscalls are not the only interface one can use to fuzz a device driver. In fact, user-space libraries provide an alternative interface, which can also be utilized for device driver fuzzing. Fuzzing user-space libraries has a number of advantages, such as more functionality-specific and user-friendly APIs, and comprehensive documentation providing valuable information about the API interfaces. To capitalize on this fact, we leverage Large Language Models (LLMs), which are highly effective in understanding and extracting information from both code and natural language (both exist in API documents). Therefore, we introduce StepStone, a novel approach that leverages LLMs to generate syzkaller descriptions for GPU libraries (e.g., CUDA, Vulkan), and fuzz these libraries to indirectly fuzz GPU kernel drivers. Our experiments show that StepStone achieves two to four times the level of coverage when compared with SyzDescribe, KernelGP</summary>
   </entry>
 </feed>
