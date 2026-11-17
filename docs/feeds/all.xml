@@ -3,7 +3,17 @@
   <title>Paper Tracker — All papers</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/all.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-16T18:05:49Z</updated>
+  <updated>2026-11-17T18:05:48Z</updated>
+  <entry>
+    <title>SAILS: Secure Activation-Based Inference-Time Latent Steering for Code Language Models (NDSS 2027) - routing artifacts and CWE-Pairs corpus</title>
+    <link href="https://doi.org/10.14722/ndss.2027.231876"/>
+    <id>https://doi.org/10.14722/ndss.2027.231876</id>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <category term="NDSS 2027"/>
+    <summary>NDSS 2027 — Kiho Lee, Eunsoo Kim, Hyoungshick Kim
+
+Archive for the NDSS 2027 paper artifact (code: https://github.com/0xk1h0/SAILS_NDSS2027). Contains the SAILS routing artifacts for Qwen2.5-Coder-7B-Instruct, OpenCoder-8B-Instruct and Devstral-Small-2507 (sails_artifacts/validation/*/pca_interventions.pkl) and the CWE-Pairs corpus (dataset_cwe_pairs/aggregated/clean_76k.csv, 33,639 vulnerable/secure function pairs, 222 CWE labels with the VulnPatchPairs source files (MIT). Unpack at the root of the code repository: bash sails_artifacts/download_artifacts.sh SAILS_NDSS2027_artifacts.zip (checks every file against sails_artifacts/zip_contents.sha256).</summary>
+  </entry>
   <entry>
     <title>"It Scams In The Family:" GenAI Voice Cloning Scams among Sighted and Families with Blind or Low Vision Members</title>
     <link href="https://doi.org/10.1145/3830454.3846559"/>
@@ -993,15 +1003,5 @@ Batched threshold encryption (BTE) enables a committee of servers to jointly dec
     <summary>CCS 2026 — Alexandre Debant, Robert Künnemann, Johannes Müller
 
 Vote privacy is a fundamental property of secure e-voting protocols. This is usually accomplished using mix nets, which shuffle and thus anonymize the votes cast. To distribute trust regarding vote privacy, mix nets with multiple servers are often required, especially in high-stakes elections. Formal, computer-aided verification has become a well-established method for verifying whether e-voting protocols ensure vote privacy. Numerous studies in this field have significantly advanced our understanding of vote privacy. However, existing studies of e-voting protocols based on verifiable mix nets have a significant limitation: they idealize the mix net's functionality or consider only a single mix server that is fully trusted regarding vote privacy. While this is understandable given the limitations of existing verification tools, it restricts the class of protocols that can be accurately analyzed. Previous research shows that this abstraction can result in overlooked vote privacy attacks. To address this open research problem, we present the first formal fine-grained model of a mix net which allows us to consider an arbitrary number of mixers. Using the ProVerif tool, we applied this model to verify that the Helios protocol, its variants Belenios and BeleniosRF, and the Perfectly Private Audit Trail (PPAT) protocol all provide vote privacy when considering this more accurate modeling of multi-server mix nets.</summary>
-  </entry>
-  <entry>
-    <title>CameraBlinder: Blinding Wireless Security Cameras Using a Low-Power Laser</title>
-    <link href="https://doi.org/10.1145/3830454.3832701"/>
-    <id>https://doi.org/10.1145/3830454.3832701</id>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <category term="CCS 2026"/>
-    <summary>CCS 2026 — Yan Zhong He, Guanchong Huang, Yao Liu, Song Fang
-
-By providing real-time surveillance and recording capabilities, wireless security cameras help deter criminal activities, enhance overall safety, and offer valuable evidence in the event of an incident. To achieve round-the-clock monitoring, wireless cameras have a daytime working mode that utilizes natural light, and a nighttime working mode that broadcasts infrared (IR) light for illuminance in dark environments. The automatic switch between these modes is based on measured light intensities intercepted by their embedded light sensors. We discover that this automatic switch mechanism can be manipulated. By combining laser manipulation and wireless traffic analysis, we implement CameraBlinder, a novel system that can blind wireless security cameras. Particularly, a low-power laser light can stealthily trigger the camera to switch into daytime mode at night and then turn off the IR light, blinding the camera. Meanwhile, the mode switch brings a corresponding change in wireless traffic patterns that can be observed to identify when the camera has been blinded. We perform real-world experiments across 22 camera models to verify the attack's effectiveness and efficiency. Notably, CameraBlinder can be successfully launched from a distance of up to 150 m.</summary>
   </entry>
 </feed>
