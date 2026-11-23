@@ -3,7 +3,7 @@
   <title>Paper Tracker — Fuzzing</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/fuzzing.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-22T18:06:58Z</updated>
+  <updated>2026-11-23T18:05:35Z</updated>
   <entry>
     <title>A Unified Approach to Bridge Snapshot Fuzzing from Low-Level Browser Vulnerabilities to Web Applications</title>
     <link href="https://doi.org/10.1145/3830454.3846926"/>
@@ -363,6 +363,16 @@ Fuzzing operating system kernels to discover deep and complex bugs is difficult 
     <summary>ICSE 2026 — Jiaqiang Yao, Meixi Liu, Zhenbang Chen, Yongchao Xing, Jinjian Luo, Yunlai Luo, Guofeng Zhang, Yufeng Zhang
 
 Fuzzing is effective for finding software bugs. However, the bugs specified in context-free properties are difficult for the existing fuzzers. These bugs are triggered when the program execution contains specific sequences of operations, e.g. , push and pop operations on the stack, and locking and unlocking operations on the lock. As far as we know, existing approaches do not support fuzzing for non-regular context-free properties, which are more expressive and can be used to specify bugs in many scenarios. This paper proposes a general runtime monitoring-based fuzzing framework for the bugs expressed as context-free properties. We propose two algorithms to improve fuzzing’s effectiveness and efficiency with respect to the context-free property. The algorithm for preserving input mutants leverages the state transition information of the property’s monitors. The other algorithm for mutating the input seed combines control flow information with state transition information to prioritize the different parts of the input. We have implemented our framework CFPOFuzz for C/C++ programs. The results of the extensive experiments on real-world C/C++ programs indicate our method’s effectiveness and efficiency. Compared with coverage-oriented fuzzing, our method achieves 3.83x speedups for generating the first target input triggering the bugs. Our method found 7 unknown zero-day bugs.</summary>
+  </entry>
+  <entry>
+    <title>Dependency-aware Residual Risk Analysis</title>
+    <link href="https://doi.org/10.1145/3744916.3773180"/>
+    <id>https://doi.org/10.1145/3744916.3773180</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="ICSE 2026"/>
+    <summary>ICSE 2026 — Seongmin Lee, Marcel Böhme
+
+However much we test a software system, some residual risk of undiscovered bugs always remains. If we model test generation as a sampling process, the residual risk can be defined as the probability that the next test input reveals a bug. This risk is upper-bounded by the discovery probability (DP) , i.e., the probability that the next test input covers new code, which itself is upper-bounded by the coverage rate , i.e., the expected number of new coverage elements per test input. Prior work introduced the Good-Turing estimator (GoTu) to estimate residual risk via coverage rate. However, we find that GoTu substantially overestimates, leading to undue optimism in bug finding because (i) the coverage rate is only a loose upper bound, and (ii) GoTu ignores dependencies among coverage elements. We propose dependency-aware DP estimation for residual risk analysis. Our estimator directly estimates DP and accounts for dependencies among coverage elements using Ma and Chao ’s sample coverage estimation. A naive implementation requires space proportional to the number of coverage elements and executions, which can be prohibitively large. To make it practical, we introduce two optimizations: dependency-aware node removal, which reduces the number of coverage elements to observe, and online singleton cluster maintenance, which eliminates the need to record observed coverage elements in each execution. A comparison of our estimator and GoTu on real-world software from FuzzBench demonstra</summary>
   </entry>
   <entry>
     <title>Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities</title>
@@ -993,15 +1003,5 @@ Fuzz testing has proven highly effective in uncovering software faults in low-le
     <summary>S&amp;P 2026 — Pinji Chen, Jinlong Jiang, Jianjun Chen, Feiran Qin, Minghao Zhang, Jiahe Zhang, Haixin Duan, Kaiwen Shen
 
 Configuration leaking attack is an emerging security threat in large language model applications (LLM apps), where adversaries can manipulate the LLM app to reveal its sensitive configurations, such as system prompts, external APIs, and knowledge files. Despite their critical implications, these attacks remain understudied within commercial LLM app stores, leaving open questions about their real-world effectiveness, prevalence, and impacts. In this paper, we propose LLMThief, a novel end-to-end framework designed to systematically evaluate configuration leaking risks in LLM app stores. LLMThief comprises three phases. First, it extracts grounding information from store-level features to construct a high-quality seed pool of attack prompts. Second, it leverages shadow LLM apps as probing oracles and a genetic algorithm to identify adaptive mutation strategies. Third, it fuzzes victim LLM apps with the resulting insightful prompts and uses a fine-tuned LLM to determine whether a configuration leakage has occurred. We evaluated LLMThief on ground truth datasets across 6 widely used LLM app stores, including OpenAI GPT Store, ByteDance Coze, and Baidu Wenxin. Evaluation results show that LLMThief can effectively leak the confidential configuration of LLM apps and significantly outperforms baselines. Beyond performance evaluation, our large-scale analysis of 4,164 real-world LLM apps reveals a range of critical risks, including system prompt leaks, external API exposures, and know</summary>
-  </entry>
-  <entry>
-    <title>NetPanic: the Attack Surface You Can't Syscall</title>
-    <link href="https://doi.org/10.1109/sp63933.2026.00236"/>
-    <id>https://doi.org/10.1109/sp63933.2026.00236</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="S&amp;P 2026"/>
-    <summary>S&amp;P 2026 — Tianshuo Han, Zong Cao, Zhen Dong, Xiaoman Luo, zj Song, Jian Liu
-
-The Linux kernel network stack exposes a critical remote attack surface, yet kernel security research has historically focused on the local attack surface, especially the post-breach local privilege escalation attacks. This has left a direct, pre-authentication attack vector dangerously overlooked. To address this gap, we present the first systematic, fuzzing-based audit of this attack surface. Our work first identifies the unique challenges that render existing fuzzers ineffective for this task: Extreme Input Complexity and the challenge of Dual-channel Input Coordination. To overcome them, we present NetPanic, a novel fuzzer built on a Fuzzer-in-the-Middle architecture. This design inherently solves the coordination challenge by orchestrating real communication between two network stack instances. Simultaneously, it provides a stream of valid packets that serves as a highquality baseline for our execution-guided structure-mutation strategy, which addresses the input complexity challenge. Our evaluation of NetPanic on the latest Linux kernel yielded significant results. It discovered 15 new, remotely triggerable vulnerabilities, none of which could be found or reproduced by the state-of-the-art kernel fuzzer Syzkaller. In direct comparison, NetPanic demonstrated vastly superior performance, achieving over 100 times the execution throughput and an average code coverage improvement of over 400 %. This performance gap, combined with a targeted ablation study, provides a dual va</summary>
   </entry>
 </feed>

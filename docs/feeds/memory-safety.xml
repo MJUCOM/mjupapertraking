@@ -3,7 +3,7 @@
   <title>Paper Tracker — Memory Safety</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/memory-safety.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-22T18:06:58Z</updated>
+  <updated>2026-11-23T18:05:35Z</updated>
   <entry>
     <title>AutoSOUP: Safety-Oriented Unit Proof Generation for Memory-Safety Verification</title>
     <link href="https://doi.org/10.1145/3830454.3846765"/>
@@ -455,6 +455,16 @@ Microcontroller systems are integral to our daily lives, powering mission-critic
 As software grows in size and complexity, modular designs are increasingly adopted, leading to frequent interactions via shared memory between components. This design however increases the risk of vulnerabilities from uncontrolled memory access to shared memory. Enforcing byte-level access control can mitigate these risks by enabling byte-level permissions on complex shared objects and their sub-elements. However, existing approaches face performance limitations as they increase the granularity of control to byte level. In this paper, we present BASTAG, a novel system that leverages ARM's Memory Tagging Extension (MTE) to tack this challenge. Although MTE enforces tag-matching between pointers and memory, its hardware-defined granularity is too coarse to support byte-level control on its own. To address the inherent limitations of applying MTE for nuanced access control, BASTAG incorporates a technique known as shadow memory tagging that places separate, but associated MTE tags for the actual memory targets, allowing for more flexible and finer access control with efficiency. We implemented a BASTAG prototype on AArch64 hardware with MTE support and evaluated it on three real-world use cases. Our results demonstrate that BASTAG significantly outperforms existing byte-level access control mechanisms.</summary>
   </entry>
   <entry>
+    <title>Beyond Tag Collision: Cluster-based Memory Management for Tag-based Sanitizers</title>
+    <link href="https://doi.org/10.1145/3719027.3765059"/>
+    <id>https://doi.org/10.1145/3719027.3765059</id>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="CCS 2025"/>
+    <summary>CCS 2025 — Mengfei Xie, Yan Lin, Hongtao Wu, Jianming Fu, Chenke Luo, Guojun Peng
+
+Tag-based sanitizers attach a small ''key'' to each pointer and a matching ''lock'' tag to its target memory object, enabling runtime verification of pointer-object consistency and helping developers to detect potential memory violations. However, the limited tag encoding space challenges existing studies in assigning distinct tags to memory objects across temporal and spatial dimensions, leading to potential tag collisions. Such limitations reduce the probabilistic protection capabilities of sanitizers and make them vulnerable to sophisticated tag probing attacks. In this paper, we present ClusterTag, a novel cluster-based memory allocator aimed at simultaneously mitigating tag collisions in both temporal and spatial dimensions. The core design of ClusterTag effectively balances the significant mismatch between tag encoding space and memory objects: it divides memory objects into multiple independent clusters, thereby limiting tag collisions to finite chunks within each cluster. To mitigate tag collisions across clusters, we design a cluster-grained heap randomization scheme. This approach introduces random address intervals between clusters and further breaks the entropy limitation of the tag space. ClusterTag has been implemented as an independent memory allocator that seamlessly integrates with tag-based sanitizers such as HWASan, and maintains comparable performance overhead (within 1%) at various randomization densities. Security evaluations on the Juliet dataset indica</summary>
+  </entry>
+  <entry>
     <title>BLACKOUT: Data-Oblivious Computation with Blinded Capabilities</title>
     <link href="https://doi.org/10.1145/3719027.3765169"/>
     <id>https://doi.org/10.1145/3719027.3765169</id>
@@ -463,16 +473,6 @@ As software grows in size and complexity, modular designs are increasingly adopt
     <summary>CCS 2025 — Hossam ElAtali, Merve Gülmez, Thomas Nyman, N. Asokan
 
 Lack of memory-safety and exposure to side channels are two prominent, persistent challenges for the secure implementation of software. Memory-safe programming languages promise to significantly reduce the prevalence of memory-safety bugs, but make it more difficult to implement side-channel-resistant code. We aim to address both memory-safety and side-channel resistance by augmenting memory-safe hardware with the ability for data-oblivious programming. We describe an extension to the CHERI capability architecture to provide blinded capabilities that allow data-oblivious computation to be carried out by userspace tasks. We also present BLACKOUT, our realization of blinded capabilities on a FPGA softcore based on the speculative out-of-order CHERI-Toooba processor and extend the CHERI-enabled Clang/LLVM compiler and the CheriBSD operating system with support for blinded capabilities. BLACKOUT makes writing side-channel-resistant code easier by making non-data-oblivious operations via blinded capabilities explicitly fault. Through rigorous evaluation we show that BLACKOUT ensures memory operated on through blinded capabilities is securely allocated, used, and reclaimed and demonstrate that, in benchmarks comparable to those used by previous work, BLACKOUT imposes only a small performance degradation (1.5% geometric mean) compared to the baseline CHERI-Toooba processor.</summary>
-  </entry>
-  <entry>
-    <title>Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks</title>
-    <link href="https://doi.org/10.1145/3719027.3765142"/>
-    <id>https://doi.org/10.1145/3719027.3765142</id>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="CCS 2025"/>
-    <summary>CCS 2025 — Zeyang Zhuang, Zilun Wang, Wei Meng, Michael Rung-Tsong Lyu
-
-Rust has been extensively used in software and system development due to its guarantees for memory and concurrency safety. Fuzzing is a popular bug detection technique for examining the correctness and robustness of programs. However, we identify that current state-of-the-art Rust fuzzers are significantly impeded by the ubiquitous presence of Rust runtime safety checks, resulting in poor effectiveness and efficiency. These checks, which are inserted either implicitly by the compiler or explicitly by the compiler or developers, could cause a high number of panic crashes and early program termination in fuzzing. Consequently, current fuzzers are unable to effectively explore deep code behind the runtime safety checks, leaving potential vulnerabilities undetected. To address these limitations, we propose P anic K iller , a new Rust fuzzing technique to detect bugs hidden in deep and unsafe code. It performs a cross-IR analysis to precisely identify runtime safety checks and unsafe code in Rust programs, and employs a novel dynamic taint analysis to track the critical input bytes associated with the conditions enforced by these checks. P anic K iller further performs novel input prioritization and mutation strategies to achieve effective and efficient fuzzing. Our evaluation shows that P anic K iller significantly outperformed current state-of-the-art Rust fuzzers by achieving average improvements of 22.0× in bug exposure speed, 1.68× in code coverage, and 18.2× in false-positiv</summary>
   </entry>
   <entry>
     <title>Securing Mixed Rust with Hardware Capabilities</title>
