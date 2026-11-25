@@ -3,7 +3,7 @@
   <title>Paper Tracker — Fuzzing</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/fuzzing.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-24T18:05:23Z</updated>
+  <updated>2026-11-25T18:05:39Z</updated>
   <entry>
     <title>A Unified Approach to Bridge Snapshot Fuzzing from Low-Level Browser Vulnerabilities to Web Applications</title>
     <link href="https://doi.org/10.1145/3830454.3846926"/>
@@ -75,7 +75,7 @@ Compartmentalization is an approach that limits the amount of damage a bug or se
 Modern software systems grow more capable by growing more complex, and vulnerabilities follow as a side effect. In security-critical systems such as the web browser, these flaws are routinely weaponized into working exploits, yet they keep emerging faster than developers can address them. What ultimately limits our ability to find and fix them is not effort but comprehension. This dissertation argues that securing a security-critical system is, in large part, a problem of improving comprehension across the vulnerability lifecycle, where each stage is bounded by a distinct kind of understanding. We make this explicit across three stages: comprehending the attack surface to decide what to test, comprehending finding techniques and the bugs they target to improve how we test, and comprehending the property behind a vulnerability to determine how to fix it correctly. We instantiate this roadmap through five works, a SoK of the browser's attack surface together with MendelFuzz , Grape , xLangChecker , and CodeMechanic , validated on security-critical softwares. Together they trace a feasible, comprehension-guided path through the vulnerability lifecycle, yielding new bountied vulnerabilities and more robust patches.</summary>
   </entry>
   <entry>
-    <title>CVE-Genie : An LLM-Based Multi-Agent Framework for Reproducing CVEs</title>
+    <title>CVE-Genie: An LLM-Based Multi-Agent Framework for Reproducing CVEs</title>
     <link href="https://doi.org/10.1145/3830454.3832602"/>
     <id>https://doi.org/10.1145/3830454.3832602</id>
     <updated>2026-11-14T00:00:00Z</updated>
@@ -885,7 +885,7 @@ Linux fair scheduling (EEVDF in kernel ≥ 6.6, CFS in older releases) is the de
 The security of the modern web depends on the correctness of JavaScript (JS) engines, yet these complex systems remain vulnerable to high-impact bugs. A critical limitation of state-of-the-art fuzzers is the coverage plateau: once a fuzzer saturates the control-flow graph, edge coverage loses its ability to guide discovery. Because complex engine behaviors, such as JIT optimization tiers and hidden class transitions, often share identical edge coverage, standard coverage metrics are blind to the distinct internal states required to trigger deep errors. To bridge this gap, we present StateLens, a framework that employs Large Language Models (LLM) to automate the discovery of deep internal states. Blindly placing instrumentation probes at all states is infeasible due to the vast state space and the high runtime overhead. State-Lens introduces a novel agent-based reasoning pipeline that emulates the intuition of a security researcher. By iteratively traversing code and developer comments, our agents intelligently select high-value instrumentation targets, effectively separating logic-driving states from irrelevant data. This results in synthesizable, high-signal feedback probes that map the engine's hidden configurations. This instrumentation feeds a dual-feedback mechanism, effectively guiding the fuzzer toward unexplored engine semantics. Our evaluation confirms that StateLens significantly outperforms state-of-the-art fuzzers and uncovers 68 new bugs.</summary>
   </entry>
   <entry>
-    <title>T amias : Feedback-Guided Systematic Concurrency Exploration for Transparent Distributed System Fuzzing</title>
+    <title>T amias: Feedback-Guided Systematic Concurrency Exploration for Transparent Distributed System Fuzzing</title>
     <link href="https://doi.org/10.1145/3830418.3843891"/>
     <id>https://doi.org/10.1145/3830418.3843891</id>
     <updated>2026-10-16T00:00:00Z</updated>

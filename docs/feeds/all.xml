@@ -3,7 +3,7 @@
   <title>Paper Tracker — All papers</title>
   <id>https://mjucom.github.io/mjupapertraking/feeds/all.xml</id>
   <link href="https://mjucom.github.io/mjupapertraking/"/>
-  <updated>2026-11-24T18:05:23Z</updated>
+  <updated>2026-11-25T18:05:39Z</updated>
   <entry>
     <title>SAILS: Secure Activation-Based Inference-Time Latent Steering for Code Language Models (NDSS 2027) - routing artifacts and CWE-Pairs corpus</title>
     <link href="https://doi.org/10.14722/ndss.2027.231876"/>
@@ -375,7 +375,7 @@ While dynamic analysis has proven to be effective for detecting vulnerabilities 
 We introduce new techniques for verifiable reporting of abusive messages in private messaging platforms. Our techniques are compatible with both metadata-hiding messaging systems, where the platform does not know who speaks to whom, and with third-party moderation, where the platform is not involved in the process of verifying or judging reported content. While prior work in this space considers the question of how a moderator would verify reports, prior works do not address the question of how a moderator and platform would collaborate to enforce moderation decisions. In a setting where the platform does not wish to be involved in or responsible for enforcing moderation decisions, or in federated settings where it is not clear who would be responsible for enforcement, this presents an additional challenge. Our work solves this problem with a lightweight credentialing and revocation mechanism that does not involve the platform in moderation enforcement at all. In order to support this added functionality, we build on Asymmetric Message Franking (Crypto~'19) and improve performance over the original scheme, reducing moderator computation and communication costs to verify reports by 6× and 7×, respectively.</summary>
   </entry>
   <entry>
-    <title>Accio : Detecting Privilege Escalation Vulnerabilities in DBMSs via Minimum Privilege Set Calculation</title>
+    <title>Accio: Detecting Privilege Escalation Vulnerabilities in DBMSs via Minimum Privilege Set Calculation</title>
     <link href="https://doi.org/10.1145/3830454.3832623"/>
     <id>https://doi.org/10.1145/3830454.3832623</id>
     <updated>2026-11-14T00:00:00Z</updated>
@@ -945,7 +945,7 @@ Decentralized identity frameworks grant users full sovereignty over their digita
 Self-Modifying Code (SMC) is the foundation of dynamic code generation in commodity JIT engines. Modern processors provide coherence mechanisms that ensure stale, overwritten code cannot be executed architecturally, but their guarantees during microarchitectural execution remain less understood. The only previously known SMC-based transient execution primitive (SCSB), is limited to x86 and relies on a very short instruction/data-cache coherence window, shaping the common view that SMC-based transient execution attacks are impractical in real-world JIT engines. In this paper, we overturn this assumption and introduce Branch Target Reuse ( BTR ), the first practical in-place Spectre-v2 attack. The key insight is that, while modern CPUs restore architectural code coherence after self-modification, they do not necessarily invalidate stale indirect branch prediction entries (i.e., branch targets ). In JIT engines, these stale targets can outlive the original code and later be reused when the code cache is repopulated, yielding a transient execute-after-free primitive. This allows attackers to hijack transient control flow to newly generated code at obsolete offsets, bypassing software hardening or reaching misaligned gadgets. We evaluate \n across SpiderMonkey, GraalVM, and the Linux kernel's cBPF JIT, and show that it is a cross-engine issue whose exploitability depends on code-cache management and garbage-collection noise. Focusing on the most vulnerable target, cBPF, we build t</summary>
   </entry>
   <entry>
-    <title>Breaking the Curse of Dimensionality: Fuzzy PSI without O ((logδ) d ) Overhead</title>
+    <title>Breaking the Curse of Dimensionality: Fuzzy PSI without O ((logδ) d) Overhead</title>
     <link href="https://doi.org/10.1145/3830454.3832568"/>
     <id>https://doi.org/10.1145/3830454.3832568</id>
     <updated>2026-11-14T00:00:00Z</updated>
