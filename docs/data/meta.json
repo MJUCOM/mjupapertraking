@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T18:05:39+00:00",
+ "updated": "2026-11-26T18:05:19+00:00",
  "venues": [
   {
    "id": "ccs",
@@ -119,7 +119,5 @@
   "usenixsec:2025": 438,
   "usenixsec:2026": 363
  },
- "errors": [
-  "icse 2025: Expecting ',' delimiter or '}': line 1 column 1447466 (char 1447465)"
- ]
+ "errors": []
 }
